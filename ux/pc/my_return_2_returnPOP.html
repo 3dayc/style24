@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | 반품 신청 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/jquery.ellipsis.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.modal.min.js"></script> <!-- modal 팝업 js -->
+<script src="js/common-ui.js"></script>
+</head>
+
+<body>
+
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container my">
+		<div class="breadcrumb">
+			<ul>
+				<li class="bread_home"><a href="index.html">홈</a></li>
+				<li class="bread_2depth">마이페이지</li>
+				<li class="bread_3depth">취소/반품/환불내역</li>
+				<li class="bread_3depth">반품 신청</li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="content">
+				<div class="cont_head" style="display: none;">
+					CONT-HEAD
+					<div class="tit">my_center</div>
+					<div class="tit my_tit">my_tit</div>
+				</div>
+				<div class="cont_body mypage">
+					<!-- CONT-BODY -->
+					<div class="my_lnb">
+						<div class="lnb_tit">
+							<h2>마이페이지</h2>
+						</div>
+						<div class="lnb_list">
+							<ul>
+								<li><a href="/ux/pc/my_order_1.html">주문확인/배송조회</a></li>
+								<li><a href="/ux/pc/my_return_1.html" class="on">취소/반품/환불내역</a></li>
+								<li><a href="/ux/pc/my_restock_1.html">재입고 알림 내역</a></li>
+								<li><a href="/ux/pc/my_coupon_1.html">쿠폰</a></li>
+								<li><a href="/ux/pc/my_point_1.html">STYLE24 포인트</a></li>
+								<li><a href="/ux/pc/my_gift_1.html">상품권</a></li>
+								<li><a href="/ux/pc/my_review_1.html">리뷰</a></li>
+								<li><a href="/ux/pc/my_delivery_1.html">배송지 관리</a></li>
+								<li><a href="/ux/pc/my_wishlist_1.html">위시리스트</a></li>
+								<li><a href="/ux/pc/my_mypage_1.html">내정보 관리</a></li>
+								<li><a href="/ux/pc/my_leave_1.html">회원 탈퇴</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="my_cont">
+						<div class="sec_head">
+							<h3>반품 신청</h3>
+							<div class="od_detail">
+								(주문번호 : <span class="num">ABCD123456789</span>)
+							</div>
+						</div>
+						<div class="sec_body mypage_body">
+							<form class="form_wrap" role="form">
+								<div class="order_list return_list">
+									<section class="order_row">
+										<div class="part_deliver">
+											<div class="tbl_tit">
+												<h3 class="subH3">상품 정보</h3>
+											</div>
+											<div class="tbl type2">
+												<table>
+													<colgroup>
+														<col width="1020">
+														<col width="180">
+													</colgroup>
+													<tbody>
+														<tr>
+															<td>
+																<div class="info_item w1000">
+																	<div class="thumb_box">
+																		<a href="">
+																			<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																		</a>
+																	</div>
+																	<div class="info_box">
+																		<p class="od_name">
+																			<a href="">
+																				<span class="brand">Mollimelli 몰리멜리</span>
+																				<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트</span>
+																			</a>
+																		</p>
+																		<p class="od_opt">
+																			<span class="option">옵션:<em>01_루돌프융기모상하복_D오렌지/110</em></span>
+																			<span class="count">수량:<em>99</em>개</span>
+																		</p>
+																	</div>
+																	<div class="info_calc">
+																		<p class="price">
+																			<span class="selling_price">61,200원</span>
+																		</p>
+																		<p class="point"><span>49</span>p</p>                       
+																	</div>
+																</div>
+															</td>
+															<td class="cnt_sel">
+																<span class="cnt_t">수량</span>
+																<select id="mounth">
+																	<option value="hide">선택</option>
+																	<option value="Test_SELECT_OPTION_1" rel="icon-temperature">99</option>
+																	<option value="Test_SELECT_OPTION_2">98</option>
+																	<option value="Test_SELECT_OPTION_3">97</option>
+																</select>
+																<button class="btn btn_dark btn_sm">옵션 변경</button>
+															</td>
+														</tr>                         
+													</tbody>
+												</table>
+											</div>                   
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="tbl_tit">
+											<h3 class="subH3">상품 정보</h3>
+										</div>
+										<div class="tbl type1">
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tbody>
+													<tr>
+														<th>사유 선택</th>
+														<td>
+															<select id="mounth">
+																<option value="hide">선택</option>
+																<option value="Test_SELECT_OPTION_1" rel="icon-temperature">99</option>
+																<option value="Test_SELECT_OPTION_2">98</option>
+																<option value="Test_SELECT_OPTION_3">97</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<th class="ver_top">세부 사유</th>
+														<td>
+															<textarea class="doc_return" name="" id="" placeholder="자세한 사유를 입력해주세요."></textarea>
+															<p class="txt_cnt"><span id="return_cnt" class="c_primary">0</span>/500</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="order_tit"> 
+											<h3 class="subH3">반품 방식</h3>
+										</div>
+										<div class="tbl type1">
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tbody>
+													<tr>
+														<th>반품 방식 선택</th>
+														<td>
+															<div class="form_field">
+																<div class="">
+																	<input type="radio" name="radio"  name="test1" id="rdi_1" value="1">
+																	<label for="rdi_1"><span>방문회수 <b>택배사에서 방문하여 회수</b></span></label>
+																</div>
+																<div class="">
+																	<input type="radio" name="radio"  name="test1" id="rdi_2" value="2" Checked>
+																	<label for="rdi_2"><span>직접반송 <b>고객이 직접 반송처리</b></span></label>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="order_tit"> 
+											<h3 class="subH3">택배사 반품 회수지 주소</h3>
+											<button class="ship_btn"><span>배송지 선택</span></button>
+										</div>
+										<div class="tbl type1">
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tbody>
+													<tr>
+														<th>성명</th>
+														<td>홍길동</td>
+													</tr>
+													<tr>
+														<th>연락처</th>
+														<td>010-1234-5678</td>
+													</tr>
+													<tr>
+														<th>주소</th>
+														<td>서울시 영등포구 은행로 11, 8층 (여의도동,일신빌딩)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="order_tit"> 
+											<h3 class="subH3">환불 정보</h3>
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="return_desc">
+											<h3>환불 정책 안내</h3>
+											<p>
+												본 상품은 전문가가 구매회원의 주문 의뢰 내용을 전반적으로 검터호나 후 산출물을 작성하여 구매회원에게 제공하는 맞춤형 용역 상품으로서, 원칙적으로가분하기 어려운 성격의 용역 상품입니다. 전문가가 건당 과금 상품의 산출물 작성 작업을 개시하는 등 용역의 제공을 개시하기 전까지는
+												구매회원의 청약철회 및 그에 따른 전액환불이 가능합니다.전문가가 구매회원의 주문 의뢰 내용에 따라 산출물 작성 작업을 개시하는 등 용역의 제공을 개시한 이후에는 전자상거래 등에서의 소비자보호에 관한 법률 제17조 제2항 제5호 제6호에 원칙적으로 구매회원의 청약철회가 제한됩니다.
+												다만,용역의 제공이 개시된 이후에도 용역의 제공 초기 단계에서는 
+											</p>
+										</div>
+									</section>
+									<div class="btn_wrap full">
+										<button type="button" class="btn btn_default cancle_btn"><span>환불 취소</span></button>
+										<button tyep="submit" class="btn btn_primary submit_btn account_pop_btn" id=""><span>123,456,789원 환불 신청</span></button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- // CONT-BODY -->					
+				</div>
+			</div>
+		</div>
+		<!-- 환불 정보 팝업 -->
+		<div class="modal account_popup" tabindex="-1" role="dialog" aria-labelledby="PopupBasicLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">환불계좌 등록</h5>
+				</div>
+				<div class="modal-body">
+					<section class="order_row">
+						<div class="tbl type1">
+							<table>
+								<colgroup>
+									<col width="170">
+									<col width="*">
+								</colgroup>   
+								<tbody>
+									<tr>
+										<th class="ver_top">예금주</th>
+										<td>
+											<div class="input_wrap">
+												<input type="text" class="form_control" readonly placeholder="홍길동">
+												<p class="desc mt15">회원명 본인이 예금주인 통장으로만 환불이 가능합니다.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>은행명</th>
+										<td>
+											<div class="form_field">
+												<select id="mounth">
+													<option value="hide">은행명</option>
+													<option value="Test_SELECT_OPTION_1" rel="icon-temperature">하나은행</option>
+													<option value="Test_SELECT_OPTION_2">국민은행</option>
+													<option value="Test_SELECT_OPTION_3">우리은행</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>계좌번호</th>
+										<td>
+											<div class="input_wrap">
+												<input type="text" class="form_control">
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_dark close_modal">계좌등록 후 환불신청</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+	<footer id="footer"></footer>
+
+	<script type="text/javascript">
+	// 컨텐츠 호출
+	$(document).ready( function() {
+		$("#header").load("head.html");
+		$("#footer").load("foot.html");
+	});
+	</script>
+	<script>
+	$(function(){
+		//modal 호출
+		$(".modal").modal("show"); //개발 반영시 삭제.
+
+		$(".account_pop_btn").click(function() {
+			$(".account_popup").modal("show");
+		});
+		$(".close_modal").click(function() {
+			$(".modal, .blocker").hide();
+			$("body").css('overflow','visible')
+		});
+
+		//세부 사유 글자 수 제한
+		$('.doc_return').keyup(function (e){
+			var content = $(this).val();
+			$('#return_cnt').html(content.length);
+			if (content.length > 500){
+				alert("최대 500자까지 입력 가능합니다.");
+				$(this).val(content.substring(0, 500));
+				$('#return_cnt').html("500");
+			}
+		});
+	});
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | default | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+
+<!-- <link rel="stylesheet" type="text/css" href="css/test-common.css" /> -->
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+</head>
+
+<body>
+
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container mb">
+		<div class="wrap">
+			<div class="content join1"> <!-- 페이지특정 클래스 = join1 -->
+				<div class="cont_head">
+                    <h3>style24</h3>
+				</div>
+				<div class="cont_body">
+					<form class="form_wrap form_col_c form_full" role="form">
+						<div class="form_head">
+							<h4>회원가입</h4>
+						</div>
+						<div class="form_sign_up">
+							<a href="">
+								<p class="c_primary t_c">STYLE24 회원으로 가입</p>
+								<p class="t_c mt15">스타일24 신규 가입 시<br>할인 쿠폰 등 다양한 혜택을 받으실 수 있습니다.</p>
+							</a>
+						</div> 
+						<div class="sns_wrap">
+							<h5>간편가입</h5>
+							<ul>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="ico ico_snslogin kakao"></i>
+										<span>카카오로 시작하기</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="ico ico_snslogin naver"></i>
+										<span>네이버로 시작하기</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<i class="ico ico_snslogin yes24"></i>
+										<span>YES24로 시작하기</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+	<footer id="footer"></footer>
+
+	<script type="text/javascript">
+		// 컨텐츠 호출
+        $(document).ready( function() {
+            $("#header").load("head.html");
+            $("#footer").load("foot.html");
+        });
+	</script>
+
+</body>
+</html>
+
+

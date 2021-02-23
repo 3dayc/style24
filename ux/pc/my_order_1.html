@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | 주문확인/배송조회 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/jquery.ellipsis.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.ui.datepicker.monthyearpicker.js"></script>
+<script src="js/common-ui.js"></script>
+</head>
+
+<body>
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container my">
+		<div class="breadcrumb">
+			<ul>
+				<li class="bread_home"><a href="index.html">홈</a></li>
+				<li class="bread_2depth">마이페이지</li>
+				<li class="bread_3depth">주문확인/배송조회</li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="content">
+				<div class="cont_head" style="display: none;">
+					CONT-HEAD
+					<div class="tit">my_center</div>
+					<div class="tit my_tit">my_tit</div>
+				</div>
+				<div class="cont_body mypage">
+					<!-- CONT-BODY -->
+					<div class="my_lnb">
+						<div class="lnb_tit">
+							<h2>마이페이지</h2>
+						</div>
+						<div class="lnb_list">
+							<ul>
+								<li><a href="/ux/pc/my_order_1.html" class="on">주문확인/배송조회</a></li>
+								<li><a href="/ux/pc/my_return_1.html">취소/반품/환불내역</a></li>
+								<li><a href="/ux/pc/my_restock_1.html">재입고 알림 내역</a></li>
+								<li><a href="/ux/pc/my_coupon_1.html">쿠폰</a></li>
+								<li><a href="/ux/pc/my_point_1.html">STYLE24 포인트</a></li>
+								<li><a href="/ux/pc/my_gift_1.html">상품권</a></li>
+								<li><a href="/ux/pc/my_review_1.html">리뷰</a></li>
+								<li><a href="/ux/pc/my_delivery_1.html">배송지 관리</a></li>
+								<li><a href="/ux/pc/my_wishlist_1.html">위시리스트</a></li>
+								<li><a href="/ux/pc/my_mypage_1.html">내정보 관리</a></li>
+								<li><a href="/ux/pc/my_leave_1.html">회원 탈퇴</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="my_cont">
+						<div class="sec_head">
+							<h3 class="mem_name"><strong>홍길동</strong>님 반갑습니다.</h3>
+							<div class="mem_info clear">
+								<div class="mem_rank">
+									<div class="rank_icon vip">V</div>
+									<div class="rank_txt01">VIP</div>
+									<div class="rank_txt02">
+										<button type="button">등급혜택 보기</button>
+										<button type="button" id="cp_down">등급쿠폰 다운</button>
+									</div>
+								</div>
+								<div class="mem_box">
+									<div class="mem_coupon">
+										<p class="tit">보유쿠폰&nbsp;/&nbsp;<span class="c_primary">만료예정</span></p>
+										<span class="coupon_txt01">
+											<span class="big_txt">30</span>장
+										</span>
+										<span>/</span>
+										<span class="coupon_txt02 c_primary">
+											<span>13</span>장
+										</span>
+									</div>
+									<div class="mem_point">
+										<p class="tit">STYLE  24 포인트</p>
+										<a href="#pop"><span class="big_txt">25,000</span>P</a>
+									</div>
+									<div class="mem_gift">
+										<p class="tit">상품권</p>
+										<a href="#pop"><span class="big_txt">25,000</span>원</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sec_body mypage_body">
+							<!-- 주문 경로 -->
+							<div class="order_info clear">
+								<ul class="clear">
+									<li>
+										<div class="or_p">주문접수</div>
+										<div class="count"><span>5</span></div>
+									</li>
+									<li>
+										<div class="or_p">결제완료</div>
+										<div class="count"><span>9</span></div>
+									</li>
+									<li>
+										<div class="or_p">상품 준비 중</div>
+										<div class="count"><span>3</span></div>
+									</li>
+									<li>
+										<div class="or_p">배송 준비 중</div>
+										<div class="count"><span>3</span></div>
+									</li>
+									<li>
+										<div class="or_p">배송 중</div>
+										<div class="count zero"><span>0</span></div>
+									</li>
+									<li>
+										<div class="or_p">배송 완료</div>
+										<div class="count"><span>9,999</span></div>
+									</li>
+								</ul>
+								<div class="order_right">
+									<p class="or_p">취소/교환/반품</p>
+									<p class="count"><span>12</span></p>
+								</div>
+							</div>
+							<!-- //주문 경로 -->
+							<h2 class="subH2 my_subtit">주문확인/배송조회</h2>
+							<!-- 주문조회 검색 -->
+							<div class="order_sch_filter clear">
+								<div class="sch_radio_tab">
+									<input type="checkbox" name="month" vlaue="최근 1개월" id="chk01"> 
+									<label for="chk01">최근 1개월</label>
+									<input type="checkbox" name="month" vlaue="최근 2개월" id="chk02"> 
+									<label for="chk02">최근 2개월</label>
+									<input type="checkbox" name="month" vlaue="최근 3개월" id="chk03"> 
+									<label for="chk03">최근 3개월</label>
+								</div>
+								<div class="sch_right">
+									<div class="sch_datepicker sb">
+										<input type="text" class="n_input my_datepicker" name="dt_fr_input" value="" placeholder="20.10.05" id="">
+									</div>
+									<div class="sch_datepicker">
+										<input type="text" class="n_input my_datepicker" name="dt_to_input" value="" placeholder="20.10.05" id="">
+									</div>
+									<button type="button" class="btn btn_dark">조회</button>
+								</div>
+							</div>
+							<!-- //주문조회 검색 -->
+							<div class="order_list">
+								<!-- 1개주문 -->
+								<div class="part_deliver">
+									<div class="tbl_tit">
+										<span class="start_t">주문일</span>
+										<span class="order_date">2020.10.25</span>
+										<span class="order_label01">업체직배송</span>
+										<span class="order_label01">STYLE24 일반배송</span>
+										<span class="order_label02">총알배송</span>
+										<a href="" class="detail_btn">주문상세보기</a>
+									</div>
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row"> <!-- 같은 데이터 노출시 동일 영역끼리 병합 : 클래스명 merge_row 추가 -->
+														<div class="delivery">
+															<p class="dlvr_staus">주문 접수</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                         
+											</tbody>
+										</table>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt cf_desc c_primary">주문 완료 / 결제를 기다리고 있습니다.</p> <!-- button 없이 텍스트만 있을 경우 cf_desc c_primary class 추가 -->
+									</div>                        
+								</div>
+								<!-- //1개주문 -->
+								<!-- 1개+사은품 -->
+								<div class="part_deliver">
+									<div class="tbl_tit">
+										<span class="start_t">주문일</span>
+										<span class="order_date">2020.10.25</span>
+										<span class="order_label02">총알배송</span>
+										<a href="" class="detail_btn">주문상세보기</a>
+									</div>
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row"> <!-- 같은 데이터 노출시 동일 영역끼리 병합 : 클래스명 merge_row 추가 -->
+														<div class="delivery">
+															<p class="dlvr_staus">결제 완료</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                         
+											</tbody>
+										</table>
+									</div>
+									<div class="oder_gift">
+										<div class="title">사은품</div>
+										<div class="li_gift">
+											<ul>
+												<li>사은품 이름1 <span class="deduct_p">(-3,000P)</span></li>
+												<li>사은품 이름2 <span class="deduct_p">(-3,000P)</span></li>
+												<li>사은품 이름2 <span class="deduct_p">(-3,000P)</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt cf_desc c_primary">배송할 상품을 준비 중입니다.</p>
+									</div>                        
+								</div>
+								<!-- //1개+사은품 -->
+								<!-- 판매자동일 -->
+								<div class="part_deliver">
+									<div class="tbl_tit">
+										<span class="start_t">주문일</span>
+										<span class="order_date">2020.10.25</span>
+										<span class="order_label01">업체직배송</span>
+										<a href="" class="detail_btn">주문상세보기</a>
+									</div>
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">배송 완료</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">배송 완료</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                          
+											</tbody>
+										</table>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt cf_desc c_primary">배송할 상품을 준비 중입니다.</p>
+									</div>                        
+								</div>  
+								<!-- //판매자동일 -->
+								<!-- 판매자동일 + 사은품  -->
+								<div class="part_deliver">
+									<div class="tbl_tit">
+										<span class="start_t">주문일</span>
+										<span class="order_date">2020.10.25</span>
+										<span class="order_label01">업체직배송</span>
+										<a href="" class="detail_btn">주문상세보기</a>
+									</div>
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">상품 준비 중</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">상품 준비 중</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                          
+											</tbody>
+										</table>
+									</div>
+									<div class="oder_gift">
+										<div class="title">사은품</div>
+										<div class="li_gift">
+											<ul>
+												<li>사은품 이름1 <span class="deduct_p">(-3,000P)</span></li>
+												<li>사은품 이름2 <span class="deduct_p">(-3,000P)</span></li>
+												<li>사은품 이름2 <span class="deduct_p">(-3,000P)</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt cf_desc c_primary">상품 준비가 완료되어 곧 배송될 예정입니다.</p>
+									</div>                        
+								</div>  
+								<!-- //판매자동일 + 사은품 -->
+								<!-- 판매자 상이 -->
+								<div class="part_deliver">
+									<div class="tbl_tit">
+										<span class="start_t">주문일</span>
+										<span class="order_date">2020.10.25</span>
+										<span class="order_label01">업체직배송</span>
+										<a href="" class="detail_btn">주문상세보기</a>
+									</div>
+									<!-- 세트01 -->
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">배송 완료</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">배송 완료</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                          
+											</tbody>
+										</table>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt"><span>CJ대한통운</span> / <span>12345678901</span></p>
+										<button type="button" class="btn btn_primary ghost">배송조회</button>
+									</div>   
+									<!-- //세트01 -->
+									<!-- 세트02 -->
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">상품 준비 중</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">상품 준비 중</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                          
+											</tbody>
+										</table>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt"><span>15</span>일 후 자동으로 구매확정</p>
+										<button type="button" class="btn btn_primary ghost">구매확정</button>
+									</div>      
+									<!-- //세트02 -->           
+								</div>  
+								<!-- //판매자 상이 -->
+								<!-- 판매자 상이 + 사은품 -->
+								<div class="part_deliver">
+									<div class="tbl_tit">
+										<span class="start_t">주문일</span>
+										<span class="order_date">2020.10.25</span>
+										<span class="order_label01">업체직배송</span>
+										<a href="" class="detail_btn">주문상세보기</a>
+									</div>
+									<!-- 세트01 -->
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">배송 중</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">배송 중</p>
+															<p class="dlvr_desc">10/26일 도착</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                          
+											</tbody>
+										</table>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt">리뷰를 작성하면 다른 구매자에게 도움이 될 수 있습니다.</p>
+										<button type="button" class="btn btn_primary ghost">리뷰작성</button>
+									</div>
+									<!-- //세트01 -->
+									<!-- 세트02 -->
+									<div class="tbl type2">
+										<table>
+											<colgroup>
+												<col width="1020">
+												<col width="180">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">구매 확정</p>
+															<p class="dlvr_desc">10/26일 구매확정</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="info_item">
+															<div class="thumb_box">
+																<a href="">
+																	<img src="/images/pc/thumb/tmp_pdClickother1.jpg" width="100%" alt="">
+																</a>
+															</div>
+															<div class="info_box">
+																<p class="od_name">
+																	<a href="">
+																		<span class="brand">Mollimelli 몰리멜리</span>
+																		<span class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</span>
+																	</a>
+																</p>
+																<p class="od_opt">
+																	<span class="option"><em>01_루돌프융기모상하복_D오렌지</em><em>110</em></span>
+																	<span class="count">수량 <em>99</em>개</span>
+																</p>
+															</div>
+															<div class="info_calc">
+																<p class="price">
+																	<span class="selling_price">61,200원</span>
+																</p>
+																<p class="point"><span>49</span>p</p>                       
+															</div>
+														</div>
+													</td>
+													<td class="merge_row">
+														<div class="delivery">
+															<p class="dlvr_staus">구매 확정</p>
+															<p class="dlvr_desc">10/26일 구매확정</p>
+														</div>
+														<div class="tbl_btn_wrap case02">
+															<button type="button" class="btn btn_default btn_sm"><span>교환</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>반품/취소</span></button>
+															<button type="button" class="btn btn_default btn_sm"><span>리뷰작성</span></button>
+														</div>
+													</td>
+												</tr>                          
+											</tbody>
+										</table>
+									</div>
+									<div class="oder_gift">
+										<div class="title">사은품</div>
+										<div class="li_gift">
+											<ul>
+												<li>라면포트_리틀라이언 <span class="deduct_p">(-3,000P)</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="order_confirm">
+										<p class="cf_txt">리뷰를 작성하면 다른 구매자에게 도움이 될 수 있습니다.</p>
+										<button type="button" class="btn btn_primary ghost">리뷰작성</button>
+									</div>      
+									<!-- //세트02 -->           
+								</div>  
+								<!-- //판매자 상이 + 사은품 -->
+							</div>
+						</div>
+					</div>
+					<!-- // CONT-BODY -->					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+	<footer id="footer"></footer>
+
+	<script type="text/javascript">
+	// 컨텐츠 호출
+        $(document).ready( function() {
+            $("#header").load("head.html");
+			$("#footer").load("foot.html");
+			
+			$(".my_datepicker").datepicker();
+
+			$(".confirm_suc").click(function(){
+				alert("구매확정 되었습니다.");
+			})
+
+			$("#cp_down").click(function(){
+				alert("총 X장의 쿠폰을 다운로드 하였습니다.");
+			})
+
+			$("#cp_down_not").click(function(){
+				alert("이미 다운로드를 완료 하셨습니다.");
+			})
+
+			$("#sms").click(function(){
+				alert("SMS로 선물내역을 다시 전송하였습니다.");
+			})
+
+			$("#sms_not").click(function(){
+				alert("선물하기 SMS를 조금전 다시 발송하였습니다. 잠시 후 다시 시도해주세요."); //sms발송한지 10분이되지 않았을 경우 #sms_not 아이디입니다.
+			})
+        });
+	</script>
+</body>
+</html>
+
+

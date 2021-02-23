@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | 회원정보 수정 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+
+<!-- <link rel="stylesheet" type="text/css" href="css/test-common.css" /> -->
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/jquery.ellipsis.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+</head>
+
+<body>
+
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container my">
+		<div class="breadcrumb">
+			<ul>
+				<li class="bread_home"><a href="index.html">홈</a></li>
+				<li class="bread_2depth">마이페이지</li>
+				<li class="bread_3depth">내정보 관리</li>
+				<li class="bread_3depth">회원정보 수정</li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="content">
+				<div class="cont_head" style="display: none;">
+					CONT-HEAD
+					<div class="tit">my_center</div>
+					<div class="tit my_tit">my_tit</div>
+				</div>
+				<div class="cont_body mypage">
+					<!-- CONT-BODY -->
+					<div class="my_lnb">
+						<div class="lnb_tit">
+							<h2>마이페이지</h2>
+						</div>
+						<div class="lnb_list">
+							<ul>
+								<li><a href="/ux/pc/my_order_1.html">주문확인/배송조회</a></li>
+								<li><a href="/ux/pc/my_return_1.html">취소/반품/환불내역</a></li>
+								<li><a href="/ux/pc/my_restock_1.html">재입고 알림 내역</a></li>
+								<li><a href="/ux/pc/my_coupon_1.html">쿠폰</a></li>
+								<li><a href="/ux/pc/my_point_1.html">STYLE24 포인트</a></li>
+								<li><a href="/ux/pc/my_gift_1.html">상품권</a></li>
+								<li><a href="/ux/pc/my_review_1.html">리뷰</a></li>
+								<li><a href="/ux/pc/my_delivery_1.html">배송지 관리</a></li>
+								<li><a href="/ux/pc/my_wishlist_1.html">위시리스트</a></li>
+								<li><a href="/ux/pc/my_mypage_1.html" class="on">내정보 관리</a></li>
+								<li><a href="/ux/pc/my_leave_1.html">회원 탈퇴</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="my_cont">
+						<div class="sec_head">
+							<h3>회원정보 수정</h3>
+						</div>
+						<div class="sec_body mypage_body">
+							<form class="form_wrap" role="form">
+								<div class="order_list">
+									<section class="order_row">
+										<div class="order_tit"> 
+											<h3 class="subH3">회원정보</h3>
+											<button type="button" class="btn_popup">개명 본인인증</button>
+										</div>
+										<div class="tbl type1 info_tbl">
+											<!-- 인증회원 -->
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tr>
+													<th>이름(성별)</th>
+													<td>홍길동(남)</td>
+												</tr>
+												<tr>
+													<th>생년월일</th>
+													<td>19921005</td>
+												</tr>
+											</table>
+											<!-- //인증회원 -->
+											<!-- 미인증회원 -->
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tr>
+													<th>이름(성별)</th>
+													<td>미인증 회원입니다.<a href="javascript:;" class="certi_btn02">본인인증 하기</a></td>
+												</tr>
+												<tr>
+													<th>생년월일</th>
+													<td>미인증 회원입니다.<a href="javascript:;" class="certi_btn02">본인인증 하기</a></td>
+												</tr>
+											</table>
+											<!-- //미인증회원 -->
+										</div>
+										<p class="alert_t">본인인증을 통해 자동으로 수집되는 정보 입니다.</p>
+									</section>
+									<section class="order_row">
+										<div class="tbl type1 info_tbl ">
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tbody>
+													<tr>
+														<th>아이디</th>
+														<td><input type="text" class="form_control" value="gunuid" placeholder="" readonly></td>
+													</tr>
+													<tr>
+														<th>비밀번호</th>
+														<td>
+															<div class="password_btn">
+																<button type="button" class="btn btn_dark"><span>변경하기</span></button>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>이메일</th>
+														<td><input type="text" class="form_control" value="gunuid@naver.com" placeholder=""></td>
+													</tr>
+													<tr>
+														<th>휴대폰 번호</th>
+														<td><input type="text" class="form_control" value="01012345678" placeholder=""></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="order_tit"> 
+											<h3 class="subH3">환불계좌 정보</h3>
+										</div>
+										<div class="tbl type1 info_tbl ">
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tbody>
+													<tr>
+														<th class="ver_top">예금주</th>
+														<td>
+															<input type="text" class="form_control" value="홍길동" placeholder="" readonly>
+															<p class="alert_t02">회원명 본인이 예금주인 통장으로만 환불이 가능합니다.</p>
+														</td>
+													</tr>
+													<tr>
+														<th>은행명</th>
+														<td>
+															<div class="form_field">
+																<select id="mounth">
+																	<option value="hide">SC은행</option>
+																	<option value="Test_SELECT_OPTION_1" rel="icon-temperature">SC은행</option>
+																	<option value="Test_SELECT_OPTION_2">하나은행</option>
+																	<option value="Test_SELECT_OPTION_3">우리은행</option>
+																</select> 
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>계좌번호</th>
+														<td><input type="text" class="form_control" value="012345-01-54328" placeholder=""></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<section class="order_row">
+										<div class="order_tit"> 
+											<h3 class="subH3">마케팅 정보 수신설정</h3>
+											<span class="desc">특가상품, 할인쿠폰, 이벤트 소식 수신 동의</span>
+										</div>
+										<div class="tbl type1 info_tbl ">
+											<table>
+												<colgroup>
+													<col width="200">
+													<col width="*">
+												</colgroup>   
+												<tbody>
+													<tr>
+														<th>수신설정</th>
+														<td>
+															<div class="form_field review_radio">
+																<div class="radio_li">
+																	<input id="chk-1" type="radio" name="test1"><label for="chk-1"><span>이메일</span></label>
+																</div>
+																<div class="radio_li">
+																	<input id="chk-2" type="radio" name="test1"><label for="chk-2"><span>SMS</span></label>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="alert_t"> 회원정보, 구매정보 및 서비스 주요 정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
+									</section>
+									<div class="btn_wrap half mt60">
+										<button tyep="submit" class="btn btn_dark submit_btn"><span>확인</span></button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- // CONT-BODY -->					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+	<footer id="footer"></footer>
+
+	<script type="text/javascript">
+	// 컨텐츠 호출
+	$(document).ready( function() {
+		$("#header").load("head.html");
+		$("#footer").load("foot.html");
+	});
+	</script>
+</body>
+</html>
+
+

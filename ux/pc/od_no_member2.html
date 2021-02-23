@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | 주문/결제 | 비회원 주문서 작성 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+<script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container od">
+		<div class="wrap">
+            <div class="content odPayment"> <!-- 페이지특정 클래스 = odPayment -->
+                <div class="cont_head">
+                    <h2>주문&#47;결제</h2>
+                    <div class="oder_steps">
+                        <ul>
+                            <li>01 쇼핑백</li>
+                            <li class="on">02 주문/결제</li>
+                            <li>03 주문완료</li>
+                        </ul>
+                    </div>
+                </div>
+				<div class="cont_body">
+                    <!-- CONT-BODY -->
+                    <form class="form_wrap">
+                        <div class="od_cont">
+                            <div class="sec_head">
+                                <div class="tbl type4">
+                                    <table>
+                                        <colgroup>
+                                            <col width="240">
+                                            <col width="*">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    총 <span class="number">8</span> 건으로 나뉘어 배송 예정
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        총알배송<em class="number">2</em>건
+                                                    </span>
+                                                    <span>
+                                                        STYLE24<em class="number">2</em>건
+                                                    </span>
+                                                    <span>
+                                                        업체직배송<em class="number">1</em>건
+                                                    </span>
+                                                    <span>
+                                                        예약배송<em class="number">2</em>건
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>                            
+                            </div>
+                            <div class="sec_body">
+                                <!-- -->
+                                <div class="foldGroup">
+                                    <ul>
+                                        <li class="fold_mbinfo">
+                                            <!-- 주문고객정보 -->
+                                            <div class="fold_head">
+                                                <a href="javascript:void(0)">
+                                                    <div>
+                                                        <div class="fold_tit">
+                                                            <span>주문고객</span>
+                                                        </div>
+                                                        <div class="data">
+                                                            <span>홍길동</span>
+                                                            <span>abcdefg@naver.com</span>
+                                                            <span>010-1234-5647</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="fold_cont" style="display: none;">
+                                                <div class="area_mbinfo">
+                                                    <dl>
+                                                        <div>
+                                                            <dt><span class="sr-only">주문자명</span></dt>
+                                                            <dd>홍길동</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt><span class="sr-only">이메일</span></dt>
+                                                            <dd>abcdefg@naver.com</dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt><span class="sr-only">휴대폰 번호</span></dt>
+                                                            <dd>
+                                                                010-1234-5647
+                                                                <button type="button" class="btn_popup" id=""><span>본인인증하기</span></button>
+                                                            </dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- //주문고객정보 -->
+                                        </li>
+                                        <li class="fold_mbinfo">
+                                            <!-- 배송지정보 -->
+                                            <div class="fold_head">
+                                                <a href="javascript:void(0)">
+                                                    <div>
+                                                        <div class="fold_tit">
+                                                            <span>배송지 정보</span>
+                                                        </div>
+                                                        <div class="data">서울시 영등포구 은행로 11,8층(여의도동,일신빌딩)</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="fold_cont" style="display: none;">
+                                                <div class="area_mbinfo">
+                                                    <dl>
+                                                        <div>
+                                                            <dt><span class="sr-only">배송지명</span></dt>
+                                                            <dd>
+                                                                홍길동
+                                                                <span class="icon_tag">
+                                                                    <em class="tag_stype1">기본 배송지</em>
+                                                                    <em class="tag_stype2">총알배송</em>
+                                                                </span>
+                                                            </dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt><span class="sr-only">배송주소</span></dt>
+                                                            <dd>
+                                                                서울시 영등포구 은행로 11,8층(여의도동,일신빌딩)
+                                                                <button type="button" class="btn_popup" id="btn_adrsChange_pop"><span>배송지 선택</span></button>
+                                                            </dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt><span class="sr-only">휴대폰 번호</span></dt>
+                                                            <dd>
+                                                                010-1234-5647
+                                                            </dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>배송요청 사항</dt>
+                                                            <dd>
+                                                                직접받고 부재 시 문앞
+                                                                <button type="button" class="btn_popup" id="btn_rqstModify_pop"><span>변경하기</span></button>
+                                                            </dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                                <!-- 해외배송상품일 경우 노출 -->
+                                                <div class="area_overseas">
+                                                    <dl>
+                                                        <div>
+                                                            <dt>개인통관고유부호</dt>
+                                                            <dd>
+                                                                <div class="form_field">
+                                                                    <div>
+                                                                        <input type="radio" name="rdi-overseas" id="rdi-overs1" value="" checked="">
+                                                                        <label for="rdi-overs1"><span>받는사람 개인통관고유부호</span></label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input type="radio" name="rdi-overseas" id="rdi-overs2" value="">
+                                                                        <label for="rdi-overs2"><span>입력 안 함</span></label>
+                                                                    </div>
+                                                                    <div class="info_box overs1">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" class="form_control err" maxlength="13" placeholder="P로 시작하는 13자리"><!-- 유효하지 않은 개인통관고유부호 일때 class명 'err' 추가 -->
+                                                                        </div>
+                                                                        <div class="t_err">개인통관고유부호가 유효하지 않습니다.</div> <!-- 유효하지 않은 개인통관고유부호 일때 노출 -->
+                                                                        <div class="agree_overs">
+                                                                            <input id="chk-overs-agr" type="checkbox" checked="">
+                                                                            <label for="chk-overs-agr"><span>위 정보는 원활한 통관을 위해 수집 및 판매자에게 제공하며,계속 사용하도록 안전하게 STYLE24에서 저장 &#47; 관리 합니다.&nbsp;&nbsp;<em class="tmark_required">(필수)</em></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info_box overs2" style="display:none;">
+                                                                        <p>
+                                                                            개인통관고유부호를 입력하지 않아도 관세사무소에서 개인정보 확인을 위해 별도 연락을 드릴 예정입니다.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info_txt">
+                                                                    <ul>
+                                                                        <li>물품가액이 $150초과할 경우 관/부과세가 발생 할 수 있습니다.</li>
+                                                                        <li>물품 종류와 해외공급자 관계없이 같은 날 입항하게 되면 합산과세 대상이 됩니다.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                                <!-- //해외배송상품일 경우 노출 -->
+                                                <!-- 주문제작상품일 경우 노출 -->
+                                                <div class="area_customitem">
+                                                    <div class="form_field">
+                                                        <div class="agree_custom">
+                                                            <input id="chk-custom-agr1" type="checkbox" checked="">
+                                                            <label for="chk-custom-agr1"><span>고객님께서 주문하신 상품에는 주문제작상품이 포함되어 있습니다.<br>주문제작상품에 대한 안내를 확인하였으며 배송에 동의합니다.&nbsp;&nbsp;<em class="tmark_required">(필수)</em></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info_txt">
+                                                        <ul>
+                                                            <li>주문 제작 상품은 주문 후 제작이 진행되며, 제작 완료 후 배송이 시작됩니다.</li>
+                                                            <li>주문 제작 상품의 특성상 주문 완료 후 취소/교환이 불가능합니다. (상품 하자에 한해 가능)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- //주문제작상품일 경우 노출 -->       
+                                            </div>
+                                            <!-- //배송지정보 -->
+                                        </li>
+                                        <li>
+                                            <!-- 사은품선택 -->
+                                            <div class="fold_head">
+                                                <a href="javascript:void(0)">
+                                                    <div>
+                                                        <div class="fold_tit">
+                                                            <span>사은품 선택</span>
+                                                        </div>
+                                                        <div class="data">
+                                                            <span>사은품 총 <em class="total_gift">2</em>개 선택</span>
+                                                            <span><em class="total_deduct">0</em>P 차감</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="fold_cont" style="display: none;">
+                                                <div class="area_selgift">
+                                                    <div class="gift_box">
+                                                        <p class="txt">
+                                                            <span>사은품선택1</span>
+                                                            TBJ 남성 제기장 스웨이드 트러커 자켓 에서 주는 사은품
+                                                        </p>
+                                                        <div class="form_field">
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift1" id="rdi-gift1" class="chk_img" value="">
+                                                                <label for="rdi-gift1">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift1.jpg" width="" alt=""></span>
+                                                                    <span class="name">유니 NBA 팀로고 양말 (N215AO225P)</span>
+                                                                    <span class="deduct">무료</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift1" id="rdi-gift2" class="chk_img" value="">
+                                                                <label for="rdi-gift2">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift1.jpg" width="" alt=""></span>
+                                                                    <span class="name">사은품이름</span>
+                                                                    <span class="deduct">-4,000P</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift1" id="rdi-gift3" class="chk_img" value="">
+                                                                <label for="rdi-gift3">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift1.jpg" width="" alt=""></span>
+                                                                    <span class="name">사은품이름</span>
+                                                                    <span class="deduct">-4,000P</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift1" id="rdi-gift4" class="chk_img" value="">
+                                                                <label for="rdi-gift4">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift_empty.jpg" width="" alt=""></span>
+                                                                    <span class="name">사은품 수령안함</span>
+                                                                    <span class="deduct">수령거부</span>
+                                                                </label>
+                                                            </div>                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="gift_box">
+                                                        <p class="txt">
+                                                            <span>사은품선택2</span>
+                                                            10만원 이상 구매시 사은품
+                                                        </p>
+                                                        <div class="form_field">
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift2" id="rdi-gift11" class="chk_img" value="">
+                                                                <label for="rdi-gift11">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift1.jpg" width="" alt=""></span>
+                                                                    <span class="name">유니 NBA 팀로고 양말 (N215AO225P)</span>
+                                                                    <span class="deduct">무료</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift2" id="rdi-gift12" class="chk_img" value="">
+                                                                <label for="rdi-gift12">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift1.jpg" width="" alt=""></span>
+                                                                    <span class="name">사은품이름</span>
+                                                                    <span class="deduct">-4,000P</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="gift">
+                                                                <input type="radio" name="rdi-gift2" id="rdi-gift13" class="chk_img" value="">
+                                                                <label for="rdi-gift13">
+                                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_gift_empty.jpg" width="" alt=""></span>
+                                                                    <span class="name">사은품 수령안함</span>
+                                                                    <span class="deduct">수령거부</span>
+                                                                </label>
+                                                            </div>                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_field">
+                                                        <div class="agree_gift">
+                                                            <p>
+                                                                <input id="chk-agree_gift" type="checkbox"><label for="chk-agree_gift"><span>동의합니다</span></label>
+                                                            </p>
+                                                            <p class="txt">
+                                                                사은품 지금에 대한 내용을 확인하였으며, 이에 동의합니다.
+                                                                <button type="button" class="btn_link_popup" id="btn_infoGift_pop"><span>보기</span></button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //사은품선택 -->                                       
+                                        </li>
+                                        <li>
+                                            <!-- 할인/혜택 사용 -->
+                                            <div class="fold_head">
+                                                <a href="javascript:void(0)">
+                                                    <div>
+                                                        <div class="fold_tit">
+                                                            <span>할인/혜택 사용</span>
+                                                        </div>
+                                                        <div class="data maxdisc"> 
+                                                            <div class="form_field">
+                                                                <input id="chk-maxdisc" type="checkbox" checked="">
+                                                                <label for="chk-maxdisc"><span>최대 할인혜택을 바로 적용하세요 <em class="maxdisc_amount">(-3,000원)</em></span></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="fold_cont" style="display: none;">
+                                                <div class="area_seldiscount">
+                                                    <dl>
+                                                        <div>
+                                                            <dt><span class="mid">할인코드</span></dt>
+                                                            <dd>
+                                                                <div class="form_field">
+                                                                    <div class="input_wrap">
+                                                                        <input type="text" class="form_control" maxlength="13" placeholder="할인코드를 입력해주세요.">
+                                                                        <button type="button" class="btn btn_dark">적용</button>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt>할인쿠폰</dt>
+                                                            <dd>
+                                                                <a href="" class="btn_coupon_toggle">할인쿠폰 <span>3장</span> 적용</a>
+                                                                <div class="coupon_list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="coupon">
+                                                                                <div class="item_gd">
+                                                                                    <figure>
+                                                                                        <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                                                        <figcaption>
+                                                                                            <div class="brand">CURLYSUE 컬리수</div>
+                                                                                            <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                                                            <div class="price">
+                                                                                                <span class="selling_price">1,000,000</span>
+                                                                                            </div>
+                                                                                        </figcaption>
+                                                                                    </figure>
+                                                                                </div>
+                                                                                <div class="form_field">						
+                                                                                    <select id="" class="select_hidden">
+                                                                                        <option value="">구매금액 100,000원 이상시 10% 할인 쿠폰</option>
+                                                                                        <option value="">구매금액 100,000원 이상시 10% 할인 쿠폰</option>
+                                                                                        <option value="">구매금액 100,000원 이상시 10% 할인 쿠폰</option>
+                                                                                        <option value="">구매금액 100,000원 이상시 10% 할인 쿠폰</option>
+                                                                                        <option value="">구매금액 100,000원 이상시 10% 할인 쿠폰</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="cp_discount"> 
+                                                                                    <span class="cp_amount">-10,000원 할인적용</span>
+                                                                                    <button type="button" class="btn_del_coupon" id=""><span>쿠폰적용해제</span></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="coupon">
+                                                                                <div class="form_field">		
+                                                                                    <label for="">장바구니 할인쿠폰</label>				
+                                                                                    <select id="" class="select_hidden">
+                                                                                        <option value="">총 구매금액 10만원 이상 시 10,000원 할인 (5,000원 할인)</option>
+                                                                                        <option value="">총 구매금액 10만원 이상 시 10,000원 할인 (5,000원 할인)</option>
+                                                                                        <option value="">총 구매금액 10만원 이상 시 10,000원 할인 (5,000원 할인)</option>
+                                                                                        <option value="">총 구매금액 10만원 이상 시 10,000원 할인 (5,000원 할인)</option>
+                                                                                        <option value="">총 구매금액 10만원 이상 시 10,000원 할인 (5,000원 할인)</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="cp_discount"> 
+                                                                                    <span class="cp_amount">-10,000원 할인적용</span>
+                                                                                    <button type="button" class="btn_del_coupon" id=""><span>쿠폰적용해제</span></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="coupon">
+                                                                                <div class="form_field">		
+                                                                                    <label for="">배송비 할인쿠폰</label>				
+                                                                                    <select id="" class="select_hidden">
+                                                                                        <option value="">배송비 할인쿠폰 (최대 5,000원)</option>
+                                                                                        <option value="">배송비 할인쿠폰 (최대 5,000원)</option>
+                                                                                        <option value="">배송비 할인쿠폰 (최대 5,000원)</option>
+                                                                                        <option value="">배송비 할인쿠폰 (최대 5,000원)</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="cp_discount"> 
+                                                                                    <span class="cp_amount">-10,000원 할인적용</span>
+                                                                                    <button type="button" class="btn_del_coupon" id=""><span>쿠폰적용해제</span></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                                <div class="area_selpoint">
+                                                    <dl>
+                                                        <div>
+                                                            <dt>선 포인트 사용</dt>
+                                                            <dd>
+                                                                <div class="form_field">
+                                                                    <div>
+                                                                        <input type="radio" name="rdi-beforpoint" id="rdi-beforpoint1" value="" checked="">
+                                                                        <label for="rdi-beforpoint1"><span>사용 안함</span></label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input type="radio" name="rdi-beforpoint" id="rdi-beforpoint2" value="">
+                                                                        <label for="rdi-beforpoint2"><span>사용함</span></label>
+                                                                        <span class="remain_point">사용가능 포인트:1,500P</span>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </div>
+                                                        <div>
+                                                            <dt><span class="mid">스타일 포인트</span></dt>
+                                                            <dd>
+                                                                <div class="form_field">
+                                                                    <!-- 스타일 포인트 3만원 이상 결제시 노출 -->
+                                                                    <div class="input_wrap">
+                                                                        <input type="text" class="form_control" maxlength="" placeholder="사용할 포인트를 입력해주세요.">
+                                                                        <button type="button" class="btn btn_dark">적용</button>
+                                                                    </div>
+                                                                    <!-- 스타일 포인트 3만원 이상 결제시 노출 -->
+                                                                    <!-- 스타일 포인트 3만원 미만 결제시 노출 --> 
+                                                                    <div class="input_wrap">
+                                                                        <input type="text" class="form_control" maxlength="" placeholder="3만원 이상 결제시에만 포인트 사용이 가능합니다." disabled>
+                                                                        <button type="button" class="btn btn_dark">적용</button>
+                                                                    </div>
+                                                                    <!-- //스타일 포인트 3만원 미만 결제시 노출 --> 
+                                                                    <p>
+                                                                        <span class="remain_point">보유: 25,500P</span>(결제금액의 최대 40%까지 사용가능)
+                                                                    </p>
+                                                                </div>
+                                                            </dd>
+                                                        </div>     
+                                                        <div>
+                                                            <dt><span class="mid">상품권</span></dt>
+                                                            <dd>
+                                                                <div class="form_field">
+                                                                    <div class="input_wrap">
+                                                                        <input type="text" class="form_control" maxlength="" placeholder="사용할 금액을 입력해주세요.">
+                                                                        <button type="button" class="btn btn_dark">적용</button>
+                                                                    </div>
+                                                                    <p>
+                                                                        <span class="remain_point">보유: 25,500원</span>
+                                                                    </p>
+                                                                    <div class="agree_receipt">
+                                                                        <input id="chk-receipt" type="checkbox">
+                                                                        <label for="chk-receipt"><span>상품권 현금영수증 신청</span></label>    
+                                                                        <div class="info_box">
+                                                                            <div class="input_wrap">
+                                                                                <input type="text" class="form_control" maxlength="11" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </div>                                                    
+                                                    </dl>                                         
+                                                </div>
+                                            </div>
+                                            <!-- //할인/혜택 사용 -->                                       
+                                        </li>
+                                        <li class="fold_paymethod">
+                                            <!-- 결제수단 선택 -->
+                                            <div class="fold_head">
+                                                <a href="javascript:void(0)">
+                                                    <div>
+                                                        <div class="fold_tit">
+                                                            <span>결제수단 선택</span>
+                                                        </div>
+                                                        <div class="data">
+                                                            <span>STYLE24 간편결제</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="fold_cont" style="display: none;">
+                                                <div class="area_paymethod">
+                                                    <div class="form_field">
+                                                        <div class="radio_blk">
+                                                            <div class="paymethod_radio">
+                                                                <input type="radio" name="rdi-paymethod" id="rdi-paymethod-quick" value="">
+                                                                <label for="rdi-paymethod-quick"><span>STYLE24 간편결제</span></label>
+                                                                <div class="quickpay_bnr">
+                                                                    <span>3초면 결제 끝! 추가 혜택 할인과 함께 만나는 STYLE24 간편결제! 지금 바로 등록하세요!</span>
+                                                                    <button type="button" class="btn_close_bnr"><span class="sr-only">닫기</span></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="paymethod_box" style="display:none;">
+                                                                <div class="card_quickpay">
+                                                                    <!-- 등록카드 없을때 -->
+                                                                    <div class="empty">
+                                                                        <button type="button" class="btn_addcard" id="btn_addCard_pop">
+                                                                            <span>결제수단 등록</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <!-- //등록카드 없을때 -->
+                                                                    <!-- 등록카드 있을때 -->
+                                                                    <div class="list_card swiper-container">
+                                                                        <div class="swiper-wrapper">
+                                                                            <div class="swiper-slide">
+                                                                                <!-- 등록된 카드 -->
+                                                                                <div class="card">
+                                                                                    <span class="logo_samsung">삼성카드</span>
+                                                                                    <p class="number">
+                                                                                        <span>9410</span>
+                                                                                        <span>09**</span>
+                                                                                        <span>****</span>
+                                                                                        <span>1287</span>
+                                                                                    </p>
+                                                                                    <p class="name">삼성개인특별카드</p>
+                                                                                    <select name="" id="" class="select_month">
+                                                                                        <option value="">일시불</option>
+                                                                                        <option value="">2개월 무이자</option>
+                                                                                        <option value="">3개월 무이자</option>
+                                                                                        <option value="">4개월 무이자</option>
+                                                                                        <option value="">5개월 무이자</option>
+                                                                                        <option value="">6개월 무이자</option>
+                                                                                        <option value="">7개월</option>
+                                                                                        <option value="">8개월</option>
+                                                                                        <option value="">9개월</option>
+                                                                                        <option value="">10개월</option>
+                                                                                        <option value="">11개월</option>
+                                                                                        <option value="">12개월</option>
+                                                                                    </select>
+                                                                                    <div class="etc">
+                                                                                        <button type="button" class="btn_favorcard"><span><i class="ico ico_star"></i><em class="sr-only">즐겨찾기</em></span></button>
+                                                                                        <button type="button" class="btn_delcard"><span><i class="ico ico_trash_wh"></i><em class="sr-only">카드삭제</em></span></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- //등록된 카드 -->
+                                                                            </div>
+                                                                            <div class="swiper-slide">
+                                                                                <!-- 등록된 카드 -->
+                                                                                <div class="card">
+                                                                                    <span class="logo_hyundai">현대카드</span>
+                                                                                    <p class="number">
+                                                                                        <span>9410</span>
+                                                                                        <span>09**</span>
+                                                                                        <span>****</span>
+                                                                                        <span>1287</span>
+                                                                                    </p>
+                                                                                    <p class="name">현대 M3 카드</p>
+                                                                                    <select name="" id="" class="select_month">
+                                                                                        <option value="">일시불</option>
+                                                                                        <option value="">2개월 무이자</option>
+                                                                                        <option value="">3개월 무이자</option>
+                                                                                        <option value="">4개월 무이자</option>
+                                                                                        <option value="">5개월 무이자</option>
+                                                                                        <option value="">6개월 무이자</option>
+                                                                                        <option value="">7개월</option>
+                                                                                        <option value="">8개월</option>
+                                                                                        <option value="">9개월</option>
+                                                                                        <option value="">10개월</option>
+                                                                                        <option value="">11개월</option>
+                                                                                        <option value="">12개월</option>
+                                                                                    </select>
+                                                                                    <div class="etc">
+                                                                                        <button type="button" class="btn_favorcard active"><span><i class="ico ico_star"></i><em class="sr-only">즐겨찾기</em></span></button>
+                                                                                        <button type="button" class="btn_delcard"><span><i class="ico ico_trash_wh"></i><em class="sr-only">카드삭제</em></span></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- //등록된 카드 -->
+                                                                            </div>
+                                                                            <div class="swiper-slide">
+                                                                                <!-- 카드추가버튼 -->
+                                                                                <button type="button" class="btn_addcard">
+                                                                                    <span>결제수단 등록</span>
+                                                                                </button>
+                                                                                <!-- //카드추가버튼 -->
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="swiper-button-next"></div>
+                                                                        <div class="swiper-button-prev"></div>
+                                                                    </div>
+                                                                    <!-- //등록카드 있을때 -->
+                                                                </div>
+                                                                <ul class="info_quick">
+                                                                    <li>결제수단 등록 한번으로 간편하게 결제하실 수 있습니다.</li>
+                                                                    <li>국내 8개 카드에 대해 이용 가능합니다. (법인카드,기프트카드,해외카드 제외)</li>
+                                                                    <li>일반 신용카드의 할인혜택은 적용되지 않습니다.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio_blk">
+                                                            <div class="paymethod_radio">
+                                                                <input type="radio" name="rdi-paymethod" id="rdi-paymethod-normal" value="">
+                                                                <label for="rdi-paymethod-normal"><span>일반 결제</span></label>
+                                                            </div>
+                                                            <div class="paymethod_box" style="display:none;">
+                                                                <ul class="sel_method">
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal1" value="">
+                                                                        <label for="rdi-paynormal1"><span>신용카드</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal2" value="">
+                                                                        <label for="rdi-paynormal2"><span>실시간계좌이체</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal3" value="">
+                                                                        <label for="rdi-paynormal3"><span>무통장입금</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal4" value="">
+                                                                        <label for="rdi-paynormal4"><span>휴대폰 결제</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal5" value="">
+                                                                        <label for="rdi-paynormal5"><span><em class="sr-only">카카오페이</em><em class="payimg kakao"></em></span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal6" value="">
+                                                                        <label for="rdi-paynormal6"><span><em class="sr-only">네이버페이</em><em class="payimg naver"></em></span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="rdi-paynormal" id="rdi-paynormal7" value="">
+                                                                        <label for="rdi-paynormal7"><span><em class="sr-only">페이코</em><em class="payimg payco"></em></span></label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="agree_insurance">
+                                                                    <input id="chk-insurance" type="checkbox">
+                                                                    <label for="chk-insurance">
+                                                                        <span>소비자 피해 보상보험 신청&nbsp;&nbsp;<em class="tmark_optional">(선택)</em></span>
+                                                                        <button type="button" class="btn_link_popup" id=""><span>FAQ확인</span></button>
+                                                                    </label>
+                                                                    <p>
+                                                                        ‘전자상거래 등에서의 소비자보호에 관한 법률‘에 따라 현금 결제시 서울보증보험㈜가 제공하는 소비자 피해보상보험을<br>신청할 수 있도록 해드리고 있습니다. (2013.11.28부터 시행)
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_field">
+                                                        <div class="agree_paymethod">
+                                                            <input id="chk-agree_paymethod" type="checkbox">
+                                                            <label for="chk-agree_paymethod">
+                                                                <span>선택한 결제수단으로 향후 결제 이용에 동의합니다.&nbsp;&nbsp;<em class="tmark_optional">(선택)</em></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="area_paymentinfo">
+                                                    <div class="paymentinfo">
+                                                        <div class="payinfo_blk on">
+                                                            <a href="">
+                                                                개인정보 제공에 대한 동의
+                                                                <span>닫기</span>
+                                                            </a>
+                                                            <div class="infotxt">
+                                                                개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.개인정보제공에 대한 동의 내용입니다.
+                                                            </div>
+                                                        </div>
+                                                        <div class="payinfo_blk">
+                                                            <a href="">
+                                                                결제대행 서비스 약관 동의
+                                                                <span>보기</span>
+                                                            </a>
+                                                            <div class="infotxt">
+                                                                결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.결제대행서비스 약관 동의 내용입니다.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="agree_payment">
+                                                        위 주문내역을 확인 하였으며, 회원 본인은 결제에 동의합니다.
+                                                    </div>
+                                                </div>
+                                                <div class="area_paybtn">
+                                                    <div class="form_field">
+                                                        <button type="button" class="btn btn_primary btn_block">동의 후 123,456,789원 결제하기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //결제수단 선택 -->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="od_side">
+                            <div class="area_order">
+                                <div class="tit_box">
+                                    <h3 class="subH2">주문내역</h3>
+                                    <span>
+                                        <em class="number">14</em>개의 상품
+                                    </span>
+                                </div>
+                                <div class="od_item_box">
+                                    <!-- 총알배송 -->
+                                    <div class="part_dlvr">
+                                        <h4 class="subH3 mb20">
+                                            STYLE24 총알배송
+                                            <span>(오늘 자정까지 도착)</span>
+                                        </h4>
+                                        <div class="gd_list">
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                    <!-- //총알배송 -->
+                                    <!-- 일반배송 -->
+                                    <div class="part_dlvr">
+                                        <h4 class="subH3 mb20">
+                                            STYLE24 일반배송
+                                        </h4>
+                                        <div class="gd_list">
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>                             
+                                    </div>
+                                    <!-- //일반배송 -->
+                                    <!-- 업체직배송 -->
+                                    <div class="part_dlvr">
+                                        <h4 class="subH3 mb20">
+                                            업체직배송
+                                        </h4>
+                                        <div class="gd_list">    
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="gd_list">    
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide2.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>                             
+                                    </div>
+                                    <!-- //업체직배송 -->
+                                    <!-- 예약배송 -->
+                                    <div class="part_dlvr">
+                                        <h4 class="subH3 mb20">
+                                            예약배송
+                                        </h4>
+                                        <div class="gd_list">
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                                <p class="info_reserv">
+                                                    <i class="ico ico_calender"></i><span>2021.01.15</span> 배송예정상품
+                                                </p>
+                                            </div>
+                                            <div class="item_gd">
+                                                <figure>
+                                                    <span class="thumb"><img src="/images/pc/thumb/tmp_odSide1.jpg" alt=""></span>
+                                                    <figcaption>
+                                                        <div class="brand">CURLYSUE 컬리수</div>
+                                                        <div class="name">[★2020 겨울신상★] 리버시블 경량점퍼 CPW0XQJM51 [겨울] 리버시블 경량점퍼 CPW0XQJM51 [겨울]</div>
+                                                        <div class="option">
+                                                            <span>01_루돌프융기모상하복_D오렌지/110</span>
+                                                            <span>수량:<em>99</em>개</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="selling_price">1,000,000</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                                <p class="info_reserv">
+                                                    <i class="ico ico_calender"></i><span>2021.01.15</span> 배송예정상품
+                                                </p>
+                                            </div>
+                                        </div>                   
+                                    </div>
+                                    <!-- //예약배송 -->                                 
+                                </div>
+                                <div class="od_amount_box">
+                                    <dl>
+                                        <div>
+                                            <dt>상품금액</dt>
+                                            <dd>1,590,000 원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>배송비</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>할인금액</dt>
+                                            <dd><span class="disc_amount">-1,746,500원</span></dd>
+                                        </div>
+                                        <div>
+                                            <dt>다다익선할인금액</dt>
+                                            <dd><span class="disc_amount">25,000원</span></dd>
+                                        </div>
+                                        <div>
+                                            <dt>쿠폰할인금액</dt>
+                                            <dd><span class="disc_amount">3,000원</span></dd>
+                                        </div>
+                                        <div>
+                                            <dt>선포인트 사용</dt>
+                                            <dd><span class="disc_amount">-1,500P</span></dd>
+                                        </div>
+                                        <div>
+                                            <dt>포인트 사용</dt>
+                                            <dd><span class="disc_amount">-5,500P</span></dd>
+                                        </div>
+                                        <div>
+                                            <dt>상품권 사용</dt>
+                                            <dd><span class="disc_amount">-50,000원</span></dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <div class="totalprice_box">
+                                    <dl>
+                                        <dt>총 결제 예정 금액</dt>
+                                        <dd data-weight="price" data-font="lato"><span>3,546,200</span>원</dd>
+                                    </dl>
+                                    <p class="info_point">
+                                    스타일 포인트 <span class="save_point">3,500 P</span> 적립예정
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+					<!-- // CONT-BODY -->					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+    <footer id="footer"></footer>
+    
+    <!---------------------------------------- 팝업영역 -------------------------------->
+    <!-- 배송지변경 팝업 -->
+    <div class="modal fade od_pop adrsChange_pop" id="adrsChangePop" tabindex="-1" role="dialog" aria-labelledby="adrsChangeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adrsChangeLabel">배송지 선택</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <ul>
+                            <li>
+                                <div class="adrs_box">
+                                    <dl>
+                                        <div>
+                                            <dt><span class="sr-only">배송지명</span></dt>
+                                            <dd>
+                                                홍길동
+                                                <span class="icon_tag">
+                                                    <em class="tag_stype1">기본 배송지</em>
+                                                    <em class="tag_stype2">총알배송</em>
+                                                </span>
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt><span class="sr-only">배송주소</span></dt>
+                                            <dd>
+                                                서울시 영등포구 은행로 11,8층(여의도동,일신빌딩)
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt><span class="sr-only">휴대폰 번호</span></dt>
+                                            <dd>
+                                                010-1234-5647
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt>배송요청 사항</dt>
+                                            <dd>
+                                                직접받고 부재 시 문앞
+                                            </dd>
+                                        </div>
+                                        <button class="btn btn_default btn_sm" id="btn_addrModify_pop"><span>수정</span></button>
+                                        <button class="btn btn_dark btn_sm" id=""><span>선택</span></button>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="adrs_box">
+                                    <dl>
+                                        <div>
+                                            <dt><span class="sr-only">배송지명</span></dt>
+                                            <dd>
+                                                홍길동
+                                                <span class="icon_tag">
+                                                    <em class="tag_stype1">기본 배송지</em>
+                                                    <em class="tag_stype2">총알배송</em>
+                                                </span>
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt><span class="sr-only">배송주소</span></dt>
+                                            <dd>
+                                                서울시 영등포구 은행로 11,8층(여의도동,일신빌딩)
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt><span class="sr-only">휴대폰 번호</span></dt>
+                                            <dd>
+                                                010-1234-5647
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt>배송요청 사항</dt>
+                                            <dd>
+                                                직접받고 부재 시 문앞
+                                            </dd>
+                                        </div>
+                                        <button class="btn btn_default btn_sm" id="btn_addrModify_pop"><span>수정</span></button>
+                                        <button class="btn btn_dark btn_sm" id=""><span>선택</span></button>
+                                    </dl>
+                                </div>
+                            </li>                        
+                        </ul>
+                        <div class="btn_group_block">
+                            <button class="btn btn_dark btn_block" id="btn_addrAdd_pop"><span>배송지 추가</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //배송지변경 팝업 -->
+    <!-- 배송지추가 팝업 -->
+    <div class="modal fade od_pop adrsAdd_pop" id="adrsAddPop" tabindex="-1" role="dialog" aria-labelledby="adrsAddLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adrsAddLabel">배송지 등록</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <form class="form_wrap form_full">
+                            <div class="area_adrsinfo">
+                                <div class="form_field">
+                                    <label class="input_label sr-only">이름(주문자명)</label>
+                                    <div class="ui_col_12">
+                                        <div class="input_wrap"> 
+                                            <input type="text" name="userName" placeholder="이름(주문자명)" id="txtName">
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="form_field">
+                                    <label class="input_label sr-only">휴대폰 번호</label>
+                                    <div class="ui_col_12">
+                                        <div class="input_wrap"> 
+                                            <input type="text" name="userPhone" placeholder="휴대폰 번호" id="userPhone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_field">
+                                    <label class="input_label sr-only">배송주소</label>
+                                    <div class="ui_col_12">
+                                        <div class="input_wrap"> 
+                                            <input type="text" name="userNumber" placeholder="배송주소" id="">
+                                            <button type="button" class="btn btn_dark btn_default btn_postcode">
+                                                <span>우편번호 찾기</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 주소 출력 -->
+                                <div class="adress">
+                                    <dl>
+                                        <div>
+                                            <dt>
+                                                <span>도로명</span>
+                                            </dt>
+                                            <dd>
+                                                서울시 영등포구 은행로 11, 일신빌딩 8층
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt>
+                                                <span>지번</span>
+                                            </dt>
+                                            <dd>
+                                                서울특별시 영등포구 여의도동 15-15 일신빌딩 8층
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //주소 출력 -->
+                            </div>
+                            <div class="area_request">       
+                                <h6>배송요청 사항</h6> 
+                                <div class="form_field">
+                                    <div>
+                                        <input type="radio" name="rdi-request1" id="rdi-request11" value="" checked="">
+                                        <label for="rdi-request11"><span>문앞</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request1" id="rdi-request12" value="" checked="">
+                                        <label for="rdi-request12"><span>직접받고 부재시 문 앞</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request1" id="rdi-request13" value="" checked="">
+                                        <label for="rdi-request13"><span>경비실</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request1" id="rdi-request14" value="" checked="">
+                                        <label for="rdi-request14"><span>택배함</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request1" id="rdi-request15" value="" checked="">
+                                        <label for="rdi-request15"><span>기타사항</span></label>
+                                        <div class="info_box">
+                                            <div class="input_wrap">
+                                                <input type="text" class="form_control" maxlength="30" placeholder="보관장소만 입력">
+                                                <p>보관 장소 외 다른 내용 입력시 통보없이 삭제 될 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_group_block">
+                                <button class="btn btn_dark btn_block"><span>배송지 등록</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //배송지추가 팝업 -->
+    <!-- 배송지수정 팝업 -->
+    <div class="modal fade od_pop adrsModify_pop" id="adrsModifyPop" tabindex="-1" role="dialog" aria-labelledby="adrsModifyLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adrsModifyLabel">배송지 수정</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <form class="form_wrap form_full">
+                            <div class="area_adrsinfo">
+                                <div class="form_field">
+                                    <label class="input_label sr-only">이름(주문자명)</label>
+                                    <div class="ui_col_12">
+                                        <div class="input_wrap"> 
+                                            <input type="text" name="userName" placeholder="이름(주문자명)" id="txtName">
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="form_field">
+                                    <label class="input_label sr-only">휴대폰 번호</label>
+                                    <div class="ui_col_12">
+                                        <div class="input_wrap"> 
+                                            <input type="text" name="userPhone" placeholder="휴대폰 번호" id="userPhone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_field">
+                                    <label class="input_label sr-only">배송주소</label>
+                                    <div class="ui_col_12">
+                                        <div class="input_wrap"> 
+                                            <input type="text" name="userNumber" placeholder="배송주소" id="">
+                                            <button type="button" class="btn btn_dark btn_default btn_postcode">
+                                                <span>우편번호 찾기</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 주소 출력 -->
+                                <div class="adress">
+                                    <dl>
+                                        <div>
+                                            <dt>
+                                                <span>도로명</span>
+                                            </dt>
+                                            <dd>
+                                                서울시 영등포구 은행로 11, 일신빌딩 8층
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt>
+                                                <span>지번</span>
+                                            </dt>
+                                            <dd>
+                                                서울특별시 영등포구 여의도동 15-15 일신빌딩 8층
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <!-- //주소 출력 -->
+                            </div>
+                            <div class="area_request">
+                                <h6>배송요청 사항</h6> 
+                                <div class="form_field">
+                                    <div>
+                                        <input type="radio" name="rdi-request2" id="rdi-request21" value="" checked="">
+                                        <label for="rdi-request21"><span>문앞</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request2" id="rdi-request22" value="" checked="">
+                                        <label for="rdi-request22"><span>직접받고 부재시 문 앞</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request2" id="rdi-request23" value="" checked="">
+                                        <label for="rdi-request23"><span>경비실</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request2" id="rdi-request24" value="" checked="">
+                                        <label for="rdi-request24"><span>택배함</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request2" id="rdi-request25" value="" checked="">
+                                        <label for="rdi-request25"><span>기타사항</span></label>
+                                        <div class="info_box">
+                                            <div class="input_wrap">
+                                                <input type="text" class="form_control" maxlength="30" placeholder="보관장소만 입력">
+                                                <p>보관 장소 외 다른 내용 입력시 통보없이 삭제 될 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_group_block">
+                                <button class="btn btn_dark btn_block"><span>배송지 수정완료</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //배송지수정 팝업 -->
+    <!-- 배송요청사항수정 팝업 -->
+    <div class="modal fade od_pop rqstModify_pop" id="rqstModifyPop" tabindex="-1" role="dialog" aria-labelledby="rqstModifyLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rqstModifyLabel">배송요청 사항</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <form class="form_wrap form_full">
+                            <div class="area_request">        
+                                <div class="form_field">
+                                    <div>
+                                        <input type="radio" name="rdi-request3" id="rdi-request31" value="" checked="">
+                                        <label for="rdi-request31"><span>문앞</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request3" id="rdi-request32" value="" checked="">
+                                        <label for="rdi-request32"><span>직접받고 부재시 문 앞</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request3" id="rdi-request33" value="" checked="">
+                                        <label for="rdi-request33"><span>경비실</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request3" id="rdi-request34" value="" checked="">
+                                        <label for="rdi-request34"><span>택배함</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-request3" id="rdi-request35" value="" checked="">
+                                        <label for="rdi-request35"><span>기타사항</span></label>
+                                        <div class="info_box">
+                                            <div class="input_wrap">
+                                                <input type="text" class="form_control" maxlength="30" placeholder="보관장소만 입력">
+                                                <p>보관 장소 외 다른 내용 입력시 통보없이 삭제 될 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_group_block">
+                                <button class="btn btn_dark btn_block"><span>등록</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <!-- //배송요청사항수정 팝업 -->
+    <!-- 사은품지급안내 팝업 -->
+    <div class="modal fade od_pop infoGift_pop" id="infoGiftPop" tabindex="-1" role="dialog" aria-labelledby="infoGiftLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoGiftLabel">STYLE24 사은품 지급 안내</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        사은품지급안내 내용입니다. 사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다. 사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다. 사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다. 사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다. 사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.사은품지급안내 내용입니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //사은품지급안내 팝업 -->
+
+    <!-- 간편결제 카드등록 > 이용약관동의 팝업 -->
+    <div class="modal fade od_pop qPayAgree_pop" id="qPayAgree_pop" tabindex="-1" role="dialog" aria-labelledby="qPayAgreeLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="qPayAgreeLabel">이용약관 동의</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <p>카드 정보 등록을 위해 약관을 확인하고 동의해주세요.</p>
+                        <div class="area_QpayCk">
+                            <div class="form_field">
+                                <div class="agree_Qpay">
+                                    <input id="chk-Qpay-agr1" type="checkbox" checked="">
+                                    <label for="chk-Qpay-agr1"><span>STYLE24 간편결제 개인회원 이용약관(카드)(필수)</span></label>
+                                </div>
+                            </div>
+                            <div class="info_agrQpay">
+                                STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.STYLE24 간편결제 개인회원 이용약관(카드) 내용입니다.
+                            </div>
+                        </div>
+                        <div class="area_QpayCk">
+                            <div class="form_field">
+                                <div class="agree_Qpay">
+                                    <input id="chk-Qpay-agr2" type="checkbox" checked="">
+                                    <label for="chk-Qpay-agr2"><span>개인정보 수집 및 이용동의(필수)</span></label>
+                                </div>
+                            </div>
+                            <div class="info_agrQpay">
+                                개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다.개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다. 개인정보 수집 및 이용동의(필수) 내용입니다.
+                            </div>
+                        </div>
+                        <div class="area_QpayCk">
+                            <div class="form_field">
+                                <div class="agree_Qpay">
+                                    <input id="chk-Qpay-agr3" type="checkbox" checked="">
+                                    <label for="chk-Qpay-agr3"><span>전자금융거래 이용약관(필수)</span></label>
+                                </div>
+                            </div>
+                            <div class="info_agrQpay">
+                                전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 전자금융거래 이용약관(필수) 내용입니다. 
+                            </div>
+                        </div>
+                        <div class="form_field">
+                            <div class="agree_QpayAll">
+                                <input id="chk-Qkpay-agrAll" type="checkbox" checked="">
+                                <label for="chk-Qpay-agrAll"><span>모든약관에 동의</span></label>
+                            </div>
+                        </div>
+                        <div class="btn_group_block">
+                            <button class="btn btn_dark btn_block" id="btn_qPayidConfirm_pop"><span>다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //간편결제 카드등록 > 이용약관동의 팝업 -->
+
+    <!-- 간편결제 카드등록 > 본인인증 팝업 -->
+    <div class="modal fade od_pop qPayidConfirm_pop" id="qPayidConfirm_pop" tabindex="-1" role="dialog" aria-labelledby="qPayidConfirmLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="qPayidConfirmLabel">본인인증</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <p>본인 명의의 휴대폰 정보를 입력해 주세요.</p>
+                        
+                        <div class="btn_group_block">
+                            <button class="btn btn_dark btn_block" id=""><span>다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //간편결제 카드등록 > 본인인증 팝업 -->
+
+	<script type="text/javascript">
+	    
+        $(document).ready( function() {
+            // 컨텐츠 호출
+            $("#header").load("head.html");
+            $("#footer").load("foot.html");
+
+            //해외배송 입력
+            $(document).on('change','.odPayment .area_overseas #rdi-overs1',function(e){
+                $('.info_box.overs2').hide();
+                $('.info_box.overs1').show();
+                return false;
+            }).on('change','.odPayment .area_overseas #rdi-overs2',function(e){
+                $('.info_box.overs1').hide();
+                $('.info_box.overs2').show();
+                return false;
+            });
+            
+            //할인쿠폰 확인
+            $(document).on('click','.odPayment .area_seldiscount .btn_coupon_toggle',function(e){
+                $('.coupon_list').toggle();
+                $(this).toggleClass('on');
+                return false;
+            });
+
+            //결제수단 선택
+            $(document).on('change','.odPayment .area_paymethod .paymethod_radio input',function(e){
+                $('.radio_blk').removeClass('on');
+                $(this).parents('.radio_blk').addClass('on');
+                $(this).parents('.radio_blk').find('.paymethod_box').show();
+                $(this).parents('.radio_blk').siblings('div').find('.paymethod_box').hide();
+
+                var paymethodlabel =  $(this).prop('labels');
+                $(this).parents('li').find('.fold_head .data span').text($(paymethodlabel).text());
+                
+                //간편결제 카드추가 슬라이드
+                var swiper = new Swiper('.paymethod_box .card_quickpay .list_card.swiper-container', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 160,
+                    centeredSlides: true,
+                    navigation: {
+                        nextEl: '.list_card .swiper-button-next',
+                        prevEl: '.list_card .swiper-button-prev',
+                    },
+                });
+                return false;
+            });
+            
+            //STYLE24 간편결제 배너닫기
+            $(document).on('click','.odPayment .area_paymethod .quickpay_bnr .btn_close_bnr',function(e){
+                $('.quickpay_bnr').hide();
+            });
+            
+
+            //결제수단 선택 > 즐겨찾기 추가시 
+            $(document).on('click','.odPayment .area_paymethod .paymethod_box .card .etc .btn_favorcard',function(e){
+                $(this).toggleClass('active');
+                return false;
+            });
+
+            //결제수단 > 일반결제> 실시간계좌이체 선택시            
+            $(document).on('change','.odPayment input:radio[name=rdi-paynormal]',function(e){
+                var paynormalValue = $(this).attr('id');
+                if (paynormalValue == 'rdi-paynormal2') {
+                    $('.area_paymethod .agree_insurance').show();
+                } else {
+                    $('.area_paymethod .agree_insurance').hide();
+                }
+                return false;
+            });            
+
+            //개인정보동의 열고닫기
+            $(document).on('click','.area_paymentinfo .payinfo_blk a',function(e){
+                e.preventDefault();
+                $(this).parents('.payinfo_blk').toggleClass('on');
+                var statusToggle = $(this).find('span');
+                $(statusToggle).text($(statusToggle).text() == '보기' ? '닫기' : '보기');
+                return false;
+            });
+            
+
+            //배송지변경 팝업열기
+            $(document).on('click','#btn_adrsChange_pop',function(e){
+                $("#adrsChangePop").modal("show");
+                return false;
+            });
+
+            //배송지추가 팝업열기
+            $(document).on('click','#btn_addrAdd_pop',function(e){
+                $("#adrsAddPop").modal("show");
+                return false;
+            });
+            
+            //배송지수정 팝업열기
+            $(document).on('click','#btn_addrModify_pop',function(e){
+                $("#adrsModifyPop").modal("show");
+                return false;
+            });
+
+            //배송요청사항 팝업열기
+            $(document).on('click','#btn_rqstModify_pop',function(e){
+                $("#rqstModifyPop").modal("show");
+                return false;
+            });
+
+            //사은품지급안내 팝업열기
+            $(document).on('click','#btn_infoGift_pop',function(e){
+                $("#infoGiftPop").modal("show");
+                return false;
+            });
+
+            //간편결제등록 > 이용약관 팝업열기
+            $(document).on('click','#btn_addCard_pop',function(e){
+                $("#qPayAgree_pop").modal("show");
+                return false;
+            });
+
+            //간편결제등록 > 본인인증 팝업열기
+            $(document).on('click','#btn_qPayidConfirm_pop',function(e){
+                $("#qPayidConfirm_pop").modal("show");
+                return false;
+            });
+
+        });
+    </script>
+    
+</body>
+</html>
+
+

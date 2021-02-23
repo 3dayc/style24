@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | 고객센터 | 1:1문의 작성 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/common-ui.js"></script>
+<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+</head>
+
+<body>
+
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container cs">
+		<div class="breadcrumb"> 
+			<ul>
+				<li class="bread_home"><a href="index.html">홈</a></li>
+				<li class="bread_2depth">고객센터</li>
+				<li class="bread_3depth">1:1문의</li>
+			</ul> 
+		</div>
+		<div class="wrap">
+			<div class="content contactUs_my">
+				<div class="cont_body">
+					<!-- CONT-BODY -->
+					<div class="lnb">
+						<div class="lnb_tit">
+							<h2>고객센터</h2>
+						</div>
+						<div class="lnb_list">
+							<ul>
+								<li><a href="">FAQ</a></li>
+								<li><a href="" class="on">1:1문의</a></li>
+								<li><a href="">상품문의</a></li>
+								<li><a href="">공지</a></li>
+							</ul>
+						</div>
+						<div class="lnb_foot">
+							<ul>
+								<li><p>고객센터 운영안내</p></li>
+								<li><p>1544-5336</p></li>
+								<li><p>평일 09:00~18:00<br>토,일,공휴일 휴무</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="cont">
+						<div>
+							<div class="sec_head">
+								<h3>1:1 문의</h3>
+							</div>
+							<div class="sec_body">
+								<div class="t_info blt_dot mb15 light">문의를 남겨 주시면 24시간 이내(토/일/공휴일 제외)에 답변 드릴 수 있도록 최선을 다 하겠습니다.</div>
+								<form class="form_wrap" role="form">
+									<div class="form_field">
+										<label class="ui_col_2 input_label">문의 유형</label>
+										<div class="ui_col_10 form_full">
+											<div class="input_wrap">
+												<select name="" id="">
+													<option value="">유형을 선택해 주세요</option>
+													<option value="">상품문의</option>
+													<option value="">주문결제</option>
+													<option value="">배송정보 문의</option>
+													<option value="">취소/반품/교환</option>
+													<option value="">포인트</option>
+													<option value="">할인쿠폰</option>
+													<option value="">회원/멤버십</option>
+													<option value="">이벤트/서비스</option>
+													<option value="">기타 중 선택</option>
+												</select>
+											</div> 
+										</div>
+									</div>
+									<div class="form_field">
+										<label class="ui_col_2 input_label">제목</label>
+										<div class="ui_col_10 form_full">
+											<div class="input_wrap">
+												<span class="input_group_addon"><span class="ico"></span></span>
+												<input type="text" class="form_control" placeholder="30자 내외로 작성해주세요" maxlength="30">
+											</div> 
+											<!-- 숫자, 특수문자, 불완성형 한글 제외하여 입력 -->
+										</div>
+									</div>
+									<div class="form_field">
+										<label class="ui_col_2 input_label">내용</label>
+										<div class="ui_col_10 form_full">
+											<div class="input_wrap">
+												<textarea class="doc_contactus" name="" id="" cols="30" rows="10" style="resize: none;"></textarea>
+												<p class="txt_cnt">
+													<span id="contactus_cnt" class="contactus_cnt">(<em class="c_primary">0</em>/500자)</span>
+												</p>
+											</div> 
+											<!-- 특수문자 : \ / : < >  사용 불가 > 입력 시, “특수문자 \ / : < > 는 사용할 수 없습니다.” 얼럿 호출 스크립트 입력 불가능 -->
+										</div>
+									</div>
+									<div class="form_field">
+										<label class="ui_col_2 input_label">첨부이미지</label>
+										<div class="ui_col_10 form_full">
+											<div class="input_wrap">
+												<!-- 이미지첨부 -->
+												<div class="form_field">
+													<div class="imgUpload">
+														<label for="fileAdd" class="fileAdd">업로드</label>
+														<input type="file" id="fileAdd" name="files[]" multiple="">
+													</div>
+												</div>
+												<!-- //이미지첨부 -->
+												<div class="info_addfile">
+													<ul>
+														<li>- 사진은 최대 20MB 이하의 JPG,PNG,GIF <span>파일2장까지 첨부 가능</span>합니다.</li>
+														<li>- 파일명에 한글은 사용불가입니다.</li>
+														<li>- 첨부된 사진은 문의 외의 목적으로는 사용되지 않습니다.</li>
+													</ul>
+												</div>
+											</div> 
+										</div>
+									</div>
+									<div class="form_field">
+										<label class="ui_col_2 input_label">휴대폰</label>
+										<div class="ui_col_10 cellphone">
+											<div class="input_wrap">
+												<input type="text" class="form_control err" maxlength="13" placeholder="휴대폰 번호를 입력해주세요."> <!-- 잘못 입력시 클래스명 : err 추가  -->
+												<!-- 알림 신청 체크박스(선택 _ 기본값) -->
+												<div class="ck_box">
+													<input id="chk-push" type="checkbox" checked>
+													<label for="chk-push"><span>알림 신청</span></label>
+												</div>
+											</div> 
+											<div class="help_block">
+												<p class="t_err">휴대폰 번호를 형식에 맞게 정확히 입력해주세요.</p>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="sec_foot t_c">
+								<button type="button" class="btn btn_default btn_md back"><span>취소</span></button>
+								<button type="button" class="btn btn_dark btn_md"><span>확인</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // CONT-BODY -->					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+	<footer id="footer"></footer>
+
+	<script type="text/javascript">
+		
+        $(document).ready( function() {
+			// 컨텐츠 호출
+			$("#header").load("head.html");
+			$("#footer").load("foot.html");
+
+			// text_area
+			$('.doc_contactus').keyup(function (e){
+				var content = $(this).val();
+				$('#contactus_cnt').html("(<em class='c_primary'>"+content.length+"</em>/500자)");  
+				if (content.length > 500){
+					alert("최대 500자까지 입력 가능합니다.");
+					$(this).val(content.substring(0, 500));
+					$('#contactus_cnt').html("(<em class='c_primary'>500</em>/500자)");
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+

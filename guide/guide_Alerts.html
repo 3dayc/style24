@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>STYLE24 | GUIDE_Alerts | Publishing</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+
+	<link rel="stylesheet" type="text/css" href="../ux/pc/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../ux/pc/css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="./css/guide_only.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="../ux/pc/css/mcxdialog_ui.css" /> -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="../ux/pc/js/jquery.ellipsis.js"></script>
+	<script src="../ux/pc/js/jquery-ui.js"></script>
+	<script src="../ux/pc/js/common-ui.js"></script>
+	<script src="../ux/pc/js/jquery.modal.min.js"></script>
+	<script src="../ux/pc/js/mcxdialog_ui.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+	<!--  container -->
+	<div class="gdWrap" id="contents">	
+		<div class="gd_lnb">
+			<div></div>
+			<ul>
+				<li><a href="#area1">Alert Popup</a></li>
+				<li><a href="#area2">Confirm</a></li>
+				<li><a href="#area3">Message</a></li>
+				<li><a href="#area4">Toast Popup</a></li>
+			</ul>
+		</div>
+
+		<!-- 본문 start -->		
+		<div class="wrap guide">			
+			<div class="area">				
+				<section>
+					<div class="guide_title">
+						<h2>Alerts/Confirm</h2>
+						<h6 class="t_req">🌼 mcxdialog_ui.js 추가</h6>
+					</div>
+
+										
+
+					<div class="guide_area"  id="area1">
+						<h3 class="guide_tit">Alert Popup</h3>
+						<!-- START HEADING -->
+
+						<div class="ui_row">
+							<div class="ui_col_12">
+
+								<textarea class="textarea_pre" name="" id="" cols="30" rows="21">
+
+1. 기본버튼 1개 (기능 : 창 닫힘)
+
+	document.getElementById("alert_js").onclick = function(){
+		mcxDialog.alert("기본 경고창입니다. </br> HTML태그도 사용가능합니다.");
+	};
+
+
+2. 사용자버튼 1개 (기능 : 기술된 함수 처리)
+
+	$("#alertC_js").onclick(function(){
+		mcxDialog.alertC("처리문이 있는 경고창입니다.</br>내용에 따라 창넓이가 조절됩니다.", {
+			sureBtnText: "네이버 열기",  //버튼명
+			sureBtnClick: function(){
+				//네이버 홈페이지 열림
+				location.href='https://www.naver.com/';
+			}
+		}
+	});
+
+</textarea>
+
+							</div>
+						</div>
+
+						<!-- EOF HEADING -->  
+
+						<h4 class="guide_tit2">Alert</h4>
+						<p>
+							<button type="button" id="button-alert" class="btn btn_default" >기본 Alert</button><br/><br/>
+							<button type="button" id="button-alert-with-title" class="btn btn_default" >타이틀 있는 alert</button>
+						</p>
+							<script type="text/javascript">	
+								// 기본 Alert
+								document.getElementById("button-alert").onclick = function() {
+									mcxDialog.alert("ALERT 내용", {
+										sureBtnText: "확인",  
+									});
+								};
+						
+								// 타이틀 있는 alert
+								document.getElementById("button-alert-with-title").onclick = function() {
+									mcxDialog.alertC("<div class="+"dialog-title"+">"+"●Title은 강제로 원안에 내용 수정.●</div><p>내용에 따라 창넓이가 조절됩니다.</p>", {
+										titleText: "Title",
+										sureBtnText: "닫기",  
+									});
+								};
+							</script>
+						<!-- EOF HEADING -->  
+					</div>
+					
+					
+					<div class="guide_area"  id="area2">
+						<h3 class="guide_tit">Confirm</h3>
+						<!-- START HEADING -->
+
+						<div class="ui_row">
+							<div class="ui_col_12">
+								<textarea class="textarea_pre" name="" id="" cols="30" rows="29" style="margin-top: 20px;">
+1. confirm
+기본버튼 1개 + 사용자버튼 1개( cancelBtnText:창 닫힘, sureBtnText:기술된 함수처리)
+	document.getElementById("confirm_js").onclick = function(){
+		mcxDialog.confirm("내용을 넣습니다. 버튼명도 바꿔봅니다.</br>처리문도 코딩합니다.", {
+			cancelBtnText: "취소/닫기",		//취소 또는 닫기 버튼명
+			sureBtnText: "네이버로 가기",  //처리문 버튼명
+			sureBtnClick: function(){
+				//네이버 홈페이지 열림
+				location.href='https://www.naver.com/';
+			}
+		});
+	};
+
+2. 사용자버튼 2개( button1:기술된 함수처리, button2:기술된 함수처리)
+	document.getElementById("confirmC_js").onclick = function(){
+		var btn = ["button1", "button2"]; //버튼명[좌,우]
+		mcxDialog.confirmC("장바구니에 상품을 담았습니다.", { //내용
+			btn: btn,
+			btnClick: function(index){
+				if (index == 1){ //button1 일때 처리문
+					$(location).attr("href","main_home.html");
+				} else {	//button2 일때 처리문
+					$(location).attr("href","cart.html");
+				}
+			}
+		});
+	};
+
+								</textarea>
+							</div>
+						</div>
+
+
+
+						<h4 class="guide_tit2">Confirm</h4>
+						<p>
+							<button id="button-confirm" class="btn btn_default">confirm 기본 </button><br/><br/>
+							<button id="button-confirm-text" class="btn btn_default">confirm 커스텀-내용 </button><br/><br/>
+							<button id="button-confirm-title" class="btn btn_default">confirm 커스텀-제목과 내용 </button><br/><br/>
+							<button id="button-confirm-click" class="btn btn_default">confirm 콜백 </button><br/><br/>
+							<button id="button-confirm-sure" class="btn btn_default">confirm 처리문포함 </button><br/><br/>
+						</p>
+						<script type="text/javascript">	
+						// 기본 confirm
+						document.getElementById("button-confirm").onclick = function() {
+							mcxDialog.confirm("버튼 커스텀 없이 확인 메세지만 작성");
+						};
+						
+						// 커스텀-내용 confirm
+						document.getElementById("button-confirm-text").onclick = function() {
+							mcxDialog.confirm("버튼 텍스트와 내용을 수정", {
+								sureBtnText: "OK!"
+							});
+						};
+
+						// 커스텀-제목과 내용 confirm
+						document.getElementById("button-confirm-title").onclick = function(){
+							mcxDialog.confirm("<div class="+"dialog-title"+">"+"●Title은 강제로 원안에 내용 수정.●</div><p>내용에 따라 창넓이가 조절됩니다.</p>", {
+								titleText: "I'm the title", // 오리지널 옵션
+								sureBtnText: "확인",
+								cancelBtnText: "취소 또는 닫기 버튼"
+							});
+						};
+
+						// 콜백 confirm
+						document.getElementById("button-confirm-click").onclick = function() {
+							mcxDialog.confirm("확인할 때 alert를 한번 더 띄움. 이때 alert는 시스템입니다", {
+								sureBtnText: "확인",  // Confirmation button text
+								sureBtnClick: function() {  // Confirm button click callback
+									alert("해당 alert는 시스템 타입 입니다");
+								}
+							});
+						};
+						
+						// 처리문을 사용 하는 confirm
+							document.getElementById("button-confirm-sure").onclick = function(){
+								mcxDialog.confirm("내용을 넣습니다. 버튼명도 바꿔봅니다.</br>처리문도 코딩합니다.", {
+									cancelBtnText: "취소 또는 닫기 버튼",
+									sureBtnText: "네이버로 이동",
+									sureBtnClick: function(){
+										location.href='https://www.naver.com/'; 	// 네이버 홈페이지 열림
+									}
+								});
+							};
+						</script>
+
+
+						<!-- EOF HEADING -->  
+					</div>
+
+
+					<div class="guide_area"  id="area3">
+						<h3 class="guide_tit">Message Popup</h3>
+						<!-- START HEADING -->
+
+						<h4 class="guide_tit2">알람 팝업</h4>
+						<h6 class="t_req">디자인 커스텀은 페이지 진행하면서 누적 시킬 것</h6>
+
+						<div class="alert" role="alert">
+							<strong>알람 팝업 예시</strong>   닫기 버튼 클릭 시, 알람 전체  display:none;
+							<button type="button" class="alertCls" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+						</div>
+
+						<!-- EOF HEADING -->  
+					</div>
+
+			
+					<div class="guide_area wait"  id="area4">
+						<h3 class="guide_tit">Toast Popup</h3>
+						<!-- START HEADING -->
+						<h4 class="guide_tit2">브라우저 하단으로 토스트</h4>
+						<div class="ui_row">
+							<div class="ui_col_12">
+								<button type="button" class="btn btn_default"><span>toast popup</span></button>
+							</div>
+						</div>
+						<!-- EOF HEADING -->  
+					</div>
+
+					
+
+
+
+				</section>
+			</div>
+		</div>
+		<!-- 본문 end -->
+	</div>
+	<!-- // container -->	
+	<script type="text/javascript">
+        $(document).ready( function() {
+            $("#header").load("guide_head.html");
+        });
+	</script>
+</body>
+</html>
+
+

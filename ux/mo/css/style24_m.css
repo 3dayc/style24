@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import 'common_m.css';
+
+
+
+/* list_gallery */
+  .list_gallery::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .list_gallery > li {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .list_gallery > li:nth-of-type(2n-1) {
+    padding-right: 7px;
+  }
+
+  .list_gallery > li:nth-of-type(2n) {
+    padding-left: 7px;
+  }
+
+  .list_gallery > li a {
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 320px) {
+    .list_gallery > li a {
+      height: 260px;
+    }
+  }
+
+  @media only screen and (min-width: 376px) and (max-width: 425px) {
+    .list_gallery > li a {
+      height: 340px;
+    }
+  }
+
+  .list_gallery > li .txtWrap {
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .list_gallery > li .txtWrap .tit {
+    padding: 15px 0 0 30px;
+    font-size: 1.4rem;
+    color: #9f7952;
+    position: relative;
+  }
+
+  .list_gallery > li .txtWrap .tit::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 20px;
+    height: 1px;
+    background-color: #9f7952;
+  }
+
+  .list_gallery > li .txtWrap .exp {
+    padding-top: 5px;
+    font-size: 1.7rem;
+  }
+
+
+  
+
+
+
+/* etc */
+.error {
+  text-align: center;
+}
+
+.error .titWrap img {
+  width: 81px;
+}
+
+.error dl {
+  margin-top: 20px;
+  padding-top: 130px;
+  background: url("../images/bg_z0_01.jpg") no-repeat 50% 40px;
+  background-size: 56px auto;
+}
+
+.error dl > dt {
+  font-size: 2.1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.error dl > dd {
+  padding-top: 15px;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.error .v2 {
+  background: url("../images/bg_z0_02.jpg") no-repeat 50% 40px;
+  background-size: 64px auto;
+}
+
+.error .btnWrap {
+  padding-top: 40px;
+}
+
+.error .txtBox {
+  border: #e5e5e5 solid 1px;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.error .txtBox .tit {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.error .txtBox .exp {
+  padding-top: 5px;
+  font-size: 1.5rem;
+  color: #9f7952;
+  letter-spacing: 0;
+}
+
+.error .txt_ref {
+  text-align: left;
+}
+
+.sitemap ul {
+  text-indent: 20px;
+  padding-top: 10px;
+}
+
+.sitemap ul li {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: -.025em;
+  padding: 12px 0;
+}
+
+.sitemap ul li:first-child {
+  padding-top: 0;
+}
+
+.sitemap ul li .dep li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #666666;
+  padding-bottom: 0;
+}
+
+.sitemap ul li .dep li::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #666666;
+  margin: -5px 10px 5px 0px;
+}
+/*# sourceMappingURL=style_m.css.map */

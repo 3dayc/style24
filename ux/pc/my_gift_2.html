@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | STYLE24 상품권 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+
+<!-- <link rel="stylesheet" type="text/css" href="css/test-common.css" /> -->
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/jquery.ellipsis.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+</head>
+
+<body>
+
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+	<header id="header"></header>
+	<!--  container -->
+	<div id="container" class="container my">
+		<div class="breadcrumb">
+			<ul>
+				<li class="bread_home"><a href="index.html">홈</a></li>
+				<li class="bread_2depth">마이페이지</li>
+				<li class="bread_3depth">상품권</li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="content">
+				<div class="cont_head" style="display: none;">
+					CONT-HEAD
+					<div class="tit">my_center</div>
+					<div class="tit my_tit">my_tit</div>
+				</div>
+				<div class="cont_body mypage">
+					<!-- CONT-BODY -->
+					<div class="my_lnb">
+						<div class="lnb_tit">
+							<h2>마이페이지</h2>
+						</div>
+						<div class="lnb_list">
+							<ul>
+								<li><a href="/ux/pc/my_order_1.html">주문확인/배송조회</a></li>
+								<li><a href="/ux/pc/my_return_1.html">취소/반품/환불내역</a></li>
+								<li><a href="/ux/pc/my_restock_1.html">재입고 알림 내역</a></li>
+								<li><a href="/ux/pc/my_coupon_1.html">쿠폰</a></li>
+								<li><a href="/ux/pc/my_point_1.html">STYLE24 포인트</a></li>
+								<li><a href="/ux/pc/my_gift_1.html" class="on">상품권</a></li>
+								<li><a href="/ux/pc/my_review_1.html">리뷰</a></li>
+								<li><a href="/ux/pc/my_delivery_1.html">배송지 관리</a></li>
+								<li><a href="/ux/pc/my_wishlist_1.html">위시리스트</a></li>
+								<li><a href="/ux/pc/my_mypage_1.html">내정보 관리</a></li>
+								<li><a href="/ux/pc/my_leave_1.html">회원 탈퇴</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="my_cont">
+						<div class="sec_head">
+							<h3>STYLE24 상품권</h3>
+						</div>
+						<div class="sec_body">
+							<div class="save_area mypage_coupon">
+								<p>사용 가능한 보유 금액<strong>25,000</strong>원</p>
+								<ul>
+									<li>보유 상품권 <span>10장</span></li>
+									<li>한달 이내 소멸 예정 <span>5장</span></li>
+								</ul>
+							</div>
+							<div class="gift_search">
+								<div class="gift_sea_wrap clear">
+									<label for="gift_input">상품권 등록</label>
+									<input type="text" id="gift_input" placeholder="상품권 번호를 입력해주세요.">
+									<button type="button" class="btn btn_dark">등록</button>
+								</div>
+							</div>
+							<div class="com_info_txt">
+								<p class="tit">상품권 등록 안내</p>
+								<ul>
+									<li>상품권은 상품 구매시 현금과 동일하게 사용됩니다.</li>
+									<li>상품권은 등록한 해당 몰에서만 사용이 가능합니다.</li>
+									<li>사용 후 남은 잔액은 상품권 잔액으로 환불되며,유효기간 내에 사용 가능합니다.</li>
+									<li>유효기간이 지난 상품권의 잔액은 자동 소멸됩니다.</li>
+									<li>상품권은 현금성 결제 수단에 포함되어 주문시 포인트 적립이 가능합니다.</li>
+									<li>상품권으로 결제한 금액은 마이페이지>주문상세페이지에서 현금영수증을 발급 받으실 수 있습니다.</li>
+								</ul>
+							</div>
+							<div class="my_tab coupon_tab">
+								<ul>
+									<li><a href="">사용내역</a></li>
+									<li><a href="" class="on">보유 상품권</a></li>
+								</ul>
+								<div class="form_field">
+									<select id="mounth">
+										<option value="hide">2020년 10월</option>
+										<option value="Test_SELECT_OPTION_1" rel="icon-temperature">2020년 9월</option>
+										<option value="Test_SELECT_OPTION_2">2020년 8월</option>
+										<option value="Test_SELECT_OPTION_3">2020년 7월</option>
+									</select> 
+								</div>
+							</div>
+							<div class="gift_list">
+								<ul class="clear">
+									<li>
+										<div class="gift_shape">
+											<strong>STYLE24 상품권</strong>
+											<div class="gift_price01">50,000원권</div>
+											<div class="gift_price02">
+												<span class="pr_t">잔액</span><span class="pr_num">20,000</span>원
+											</div>
+											<div class="gift_price03">1234-ABCD-3342-ADLS</div>
+										</div>
+										<div class="gift_date">
+											~ <span>2020.10.05</span>
+										</div>
+									</li>
+									<li class="off">
+										<div class="gift_shape">
+											<strong>STYLE24 상품권</strong>
+											<div class="gift_price01">50,000원권</div>
+											<div class="gift_price02">
+												<span class="pr_num">전액소진</span>
+											</div>
+											<div class="gift_price03">1234-ABCD-3342-ADLS</div>
+										</div>
+										<div class="gift_date">
+											~ <span>2020.10.05</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // CONT-BODY -->					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // container -->	
+	<footer id="footer"></footer>
+
+	<script type="text/javascript">
+	// 컨텐츠 호출
+	$(document).ready( function() {
+		$("#header").load("head.html");
+		$("#footer").load("foot.html");
+	});
+	</script>
+</body>
+</html>
+
+
