@@ -1,1 +1,38 @@
 @charset "UTF-8";
+
+.mb .mb_close{position: relative; height:5.2rem;}
+.mb .mb_close span{position:absolute; left:50%; margin-left:-0.5px; display:inline-block; width:1px; height:18px; background-color:#000; transform:rotate(45deg);}
+.mb .mb_close span:first-child{transform:rotate(-45deg);}
+.mb .mb_close a{position:absolute; top:50%; right:2rem; margin-top:-0.8rem; width:1.8rem; height:1.8rem; font-size:0; background-color:#fff;}
+.mb .mb_top .title{text-align:center; font-size:1.8rem; font-weight:700;}
+.mb .mb_body{margin-top:3rem;}
+.mb .mb_body .inner{padding-bottom:0!important;}
+.mb .mb_body .form_wrap > div{margin-top:1rem;}
+.mb .mb_body .form_wrap > div.btn_area{margin-top:3rem;}
+.mb .mb_body .form_wrap input[type=text],
+.mb .mb_body .form_wrap input[type=password]{width:100%; height:4.5rem; border:1px solid #e1e1e1; box-sizing:border-box;}
+.mb .mb_body .form_wrap button{width:100%; height:4.5rem; color:#fff; background-color:#222222; box-sizing:border-box;}
+.mb .mb_body .form_wrap .login_check{font-size:1.2rem; line-height:18px;}
+.mb .mb_body .form_wrap .login_check:after{content:''; display:block; clear:both;}
+.mb .mb_body .form_wrap .login_check .left{float:left;}
+.mb .mb_body .form_wrap .login_check .right{float:right;}
+.mb .mb_body .form_wrap .login_check .right ul{overflow:hidden;}
+.mb .mb_body .form_wrap .login_check .right ul > li{position:relative; float:left; margin-left:1rem; padding-left:1rem;}
+.mb .mb_body .form_wrap .login_check .right ul > li:first-child{margin-left:0rem; padding-left:0rem;}
+.mb .mb_body .form_wrap .login_check .right ul > li::before{content: ''; position:absolute; width:1px; height:1rem; left:0; top:50%; transform:translateY(-50%); background:#ddd;}
+.mb .mb_body .form_wrap .login_check .right ul > li:first-child::before{display:none;}
+.mb .mb_foot{margin-top:4rem; text-align:center;}
+.mb .mb_foot .login_utill{font-size:0;}
+.mb .mb_foot .login_utill > li{display:inline-block; margin-left:3.5rem;}
+.mb .mb_foot .login_utill > li:first-child{margin-left:0;}
+.mb .mb_foot .login_utill > li a{font-size:1.2rem;}
+.mb .mb_foot .login_utill > li a .ico{position:relative; display:block; margin-bottom:0.7rem; width:5rem; height:5rem; background-color:#ccc; border-radius:50%;}
+.mb .mb_foot .login_utill > li a .ico:before{display:block; content:''; position:absolute; top:50%; left:50%; background:url(../../../images/mo/ico_snslogin.png); transform:translate(-50%, -50%);}
+.mb .mb_foot .login_utill > li.lu_kakao a .ico{background:#ffe500;}
+.mb .mb_foot .login_utill > li.lu_kakao a .ico:before{width:20px; height:22px; background-position:0 0;}
+.mb .mb_foot .login_utill > li.lu_naver a .ico{background:#69c441;}
+.mb .mb_foot .login_utill > li.lu_naver a .ico:before{width:16px; height:22px; background-position: -20px 0;}
+.mb .mb_foot .login_utill > li.lu_yes24 a .ico{background:#f5f5f5;}
+.mb .mb_foot .login_utill > li.lu_yes24 a .ico:before{width:34px; height:22px; background-position: -36px 0;}
+.mb .mb_foot .login_nomember{position:relative; margin-top:3.5rem; display:inline-block; font-weight:700; color:#999;}
+.mb .mb_foot .login_nomember:after{display:block; content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; bottom:0; background-color:#999;}
