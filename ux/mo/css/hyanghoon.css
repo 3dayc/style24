@@ -54,7 +54,7 @@
 .cs .cs_contactUs_1 .qna_list > div.answer .two_dep_answer > div{display:flex; justify-content:space-between; margin-top:6px; color:#828282}
 .cs .cs_contactUs_1 .qna_list > div.answer .two_dep_answer > div > p{font-size:1.5rem;}
 .cs .cs_contactUs_1 .qna_list > div.answer .two_dep_answer > div > p:nth-of-type(2){border-bottom:1px solid #828282; height:17px;}
-
+.cs .cs_contactUs_1 .inner.m_pb45{padding-bottom:45px;}
 
 
 
