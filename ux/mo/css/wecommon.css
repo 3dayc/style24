@@ -981,7 +981,7 @@ input[type="file"] {
 }
 .fileAdd{
   width: 75px;height:75px;border: 1px solid #dddddd;float: right;font-size: 0;
-  background: url('/images/pc/ico_btn_file.png') no-repeat;background-position: 50% 50%;
+  background: url('../../../images/pc/ico_btn_file.png') no-repeat;background-position: 50% 50%;
   -webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;
   background-size: 30px 30px;
 }
@@ -1004,7 +1004,7 @@ input[type="file"] {
 }
 .removes::after {
   content: '';display: inline-block;width: 20px;height: 20px;
-  background: url('/images/pc/ico_btn_cls1.png') no-repeat;background-position: 50% 50%;
+  background: url('../../../images/pc/ico_btn_cls1.png') no-repeat;background-position: 50% 50%;
 }
 
 /* select */
