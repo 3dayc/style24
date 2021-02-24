@@ -972,7 +972,7 @@ select,
 }
 
 
-/* input-File-Add (hyangah_0223_.fileAdd, .pics 크기변경)*/
+/* input-File-Add (hyangah_0223_.fileAdd, .pics 크기변경, .removes, .removes::after 크기변경)*/
 .imgUpload {position: relative;}
 .imgUpload::after {content: '';display: block;clear: both;}
 input[type="file"] {
@@ -983,6 +983,7 @@ input[type="file"] {
   width: 75px;height:75px;border: 1px solid #dddddd;float: right;font-size: 0;
   background: url('/images/pc/ico_btn_file.png') no-repeat;background-position: 50% 50%;
   -webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer;
+  background-size: 30px 30px;
 }
 .fileAdds {
   padding: 14px 10px;font-size: 14px;color: #222222;border: 1px solid #dddddd;box-sizing: border-box;
@@ -998,11 +999,11 @@ input[type="file"] {
   transform: translate(-50%, -50%);cursor: pointer;
 }
 .removes {
-  display: block;width: 30px;height: 30px;font-size: 0;text-align: center;cursor: pointer;background-color: #666666;
+  display: block;width: 20px;height: 20px;font-size: 0;text-align: center;cursor: pointer;background-color: #666666;
   position: absolute;top: 0;bottom: auto;left: auto;right: 0;
 }
 .removes::after {
-  content: '';display: inline-block;width: 30px;height: 30px;
+  content: '';display: inline-block;width: 20px;height: 20px;
   background: url('/images/pc/ico_btn_cls1.png') no-repeat;background-position: 50% 50%;
 }
 

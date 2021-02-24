@@ -31,27 +31,30 @@
 			<nav>
 				<ul class="cs_faq_popup_header">
                     <li>1:1 문의하기</li>
-                    <li><a href="#">X</a></li>
+                    <li><a href="#"><img src="../../images/pc/btn_close_code.png"></a></li>
 				</ul>
 			</nav>
 
 			<!-- ★ 컨텐츠 시작 -->
 			<section class="content cs_faq_popup">
 				<div class="inner">
-                    <form>
+                    <form class="form_wrap">
                         <div class="form_field">
-                            <select name="" id="">
-                                <option value="">(필수) 문의 유형을 선택해주세요</option>
-                                <option value="">상품문의</option>
-                                <option value="">주문결제</option>
-                                <option value="">배송정보 문의</option>
-                                <option value="">취소/반품/교환</option>
-                                <option value="">포인트</option>
-                                <option value="">할인쿠폰</option>
-                                <option value="">회원/멤버십</option>
-                                <option value="">이벤트/서비스</option>
-                                <option value="">기타</option>
-                            </select>
+                            <div class="select">
+                                <select name="" id="" class="form-control select select_hidden" data-live-search="true">
+                                    <option value="hide">(필수) 문의 유형을 선택해주세요</option>
+                                    <option value="">상품문의</option>
+                                    <option value="">주문결제</option>
+                                    <option value="">배송정보 문의</option>
+                                    <option value="">취소/반품/교환</option>
+                                    <option value="">포인트</option>
+                                    <option value="">할인쿠폰</option>
+                                    <option value="">회원/멤버십</option>
+                                    <option value="">이벤트/서비스</option>
+                                    <option value="">기타</option>
+                                </select>
+                            </div>
+                            <div class="select_dress">(필수) 문의 유형을 선택해주세요<span><img src="../../images/pc/ico_star02.png"></span></div>
                         </div>
                         <div class="form_field">
                             <input type="text" placeholder="(필수) 문의 제목을 입력해 주세요">
@@ -72,27 +75,31 @@
                                 <!-- 첨부한 이미지가 반영될 곳, 실제 반영 시 해당 구역은 제거할 것 -->
                                 <span class="pics">
                                     <span class="removes">removes image</span>
-                                </span>		
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form_field">
+                            <ul class="cs_faq_popup_ul">
+                                <li>사진은 이미지당 10MB 이하의 JPEG, JPG, PNG 파일 2장까지 첨부 가능합니다.</li>
+                                <li>파일명에 한글은 사용 불가입니다.</li>
+                                <li>첨부된 사진은 문의 외의 목적으로는 사용되지 않습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="form_field">
+                            <div class="radio_wrap">
+                                <p>알림톡 수신 여부</p>
+                                <div class="ui_col_4">
+                                    <input type="radio" name="radio" id="rdi-2" value="2" checked=""><label for="rdi-2"> <span>수신</span> </label>
+                                </div>
+                                <div class="ui_col_4">
+                                                        
+                                        <!-- width auto important, 소수점 백그라운드 이슈로 인해 auto 설정 -->
+
+                                    <input type="radio" name="radio" id="rdi-1" value="1"><label for="rdi-1"> <span>미수신</span> </label>
+                                </div>
                             </div>
                         </div>
                     </form>
-                    <ul>
-                        <li>사진은 이미지당 10MB 이하의 JPEG, JPG, PNG 파일 2장까지 첨부 가능합니다.</li>
-                        <li>파일명에 한글은 사용 불가입니다.</li>
-                        <li>첨부된 사진은 문의 외의 목적으로는 사용되지 않습니다.</li>
-                    </ul>
-                    <div class="radio_wrap">
-                        <p>알림톡 수신 여부</p>
-                        <div class="ui_col_4">
-                            <input type="radio" name="radio" id="rdi-2" value="2" checked=""><label for="rdi-2"> <span>수신</span> </label>
-                        </div>
-                        <div class="ui_col_4">
-                                                
-                                <!-- width auto important, 소수점 백그라운드 이슈로 인해 auto 설정 -->
-
-                            <input type="radio" name="radio" id="rdi-1" value="1"><label for="rdi-1"> <span>미수신</span> </label>
-                        </div>
-                    </div>
                 </div>
                 
 			</section>
