@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>STYLE24 | 1:1문의 리스트 | Publishing</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+
+	<link rel="stylesheet" href="../../ux/mo/css/swiper.min.css">
+	<link rel="stylesheet" href="../../ux/mo/css/style24_m.css">
+
+	<script src="../../ux/mo/js/jquery-3.5.1.min.js"></script>
+	<script src="../../ux/mo/js/swiper.min.js"></script>
+	<script src="../../ux/mo/js/common_m.js"></script>
+	<script src="js/hyanghoon.js" defer></script>
+
+</head>
+
+<body>
+	<div class="app">
+		<a href="#mainCon" class="skipNav">본문바로가기</a>
+		<header class=" "> <!-- 서브페이지에서는 <header>의 클래스.main 제거 -->
+			<section class="htop" id="htopMain">
+				<h1>
+					<a href="./index.html"><img src="/images/mo/logo_STYLE24.png" alt="STYLE24"></a>
+					<button class="btn_gnb" title="메인메뉴 열기/닫기">
+						<span>
+							<i class="gl1"></i>
+							<i class="gl2"></i>
+						</span>
+					</button>
+				</h1>
+			</section>		
+			<section class="htop" id="htopSub" style="background: #fff;">
+				<button class="btn_back" title="이전페이지로">
+					<span>
+						<i class="gl1"></i>
+						<i class="gl2"></i>
+						<i class="gl3"></i>
+					</span>
+				</button>
+				<h1 id="htopTitle">고객센터</h1>
+			</section>
+			<section class="hmenu">
+				<div class="inner scrollWrap">
+					<nav class="bng">
+					<!-- <nav class="gnb bng"> -->
+						<ul class="d1">
+							<li>
+								<a href="#brandpage">
+									BUCKAROO <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									TBJ <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									ANDEW <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									FRJ <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									NBA <span><img src="#" alt=""></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- fold/depth type -->
+					<!-- 
+					<nav class="gnb bng"> 
+						<ul class="d1">
+							<li class="folder">
+								<a href="#toggle">depth1</a>
+								<ul class="d2">
+									<li><a href="./sustainability2.html">depth2-1-1</a></li>
+									<li class="folder">
+										<a href="#toggle">depth2-2-1</a>
+										<ul class="d3">
+											<li><a href="#depth3-1">depth3-1</a></li>
+											<li><a href="#depth3-2">depth3-2</a></li>
+										</ul>
+									</li>
+									<li class="folder">
+										<a href="#toggle">depth2-3-1</a>
+										<ul class="d3">
+											<li><a href="#depth3-1">depth3-1</a></li>
+											<li><a href="#depth3-2">depth3-2</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					 -->
+					<nav class="bnb">
+						<ul>
+							<li><a href="#go">Quick Link 1</a></li>
+							<li><a href="#go">Quick Link 2</a></li>
+							<li><a href="#go">Quick Link 3</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</header>
+
+		<div id="gnb" class="gnb">
+			<div class="gnb-inner">
+				<ul>
+					<li class="on"><a href="#none">브랜드</a></li>
+					<li><a href="#none">여성</a></li>
+					<li><a href="#none">남성</a></li>
+					<li><a href="#none">유아동</a></li>
+					<li><a href="#none">골프</a></li>
+					<li><a href="#none">라이프</a></li>
+					<li><a href="#none">베스트</a></li>
+					<li><a href="#none">핫딜</a></li>
+					<li><a href="#none">기획전</a></li>
+					<li><a href="#none">총알배송</a></li>
+					<li><a href="#none">아울렛</a></li>
+					<li><a href="#none">룩북</a></li>
+					<li><a href="#none">이벤트</a></li>
+				</ul>
+			</div>
+			<button onclick="$('#gnb').toggleClass('expand');" class="btn-expand"></button>
+		</div>
+
+
+		<main role="" id="" class="container cs">
+			<!-- page nav: CS 고객센터 -->
+			<nav class="pnb">
+				<ul>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+					<li>
+						<a href="" class="on">1:1문의</a>
+					</li>
+					<li>
+						<a href="">상품문의</a>
+					</li>
+					<li>
+						<a href="">공지</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- ★ 컨텐츠 시작 -->
+			<section class="content cs_contactUs_1">
+				<div class="inner">
+					<ul class="inquiry_box">
+                        <li>
+                            <p>999</p>
+                            <p>총 문의</p>
+                        </li>
+                        <li>
+                            <p>456</p>
+                            <p>답변완료</p>
+                        </li>
+                        <li>
+                            <p>690</p>
+                            <p>처리 중</p>
+                        </li>
+                    </ul>
+				</div>
+				<div class="division_line"></div>
+				<div class="inner">
+					<ul class="qna_list">
+						<li class="tog_btn">
+							<div class="title">
+                                <span>처리중</span>
+								<p>배송정보문의</p>
+								<p>배송은 얼마나 걸리나요?</p>
+                                <p>2021.01.19</p>
+							</div>
+							<span class="cs_btn">arrow</span>
+						</li>
+						<div class="answer">
+							<p><span>Q.</span> 품절이라고 되어있는 상품은 언제 다시 구매할 수 있는 걸까요? 조만간 재입고 예정은 있는걸까요?
+							</p>
+                            <form class="form_wrap">
+                                <div class="form_field">
+
+                                    <div class="imgUpload">
+                                        <label for="fileAdd" class="fileAdd">업로드</label>
+                                        <input type="file" id="fileAdd" name="files[]" multiple="">
+
+                                        <!-- 첨부한 이미지가 반영될 곳, 실제 반영 시 해당 구역은 제거할 것 -->
+                                        <span class="pics">
+                                            <span class="removes">removes image</span>
+                                        </span>		
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="two_dep_answer">
+                                <p><span>A.</span> 먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 이미지 오등록 또는 오배송 된 부분 일 수 있사오니
+                                    정확한 처리를 위해 번거로우시겠지만, 당사 고객센터(1544-5336)나 1:1문의로 접수해주시면 신속히 확인하여 처리해 드리겠습니다.
+                                </p>
+                                <div>
+                                    <p>2021.01.19</p>
+                                    <p>삭제</p>
+                                </div>
+                            </div>
+						</div>
+						<li class="tog_btn">
+							<div class="title">
+                                <span class="on">답변완료</span>
+								<p>포인트</p>
+								<p>포인트는 어디에 쓸 수 있나요?</p>
+                                <p>2021.01.19</p>
+							</div>
+							<span class="cs_btn">arrow</span>
+						</li>
+						<div class="answer">
+							<p>먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 
+								이미지 오등록 또는 오배송 된 부분 일 수 있사오니 정확한 
+								처리를 위해 번거로우시겠지만, 
+								당사 고객센터(1544-5366)나 1:1문의로 접수해주시면 
+								신속히 확인하여 처리해 드리겠습니다.
+							</p>
+						</div>
+						<li class="tog_btn">
+							<div class="title">
+                                <span class="on">답변완료</span>
+								<p>상품문의</p>
+								<p>상품 상세정보에 품절이라고 되어있습니다. 재입고는 언제 되느지 알 수 있을까요?</p>
+                                <p>2021.01.19</p>
+							</div>
+							<span class="cs_btn">arrow</span>
+						</li>
+						<div class="answer">
+							<p>먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 
+								이미지 오등록 또는 오배송 된 부분 일 수 있사오니 정확한 
+								처리를 위해 번거로우시겠지만, 
+								당사 고객센터(1544-5366)나 1:1문의로 접수해주시면 
+								신속히 확인하여 처리해 드리겠습니다.
+							</p>
+						</div>
+                        <li class="tog_btn">
+							<div class="title">
+                                <span class="on">답변완료</span>
+								<p>상품문의</p>
+								<p>상품 상세정보에 품절이라고 되어있습니다. 재입고는 언제 되느지 알 수 있을까요?</p>
+                                <p>2021.01.19</p>
+							</div>
+							<span class="cs_btn">arrow</span>
+						</li>
+						<div class="answer">
+							<p>먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 
+								이미지 오등록 또는 오배송 된 부분 일 수 있사오니 정확한 
+								처리를 위해 번거로우시겠지만, 
+								당사 고객센터(1544-5366)나 1:1문의로 접수해주시면 
+								신속히 확인하여 처리해 드리겠습니다.
+							</p>
+						</div>
+					</ul>
+				</div>
+
+			</section>
+			<!-- ★ 컨텐츠 종료 -->	
+
+		</main>
+
+		<nav id="tabbar" class="tabbar fixed">
+		<!-- <nav id="tabbar" class="tabbar"> -->
+			<div class="tabbar-inner">
+				<a href="javascript:home" class="btn-home">Home</a>
+				<a href="javascript:history" class="btn-history">History</a>
+				<a href="javascript:wish" class="btn-wish">Wish</a>
+				<a href="javascript:myPage" class="btn-my">Mypage</a>
+				<a href="javascript:menu;" class="btn-menu" data-popup-trigger="" data-target="#menu">Menu</a>
+			</div>
+				<!-- 
+					<span class="txt-balloon" id="tutorial_mycloset" style=""> 툴팁예제</span>
+				-->
+		</nav>
+		<footer>
+			<button class="btn_top" title="페이지 맨위로 이동">
+				<span>
+					<i class="gl1"></i>
+					<i class="gl2"></i>
+					<i class="gl3"></i>
+				</span>
+			</button>
+			<section class="f1">
+				<div class="inner">
+					<ul class="link wider">
+						<li><a href="#none">고객센터</a></li>
+						<li><a href="#none">이용약관</a></li>
+						<li><a href="#none">개인정보취급방침</a></li>
+					</ul>
+
+					<div class="collapse">
+						<div class="btnWrap">
+							<button class="btn_infos">아이스타일이십사 주식회사</button>
+						</div>
+						<ul class="infos info">
+							<li class="fn">대표이사 : 윤종선</li>
+							<li class="fn">주소 : 서울시 영등포구 은행로 11, 8층(여의도동, 일신빌딩)</li>
+							<li class="fn">사업자등록번호 : 116-81-32499 </li>
+							<li class="fn">개인정보관리책임자 : 이정득 </li>
+							<li class="fn">통신판매업신고번호 : 제 2020-서울영등포1432</li>
+							<li class="fn">개인정보보호책임자 : 김명인</li>
+							<li class="fn">호스팅 서비스 : 아이스타일이십사㈜</li>
+						</ul>
+					</div>
+					
+					<ul class="link">
+						<li><a href="#none">사업자정보확인</a></li>
+						<li><a href="#none">PC버전</a></li>
+						<li><a href="#none">APP 다운로드</a></li>
+						<li><a href="#none">SN&#64;PP</a></li>
+					</ul>
+					<ul class="copy">
+						<li>COPYRIGHTⓒ2020 STYLE24 ALL RIGHTS RESERVED.</li>
+					</ul>
+					<ul class="sns">
+						<li><a href="#none" class="insta">Instagram</a></li>
+						<li><a href="#none" class="facebook">facebook</a></li>
+					</ul>
+				</div>
+			</section>
+
+
+		</footer>
+	</div>
+
+
+	<!-- script -->
+	<!-- 서브일 경우 스크립트 추가 -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setHtop();
+		});
+
+		function setHtop() {
+			if($('header').hasClass('main')) {
+				$('#htopMain').show();
+				$('#htopSub').hide();
+			} else {
+				$('#htopMain').hide();
+				$('#gnb').hide();
+				$('#htopSub').show();
+			}
+		}
+	</script>
+
+</body>
+
+</html>
