@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>STYLE24 | FAQ 리스트 | Publishing</title>
+	<title>STYLE24 | 1:1문의 리스트 | Publishing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
@@ -119,10 +119,10 @@
 			<nav class="pnb">
 				<ul>
 					<li>
-						<a href="" class="on">FAQ</a>
+						<a href="">FAQ</a>
 					</li>
 					<li>
-						<a href="">1:1문의</a>
+						<a href="" class="on">1:1문의</a>
 					</li>
 					<li>
 						<a href="">상품문의</a>
@@ -134,48 +134,68 @@
 			</nav>
 
 			<!-- ★ 컨텐츠 시작 -->
-			<section class="content cs_faq_1">
+			<section class="content cs_contactUs_1">
 				<div class="inner">
-					<input type="text" class="cs_search_input" placeholder="검색어를 입력해주세요">
-					<button>search</button>
-					<p>찾으시는 문의 내용이 없으시면 1:1 문의를 이용해 주세요.</p>
-					<ul class="select_list">
-						<li><button class="on">전체</button></li>
-						<li><button>상품문의</button></li>
-						<li><button>주문결제</button></li>
-						<li><button>취소/반품/교환</button></li>
-						<li><button>배송정보 문의</button></li>
-						<li><button>포인트</button></li>
-						<li><button>이벤트/서비스</button></li>
-						<li><button>할인쿠폰</button></li>
-						<li><button>회원/멤버십</button></li>
-						<li><button>기타</button></li>
-					</ul>
+					<ul class="inquiry_box">
+                        <li>
+                            <p>999</p>
+                            <p>총 문의</p>
+                        </li>
+                        <li>
+                            <p>456</p>
+                            <p>답변완료</p>
+                        </li>
+                        <li>
+                            <p>690</p>
+                            <p>처리 중</p>
+                        </li>
+                    </ul>
 				</div>
 				<div class="division_line"></div>
-
-				<!-- 검색조건에 맞는 항목이 있을 때 -->
-				<div class="inner">
+				<div class="inner m_pb45">
 					<ul class="qna_list">
 						<li class="tog_btn">
 							<div class="title">
+                                <span>처리중</span>
 								<p>배송정보문의</p>
 								<p>배송은 얼마나 걸리나요?</p>
+                                <p>2021.01.19</p>
 							</div>
 							<span class="cs_btn">arrow</span>
 						</li>
 						<div class="answer">
-							<p>먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 
-								이미지 오등록 또는 오배송 된 부분 일 수 있사오니 정확한 
-								처리를 위해 번거로우시겠지만, 
-								당사 고객센터(1544-5366)나 1:1문의로 접수해주시면 
-								신속히 확인하여 처리해 드리겠습니다.
+							<p><span>Q.</span> 품절이라고 되어있는 상품은 언제 다시 구매할 수 있는 걸까요? 조만간 재입고 예정은 있는걸까요?
 							</p>
+                            <form class="form_wrap">
+                                <div class="form_field">
+
+                                    <div class="imgUpload">
+                                        <label for="fileAdd" class="fileAdd">업로드</label>
+                                        <input type="file" id="fileAdd" name="files[]" multiple="">
+
+                                        <!-- 첨부한 이미지가 반영될 곳, 실제 반영 시 해당 구역은 제거할 것 -->
+                                        <span class="pics">
+                                            <span class="removes">removes image</span>
+                                        </span>		
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- <div class="two_dep_answer">
+                                <p><span>A.</span> 먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 이미지 오등록 또는 오배송 된 부분 일 수 있사오니
+                                    정확한 처리를 위해 번거로우시겠지만, 당사 고객센터(1544-5336)나 1:1문의로 접수해주시면 신속히 확인하여 처리해 드리겠습니다.
+                                </p>
+                                <div>
+                                    <p>2021.01.19</p>
+                                    <p>삭제</p>
+                                </div>
+                            </div> -->
 						</div>
 						<li class="tog_btn">
 							<div class="title">
+                                <span class="on">답변완료</span>
 								<p>포인트</p>
-								<p>포인트는 언제 소멸되나요?</p>
+								<p>포인트는 어디에 쓸 수 있나요?</p>
+                                <p>2021.01.19</p>
 							</div>
 							<span class="cs_btn">arrow</span>
 						</li>
@@ -189,8 +209,27 @@
 						</div>
 						<li class="tog_btn">
 							<div class="title">
+                                <span class="on">답변완료</span>
 								<p>상품문의</p>
 								<p>상품 상세정보에 품절이라고 되어있습니다. 재입고는 언제 되느지 알 수 있을까요?</p>
+                                <p>2021.01.19</p>
+							</div>
+							<span class="cs_btn">arrow</span>
+						</li>
+						<div class="answer">
+							<p>먼저, 이용에 불편드린 점 사과 말씀 드리며 상세 페이지 
+								이미지 오등록 또는 오배송 된 부분 일 수 있사오니 정확한 
+								처리를 위해 번거로우시겠지만, 
+								당사 고객센터(1544-5366)나 1:1문의로 접수해주시면 
+								신속히 확인하여 처리해 드리겠습니다.
+							</p>
+						</div>
+                        <li class="tog_btn">
+							<div class="title">
+                                <span class="on">답변완료</span>
+								<p>상품문의</p>
+								<p>상품 상세정보에 품절이라고 되어있습니다. 재입고는 언제 되느지 알 수 있을까요?</p>
+                                <p>2021.01.19</p>
 							</div>
 							<span class="cs_btn">arrow</span>
 						</li>
@@ -203,11 +242,6 @@
 							</p>
 						</div>
 					</ul>
-					<button class="see_more"><p>더보기</p><span>arrow</span></button>
-				</div>
-				<!-- 검색조건에 맞는 항목이 없을 때 -->
-				<div class="inner none">
-					<p>검색어 조건에 맞는 항목이 없습니다.</p>
 				</div>
 
 			</section>
@@ -228,7 +262,7 @@
 					<span class="txt-balloon" id="tutorial_mycloset" style=""> 툴팁예제</span>
 				-->
 		</nav>
-		<footer>
+		<!-- <footer>
 			<button class="btn_top" title="페이지 맨위로 이동">
 				<span>
 					<i class="gl1"></i>
@@ -276,6 +310,11 @@
 			</section>
 
 
+		</footer> -->
+		<footer>
+			<div class="cs_faq_popup_footer">
+				<p>1:1문의하기</p>
+			</div>
 		</footer>
 	</div>
 
