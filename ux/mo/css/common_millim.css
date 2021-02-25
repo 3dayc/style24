@@ -331,6 +331,12 @@ select,
 
 
 
+/* =========================밀림이 추가하는 새로운 공통 ==========================*/
+
+/* 비지깔린 레이아웃  공통으로 쓸거임*/
+.blockLyout{background-color:#ddd;}
+.blockLyout > .block{margin-top:1.5rem; background-color:#Fff;}
+.blockLyout > .block:first-child{margin-top:0;}
 
 
 
