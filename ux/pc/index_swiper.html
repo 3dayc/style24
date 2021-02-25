@@ -27,10 +27,11 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <!-- <script type="text/javascript" src="/ux/pc/js/slick.min.js"></script> -->
+<!-- <script type="text/javascript" src="/ux/pc/js/swiper.min.js"></script> -->
 <script type="text/javascript" src="/ux/pc/js/jquery-ui.js"></script>
 <script type="text/javascript" src="/ux/pc/js/common-ui.js"></script>
 <script type="text/javascript" src="/ux/pc/js/jquery.modal.min.js"></script>
@@ -286,9 +287,6 @@
 										</a>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide">
-								<img src="/images/pc/thumb/main_trendy03.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -711,13 +709,15 @@
 				</div>
 			</div>
 
-
 			<!-- 6. 타임딜 : 슬라이드 -->
 			<div class="content wide main_deal">
 				<div class="cont_head">
 					<p class="displayH">오늘만<br>이 가격에 만나요</p>
 					<a href="#none"><span>전체보기</span></a>
-
+					<div class="deal_progress">
+						<div class="bar_current" style="width:33.333%"><span>HERE</span></div>
+						<div class="bar_bg"></div>
+					</div>
 					<div class="count">
 						<span class="count_tit">남은 시간</span>
 						<div class="hotdeal">
@@ -769,7 +769,7 @@
 					</script>
 				</div>
 				<div class="cont_body">
-					<div class="swiper-container post-deal active" >
+					<div class="swiper-container post-deal" >
 						<div class="swiper-wrapper ">
 							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> <!-- item_prod ranker d_detail -->
@@ -958,8 +958,6 @@
 				</div>
 			</div>
 
-			
-
 			<!-- 7. 브랜드픽 -->
 			<div class="content main_pick">
 				<div class="cont_head">
@@ -968,17 +966,17 @@
 				<div class="cont_body">
 					<div class="swiper-container post-pick-nav">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide active-tab"><img src="/images/pc/thumb/main_picklogo01.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo01.png"></div>
 							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo02.png"></div>
 							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo03.png"></div>
 							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo04.png"></div>
 							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo05.png"></div>
 							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo06.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo06.png"></div>
 						</div>
+						<div class="swiper-button-prev "></div>
+						<div class="swiper-button-next "></div>
 					</div>
-					<div class="swiper-button-prev "></div>
-					<div class="swiper-button-next "></div>
-					
 					<div class="swiper-container post-pick-for">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -1123,20 +1121,17 @@
 								<div class="pick_look"></div>
 								<div class="pick_item"></div>
 							</div>
+							<div class="swiper-slide">
+								<div class="pick_look"></div>
+								<div class="pick_item"></div>
+							</div>
 						</div>
 					</div>
-				
-				
-
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT
 				</div>
 			</div>
-
-
-
-
 			<!-- 8. 가로 긴 배너 슬라이드 -->
 			<!-- bnn_1stage -->
 			<div class="content wide main_1stage">
@@ -1758,7 +1753,8 @@
 									<div class="swiper-pagination"></div>
 								</div>
 							</div>
-							
+							<div class="swiper-button-prev "></div>
+							<div class="swiper-button-next "></div>
 						</div>
 						<div class="sec_foot dpnone">SECTION-FOOT</div>
 					</section>
@@ -1776,31 +1772,33 @@
 					<span>스타일24에서 가장 주목받는 상품을 살펴보세요</span>
 				</div>
 				<div class="cont_body">
-
-					<div class="swiper-container post-sug fy_nav">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<ul>
-									<li><button class="btn btn_shape active" data-tab="fy1"><div><span class="number">1</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy2"><div><span class="number">2</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy3"><div><span class="number">3</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy4"><div><span class="number">4</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy5"><div><span class="number">5</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
-								</ul>
-							</div>
-							<div class="swiper-slide">
-								<ul>
-									<li><button class="btn btn_shape" data-tab="fy6"><div><span class="number">6</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy7"><div><span class="number">7</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy8"><div><span class="number">8</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy9"><div><span class="number">9</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy10"><div><span class="number">10</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
-								</ul>
+					<div class="post-sug fy_nav">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<ul>
+										<li><button class="btn btn_shape active" data-tab="fy1"><div><span class="number">1</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy2"><div><span class="number">2</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy3"><div><span class="number">3</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy4"><div><span class="number">4</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy5"><div><span class="number">5</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li><button class="btn btn_shape" data-tab="fy6"><div><span class="number">6</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy7"><div><span class="number">7</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy8"><div><span class="number">8</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy9"><div><span class="number">9</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy10"><div><span class="number">10</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
+						<div class="swiper-controls">
+							<div class="swiper-pagination"></div>
+						</div>
 					</div>
-
-
 					<div class="fy_item active" id="fy1">
 						<div class="part">
 							<div class="item_prod">
@@ -2058,7 +2056,14 @@
 							</div>
 						</div>
 					</div>
-
+					<div class="fy_item" id="fy3" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy4" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy5" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy6" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy7" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy8" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy9" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy10" style="min-height:700px;"></div>
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT
@@ -2107,11 +2112,10 @@
 						</div>
 						<div class="swiper-button-prev "></div>
 						<div class="swiper-button-next "></div>
-						<div class="swiper-controls">
-							<div class="swiper-pagination"></div>
-						</div>
 					</div>
-
+					<div class="swiper-controls">
+						<div class="swiper-pagination"></div>
+					</div>
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT					
@@ -2136,43 +2140,90 @@
 		$("#footer").load("foot.html");
 	});
 
-	var post01 = new Swiper('.post-visual', {
-		// Optional parameters
-		loop: true,
-		slidesPerView: 'auto',
-		spaceBetween: 80,
-		// initialSlide: 0, 
-		// 초기 슬라이드의 색인 번호입니다
-		centeredSlides: true,
-		// slidesOffsetBefore: 250, 
-		// 컨테이너 시작 부분 (모든 슬라이드 이전)에 슬라이드 오프셋 추가 (픽셀 단위)
-		speed : 1000,
-		// Navigation arrows
-		autoplay: false,
-		// autoplay: {
-		// 	delay: 2000,
-		// 	disableOnInteraction: false,
-		// },
-		navigation: {
-			nextEl: '.post-visual .swiper-button-next',
-			prevEl: '.post-visual .swiper-button-prev',
-		},
-		pagination: {
-			el: '.main_visual .swiper-pagination',
-			clickable: true,
-		},
+	var agent = navigator.userAgent.toLowerCase();
+
+	if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+		// ie일 경우
+		var post01 = new Swiper('.main_visual .post-visual', {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 'auto',
+			spaceBetween: 100,
+			
+			// initialSlide: 0, 
+			// 초기 슬라이드의 색인 번호입니다
+			centeredSlides: true,
+			// slidesOffsetBefore: 250, 
+			// 컨테이너 시작 부분 (모든 슬라이드 이전)에 슬라이드 오프셋 추가 (픽셀 단위)
+			speed : 1000,
+			// Navigation arrows
+			//autoplay: false,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.post-visual .swiper-button-next',
+				prevEl: '.post-visual .swiper-button-prev',
+			},
+			pagination: {
+				el: '.main_visual .swiper-pagination',
+				clickable: true,
+			},
+		});
+	}else{
+		// ie가 아닐 경우
+		var post01 = new Swiper('.main_visual .post-visual', {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 'auto',
+			spaceBetween: 70,
+			
+			// initialSlide: 0, 
+			// 초기 슬라이드의 색인 번호입니다
+			centeredSlides: true,
+			// slidesOffsetBefore: 250, 
+			// 컨테이너 시작 부분 (모든 슬라이드 이전)에 슬라이드 오프셋 추가 (픽셀 단위)
+			speed : 1000,
+			// Navigation arrows
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.post-visual .swiper-button-next',
+				prevEl: '.post-visual .swiper-button-prev',
+			},
+			pagination: {
+				el: '.main_visual .swiper-pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	//메인 비주얼_자동재생 스탑
+	$(document).on('click','.slide-curb-pause',function(e){
+		post01.autoplay.stop();
+		$(this).hide();
+		$('.slide-curb-play').show();
 	});
+
+	//메인 비주얼_자동재생 시작
+	$(document).on('click','.slide-curb-play',function(e){
+		post01.autoplay.start();
+		$(this).hide();
+		$('.slide-curb-pause').show();
+	});
+
 	var post02 = new Swiper ('.post-trendy', {
 		loop: true,
-		slidesPerView: 5,
+		slidesPerView: 'auto',
 		centeredSlides: true,
 		//speed : 1000,
-		autoWidth: true, 
-		autoHeight: true, 
-		autoplay: {
-			delay: 2000,
-			disableOnInteraction: false,
-		},
+		//autoplay: {
+		//	delay: 2000,
+		//	disableOnInteraction: false,
+		//},
 		navigation: {
 			nextEl: '.main_trendy .swiper-button-next',
 			prevEl: '.main_trendy .swiper-button-prev',
@@ -2184,13 +2235,14 @@
 	});
 	var post03 = new Swiper ('.main_it .swiper-container', {
 		//loop: true,
-		slidesPerView: 4,
+		slidesPerView: 'auto',
+		spaceBetween: 20,
 		// slidesToScroll: 4,
-		slidesPerGroup:1,
+		//slidesPerGroup:1,
 		observer: true,
 		observeParents: true,
 		speed : 1000,
-		freeMode: false,
+		//freeMode: false,
 		autoplay: false,
 		// autoplay: {
 		// 	delay: 2000,
@@ -2211,13 +2263,12 @@
 	});
 
 	var post04 = new Swiper ('.post-deal', {
-		loop: true,
-		slidesPerView: 4,
+		loop: false,
+		slidesPerView: 'auto',
 		// slidesToScroll: 4,
 		// centeredSlides: true,
 		speed : 1000,
-		autoWidth: true, 
-		autoHeight: true, 
+		autoWidth: true,
 		autoplay: false,
 		// autoplay: {
 		// 	delay: 2000,
@@ -2235,37 +2286,60 @@
 		// slidesToScroll: 1,
 		// centeredSlides: true,
 		speed : 1000,
-		autoplay: {
-			delay: 1000,
-			disableOnInteraction: false,
-		},
+		//autoHeight:true,
+		//autoplay: {
+		//	delay: 4000,
+		//	disableOnInteraction: false,
+		//},
 		pagination: {
 			el: '.post-lookbook .swiper-pagination',
 			clickable: true,
 		},
 	});
-	var pickTabs = document.querySelector('.post-pick-nav .swiper-wrapper');
-	var post05Nav = new Swiper('.post-pick-nav', {
-		slidesPerView: 'auto',
-		mousewheelControl: true,
+
+	//var pickTabs = document.querySelector('.post-pick-nav .swiper-wrapper');
+	/*var post05Nav = new Swiper('.post-pick-nav', {
+		slidesPerView: 6,
 		navigation: {
 			nextEl: '.main_pick .swiper-button-next',
 			prevEl: '.main_pick .swiper-button-prev',
 		},
-		onTap: function (swiper, event) {
-			if (event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab')) {
-				event.target.parentElement.querySelector('.active-tab').classList.remove('active-tab');
-				event.target.classList.add('active-tab');
-				post05PickFor.slideTo(swiper.clickedIndex);
-			}
-		} 
+		watchSlidesVisibility: true,
+     	watchSlidesProgress: true,
+		//onTap: function (swiper, event) {
+		//	if (event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab')) {
+		//		event.target.parentElement.querySelector('.active-tab').classList.remove('active-tab');
+		//		event.target.classList.add('active-tab');
+		//		post05PickFor.slideTo(swiper.clickedIndex);
+		//	}
+		//} 
 	}); 	
 	var post05PickFor = new Swiper('.post-pick-for', {
-		onSlideChangeStart: function (swiper, event) {
-			pickTabs.children[swiper.previousIndex].classList.remove('active');
-			pickTabs.children[swiper.activeIndex].classList.add('active');
+		//onSlideChangeStart: function (swiper, event) {
+		//	pickTabs.children[swiper.previousIndex].classList.remove('active');
+		//	pickTabs.children[swiper.activeIndex].classList.add('active');
+		//}
+		thumbs: {
+			swiper: post05Nav,
+		},
+	});*/
+
+	var postPickNav = new Swiper('.post-pick-nav', {
+		slidesPerView: 6,
+		freeMode: false,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+    });
+    var postPick = new Swiper('.post-pick-for', {
+		spaceBetween: 10,
+		navigation: {
+		nextEl: '.main_pick .swiper-button-next',
+		prevEl: '.main_pick .swiper-button-prev',
+		},
+		thumbs: {
+		swiper: postPickNav
 		}
-	});
+    });
 
 
 	var post06 = new Swiper ('.post-bnnWide', {
@@ -2296,7 +2370,12 @@
 			el: '.main_recomm .swiper-pagination',
 			clickable: true,
 		},
+		navigation: {
+			nextEl: '.main_recomm .swiper-button-next',
+			prevEl: '.main_recomm .swiper-button-prev',
+		},
 	});	
+	
 	var _tagList = $( ".tag_list" );
 	var _tagTarget = _tagList.children( "button" );
 	var swiper = new Swiper('.main_recomm .post-recomm');
@@ -2304,11 +2383,11 @@
 	_tagTarget.on( "click", function( $e ){
 		var itemIndex = $( this ).index();
 		swiper.slideTo( itemIndex);             //index값으로 slideto에 넘김
-		    $('.tag_list button').removeClass('active');
-    $(this).addClass('active');
-	});
+		$('.tag_list button').removeClass('active');
+		$(this).addClass('active');
+	});	
 
-	var post08 = new Swiper ('.post-sug', {
+	var post08 = new Swiper ('.post-sug .swiper-container', {
 		loop: true,
 		slidesPerView: 1,
 		spaceBetween: 80,
@@ -2320,7 +2399,7 @@
 			disableOnInteraction: false,
 		},
 		pagination: {
-			el: '.main_foryou .swiper-pagination',
+			el: '.post-sug .swiper-pagination',
 			clickable: true,
 		},
 	});	
@@ -2338,7 +2417,7 @@
 		slidesPerView: 2,
 		spaceBetween: 80,
 		centeredSlides: true,
-		speed : 2500,
+		speed : 800,
 		// effect: 'fade',
 		autoplay: false,
 		// autoplay: {
@@ -2346,11 +2425,11 @@
 		// 	disableOnInteraction: false,
 		// },
 		navigation: {
-			nextEl: '.post-tv .swiper-button-next',
-			prevEl: '.post-tv .swiper-button-prev',
+			nextEl: '.main_tv .swiper-button-next',
+			prevEl: '.main_tv .swiper-button-prev',
 		},
 		pagination: {
-			el: '.post-tv .swiper-pagination',
+			el: '.main_tv .swiper-pagination',
 			clickable: true,
 		},
 	});	

@@ -196,10 +196,53 @@
 								</form>
 							</div>
 						</div>
-						<script>
-							
-						</script>
 
+
+						<div class="ui_row">
+							<!-- ★ NEW-SELECTER -->
+							<div class="ui_col_12">
+								<!-- form start -->
+								<form class="form_wrap">
+									<div class="form_field">
+										<!-- <div class="select_custom type1" disabled > 셀렉트 자체 비활성 -->
+										<div class="select_custom type1">
+											<div class="combo">
+												<div class="select">선택</div>
+												<ul class="list">
+													<li class="selected">선택</li>
+													<li>상품옵션01</li>
+													<li> <input type="radio" > 상품옵션02</li>
+													<li>
+														<div>03. 상품옵션 : 두줄처리</div>
+														<div>120,000원</div>
+													</li>
+													<!-- 
+														※ 선택불가: aria-disabled
+														※ 품절표시: data-soldout
+													 -->
+													<li aria-disabled="true" data-soldout="true">
+														<div>04. 상품옵션 : 두줄처리</div>
+														<div>120,000원</div>
+													</li>
+													<li>상품옵션04</li>
+													<li>상품옵션05</li>
+													<li aria-disabled="true" data-soldout="true">상품옵션06</li>
+													<li>상품옵션07</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<script>
+							$(function(){
+								// 여러 개의 셀렉트 박스는 아래에서 인스턴스 생성
+								var selecter01 = new sCombo('.select_custom.type1');
+								var selecter02 = new sCombo('.select_custom.type2');
+								var selecter03 = new sCombo('.select_custom.type3');
+							});
+						</script>
 						<!-- EOF HEADING -->  
 					</div>
 

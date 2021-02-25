@@ -116,7 +116,6 @@ $(document).ready(function() {
 	}
 });
 
-
 // check-All
 $( document ).ready(function() {
 	var $chkAll = $('.check-all');
@@ -190,6 +189,56 @@ $( document ).ready(function() {
 });
 
 
+// Select-Combo-Custom
+function sCombo(selector){
+	this.$selectBox = null,
+	this.$select = null,
+	this.$list = null,
+	this.$listLi = null;
+	sCombo.prototype.init = function(selector){
+		this.$selectBox = $(selector);
+		this.$select = this.$selectBox.find('.combo .select');
+		this.$list = this.$selectBox.find('.combo .list');
+		this.$listLi = this.$list.children('li');
+	}
+	sCombo.prototype.initEvent = function(e){
+		var that = this;
+		this.$select.on('click', function(e){
+			that.listOn();
+		});
+		this.$listLi.on('click', function(e){
+			that.listSelect($(this));
+		});
+		$(document).on('click', function(e){
+			that.listOff($(e.target));
+		});
+	}
+	sCombo.prototype.listOn = function(){
+		this.$selectBox.toggleClass('on');
+		if(this.$selectBox.hasClass('on')){
+			this.$list.css('display', 'block');
+		}else{
+			this.$list.css('display', 'none');
+		};
+	}
+	sCombo.prototype.listSelect = function($target){
+		$target.addClass('selected').siblings('li').removeClass('selected');
+		this.$selectBox.removeClass('on');
+		this.$select.text($target.text());
+		this.$list.css('display', 'none');
+	}
+	sCombo.prototype.listOff = function($target){
+		if(!$target.is(this.$select) && this.$selectBox.hasClass('on')){
+			this.$selectBox.removeClass('on');
+			this.$list.css('display', 'none');
+		};
+	}
+	this.init(selector);
+	this.initEvent();
+};
+
+
+
 // selectBrand on/off
 $( document ).ready( function() {
 	$("#selectBrand .brandbox input").on("click", function() {
@@ -197,6 +246,9 @@ $( document ).ready( function() {
 		$(this).addClass("on");
 	});
 });
+
+
+
 
 
 /* alert */
@@ -255,7 +307,7 @@ $(document).ready( function() {
 	});
 
 	/* 상품상세 > 상품문의 _accordion */
-	$(document).on('click','.pd_qnalist_pop .foldGroup .fold_head',function(e){
+	$(document).on('click','.pd_qnalist .foldGroup .fold_head',function(e){
 		$(this).parents('.foldGroup li').find('.fold_cont').slideToggle(100);
 		$(this).toggleClass('on');
 		return false;
