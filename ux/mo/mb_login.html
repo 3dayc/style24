@@ -29,25 +29,23 @@
 		<header></header>
 
 		<main role="" id="" class="container mb">
+			<div class="close">
+				<a href="#none" class="btn_close"><span></span><span></span></a>
+			</div>
 
 			<!-- ★ 컨텐츠 시작 -->
 			<section class="content mb_login">
 				
-				<div class="mb_close">
-					<a href="#none" class="btn_close">
-						<span></span>
-						<span></span>
-					</a>
-				</div>
-				<div class="mb_top">
+				<div class="cont_head">
 					<h2 class="title">로그인</h2>
 				</div>
-				<div class="mb_body">
+				<div class="cont_body">
 					<div class="inner">
-						<form class="form_wrap">
-							<div class="form_field"><input type="text" placeholder="아이디"></div>
-							<div class="form_field"><input type="password" placeholder="비밀번호 8자~20자 입력"></div>
-							<div class="login_check">
+						<form class="form_wrap form_full">
+							<div class="form_head"><h3 class="title sr-only">로그인</h3></div>
+							<div class="form_field mt0"><input type="text" placeholder="아이디" class="form_control"></div>
+							<div class="form_field"><input type="password" placeholder="비밀번호 8자~20자 입력" class="form_control"></div>
+							<div class="login_check mt10">
 								<div class="left">
 									<div class="form_field"><input id="chk-1" type="checkbox"><label for="chk-1"> <span>아이디 저장</span> </label></div>
 								</div>
@@ -58,17 +56,55 @@
 									</ul>
 								</div>
 							</div>
-							<div class="btn_area"><button>로그인</button></div>
+							<div class="help_block">
+								<!-- 회원 아이디 또는 비밀번호가 일치하지 않을때 -->
+								<div>
+									<p class="t_err">
+										회원 아이디 또는 비밀번호가 일치하지 않습니다.<br>
+										(10회 이상 실패하면 180초 동안 로그인이 불가능 합니다.)<br>
+										<span>4</span>회 실패 / 잔여 : <span>6</span>회 / <span>180</span>초 남음
+									</p>
+								</div>
+								<!-- //회원 아이디 또는 비밀번호가 일치하지 않을때 -->
+								<!-- 보안문자 입력시 -->
+								<div>
+									<div class="captcha"> <!-- 캡차영역 -->
+										<ul>
+											<li class="lap"> <!-- 캡차이미지 -->
+												<div class="captcha_box"> <!-- 캡차이미지 -->
+												
+												</div>
+												<div class="captcha_btn_dual">
+													<button type="button" id="play_audio">새로고침</button>
+													<button type="button" id="swap_captcha">음성듣기</button>
+												</div>
+											</li>
+											<li class="captcha_area">
+												<label for="captcha" id="label_captcha_area" class="sr-only">보안문자 입력</label>
+												<input type="text" id="captcha" name="captcha" placeholder="위 보안문자 이미지에 보이는 문자 입력" title="문자입력">
+											</li>
+										</ul>
+									</div>
+									<p class="t_err mt10">
+										보안문자 입력을 다시 시도해 주세요.<br>
+										(10회 이상 실패하면 300초 동안 로그인이 불가능 합니다.)<br>
+										<span>10</span>회 실패 / 잔여 : <span>0</span>회 / <span>180</span>초 남음
+									</p>
+								</div>
+								<!-- //보안문자 입력시 -->
+							</div>
+							<div class="ui_row mt20"><button class="btn btnL btn_dark">로그인</button></div>
 						</form>
+						<div class="t_c sns_wrap">
+							<h3 class="sr-only">간편로그인</h3>
+							<ul class="login_utill">
+								<li class="lu_kakao"><a href="#none"><div class="ico"></div>카카오로<br>시작하기</a></li>
+								<li class="lu_naver"><a href="#none"><div class="ico"></div>네이버로<br>시작하기</a></li>
+								<li class="lu_yes24"><a href="#none"><div class="ico"></div>YES24로<br>시작하기</a></li>
+							</ul>
+						</div>
+						<div class="t_c mt30"><botton class="btn_nonMb">비회원 주문조회</botton>
 					</div>
-				</div>
-				<div class="mb_foot">
-					<ul class="login_utill">
-						<li class="lu_kakao"><a href="#none"><div class="ico"></div>카카오로<br>시작하기</a></li>
-						<li class="lu_naver"><a href="#none"><div class="ico"></div>네이버로<br>시작하기</a></li>
-						<li class="lu_yes24"><a href="#none"><div class="ico"></div>YES24로<br>시작하기</a></li>
-					</ul>
-					<a href="#none" class="login_nomember">비회원 주문조회</a>
 				</div>
 
 			</section>
