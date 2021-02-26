@@ -96,3 +96,9 @@
 .foldGroup .fold_head .fold_tit {max-width: 820px;}
 .foldGroup .fold_answer .answer_head {margin-bottom:10px}
 .foldGroup .fold_cont > div:first-of-type {border-top:1px solid #ddd}
+
+/* swiper */
+.swiper-container.cs_pop{height:100%; width:100%;}
+.swiper-container.cs_pop .swiper-wrapper .swiper-slide img{position:absolute; top:50%; transform:translate(0, -50%);}
+.swiper-container.cs_pop .swiper-pagination-bullet{height:1.5rem; width:1.5rem;}
+.swiper-container.cs_pop .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:#ff4701;}
