@@ -339,6 +339,17 @@
                         </div>
                     </div>
                 </div>
+
+                 <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../images/mo/cs_pop_people.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/mo/cs_pop_people2.png" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
 			</section>
 			<!-- ★ 컨텐츠 종료 -->	
 
@@ -428,6 +439,17 @@
 			}
 		}
 	</script>
+
+    <script src="../package/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.swiper-pagination',
+        },
+    });
+    </script>
 
 </body>
 

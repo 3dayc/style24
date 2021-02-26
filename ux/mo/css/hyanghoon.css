@@ -25,8 +25,10 @@
 .cs .cs_faq_1 .qna_list > li > span.on{background:url(../../../images/mo/cs_qna_btn_on.png) no-repeat;}
 .cs .cs_faq_1 .qna_list > div.answer{background-color:#f5f5f5; padding:23px 2.0rem; border-bottom:1px solid #e1e1e1; display:none; overflow:hidden; margin:0 -2.0rem;}
 .cs .cs_faq_1 .qna_list > div.answer > p{font-size:1.5rem; width:90%; line-height:24px;}
-
-
+.cs .cs_faq_1 .swiper-container{background-color:pink; height:1000px;}
+.cs .cs_faq_1 .swiper-container .swiper-wrapper .swiper-slide img{position:absolute; top:50%; transform:translate(0, -50%);}
+.cs .cs_faq_1 .swiper-pagination-bullet{height:1.5rem; width:1.5rem;}
+.cs .cs_faq_1 .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:#ff4701;}
 
 
 /* cs_contactUs_1 */
@@ -58,14 +60,6 @@
 .cs .cs_contactUs_1 .qna_list > div.answer .two_dep_answer > div > p{font-size:1.5rem;}
 .cs .cs_contactUs_1 .qna_list > div.answer .two_dep_answer > div > p:nth-of-type(2){border-bottom:1px solid #828282; height:17px;}
 .cs .cs_contactUs_1 .inner.m_pb45{padding-bottom:45px;}
-
-
-
-
-
-
-
-
 
 
 
