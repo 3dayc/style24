@@ -89,10 +89,10 @@
 .search_wrap p{margin-top:8px; font-size:12px; color:#666666;}
 .fold_nav {width:100%;}
 .fold_nav ul {display: flex; display: -ms-flexbox; flex-wrap: wrap; /*margin-top:-12px*/}
-.fold_nav ul li {margin:6px 6px 0 0;}
+.fold_nav ul li {margin:4px 4px 0 0;}
 .fold_nav ul li a {display:inline-block;padding:10px;border: 1px solid #ddd;font-size:12px;font-weight: 300;line-height: 1; letter-spacing:-0.025em; border-radius:20px;}
 .fold_nav ul li a.on {position: relative; background: #222; color:#fff; border: 1px solid #222;}
 /* .foldGroup {margin-top:50px} */
 .foldGroup .fold_head .fold_tit {max-width: 820px;}
 .foldGroup .fold_answer .answer_head {margin-bottom:10px}
-.foldGroup .fold_cont > div:first-of-type {padding-top:35px; border-top:1px solid #ddd}
+.foldGroup .fold_cont > div:first-of-type {border-top:1px solid #ddd}
