@@ -26,6 +26,9 @@
 .cs .cs_faq_1 .qna_list > div.answer{background-color:#f5f5f5; padding:23px 2.0rem; border-bottom:1px solid #e1e1e1; display:none; overflow:hidden; margin:0 -2.0rem;}
 .cs .cs_faq_1 .qna_list > div.answer > p{font-size:1.5rem; width:90%; line-height:24px;}
 
+
+
+
 /* cs_contactUs_1 */
 .cs .cs_contactUs_1 ul.inquiry_box{display:flex; height:8.0rem; margin-top:5px; margin-bottom:-25px;}
 .cs .cs_contactUs_1 ul.inquiry_box > li{width:33.3%; border-right:2px solid #e4e4e4; height:50px;}
