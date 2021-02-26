@@ -148,15 +148,9 @@
 
 
 /* cs공통 */
-.cs .ui_row.nodata .foldGroup {
-    display: none;
-}
-.cs .ui_row.nodata + .ui_foot {
-    display: none;
-}
+.cs .ui_row.nodata .foldGroup{display:none;}
+.cs .ui_row.nodata + .ui_foot{display:none;}
 .cs .ui_row.nodata {display: inherit; padding: 124px 0; margin-bottom: 0; /*border-top: 1px solid #222222;*/ text-align: center;}
-
-
 .cs .cs_faq_1{}
 .cs .cs_faq_1 .inner{padding-top:0; padding-bottom:0;}
 .cs .cs_faq_1 .inner:last-child{padding-top:0; padding-bottom:0;}
@@ -167,7 +161,6 @@
 .cs .cs_contactUs_1 .inner:last-child{padding-top:0; padding-bottom:0;}
 .cs .cs_contactUs_1 .blockLyout > .block:first-child{padding:20px 0}
 .cs .cs_contactUs_1 .blockLyout > .block:nth-child(2){padding-top:0}
-
 .cs .cs_notice_1 .blockLyout > .block:first-child{padding-top:0;}
 
 

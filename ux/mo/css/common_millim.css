@@ -478,7 +478,6 @@ textarea {background-color:transparent; border:1px solid #d7d7d7; width:99%; ove
 .blockLyout > .block:first-child{margin-top:0;}
 
 
-
 /* 색상에 관하여... */
 /* 
 .주색상(약 7가지)
@@ -486,24 +485,16 @@ textarea {background-color:transparent; border:1px solid #d7d7d7; width:99%; ove
 .라인컬러 (약 5종)
 .비지컬러 (약 5종) 
 */
-
-
 .txC1{color:#222222!important;}
 .txC2{color:#666666!important;}
 .txC3{color:#888888!important;}
 .txC4{color:#ffffff!important;}
-
 .bgC1{background-color:#222222!important;}
 .bgC2{background-color:#444444!important;}
 .bgC3{background-color:#dddddd!important;}
 .bgC4{background-color:#fff6f2!important;}
 .bgC5{background-color:#f5f5f5!important;}
 .bgC6{background-color:#f1f1f1!important;} /* <----풋터색상*/
-
-
-
-
-/* 텍스트에 관하여... */
 
 
 /* 버튼에 관한... */
@@ -515,7 +506,6 @@ textarea {background-color:transparent; border:1px solid #d7d7d7; width:99%; ove
 .스몰버튼2(라인과 배경색으로 이루어진 버튼)
 .텍스트버튼(텍스타와 아이콘으로 이루어진 버튼) 
 */
-
 .btnL{width:100%; height:4.5rem;}
 .btnM{width:100%; height:4rem;}
 .btnS{width:100%; height:3rem;}
@@ -526,24 +516,14 @@ textarea {background-color:transparent; border:1px solid #d7d7d7; width:99%; ove
 .btnIcon_brand:after{background-image:url('../../../images/mo/ico_btn_brand.png');}
 .btnIcon_detail:after{background-image:url('../../../images/mo/ico_btn_detail.png');}
 
+.btn_dark {color: #ffffff; background-color: #222222; border-color: #222222;}
 
 
-
-.btn_dark {
-    color: #ffffff;
-    background-color: #222222;
-    border-color: #222222;
-}
-
-
-
+/* 텍스트에 관한... */
 
 /* 네비게이션에 관하여... */
 
-
 /* 탭에 관하여... */
-
-
 
 /* 텍스트필드 관하여... */
 /* 
@@ -554,24 +534,12 @@ textarea {background-color:transparent; border:1px solid #d7d7d7; width:99%; ove
 .라디오박스 
 */
 
-
-
 /* 팝업에 관하여... */
 
-
 /* 리스트에 관하여... */
 
 
-/* 리스트에 관하여... */
 
-/*bottomsheet에 관하여*/
-
-
-/*내가 정의하는 그리드*/
-/* 
-.gridLyout{background-color:#ddd}
-.gridLyout .grid{margin-top:10px;} 
-*/
 
 
 
