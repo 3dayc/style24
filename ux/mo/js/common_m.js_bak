@@ -1,8 +1,5 @@
 
-// 초기설정
-
 $(document).ready(function () {
-    
     // 웹페이지가 브라우징된 후 주소창 제거
     window.addEventListener("load", function () {
         setTimeout(scrollTo, 0, 0, 1);
@@ -12,56 +9,7 @@ $(document).ready(function () {
     $(".btn_back").on("click", function () {
         history.back()
     });
-    
-    // goTop, header (스크롤 인식)
-    $(".btn_top").click(function () {
-        $("html, body").animate({
-            "scrollTop": 0
-        }, 50);
-    });
-    $(window).scroll(function () {
 
-        // header height 가 아닌, 스크롤 감지로 변경할 것
-        if ($(window).scrollTop() > $("header").height()) {
-            $(".tabbar").removeClass('fixed');
-        } else {
-            $(".tabbar").addClass('fixed');
-        }
-
-        if ($(window).scrollTop() > $("header").height()) {
-            $(".btn_top").animate({
-                "opacity": 1
-            }, 50);
-            
-            if ( $(window).scrollTop() > ($("footer").position().top - $("footer").height() )) {
-                $(".btn_top").css("bottom", ($("footer").height() + 20) + "px");
-            } else {
-                $(".btn_top").css("bottom", "60px");
-            }
-        } else {
-            $(".btn_top").animate({
-                "opacity": 0
-            }, 50);
-        }
-
-        if ($(window).scrollTop() > ($(window).height() - $("header .htop").height())) {            
-            // $("header.main .htop").addClass("dark");            
-            $("header").addClass("hide");
-        } else {            
-            // $("header.main .htop").removeClass("dark");
-            $("header").removeClass("hide");
-        }
-    });
-
-
-});
-
-
-
-
-
-// 페이지 세팅
-$(document).ready(function () {
     // GNB
     $(".btn_gnb").on("click", function () {
         $(this).toggleClass("on");
@@ -130,6 +78,47 @@ $(document).ready(function () {
         } else {
             $(".list_cate .btn_all").removeClass("on");
             $(this).toggleClass("on");
+        }
+    });
+
+
+    // goTop, header
+    $(".btn_top").click(function () {
+        $("html, body").animate({
+            "scrollTop": 0
+        }, 50);
+    });
+    $(window).scroll(function () {
+
+        // header height 가 아닌, 스크롤 감지로 변경할 것
+        if ($(window).scrollTop() > $("header").height()) {
+            $(".tabbar").removeClass('fixed');
+        } else {
+            $(".tabbar").addClass('fixed');
+        }
+
+        if ($(window).scrollTop() > $("header").height()) {
+            $(".btn_top").animate({
+                "opacity": 1
+            }, 50);
+            
+            if ( $(window).scrollTop() > ($("footer").position().top - $("footer").height() )) {
+                $(".btn_top").css("bottom", ($("footer").height() + 20) + "px");
+            } else {
+                $(".btn_top").css("bottom", "60px");
+            }
+        } else {
+            $(".btn_top").animate({
+                "opacity": 0
+            }, 50);
+        }
+
+        if ($(window).scrollTop() > ($(window).height() - $("header .htop").height())) {            
+            // $("header.main .htop").addClass("dark");            
+            $("header").addClass("hide");
+        } else {            
+            // $("header.main .htop").removeClass("dark");
+            $("header").removeClass("hide");
         }
     });
 
@@ -342,30 +331,13 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
-    // pop open
-    function popOpenScroll(){
-        $('html, body').css({'overflow': 'hidden', 'height': '100%'}); 
-        $('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브, 휠 스크롤 방지
-            event.preventDefault();
-            event.stopPropagation();
-            return false;
-        });
-    }
-    // pop close
-    function popClsScroll(){
-        $('html, body').css({'overflow': 'auto', 'height': '100%'}); //n 해제
-        $('#element').off('scroll touchmove mousewheel'); // 터치무브, 휠 스크롤 가능
-    }
-    
     // popup (media)
     $(".btn_popOpen").on("click", function(e) {
-        popOpenScroll();
-        $(".popup").fadeIn();
+        $(".me1_pop").fadeIn();
         swiper_me1.update();
     });
-    $(".popup .btn_popClose").on("click", function(e) {
-        popClsScroll();
-        $(".popup").fadeOut();
+    $(".me1_pop .btn_popClose").on("click", function(e) {
+        $(".me1_pop").fadeOut();
     });
 
     // jk
@@ -377,7 +349,11 @@ $(document).ready(function () {
     });
 
 
-    
+
+
+
+
+
 
 /* ====================================================================================================================================================================
                                         ▲▲▲▲▲▲▲ 여기를 기점으로 위에는 윤성미과장님 필드 ▲▲▲▲▲▲▲
@@ -417,10 +393,5 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-    
 /* ================================================= SCRIPT END========================================================*/
 });
