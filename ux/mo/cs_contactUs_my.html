@@ -58,7 +58,7 @@
                                             <option value="">이벤트/서비스</option>
                                             <option value="">기타 중 선택</option>
                                         </select>
-                                        <div class="select_dress">(필수) 문의 유형을 선택해 주세요<span></span></div>
+                                        <!-- <div class="select_dress">(필수) 문의 유형을 선택해 주세요<span></span></div> -->
                                         <ul class="select_options">
                                             <li rel="">(필수) 유형을 선택해 주세요</li>
                                             <li rel="">상품문의</li>
@@ -96,37 +96,45 @@
                             </div>
                         </div>
                         <div class="form_field">
-                            <div class="imgUpload">
-                                <label for="fileAdd" class="fileAdd">업로드</label>
-                                <input type="file" id="fileAdd" name="files[]" multiple="">
-
-                                <!-- 첨부한 이미지가 반영될 곳, 실제 반영 시 해당 구역은 제거할 것 -->
-                                <span class="pics">
-                                    <span class="removes">removes image</span>
-                                </span>
+                            <div class="ui_col_12 form_full">
+                                <div class="input_wrap">
+                                    <!-- 이미지첨부 -->
+                                    <div class="form_field">
+                                        <div class="imgUpload">
+                                            <label for="fileAdd" class="fileAdd">업로드</label>
+                                            <input type="file" id="fileAdd" name="files[]" multiple="">
+                                        </div>
+                                    </div>
+                                    <!-- //이미지첨부 -->
+                                    <div class="info_addfile">
+                                        <ul>
+                                            <li>사진은 이미지당 10MB 이하의 JPEG, JPG, PNG 파일 2장까지 첨부 가능합니다.</li>
+                                            <li>파일명에 한글은 사용 불가입니다.</li>
+                                            <li>첨부된 사진은 문의 외의 목적으로는 사용되지 않습니다.</li>
+                                        </ul>
+                                    </div>
+                                </div> 
                             </div>
-                        </div>
-                        <div class="info_addfile">
-                            <ul class="">
-                                <li>&bull; 사진은 이미지당 10MB 이하의 JPEG, JPG, PNG 파일 2장까지 첨부 가능합니다.</li>
-                                <li>&bull; 파일명에 한글은 사용 불가입니다.</li>
-                                <li>&bull; 첨부된 사진은 문의 외의 목적으로는 사용되지 않습니다.</li>
-                            </ul>
                         </div>
                         <div class="form_field">
-                            <div class="radio_wrap">
-                                <p>알림톡 수신 여부</p>
-                                <div class="ui_col_4">
-                                    <input type="radio" name="radio" id="rdi-2" value="2" checked=""><label for="rdi-2"> <span>수신</span> </label>
-                                </div>
-                                <div class="ui_col_4">
-                                                        
-                                        <!-- width auto important, 소수점 백그라운드 이슈로 인해 auto 설정 -->
-
-                                    <input type="radio" name="radio" id="rdi-1" value="1"><label for="rdi-1"> <span>미수신</span> </label>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="form_field">
+								<div class="ui_col_12 cellphone">
+									<div class="input_wrap">
+										<span class="tt">알림톡 수신 여부</span>
+										<!-- 알림 신청 체크박스(선택 _ 기본값) -->
+										<div>
+											<div class="ck_box">
+												<input id="chk-push1" type="radio" name="sms" checked="">
+												<label for="chk-push1"><span>수신</span></label>
+											</div>
+											<div class="ck_box">
+												<input id="chk-push2" type="radio" name="sms">
+												<label for="chk-push2"><span>미수신</span></label>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
                     </form>
                 </div>
 
@@ -135,11 +143,140 @@
 
             <footer>
                 <div class="cs_contactUs_my_footer">
-                    <p>등록</p>
+                    <a href="#none"><p>등록</p></a>
                 </div>
             </footer>
 
 		</main>
+
+        <script type="text/javascript">
+            // FORM
+            // input-File-Add
+            $(document).ready(function() {
+                if (window.File && window.FileList && window.FileReader) {
+                    $("#fileAdd").on("change", function(e) {
+                        var files = e.target.files,
+                            filesLength = files.length;
+                        for (var i = 0; i < filesLength; i++) {
+                            var f = files[i]
+                            var fileReader = new FileReader();
+                            fileReader.onload = (function(e) {
+                                var file = e.target;
+                                $("<span class=\"pics\">" +
+                                    "<img class=\"picsThumbs\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                    "<br/><span class=\"removes\">Removes image</span>" +
+                                    "</span>").insertAfter("#fileAdd");
+                                $(".removes").click(function(){
+                                    $(this).parent(".pics").remove();
+                                });
+                            });
+                        fileReader.readAsDataURL(f);
+                        }
+                    });
+                } else {
+                    alert("브라우저가 File API를 지원하지 않습니다.")
+                }
+            });
+            // input-File-Adds
+            $(document).ready(function() {
+                if (window.File && window.FileList && window.FileReader) {
+                    $("#fileAdds").on("change", function(e) {
+                        var files = e.target.files,
+                            filesLength = files.length;
+                        for (var i = 0; i < filesLength; i++) {
+                            var f = files[i]
+                            var fileReader = new FileReader();
+                            fileReader.onload = (function(e) {
+                                var file = e.target;
+                                $("<span class=\"pics\">" +
+                                    "<img class=\"picsThumbs\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                    "<br/><span class=\"removes\">Removes image</span>" +
+                                    "</span>").insertAfter("#fileAdds");
+                                $(".removes").click(function(){
+                                    $(this).parent(".pics").remove();
+                                });
+                            });
+                        fileReader.readAsDataURL(f);
+                        }
+                    });
+                } else {
+                    alert("브라우저가 File API를 지원하지 않습니다.")
+                }
+            });
+        
+        
+            // check-All
+            $( document ).ready(function() {
+                var $chkAll = $('.check-all');
+                    $chkAll.change(function () {
+                        var checked = $(this).prop('checked'); 
+                        $('input[name="dd"]').prop('checked', checked);
+                    });
+                    
+                var ddChk = $('input[name="dd"]');
+                ddChk.change(function () {
+                        var ddChkLength = ddChk.length;
+                        var checkedLength = $('input[name="dd"]:checked').length;
+                        var selectAll = (ddChkLength == checkedLength);
+                        $chkAll.prop('checked', selectAll);
+                    });
+            });
+        
+            //Select Custom
+            $( document ).ready(function() {
+                $('select').each(function(){
+                    var $this = $(this), numberOfOptions = $(this).children('option').length;
+                
+                    $this.addClass('select_hidden'); 
+                    $this.wrap('<div class="select"></div>');
+                    $this.after('<div class="select_dress"></div>');
+        
+                    var $dressSelect = $this.next('div.select_dress');
+                    $dressSelect.text($this.children('option').eq(0).text());
+                
+                    var $selList = $('<ul />', {
+                        'class': 'select_options'
+                    }).insertAfter($dressSelect);
+                
+                    for (var i = 0; i < numberOfOptions; i++) {
+                        $('<li />', {
+                            text: $this.children('option').eq(i).text(),
+                            rel: $this.children('option').eq(i).val(),
+                            class: $this.children('option').eq(i).attr('disabled')
+                        }).appendTo($selList);
+                    }
+                
+                    var $selListItems = $selList.children('li');
+                
+                    $dressSelect.click(function(e) {
+                        e.stopPropagation();
+                        $('div.select_dress.active').not(this).each(function(){
+                            $(this).removeClass('active').next('ul.select_options').hide();
+                        });
+                        $(this).toggleClass('active').next('ul.select_options').toggle();
+                    });
+                
+                    $selListItems.click(function(e) {
+                        e.stopPropagation();
+                        
+                        if($(this).hasClass('disabled')){
+                            $this.val($(this).attr('rel',false));
+                        } 
+                        else{
+                            $dressSelect.text($(this).text()).removeClass('active');
+                            $this.val($(this).attr('rel'));
+                            $selList.hide();
+                        }
+                    });
+                
+                    $(document).click(function() {
+                        $dressSelect.removeClass('active');
+                        $selList.hide();
+                    });
+        
+                });
+            });
+            </script>
 
 </body>
 
