@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>STYLE24 | FAQ 리스트 | Publishing</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+
+	<link rel="stylesheet" href="../../ux/mo/css/swiper.min.css">
+	<link rel="stylesheet" href="../../ux/mo/css/style24_m.css">
+
+	<script src="../../ux/mo/js/jquery-3.5.1.min.js"></script>
+	<script src="../../ux/mo/js/swiper.min.js"></script>
+	<script src="../../ux/mo/js/common_m.js"></script>
+	<script src="js/hyanghoon.js" defer></script>
+
+</head>
+
+<body>
+	<div class="app">
+		<a href="#mainCon" class="skipNav">본문바로가기</a>
+		<header class=" "> <!-- 서브페이지에서는 <header>의 클래스.main 제거 -->
+			<section class="htop" id="htopMain">
+				<h1>
+					<a href="./index.html"><img src="/images/mo/logo_STYLE24.png" alt="STYLE24"></a>
+					<button class="btn_gnb" title="메인메뉴 열기/닫기">
+						<span>
+							<i class="gl1"></i>
+							<i class="gl2"></i>
+						</span>
+					</button>
+				</h1>
+			</section>		
+			<section class="htop" id="htopSub" style="background: #fff;">
+				<button class="btn_back" title="이전페이지로">
+					<span>
+						<i class="gl1"></i>
+						<i class="gl2"></i>
+						<i class="gl3"></i>
+					</span>
+				</button>
+				<h1 id="htopTitle">고객센터</h1>
+			</section>
+			<section class="hmenu">
+				<div class="inner scrollWrap">
+					<nav class="bng">
+					<!-- <nav class="gnb bng"> -->
+						<ul class="d1">
+							<li>
+								<a href="#brandpage">
+									BUCKAROO <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									TBJ <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									ANDEW <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									FRJ <span><img src="#" alt=""></span>
+								</a>
+							</li>
+							<li>
+								<a href="#brandpage">
+									NBA <span><img src="#" alt=""></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- fold/depth type -->
+					<!-- 
+					<nav class="gnb bng"> 
+						<ul class="d1">
+							<li class="folder">
+								<a href="#toggle">depth1</a>
+								<ul class="d2">
+									<li><a href="./sustainability2.html">depth2-1-1</a></li>
+									<li class="folder">
+										<a href="#toggle">depth2-2-1</a>
+										<ul class="d3">
+											<li><a href="#depth3-1">depth3-1</a></li>
+											<li><a href="#depth3-2">depth3-2</a></li>
+										</ul>
+									</li>
+									<li class="folder">
+										<a href="#toggle">depth2-3-1</a>
+										<ul class="d3">
+											<li><a href="#depth3-1">depth3-1</a></li>
+											<li><a href="#depth3-2">depth3-2</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					 -->
+					<nav class="bnb">
+						<ul>
+							<li><a href="#go">Quick Link 1</a></li>
+							<li><a href="#go">Quick Link 2</a></li>
+							<li><a href="#go">Quick Link 3</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</header>
+
+		<div id="gnb" class="gnb">
+			<div class="gnb-inner">
+				<ul>
+					<li class="on"><a href="#none">브랜드</a></li>
+					<li><a href="#none">여성</a></li>
+					<li><a href="#none">남성</a></li>
+					<li><a href="#none">유아동</a></li>
+					<li><a href="#none">골프</a></li>
+					<li><a href="#none">라이프</a></li>
+					<li><a href="#none">베스트</a></li>
+					<li><a href="#none">핫딜</a></li>
+					<li><a href="#none">기획전</a></li>
+					<li><a href="#none">총알배송</a></li>
+					<li><a href="#none">아울렛</a></li>
+					<li><a href="#none">룩북</a></li>
+					<li><a href="#none">이벤트</a></li>
+				</ul>
+			</div>
+			<button onclick="$('#gnb').toggleClass('expand');" class="btn-expand"></button>
+		</div>
+
+
+		<main role="" id="" class="container cs">
+			<!-- page nav: CS 고객센터 -->
+			<nav class="pnb">
+				<ul>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+					<li>
+						<a href="">1:1문의</a>
+					</li>
+					<li>
+						<a href="" class="on">상품문의</a>
+					</li>
+					<li>
+						<a href="">공지</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- ★ 컨텐츠 시작 -->
+			<section class="content cs_contactUs_1">
+				<div class="con_head"><h2 class="title sr-only">FAQ 리스트</h2></div>
+				<div class="sec_body">
+                    <div class="blockLyout">
+						<div class="block">
+                            <div class="inner">
+                                <ul class="inquiry_box">
+                                    <li>
+                                        <p>999</p>
+                                        <p>총 문의</p>
+                                    </li>
+                                    <li>
+                                        <p>456</p>
+                                        <p>답변완료</p>
+                                    </li>
+                                    <li>
+                                        <p>690</p>
+                                        <p>처리 중</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="inner block">
+                        <div class="ui_row"> <!-- 데이터 없을시 클래스 nodata 추가 -->
+                            <!-- list -->
+                            <div class="foldGroup case2">
+                                <ul>
+                                    <li>
+                                        <div class="fold_head on">
+                                            <a href="javascript:void(0)">
+                                                <div>
+                                                    <div class="fold_tit">
+                                                        <div class="lap1">
+                                                            <span class="fold_state done">답변완료</span> <!-- 답변완료 : done / 처리중 : doing -->
+                                                            <span class="prod">클립더블포켓 롱패딩점퍼(털안감) MOW2FZPM04</span>
+                                                        </div>
+                                                        <div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
+                                                    </div>
+                                                    <span class="data">2020.12.02</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fold_cont">
+                                            <!-- 내 1대1문의 내용 -->
+                                            <div class="fold_detail">
+                                                <div>
+                                                    <p>
+                                                        PC에서 남성 분또 맨투맨 (T203TS120P)<br>
+                                                        오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
+                                                        다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
+                                                        바쁘시겠지만 확인 부탁드립니다.
+                                                    </p>
+                                                    <p class="img_group">
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/dp_Exhibition_Item01.png" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/tmp_pdDetail1.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_trendy01.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_visual03.jpg" alt="">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 내용 -->
+                                            <!-- 내 1대1문의 답변 -->
+                                            <div class="fold_answer">
+                                                <div class="answer_body">
+                                                    안녕하세요, 고객님. 스타일24 담당자 배수지 입니다. <br>
+                                                    문의주신 해당 상품의 선물하기는 모바일에서만 사용이 가능합니다. <br>
+                                                    이외 궁금하신 사항이 있으시면 1:1문의나 고객센터(1544-5336)로 문의 부탁 드립니다. <br>
+                                                    고객 만족을 위해 더욱 더 노력하는 스타일24가 되겠습니다. <br>
+                                                    좋은 하루 보내세요, 감사합니다.
+                                                </div>
+                                                <div class="answer_foot">
+                                                    <span class="data">2020.12.02</span>
+                                                    <button type="button" class="btn_delete"><span>삭제</span></button>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 답변 -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fold_head on">
+                                            <a href="javascript:void(0)">
+                                                <div>
+                                                    <div class="fold_tit">
+                                                        <div class="lap1">
+                                                            <span class="fold_state done">답변완료</span> <!-- 답변완료 : done / 처리중 : doing -->
+                                                            <span class="prod">클립더블포켓 롱패딩점퍼(털안감) MOW2FZPM04</span>
+                                                        </div>
+                                                        <div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
+                                                    </div>
+                                                    <span class="data">2020.12.02</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fold_cont">
+                                            <!-- 내 1대1문의 내용 -->
+                                            <div class="fold_detail">
+                                                <div>
+                                                    <p>
+                                                        PC에서 남성 분또 맨투맨 (T203TS120P)<br>
+                                                        오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
+                                                        다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
+                                                        바쁘시겠지만 확인 부탁드립니다.
+                                                    </p>
+                                                    <p class="img_group">
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/dp_Exhibition_Item01.png" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/tmp_pdDetail1.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_trendy01.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_visual03.jpg" alt="">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 내용 -->
+                                            <!-- 내 1대1문의 답변 -->
+                                            <div class="fold_answer">
+                                                <div class="answer_body">
+                                                    안녕하세요, 고객님. 스타일24 담당자 배수지 입니다. <br>
+                                                    문의주신 해당 상품의 선물하기는 모바일에서만 사용이 가능합니다. <br>
+                                                    이외 궁금하신 사항이 있으시면 1:1문의나 고객센터(1544-5336)로 문의 부탁 드립니다. <br>
+                                                    고객 만족을 위해 더욱 더 노력하는 스타일24가 되겠습니다. <br>
+                                                    좋은 하루 보내세요, 감사합니다.
+                                                </div>
+                                                <div class="answer_foot">
+                                                    <span class="data">2020.12.02</span>
+                                                    <button type="button" class="btn_delete"><span>삭제</span></button>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 답변 -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fold_head on">
+                                            <a href="javascript:void(0)">
+                                                <div>
+                                                    <div class="fold_tit">
+                                                        <div class="lap1">
+                                                            <span class="fold_state doing">처리중</span> <!-- 답변완료 : done / 처리중 : doing -->
+                                                            <span class="prod">클립더블포켓 롱패딩점퍼(털안감) MOW2FZPM04</span>
+                                                        </div>
+                                                        <div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
+                                                    </div>
+                                                    <span class="data">2020.12.02</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fold_cont">
+                                            <!-- 내 1대1문의 내용 -->
+                                            <div class="fold_detail">
+                                                <div>
+                                                    <p>
+                                                        PC에서 남성 분또 맨투맨 (T203TS120P)<br>
+                                                        오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
+                                                        다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
+                                                        바쁘시겠지만 확인 부탁드립니다.
+                                                    </p>
+                                                    <p class="img_group">
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/dp_Exhibition_Item01.png" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/tmp_pdDetail1.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_trendy01.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_visual03.jpg" alt="">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 내용 -->
+                                        </div>
+                                    </li>		
+                                    <li>
+                                        <div class="fold_head on">
+                                            <a href="javascript:void(0)">
+                                                <div>
+                                                    <div class="fold_tit">
+                                                        <div class="lap1">
+                                                            <span class="fold_state doing">처리중</span> <!-- 답변완료 : done / 처리중 : doing -->
+                                                            <span class="prod">클립더블포켓 롱패딩점퍼(털안감) MOW2FZPM04</span>
+                                                        </div>
+                                                        <div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
+                                                    </div>
+                                                    <span class="data">2020.12.02</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fold_cont">
+                                            <!-- 내 1대1문의 내용 -->
+                                            <div class="fold_detail">
+                                                <div>
+                                                    <p>
+                                                        PC에서 남성 분또 맨투맨 (T203TS120P)<br>
+                                                        오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
+                                                        다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
+                                                        바쁘시겠지만 확인 부탁드립니다.
+                                                    </p>
+                                                    <p class="img_group">
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/dp_Exhibition_Item01.png" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/tmp_pdDetail1.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_trendy01.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_visual03.jpg" alt="">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 내용 -->
+                                        </div>
+                                    </li>	
+                                    <li>
+                                        <div class="fold_head on">
+                                            <a href="javascript:void(0)">
+                                                <div>
+                                                    <div class="fold_tit">
+                                                        <div class="lap1">
+                                                            <span class="fold_state doing">처리중</span> <!-- 답변완료 : done / 처리중 : doing -->
+                                                            <span class="prod">클립더블포켓 롱패딩점퍼(털안감) MOW2FZPM04</span>
+                                                        </div>
+                                                        <div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
+                                                    </div>
+                                                    <span class="data">2020.12.02</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fold_cont">
+                                            <!-- 내 1대1문의 내용 -->
+                                            <div class="fold_detail">
+                                                <div>
+                                                    <p>
+                                                        PC에서 남성 분또 맨투맨 (T203TS120P)<br>
+                                                        오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
+                                                        다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
+                                                        바쁘시겠지만 확인 부탁드립니다.
+                                                    </p>
+                                                    <p class="img_group">
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/dp_Exhibition_Item01.png" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/tmp_pdDetail1.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_trendy01.jpg" alt="">
+                                                        </span>
+                                                        <span class="thumb_pic">
+                                                            <img src="../../images/pc/thumb/main_visual03.jpg" alt="">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- //내 1대1문의 내용 -->
+                                        </div>
+                                    </li>	
+                                </ul>
+                                <!-- //list2 -->
+                                <!--=================================================== //리스트 case2 ===================================================-->
+                                
+                            </div>					
+                        </div>
+                        <div class="ui_foot">
+                            <button class="btn btnL">더보기</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+			</section>
+			<!-- ★ 컨텐츠 종료 -->	
+
+		</main>
+
+		<nav id="tabbar" class="tabbar fixed">
+		<!-- <nav id="tabbar" class="tabbar"> -->
+			<div class="tabbar-inner">
+				<a href="javascript:home" class="btn-home">Home</a>
+				<a href="javascript:history" class="btn-history">History</a>
+				<a href="javascript:wish" class="btn-wish">Wish</a>
+				<a href="javascript:myPage" class="btn-my">Mypage</a>
+				<a href="javascript:menu;" class="btn-menu" data-popup-trigger="" data-target="#menu">Menu</a>
+			</div>
+				<!-- 
+					<span class="txt-balloon" id="tutorial_mycloset" style=""> 툴팁예제</span>
+				-->
+		</nav>
+		<footer>
+			<button class="btn_top" title="페이지 맨위로 이동">
+				<span>
+					<i class="gl1"></i>
+					<i class="gl2"></i>
+					<i class="gl3"></i>
+				</span>
+			</button>
+			<section class="f1">
+				<div class="inner">
+					<ul class="link wider">
+						<li><a href="#none">고객센터</a></li>
+						<li><a href="#none">이용약관</a></li>
+						<li><a href="#none">개인정보취급방침</a></li>
+					</ul>
+
+					<div class="collapse">
+						<div class="btnWrap">
+							<button class="btn_infos">아이스타일이십사 주식회사</button>
+						</div>
+						<ul class="infos info">
+							<li class="fn">대표이사 : 윤종선</li>
+							<li class="fn">주소 : 서울시 영등포구 은행로 11, 8층(여의도동, 일신빌딩)</li>
+							<li class="fn">사업자등록번호 : 116-81-32499 </li>
+							<li class="fn">개인정보관리책임자 : 이정득 </li>
+							<li class="fn">통신판매업신고번호 : 제 2020-서울영등포1432</li>
+							<li class="fn">개인정보보호책임자 : 김명인</li>
+							<li class="fn">호스팅 서비스 : 아이스타일이십사㈜</li>
+						</ul>
+					</div>
+					
+					<ul class="link">
+						<li><a href="#none">사업자정보확인</a></li>
+						<li><a href="#none">PC버전</a></li>
+						<li><a href="#none">APP 다운로드</a></li>
+						<li><a href="#none">SN&#64;PP</a></li>
+					</ul>
+					<ul class="copy">
+						<li>COPYRIGHTⓒ2020 STYLE24 ALL RIGHTS RESERVED.</li>
+					</ul>
+					<ul class="sns">
+						<li><a href="#none" class="insta">Instagram</a></li>
+						<li><a href="#none" class="facebook">facebook</a></li>
+					</ul>
+				</div>
+			</section>
+
+
+		</footer>
+	</div>
+
+
+	<!-- script -->
+	<!-- 서브일 경우 스크립트 추가 -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setHtop();
+		});
+
+		function setHtop() {
+			if($('header').hasClass('main')) {
+				$('#htopMain').show();
+				$('#htopSub').hide();
+			} else {
+				$('#htopMain').hide();
+				$('#gnb').hide();
+				$('#htopSub').show();
+			}
+		}
+	</script>
+
+</body>
+
+</html>
