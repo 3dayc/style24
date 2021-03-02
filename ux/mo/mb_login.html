@@ -36,11 +36,10 @@
 			<!-- ★ 컨텐츠 시작 -->
 			<section class="content mb_login">
 				
-				<div class="cont_head">
+				<div class="inner">
 					<h2 class="title">로그인</h2>
 				</div>
-				<div class="cont_body">
-					<div class="inner">
+				<div class="inner">
 						<form class="form_wrap form_full">
 							<div class="form_head"><h3 class="title sr-only">로그인</h3></div>
 							<div class="form_field mt0"><input type="text" placeholder="아이디" class="form_control"></div>
@@ -104,7 +103,6 @@
 							</ul>
 						</div>
 						<div class="t_c mt30"><botton class="btn_nonMb">비회원 주문조회</botton>
-					</div>
 				</div>
 
 			</section>
@@ -116,6 +114,22 @@
 
 	</div>
 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setHtop();
+		});
+
+		function setHtop() {
+			if($('header').hasClass('main')) {
+				$('#htopMain').show();
+				$('#htopSub').hide();
+			} else {
+				$('#htopMain').hide();
+				$('#gnb').hide();
+				$('#htopSub').show();
+			}
+		}
+	</script>
 
 </body>
 

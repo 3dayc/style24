@@ -36,11 +36,10 @@
 			<!-- ★ 컨텐츠 시작 -->
 			<section class="content mb_idInquiry_8">
 				
-				<div class="cont_head">
+				<div class="inner">
 					<h2 class="title">비회원 주문조회</h2>
 				</div>
-				<div class="cont_body">
-					<div class="inner">
+				<div class="inner">
                         
                         <form class="form_wrap form_full" role="form">
                             <div class="form_head">
@@ -85,7 +84,6 @@
                             </div>
                         </form>
 
-					</div>
 				</div>
 
 			</section>
@@ -96,6 +94,23 @@
 		<footer></footer>
 
 	</div>
+
+    <script type="text/javascript">
+		$(document).ready(function(){
+			setHtop();
+		});
+
+		function setHtop() {
+			if($('header').hasClass('main')) {
+				$('#htopMain').show();
+				$('#htopSub').hide();
+			} else {
+				$('#htopMain').hide();
+				$('#gnb').hide();
+				$('#htopSub').show();
+			}
+		}
+	</script>
 
 </body>
 

@@ -36,11 +36,10 @@
 			<!-- ★ 컨텐츠 시작 -->
 			<section class="content mb_idInquiry_6 dormant">
 				
-				<div class="cont_head">
+				<div class="inner">
 					<h2 class="title">휴면회원 전환안내</h2>
 				</div>
-				<div class="cont_body">
-					<div class="inner">
+				<div class="inner">
                         
                         <div class="form_wrap form_full">
                             <div class="form_head">
@@ -66,8 +65,6 @@
                                 </p>
                             </div>
                         </div>
-
-					</div>
 				</div>
 
 			</section>
@@ -78,6 +75,23 @@
 		<footer></footer>
 
 	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setHtop();
+		});
+
+		function setHtop() {
+			if($('header').hasClass('main')) {
+				$('#htopMain').show();
+				$('#htopSub').hide();
+			} else {
+				$('#htopMain').hide();
+				$('#gnb').hide();
+				$('#htopSub').show();
+			}
+		}
+	</script>
 
 </body>
 

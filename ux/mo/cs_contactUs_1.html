@@ -21,7 +21,7 @@
 	<script src="/ux/mo/js/jquery.modal.min.js"></script>
 	<script src="/ux/mo/js/swiper.min.js"></script>
 	<script src="/ux/mo/js/common_m.js"></script>
-	<script src="js/hyanghoon.js" defer></script>
+	<script src="js/main_m.js" defer></script>
 
 </head>
 
@@ -164,11 +164,10 @@
 
 			<!-- ★ 컨텐츠 시작 -->
 			<section class="content cs_contactUs_1">
-				<div class="con_head"><h2 class="title sr-only">상품문의 리스트</h2></div>
-				<div class="con_body">
+				<div class="inner"><h2 class="title sr-only">상품문의 리스트</h2></div>
+				<div class="inner">
 					<div class="blockLyout">
 						<div class="block">
-							<div class="inner">
 								
                                 <ul class="inquiry_box">
                                     <li>
@@ -185,7 +184,6 @@
                                     </li>
                                 </ul>
 								
-							</div>
 						</div>	
 						<div class="block">
 							<div class="ui_row"> <!-- 데이터 없을시 클래스 nodata 추가 -->
@@ -565,6 +563,23 @@
 				$("#thumb_pic").modal("show");
 			});					 
 		});		
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setHtop();
+		});
+
+		function setHtop() {
+			if($('header').hasClass('main')) {
+				$('#htopMain').show();
+				$('#htopSub').hide();
+			} else {
+				$('#htopMain').hide();
+				$('#gnb').hide();
+				$('#htopSub').show();
+			}
+		}
 	</script>
 
 	<script>
