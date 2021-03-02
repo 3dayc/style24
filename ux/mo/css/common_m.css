@@ -236,7 +236,7 @@ i.big {font-size:18px; position:relative; top:2px;}
 .t_help {color: #888888 !important;}
 .t_info {color: #888888 !important;}
 .t_err {color: #fd4802 !important;}
-.t_err::before {content: '';display: inline-block; width:17px; height:17px; background:url('/images/mo/mo/ico_err.png') no-repeat right top;margin: 0px 2px 0 0px;position: relative;top: 4px;left: 0;right: auto;bottom: auto;}
+.t_err::before {content: '';display: inline-block; width:17px; height:17px; background:url('/images/mo//ico_err.png') no-repeat right top;margin: 0px 2px 0 0px;position: relative;top: 4px;left: 0;right: auto;bottom: auto;}
 .t_success {color: #333333 !important;}
 
 /* textarea */
@@ -275,7 +275,7 @@ select,
 .form_control.err {border: 1px solid #fd4802 !important; background: #fff6f2;}
 
 .usable {display: none;}
-.form_control.usable + .usable:before {content:'사용가능';  position:absolute; top:50%; bottom: auto; right: 20px; left: auto; transform: translateY(-50%); padding-left:15px; background: url('/images/mo/mo/ico_usable1.png') no-repeat 0 40%; color:#222; font-size:12px; font-weight:200; line-height:1;}
+.form_control.usable + .usable:before {content:'사용가능';  position:absolute; top:50%; bottom: auto; right: 20px; left: auto; transform: translateY(-50%); padding-left:15px; background: url('/images/mo//ico_usable1.png') no-repeat 0 40%; color:#222; font-size:12px; font-weight:200; line-height:1;}
 .sr-only {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;}
 
 /* form style (hyangah_0223_수정중 - input[type="text"] padding 수정) */
@@ -301,19 +301,19 @@ input[type="reset"], input[type="button"], input[type="submit"], button {line-he
 .form_field input[type="checkbox"] + label{ display:inline-block; position:relative; padding-left:26px; cursor:pointer; font-size: 12px; line-height: 1.4;font-weight: 300;letter-spacing: 0;} 
 .form_field input[type="checkbox"] + label:before{ 
   content:''; position:absolute; left:0; top:50%; margin-top:-10px; width:20px; height:20px; text-align:center; background:#fff; /*border:1px solid #ccc;*/ border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo/mo/ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
   background-position: 0px 0px;
 } 
 .form_field input[type="checkbox"]:Disabled + label, 
 .form_field input[type="radio"]:Disabled + label{cursor: default;opacity: .45;} 
 .form_field input[type="checkbox"]:checked + label:after{ 
   content: ''; position:absolute; top:50%; margin-top:-10px; left:0; width:20px; height:20px; background-color: #fd4800; border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo/mo/ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
   background-position: -20px 0px;
 }
 .form_field input[type="checkbox"]:Disabled + label:after{ 
   content: ''; position:absolute; top:3px; left:0; width:20px; height:20px; background-color: #fd4800; border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo/mo/ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
   background-position: -40px 0px;
 }
 
@@ -322,20 +322,20 @@ input[type="reset"], input[type="button"], input[type="submit"], button {line-he
 .form_field input[type="radio"] + label{ display:inline-block; position:relative; padding-left:2.5rem; cursor:pointer; font-size: 1.3rem;line-height: 1.5;font-weight: 300;letter-spacing: 0;} 
 .form_field input[type="radio"] + label:before{ 
   content:''; position:absolute; left:0; top:50%; margin-top:-10px; width:20px; height:20px; text-align:center; background:#fff; /*border:1px solid #ccc;*/ border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo/mo/ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
   background-position: -60px 0px;
 } 
 
 /* 보여질 부분의 스타일을 추가하면 된다. */ 
 .form_field input[type="radio"]:checked + label:after{ 
   content: ''; position:absolute; top:50%; margin-top:-10px; left:0; width:20px; height:20px; background-color: #fd4800; 
-  background: url('/images/mo/mo/ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
   background-position: -80px 0px;
 }
 
 .form_field input[type="radio"]:Disabled + label:after{ 
   content: ''; position:absolute; top:50%; margin-top:-10px; left:0; width:20px; height:20px; background-color: #fd4800; 
-  background: url('/images/mo/mo/ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
   background-position: -100px 0px;
 }
 /* 이미지 체크박스 */
@@ -416,38 +416,38 @@ input[type="file"] {
 [class^="ico_"]:before {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 [class^="ico_content_"]::before {content:''; display:block;} 
 
-.ico_logo:before {content: ""; display:block; width:184px; height:28px; background-image: url('/images/mo/mo/logo_STYLE24.png'); }
-.ico_logo_ft:before {content: ""; display:block; width:150px; height:23px; background-image: url('/images/mo/mo/logo_STYLE24_footer.png'); }
-.ico_search:before {content: ""; display: inline-block; width:22px; height:26px; background-image: url('/images/mo/mo/ico_sch.png'); }
-.ico_bag:before {content: ""; display: inline-block; width:22px; height:26px; background-image: url('/images/mo/mo/ico_bag.png');}
-.ico_content_order::before {width:40px; height: 46px; background: url('/images/mo/mo/ico_content_order.png') no-repeat 50% 50%;} 
-.ico_content_find::before {width:36px; height: 46px; background: url('/images/mo/mo/ico_content_find.png') no-repeat 50% 50%;} 
-.ico_content_none::before {width:36px; height: 46px; background: url('/images/mo/mo/ico_content_none.png') no-repeat 50% 50%;} 
-.ico_content_security::before {width:38px; height: 43px; background: url('/images/mo/mo/ico_content_security.png') no-repeat 50% 50%;} 
-.ico_content_mail::before {width:48px; height: 40px; background: url('/images/mo/mo/ico_content_mail.png') no-repeat 50% 50%;} 
-.ico_content_dormant::before {width:36px; height: 46px; background: url('/images/mo/mo/ico_content_dormant.png') no-repeat 50% 50%;}  
-.ico_content_dormant2::before {width:36px; height: 46px; background: url('/images/mo/mo/ico_content_dormant2.png') no-repeat 50% 50%;}
-.ico_blank::before {content: ""; width:13px; height:13px; background-image: url('/images/mo/mo/ico_blank.png');}
-.ico_ft_arrow_r:before {content: ""; width:11px; height:11px; background-image: url('/images/mo/mo/ico_ft_arrow.png');}
-.ico_ft_arrow_b:before {content: ""; width:11px; height:11px; background-image: url('/images/mo/mo/ico_ft_arrow.png'); transform: rotate(90deg);}
-.ico_ft_arrow_t:before {content: ""; width:11px; height:11px; background-image: url('/images/mo/mo/ico_ft_arrow.png'); transform: rotate(-90deg);}
-.ico_kcl::before {content: ""; width:32px; height:50px; background-image: url('/images/mo/mo/ico_kcl.png');}
-.ico_picker::before {content: ""; width:40px; height:40px; background:url(/images/mo/mo/ico_picker.png) no-repeat 50% 50%;}
-.ico_trash::before {content: ""; width:13px; height:16px; background:url(/images/mo/mo/ico_trash.png) no-repeat 50% 50%;}
-.ico_like::before {content: ""; width: 19px;height:16px;background: url(/images/mo/mo/ico_like.png) no-repeat 0% 50%; background-size:cover;}
+.ico_logo:before {content: ""; display:block; width:184px; height:28px; background-image: url('/images/mo//logo_STYLE24.png'); }
+.ico_logo_ft:before {content: ""; display:block; width:150px; height:23px; background-image: url('/images/mo//logo_STYLE24_footer.png'); }
+.ico_search:before {content: ""; display: inline-block; width:22px; height:26px; background-image: url('/images/mo//ico_sch.png'); }
+.ico_bag:before {content: ""; display: inline-block; width:22px; height:26px; background-image: url('/images/mo//ico_bag.png');}
+.ico_content_order::before {width:40px; height: 46px; background: url('/images/mo//ico_content_order.png') no-repeat 50% 50%;} 
+.ico_content_find::before {width:36px; height: 46px; background: url('/images/mo//ico_content_find.png') no-repeat 50% 50%;} 
+.ico_content_none::before {width:36px; height: 46px; background: url('/images/mo//ico_content_none.png') no-repeat 50% 50%;} 
+.ico_content_security::before {width:38px; height: 43px; background: url('/images/mo//ico_content_security.png') no-repeat 50% 50%;} 
+.ico_content_mail::before {width:48px; height: 40px; background: url('/images/mo//ico_content_mail.png') no-repeat 50% 50%;} 
+.ico_content_dormant::before {width:36px; height: 46px; background: url('/images/mo//ico_content_dormant.png') no-repeat 50% 50%;}  
+.ico_content_dormant2::before {width:36px; height: 46px; background: url('/images/mo//ico_content_dormant2.png') no-repeat 50% 50%;}
+.ico_blank::before {content: ""; width:13px; height:13px; background-image: url('/images/mo//ico_blank.png');}
+.ico_ft_arrow_r:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png');}
+.ico_ft_arrow_b:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png'); transform: rotate(90deg);}
+.ico_ft_arrow_t:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png'); transform: rotate(-90deg);}
+.ico_kcl::before {content: ""; width:32px; height:50px; background-image: url('/images/mo//ico_kcl.png');}
+.ico_picker::before {content: ""; width:40px; height:40px; background:url(/images/mo//ico_picker.png) no-repeat 50% 50%;}
+.ico_trash::before {content: ""; width:13px; height:16px; background:url(/images/mo//ico_trash.png) no-repeat 50% 50%;}
+.ico_like::before {content: ""; width: 19px;height:16px;background: url(/images/mo//ico_like.png) no-repeat 0% 50%; background-size:cover;}
 .active .ico_like::before {background-position:100% 50%;}
-.ico_saletag::before {content: ""; width:36px;height:16px;background: url(/images/mo/mo/ico_saletag.png) no-repeat 50% 50%; background-size:cover;}
-.ico_calender::before {content: ""; width:15px;height:16px;background: url(/images/mo/mo/ico_calender.png) no-repeat 50% 50%; background-size:cover;}
-.ico_snslogin::before {content: ""; background-image: url(/images/mo/mo/ico_snslogin.png); background-size:auto 100%;}
+.ico_saletag::before {content: ""; width:36px;height:16px;background: url(/images/mo//ico_saletag.png) no-repeat 50% 50%; background-size:cover;}
+.ico_calender::before {content: ""; width:15px;height:16px;background: url(/images/mo//ico_calender.png) no-repeat 50% 50%; background-size:cover;}
+.ico_snslogin::before {content: ""; background-image: url(/images/mo//ico_snslogin.png); background-size:auto 100%;}
 .ico_snslogin.kakao::before {width:20px; height:22px; background-position:0 0;}
 .ico_snslogin.naver::before {width:16px; height:22px; background-position:-20px 0;}
 .ico_snslogin.yes24::before {width:34px; height:22px; background-position:-36px 0;}
-.ico_check::before {content: ""; width:10px; height:8px; background-image: url(/images/mo/mo/ico_check.png); background-size:100% auto; margin-bottom:2px;}
+.ico_check::before {content: ""; width:10px; height:8px; background-image: url(/images/mo//ico_check.png); background-size:100% auto; margin-bottom:2px;}
 .ico_check.black::before {content: ""; background-position:0 0;}
 .ico_check.red::before {content: ""; background-position:0px -8px;}
 .ico_check.gray::before {content: ""; background-position:0px -16px;}
-.ico_phone::before {content: ""; width:15px; height:20px; background:url(/images/mo/mo/ico_join_bg.png) no-repeat 0 0; background-size:cover;}
-.ico_ipin::before {content: ""; width:20px; height:20px; background:url(/images/mo/mo/ico_join_bg.png) no-repeat -20px 0; background-size:cover;}
+.ico_phone::before {content: ""; width:15px; height:20px; background:url(/images/mo//ico_join_bg.png) no-repeat 0 0; background-size:cover;}
+.ico_ipin::before {content: ""; width:20px; height:20px; background:url(/images/mo//ico_join_bg.png) no-repeat -20px 0; background-size:cover;}
 
 /* btn : btn_default, btn_more, btn_go, btn_waiting */
 .btn{display: inline-block; height: 5.0rem; margin-bottom: 0; padding: 0.4rem 1.3rem; font-size: 1.4rem; font-weight: 400; line-height: 1; color: #333333; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; background-image: none; background-color: #ffffff; box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #dddddd; -webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; -ms-touch-action: manipulation;touch-action: manipulation; -webkit-transition: all 200ms ease;-moz-transition: all 200ms ease;-ms-transition: all 200ms ease;-o-transition: all 200ms ease;transition: all 200ms ease; cursor: pointer; }
@@ -465,9 +465,9 @@ input[type="file"] {
 .btnIcon_more:after,
 .btnIcon_brand:after,
 .btnIcon_detail:after{content:''; display:inline-block; margin-left:8px; width:11px; height:11px; background-position:center center; background-repeat:no-repeat; background-size:contain; vertical-align:middle;}
-.btnIcon_more:after{background-image:url('/images/mo/mo/ico_btn_more.png');}
-.btnIcon_brand:after{background-image:url('/images/mo/mo/ico_btn_brand.png');}
-.btnIcon_detail:after{background-image:url('/images/mo/mo/ico_btn_detail.png');}
+.btnIcon_more:after{background-image:url('/images/mo//ico_btn_more.png');}
+.btnIcon_brand:after{background-image:url('/images/mo//ico_btn_brand.png');}
+.btnIcon_detail:after{background-image:url('/images/mo//ico_btn_detail.png');}
 
 /* btn hover, focus */
 .btn:hover, .btn:focus, .btn.focus {color: #333333;text-decoration: none;}
