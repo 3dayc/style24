@@ -21,13 +21,15 @@
 <link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/slick.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/common-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+<script src="js/mcxdialog_ui.js"></script>
 </head>
 
 <body>
@@ -44,13 +46,10 @@
 		<div class="wrap">
 			<div class="content find_complete"> <!-- 페이지특정 클래스 = find_complete -->
 				<div class="cont_head">
-                    <h3>style24</h3>
+                    <h4>아이디&#47;비밀번호 찾기</h4>
 				</div>
 				<div class="cont_body">
-					<div class="form_wrap form_col_c">
-						<div class="form_head">
-							<h4>아이디&#47;비밀번호 찾기</h4>
-						</div> 
+					<form class="form_wrap form_col_c" role="form">
 						<!-- 아이디찾기 성공일경우 -->
 						<div class="find_result clear">
 							<div class="form_info">
@@ -80,7 +79,7 @@
 							</div>
 						</div>
 						<!-- //아이디찾기 성공일경우 -->
-					</div>		
+					</form>		
 				</div>
 			</div>
 		</div>

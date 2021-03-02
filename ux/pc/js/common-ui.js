@@ -224,7 +224,8 @@ function sCombo(selector){
 	sCombo.prototype.listSelect = function($target){
 		$target.addClass('selected').siblings('li').removeClass('selected');
 		this.$selectBox.removeClass('on');
-		this.$select.text($target.text());
+		//this.$select.text($target.text());
+		this.$select.html($target.html());
 		this.$list.css('display', 'none');
 	}
 	sCombo.prototype.listOff = function($target){

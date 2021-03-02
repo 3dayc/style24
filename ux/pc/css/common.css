@@ -1346,9 +1346,9 @@ input[type="file"] {
 
 .bundle {display: inline-block;padding:0 10px;}
 .bundle:first-child {margin-left:-10px;}
-.bundle li{position: relative;}
-.bundle li:last-child::after{content: ''; display: block; width: 1px; height: 18px; background: #4e4e4e; position: absolute; top:50%; bottom:auto; right: -12px; left:auto; transform: translateY(-50%);}
-.bundle:last-child li::after{content: ''; display: none;}
+.bundle > li a {position: relative;}
+.bundle > li:last-child > a::after{content: ''; display: block; width: 1px; height: 18px; background: #4e4e4e; position: absolute; top:50%; bottom:auto; right: -20px; left:auto; transform: translateY(-50%);}
+.bundle:last-child li a::after{content: ''; display: none;}
 
 .gnb {height:58px; margin:0 auto; padding:0px 70px 20px; position: relative; min-width: 1460px; box-sizing:border-box;}
 .gnb::after {content: ''; display: block; clear: both;}
@@ -1376,7 +1376,7 @@ input[type="file"] {
 .all_menu > .area > ul > li > a{font-size:15px;color:#333}
 .all_menu > .area > ul > li.on .depth_menu{display:block}
 
-.all_menu.on .depth_menu{display:block;}
+/* .all_menu.on .depth_menu{display:block;}
 .all_menu .depth_menu{display:none;position:absolute;top:190px;left:0;width:100%;min-width:1350px;height:535px;padding:23px 21px;border:1px solid #fd4802;background:#fff;box-sizing:border-box;clear:both;z-index: 200;}
 .all_menu .depth_menu .step1{position: relative;float: left;top: 0px;box-sizing: border-box;width: 300px;height: 600px;padding: 4px 0px 0px 48px;z-index: 1;}
 .all_menu .depth_menu .step2{position: relative;float: left;width: calc(100% - 300px);height: 600px;box-sizing: border-box;padding-left: 30px;}
@@ -1406,7 +1406,7 @@ input[type="file"] {
 .all_menu .depth_menu a{padding:3px 0 2px !important;font-size:14px}
 
 .all_menu .depth_menu a:hover {font-weight: bold; color: #fd4802;}
-.all_menu .depth_menu ul:nth-child(3) a:hover {font-weight: bold; color: #445694;}
+.all_menu .depth_menu ul:nth-child(3) a:hover {font-weight: bold; color: #445694;} */
 .all_menu ul li:nth-last-child(2) .depth_menu a:hover {font-weight: bold; color: #445694;}
 .all_menu ul li:nth-last-child(4) .depth_menu ul:nth-child(3) a:hover {font-weight: bold; color: #fd4802;}
 
@@ -1438,7 +1438,7 @@ input[type="file"] {
 .common_footer .service_support .support_txt li::before {content:''; position:absolute; left:0; top:2px; bottom:2px; border-left:1px solid #ddd; z-index:2;}
 .common_footer .service_support .support_txt li:first-child {margin-left:0; padding-left:0;}
 .common_footer .service_support .support_txt li:first-child::before {display:none;}
-.common_footer .service_support .family_link {position:absolute; z-index: 100; right:0; top:0px; width:170px;}
+.common_footer .service_support .family_link {position:absolute; z-index: 99; right:0; top:0px; width:170px;}
 .common_footer .service_support .family_link h2 a {display:block; position:relative; height:32px; padding:10px; color: #444; font-weight: 300; font-size: 14px; letter-spacing: 0; line-height:1; text-align: left; border: solid 1px transparent; border-bottom: solid 1px #222222; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .common_footer .service_support .family_link h2 a:hover{background-color: rgb(255 255 255);}
 .common_footer .service_support .family_link h2 a:focus{

@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import 'common_m.css';
 @import 'layout.css';
-@import 'common_millim.css';
 
 
 
@@ -93,7 +92,7 @@
 .error dl {
   margin-top: 20px;
   padding-top: 130px;
-  background: url("../images/bg_z0_01.jpg") no-repeat 50% 40px;
+  background: url("/images/mo/bg_z0_01.jpg") no-repeat 50% 40px;
   background-size: 56px auto;
 }
 
@@ -110,7 +109,7 @@
 }
 
 .error .v2 {
-  background: url("../images/bg_z0_02.jpg") no-repeat 50% 40px;
+  background: url("/images/mo/bg_z0_02.jpg") no-repeat 50% 40px;
   background-size: 64px auto;
 }
 

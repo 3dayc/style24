@@ -21,13 +21,15 @@
 <link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/slick.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/common-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+<script src="js/mcxdialog_ui.js"></script>
 </head>
 
 <body>
@@ -45,118 +47,92 @@
 		<div class="wrap">
 			<div class="content find"> <!-- 페이지특정 클래스 = find -->
 				<div class="cont_head">
-                    <h3>style24</h3>
+                    <h4>아이디&#47;비밀번호 찾기</h4>
 				</div>
 				<div class="cont_body">
                     <form class="form_wrap form_col_c" role="form">
-                        <div class="form_head">
-                            <h4>아이디&#47;비밀번호 찾기</h4>
-                        </div>
                         <div class="registration_nav">
                             <ul>
                                 <li class="active"><a href="javascript:void(0)">아이디 찾기</a></li>
                                 <li><a href="javascript:void(0)">비밀번호 찾기</a></li>
                             </ul>
                         </div>
+                        <!-- new -->
                         <div class="registration_tap">
                             <div class="form_group">
                                 <!-- 아이디찾기일경우 -->
-                                <div class="foldGroup checkcase">
-                                    <ul>
-                                        <li>
-                                            <form class="form_wrap" role="form">
-                                                <div class="fold_head">
-                                                    <a href="javascript:void(0)">
-                                                        <div>
-                                                            <div class="fold_tit">
-                                                                <span>회원정보로 찾기</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
+                                <div class="form_field">
+                                    <div>
+                                        <input type="radio" name="rdi-mbCertify1" id="rdi-mbCertify11" value="" checked="">
+                                        <label for="rdi-mbCertify11"><span>회원정보인증</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-mbCertify1" id="rdi-mbCertify12" value="">
+                                        <label for="rdi-mbCertify12"><span>휴대폰인증</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-mbCertify1" id="rdi-mbCertify13" value="">
+                                        <label for="rdi-mbCertify13"><span>아이핀인증</span></label>
+                                    </div>
+                                </div>
+                                <div class="registration_cont">
+                                    <!-- 회원정보인증 -->
+                                    <div class="regist_box on">
+                                        <div class="form_field">
+                                            <label class="input_label sr-only">이름</label>
+                                            <div class="ui_col_12">
+                                                <div class="input_wrap"> 
+                                                    <input type="text" name="userName" placeholder="이름" id="txtName" class="form_control">
                                                 </div>
-                                                <div class="fold_cont">
-                                                    <div class="txt mb30">
-                                                        <p>등록된 내 회원정보로 찾을 수 있습니다.</p>
-                                                    </div>
-                                                    <div class="form_field">
-                                                        <label class="input_label sr-only">이름</label>
-                                                        <div class="ui_col_12">
-                                                            <div class="input_wrap"> 
-                                                                <input type="text" name="userName" placeholder="이름" id="txtName" class="form_control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form_field">
-                                                        <label class="input_label sr-only">생년월일 8자리 (예:19880912)</label>
-                                                        <div class="ui_col_12">
-                                                            <div class="input_wrap"> 
-                                                                <input type="text" name="userBirth" placeholder="생년월일 8자리 (예:19880912)" id="txtBirth" class="form_control">
-                                                            </div>
-                                                        </div>
-                                                    </div>                                                    
-                                                    <div class="form_field">
-                                                        <label class="input_label sr-only">이메일</label>
-                                                        <div class="ui_col_12">
-                                                            <div class="input_wrap"> 
-                                                                <input type="text" name="userEmail" placeholder="이메일" id="txtEmail" class="form_control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="btn_group_block ui_row mt20">
-                                                        <div class="ui_col_12">
-                                                            <button class="btn btn_dark btn_block"><span>확인</span></button>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label class="input_label sr-only">생년월일 8자리 (예:19880912)</label>
+                                            <div class="ui_col_12">
+                                                <div class="input_wrap"> 
+                                                    <input type="text" name="userBirth" placeholder="생년월일 8자리 (예:19880912)" id="txtBirth" class="form_control">
                                                 </div>
-                                            </form>
-                                        </li>
-                                        <li>
-                                            <form class="form_wrap" role="form">
-                                                <div class="fold_head">
-                                                    <a href="javascript:void(0)">
-                                                        <div>
-                                                            <div class="fold_tit" style="width: inherit;">
-                                                                <span style="width: inherit;">휴대폰 본인인증으로 찾기</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
+                                            </div>
+                                        </div>                                                    
+                                        <div class="form_field">
+                                            <label class="input_label sr-only">이메일</label>
+                                            <div class="ui_col_12">
+                                                <div class="input_wrap"> 
+                                                    <input type="text" name="userEmail" placeholder="이메일" id="txtEmail" class="form_control">
                                                 </div>
-                                                <div class="fold_cont">
-                                                    <div class="txt">
-                                                        <p>회원님의 명의로 등록된 휴대폰으로 본인확인을 진행합니다.</p>
-                                                    </div>
-                                                    <div class="ui_row mt20">
-                                                        <div class="ui_col_12">
-                                                            <button class="btn btn_dark btn_block"><span>본인명의 휴대폰으로 인증</span></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </li>
-                                        <li>
-                                            <form class="form_wrap" role="form">
-                                                <div class="fold_head">
-                                                    <a href="javascript:void(0)">
-                                                        <div>
-                                                            <div class="fold_tit" style="width: inherit;">
-                                                                <span style="width: inherit;">아이핀 인증으로 찾기</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="fold_cont">
-                                                    <div class="txt">
-                                                        <p>아이핀 인증을 통해 찾을 수 있습니다.</p>
-                                                    </div>
-                                                    <div class="ui_row mt20">
-                                                        <div class="ui_col_12">
-                                                            <button class="btn btn_dark btn_block"><span>아이핀 인증</span></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </li>
-                                    </ul>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group_block ui_row mt20">
+                                            <div class="ui_col_12">
+                                                <button class="btn btn_dark btn_block"><span>확인</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //회원정보인증 -->
+                                    <!-- 휴대폰인증 -->
+                                    <div class="regist_box">
+                                        <div class="txt">
+                                            <p>회원님의 명의로 등록된 휴대폰으로<br>본인확인을 진행합니다.</p>
+                                        </div>
+                                        <div class="ui_row mt20">
+                                            <div class="ui_col_12">
+                                                <button class="btn btn_dark btn_block"><span>본인명의 휴대폰으로 인증</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //휴대폰인증 -->
+                                    <!-- 아이핀인증 -->
+                                    <div class="regist_box">
+                                        <div class="txt">
+                                            <p>아이핀 인증을 통해 찾을 수 있습니다.</p>
+                                        </div>
+                                        <div class="ui_row mt20">
+                                            <div class="ui_col_12">
+                                                <button class="btn btn_dark btn_block"><span>아이핀 인증</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //아이핀인증 -->            
                                 </div>
                                 <!-- //아이디찾기일경우 -->
                                 <!-- 아이디찾기 성공일경우 -->
@@ -224,112 +200,87 @@
                                 </div>
                                 <!-- //휴대폰,아이핀 본인인증으로 아이디찾기 실패일경우 -->
                             </div>
-                            <div class="form_group" >
+                            <div class="form_group">
                                 <!-- 비밀번호찾기일경우 -->
-                                <div class="foldGroup checkcase">
-                                    <ul>
-                                        <li>
-                                            <form class="form_wrap" role="form">
-                                                <div class="fold_head">
-                                                    <a href="javascript:void(0)">
-                                                        <div>
-                                                            <div class="fold_tit" style="width: inherit;">
-                                                                <span style="width: inherit;">회원정보로 찾기</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
+                                <div class="form_field">
+                                    <div>
+                                        <input type="radio" name="rdi-mbCertify2" id="rdi-mbCertify21" value="" checked="">
+                                        <label for="rdi-mbCertify21"><span>회원정보인증</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-mbCertify2" id="rdi-mbCertify22" value="">
+                                        <label for="rdi-mbCertify22"><span>휴대폰인증</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="rdi-mbCertify2" id="rdi-mbCertify23" value="">
+                                        <label for="rdi-mbCertify23"><span>아이핀인증</span></label>
+                                    </div>
+                                </div>
+                                <div class="registration_cont">
+                                    <!-- 회원정보인증 -->
+                                    <div class="regist_box on">
+                                        <div class="form_field form_full">
+                                            <label class="input_label sr-only">아이디</label>
+                                            <div class="ui_col_12">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="userId" placeholder="아이디" id="txtId" class="form_control">
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label class="input_label sr-only">이름</label>
+                                            <div class="ui_col_12">
+                                                <div class="input_wrap"> 
+                                                    <input type="text" name="userName" placeholder="이름" id="txtName" class="form_control">
                                                 </div>
-                                                <div class="fold_cont">
-                                                    <div class="txt mb30">
-                                                        <p>등록된 내 회원정보로 찾을 수 있습니다.</p>
-                                                    </div>
-                                                    <div class="form_field form_full">
-                                                        <label class="input_label sr-only">아이디</label>
-                                                        <div class="ui_col_12">
-                                                            <div class="input_wrap">
-                                                                <input type="text" name="userId" placeholder="아이디" id="txtId" class="form_control">
-                                                                <button type="button" class="btn btn_primary"><span>확인</span></button>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                    <div class="form_field">
-                                                        <label class="input_label sr-only">이름</label>
-                                                        <div class="ui_col_12">
-                                                            <div class="input_wrap"> 
-                                                                <input type="text" name="userName" placeholder="이름" id="txtName" class="form_control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form_field">
-                                                        <label class="input_label sr-only">이메일</label>
-                                                        <div class="ui_col_12">
-                                                            <div class="input_wrap"> 
-                                                                <input type="text" name="userEmail" placeholder="이메일" id="email" class="form_control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="btn_group_block ui_row mt20">
-                                                        <div class="ui_col_12">
-                                                            <button class="btn btn_dark btn_block"><span>확인</span></button>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label class="input_label sr-only">이메일</label>
+                                            <div class="ui_col_12">
+                                                <div class="input_wrap"> 
+                                                    <input type="text" name="userEmail" placeholder="이메일" id="email" class="form_control">
                                                 </div>
-                                            </form>
-                                        </li>
-                                        <li>
-                                            <form action="" class="form_wrap" role="form">
-                                                <div class="fold_head">
-                                                    <a href="javascript:void(0)">
-                                                        <div>
-                                                            <div class="fold_tit" style="width: inherit;">
-                                                                <span style="width: inherit;">휴대폰 본인인증으로 찾기</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="fold_cont">
-                                                    <div class="txt">
-                                                        <p>회원님의 명의로 등록된 휴대폰으로 본인확인을 진행합니다.</p>
-                                                    </div>
-                                                    <div class="ui_row mt20">
-                                                        <div class="ui_col_12">
-                                                            <button class="btn btn_dark btn_block"><span>본인명의 휴대폰으로 인증</span></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </li>
-                                        <li>
-                                            <form action="" class="form_wrap" role="form">
-                                                <div class="fold_head">
-                                                    <a href="javascript:void(0)">
-                                                        <div>
-                                                            <div class="fold_tit" style="width: inherit;">
-                                                                <span style="width: inherit;">아이핀 인증으로 찾기</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="fold_cont">
-                                                    <div class="txt">
-                                                        <p>아이핀 인증을 통해 찾을 수 있습니다.</p>
-                                                    </div>
-                                                    <div class="ui_row mt20">
-                                                        <div class="ui_col_12">
-                                                            <button class="btn btn_dark btn_block"><span>아이핀 인증</span></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </li>
-                                    </ul>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group_block ui_row mt20">
+                                            <div class="ui_col_12">
+                                                <button class="btn btn_dark btn_block"><span>확인</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //회원정보인증 -->
+                                    <!-- 휴대폰인증 -->
+                                    <div class="regist_box">
+                                        <div class="txt">
+                                            <p>회원님의 명의로 등록된 휴대폰으로<br>본인확인을 진행합니다.</p>
+                                        </div>
+                                        <div class="ui_row mt20">
+                                            <div class="ui_col_12">
+                                                <button class="btn btn_dark btn_block"><span>본인명의 휴대폰으로 인증</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //휴대폰인증 -->
+                                    <!-- 아이핀인증 -->
+                                    <div class="regist_box">
+                                        <div class="txt">
+                                            <p>아이핀 인증을 통해 찾을 수 있습니다.</p>
+                                        </div>
+                                        <div class="ui_row mt20">
+                                            <div class="ui_col_12">
+                                                <button class="btn btn_dark btn_block"><span>아이핀 인증</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //아이핀인증 -->            
                                 </div>
                                 <!-- //비밀번호찾기일경우 -->
                                 <!-- 비밀번호 재설정 -->
                                 <div class="find_result clear">
                                     <div class="form_info">
                                         <span class="ico_content_security"></span>
-                                        <p>안전을 위해 비밀번호를 변경하신 후 이용이 가능합니다.</p>
+                                        <p>안전을 위해 비밀번호를 변경하신 후<br>이용이 가능합니다.</p>
                                     </div>
                                     <div class="form_field mt40">
                                         <label class="input_label sr-only">신규 비밀번호</label>
@@ -400,9 +351,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- //임시비밀번호 발급 -->
+                                <!-- //임시비밀번호 발급 -->                                
                             </div>
-                        </div>                        
+                        </div>
+                        <!-- //new -->
+                       
                     </form>
 				</div>
 			</div>
@@ -416,6 +369,13 @@
         $(document).ready( function() {
             $("#header").load("head.html");
             $("#footer").load("foot.html");
+            
+            $(document).on('click','.mb .registration_nav .form_field > div',function(e){
+                $(this).find('input').prop('checked', true);
+                $(this).parents('.form_group').find('.regist_box').removeClass('on');		
+                $(this).parents('.form_group').find('.regist_box').eq($(this).index()).addClass('on');		
+                return false;
+            });
         });
 	</script>
 

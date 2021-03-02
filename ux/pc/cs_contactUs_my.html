@@ -21,13 +21,15 @@
 <link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/slick.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/common-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+<script src="js/mcxdialog_ui.js"></script>
 </head>
 
 <body>
@@ -148,18 +150,13 @@
 										</div>
 									</div>
 									<div class="form_field">
-										<label class="ui_col_2 input_label">휴대폰</label>
-										<div class="ui_col_10 cellphone">
-											<div class="input_wrap">
-												<input type="text" class="form_control err" maxlength="13" placeholder="휴대폰 번호를 입력해주세요."> <!-- 잘못 입력시 클래스명 : err 추가  -->
-												<!-- 알림 신청 체크박스(선택 _ 기본값) -->
-												<div class="ck_box">
-													<input id="chk-push" type="checkbox" checked>
-													<label for="chk-push"><span>알림 신청</span></label>
-												</div>
-											</div> 
-											<div class="help_block">
-												<p class="t_err">휴대폰 번호를 형식에 맞게 정확히 입력해주세요.</p>
+										<label class="ui_col_2 input_label">알림톡 수신 여부</label>
+										<div class="ui_col_10 push_agree">
+											<div>
+												<input type="radio" name="radio" name="pushAgree" id="rdi-pushAgr1" value="" checked="checked"><label for="rdi-pushAgr1"><span>수신</span></label>
+											</div>
+											<div>
+												<input type="radio" name="radio" name="pushAgree" id="rdi-pushAgr2" value=""><label for="rdi-pushAgr2"><span>미수신</span></label>
 											</div>
 										</div>
 									</div>
@@ -167,7 +164,7 @@
 							</div>
 							<div class="sec_foot t_c">
 								<button type="button" class="btn btn_default btn_md back"><span>취소</span></button>
-								<button type="button" class="btn btn_dark btn_md"><span>확인</span></button>
+								<button type="button" class="btn btn_dark btn_md"><span>등록</span></button>
 							</div>
 						</div>
 					</div>

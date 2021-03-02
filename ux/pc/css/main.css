@@ -433,7 +433,22 @@
 	margin-right: 33px;
 	float:left;
     text-align: center;
+	position: relative;
 }
+.main_deal .count .count_time span:first-child::before,
+.main_deal .count .count_time span:first-child::after{content: '';display: none;}
+.main_deal .count .count_time span::before,
+.main_deal .count .count_time span::after{
+	content: '';
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	background: #ffffff;
+	border-radius: 100%;
+	position: absolute;
+}
+.main_deal .count .count_time span::before{top: -57px;left: -20px;}
+.main_deal .count .count_time span::after{top: -44px;left: -20px;}
 .main_deal .count #countdown{
 	text-align: center;
 	margin: auto;
@@ -510,6 +525,7 @@
 .main_pick .cont_body .post-pick-for{margin-top: 60px; border: 1px solid #dddddd; box-sizing: border-box;}
 .main_pick .cont_body .post-pick-for::after{content: '';display: block; clear: both;}
 .main_pick .cont_body .post-pick-for .pick_look{width: 671px; width: 38.6%; height: 670px; height:auto; background: #888888; float: left;}
+.main_pick .cont_body .post-pick-for .pick_look .swiper-slide{width: 100% !important;}
 .main_pick .cont_body .post-pick-for .pick_look .swiper-pagination {bottom: 40px;}
 .main_pick .cont_body .post-pick-for .pick_look img{width: 100%; height: auto;}
 .main_pick .cont_body .post-pick-for .pick_item {float:left; width: 61.4%; padding:4% 80px; font-size: 0;}
@@ -980,3 +996,4 @@ transition: all 10ms ease;
 .br_lookbook_popup .itemsGrp .item_prod .itemPrice_original {display: inline-block; margin-bottom:15px; font-size: 20px; font-weight: 200;}
 .br_lookbook_popup .itemsGrp .item_prod .itemPercent {font-size: 26px; line-height: 0.8;}
 .br_lookbook_popup .itemsGrp .item_prod .itemLink .btn {border:1px solid #a7a7a7; font-weight:300;}
+

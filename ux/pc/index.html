@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,16 +16,20 @@
 <meta property="og:site_name" th:content="" content=""/>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="images/pc/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="stylesheet" type="text/css" href="css/common.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-<link rel="stylesheet" type="text/css" href="css/slick.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/common-ui.js"></script>
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" type="text/css" href="/ux/pc/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/ux/pc/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/ux/pc/css/swiper.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="/ux/pc/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/ux/pc/js/common-ui.js"></script>
+<script type="text/javascript" src="/ux/pc/js/jquery.modal.min.js"></script>
 </head>
 
 <body>
@@ -49,9 +52,10 @@
 					<p class="t_c">비주얼 슬라이드</p>
 				</div>
 				<div class="cont_body">
-					<div class="post-slider">
-						<div class="post-wrapper post-visual">
-							<div class="post">
+					<!-- <div class="swiper-container post-visual" data-slider-1-autoplay-status="Y"> -->
+					<div class="swiper-container post-visual">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<p class="vrt_txt">NBA</p>
 									<dl class="w">
@@ -60,12 +64,11 @@
 										<dd>NEW ARRIVAL</dd>
 										<dd class="txt_xs">나만의 가을 스타일 찾기</dd>
 									</dl>
-									<button type="button" class="btn"><span>VIEW MORE</span></button>
+									<button type="button" class="btn"><span>자세히 보기</span></button>
 								</div>
 								<img src="/images/pc/thumb/main_visual01.jpg" alt="">
 							</div>
-						
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<p class="vrt_txt">vertical-BrandName</p>
 									<dl class="w">
@@ -74,12 +77,11 @@
 										<dd>DENIM SALE</dd>
 										<dd class="txt_xs">데님 신상 아이템 ~20% 세일</dd>
 									</dl>
-									<button type="button" class="btn"><span>VIEW MORE</span></button>
+									<button type="button" class="btn"><span>자세히 보기</span></button>
 								</div>
 								<img src="/images/pc/thumb/main_visual02.jpg" alt="">
-							</div>
- 	
-							<div class="post">
+							</div> 	
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<p class="vrt_txt">vertical-BrandName</p>
 									<dl class="w">
@@ -88,11 +90,11 @@
 										<dd>DENIM SALE</dd>
 										<dd class="txt_xs">데님 신상 아이템 ~20% 세일</dd>
 									</dl>
-									<button type="button" class="btn"><span>VIEW MORE</span></button>
+									<button type="button" class="btn"><span>자세히 보기</span></button>
 								</div>
 								<img src="/images/pc/thumb/main_visual03.jpg" alt="">
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<p class="vrt_txt">vertical-BrandName</p>
 									<dl class="">
@@ -101,11 +103,11 @@
 										<dd>DENIM SALE</dd>
 										<dd class="txt_xs">데님 신상 아이템 ~20% 세일</dd>
 									</dl>
-									<button type="button" class="btn"><span>VIEW MORE</span></button>
+									<button type="button" class="btn"><span>자세히 보기</span></button>
 								</div>
 								<img src="/images/pc/thumb/main_visual04.jpg" alt="">
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<p class="vrt_txt">vertical-BrandName</p>
 									<dl class="">
@@ -114,13 +116,21 @@
 										<dd>DENIM SALE</dd>
 										<dd class="txt_xs">데님 신상 아이템 ~20% 세일</dd>
 									</dl>
-									<button type="button" class="btn"><span>VIEW MORE</span></button>
+									<button type="button" class="btn"><span>자세히 보기</span></button>
 								</div>
 								<img src="/images/pc/thumb/main_visual05.jpg" alt="">
 							</div>
 						</div>
+						<div class="swiper-button-prev sbtn01_lb"></div>
+						<div class="swiper-button-next sbtn01_rb"></div>
 					</div>
-					
+					<div class="swiper-controls">
+						<div class="swiper-pagination"></div>
+						<div class="slide-curb">
+							<div class="slide-curb-play sbtn01_play">슬라이드 재생</div>
+							<div class="slide-curb-pause sbtn01_stop">슬라이드 정지</div>
+						</div>
+					</div>
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT
@@ -183,15 +193,13 @@
 
 			<!-- 3. 트렌디한 신상아이템 -->
 			<div class="content wide main_trendy">
-
 				<div class="cont_head">
-					
 					<p class="displayH t_c">트렌디한 신상 아이템 </p>
 				</div>
 				<div class="cont_body">
-					<div class="post-slider variable">
-						<div class="post-wrapper post-trendy">
-							<div class="post">
+					<div class="swiper-container post-trendy">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
 								<div class=" item_prod inc">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -207,7 +215,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod shr">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -227,7 +235,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod shr">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -243,7 +251,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod inc">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -259,7 +267,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod shr">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -275,10 +283,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
-								<img src="/images/pc/thumb/main_trendy03.jpg" alt="">
-							</div>
 						</div>
+					</div>
+					<div class="swiper-button-prev "></div>
+					<div class="swiper-button-next "></div>
+					<div class="swiper-controls">
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 				<div class="cont_foot dpnone">
@@ -302,9 +312,9 @@
 							<li><button class="btn btn_link" data-tab="it5"><div><span>라이프</span></button></li>
 						</ul>
 					</div>
-					<div class="post-slider it_item active " id="it1">
-						<div class="post-wrapper post-it">
-							<div class="post">
+					<div class="swiper-container post-it it_item active " id="it1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> <!-- item_prod ranker d_detail -->
 									
 									<div class="item_state"> <!-- item_state AD soldout -->
@@ -324,7 +334,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -341,7 +351,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -358,7 +368,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -375,7 +385,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -392,7 +402,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> 
 									<div class="item_state"> 
 										<a href="#none" class=" itemLink">
@@ -411,7 +421,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -429,7 +439,7 @@
 
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -446,7 +456,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -463,7 +473,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -481,14 +491,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-							<span class="slider__label sr-only">
-							</span>
+						<div class="swiper-controls">
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
-					<div class="post-slider it_item " id="it2">
-						<div class="post-wrapper post-it">
-							<div class="post">
+					<div class="swiper-container post-it it_item " id="it2">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> <!-- item_prod ranker d_detail -->
 									
 									<div class="item_state"> <!-- item_state AD soldout -->
@@ -508,7 +517,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -525,7 +534,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -542,7 +551,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -559,7 +568,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -576,7 +585,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> 
 									<div class="item_state"> 
 										<a href="#none" class=" itemLink">
@@ -595,7 +604,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -613,7 +622,7 @@
 
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -630,7 +639,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -647,7 +656,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -665,9 +674,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-							<span class="slider__label sr-only">
-							</span>
+						<div class="swiper-controls">
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</div>
@@ -696,38 +704,69 @@
 				</div>
 			</div>
 
-
 			<!-- 6. 타임딜 : 슬라이드 -->
 			<div class="content wide main_deal">
 				<div class="cont_head">
 					<p class="displayH">오늘만<br>이 가격에 만나요</p>
 					<a href="#none"><span>전체보기</span></a>
-
-					<div class="count">
-						<style>
-							/**
-*  Progress Bar
-*/
-.progress {
-display: block;
-width: 100%;
-height: 2px;
-border-radius: 0px;
-overflow: hidden;
-background-color: #dddddd;
-background-image: linear-gradient(to right, #222222, #222222);
-background-repeat: no-repeat;
-/* background-size: 0 100%; */
-background-size: 0% 100%;
-transition: background-size .4s ease-in-out;
-}
-						</style>
+					<div class="deal_progress">
+						<div class="bar_current" style="width:33.333%"><span>HERE</span></div>
+						<div class="bar_bg"></div>
 					</div>
+					<div class="count">
+						<span class="count_tit">남은 시간</span>
+						<div class="hotdeal">
+							<div id="countdown">
+								<div id="tiles"></div>
+							</div>
+							<div class="count_time">
+								<span>HOURS</span>
+								<span>MINS</span>
+								<span>SECS</span>
+							</div>
+						</div>  
+					</div>
+					<script>
+									
+						/* 핫딜 countDown */
+						var target_date = new Date().getTime() + (1000*3600*8); // set the countdown date
+						var days, hours, minutes, seconds; // variables for time units
+
+						var countdown = document.getElementById("tiles"); // get tag element
+
+						getCountdown();
+
+						setInterval(function () { getCountdown(); }, 1000);
+
+						function getCountdown(){
+
+							// find the amount of "seconds" between now and target
+							var current_date = new Date().getTime();
+							var seconds_left = (target_date - current_date) / 1000;
+
+							
+							seconds_left = seconds_left % 86400;
+								
+							hours = pad( parseInt(seconds_left / 3600) );
+							seconds_left = seconds_left % 3600;
+								
+							minutes = pad( parseInt(seconds_left / 60) );
+							seconds = pad( parseInt( seconds_left % 60 ) );
+
+							// format countdown string + set tag value
+							countdown.innerHTML = "<span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+						}
+
+						function pad(n) {
+							return (n < 10 ? '0' : '') + n;
+						}
+						/* countDown */
+					</script>
 				</div>
 				<div class="cont_body">
-					<div class="post-slider  active" id="it1">
-						<div class="post-wrapper post-deal">
-							<div class="post">
+					<div class="swiper-container post-deal" >
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> <!-- item_prod ranker d_detail -->
 									
 									<div class="item_state"> <!-- item_state AD soldout -->
@@ -747,7 +786,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -764,7 +803,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -781,7 +820,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -798,7 +837,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -815,7 +854,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod sUiXc "> 
 									<div class="item_state"> 
 										<a href="#none" class=" itemLink">
@@ -834,7 +873,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -852,7 +891,7 @@ transition: background-size .4s ease-in-out;
 
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -869,7 +908,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -886,7 +925,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class=" item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
@@ -902,11 +941,10 @@ transition: background-size .4s ease-in-out;
 										</a>
 									</div>
 								</div>
-							</div>							
+							</div>
 						</div>
-						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-							<span class="slider__label sr-only">
-							</span>
+						<div class="swiper-controls">
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</div>
@@ -921,26 +959,31 @@ transition: background-size .4s ease-in-out;
 					<p class="displayH t_c">브랜드 PICK</p>
 				</div>
 				<div class="cont_body">
-					<div class="post-slider variable">
-						<div class="post-wrapper post-pick-nav">
-							<div><span><img src="/images/pc/thumb/main_picklogo01.png" alt="barnd name"></span></div>
-							<div><span><img src="/images/pc/thumb/main_picklogo02.png" alt="barnd name"></span></div>
-							<div><span><img src="/images/pc/thumb/main_picklogo03.png" alt="barnd name"></span></div>
-							<div><span><img src="/images/pc/thumb/main_picklogo04.png" alt="barnd name"></span></div>
-							<div><span><img src="/images/pc/thumb/main_picklogo05.png" alt="barnd name"></span></div>
-							<div><span><img src="/images/pc/thumb/main_picklogo06.png" alt="barnd name"></span></div>
+					<div class="swiper-container post-pick-nav">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo01.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo02.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo03.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo04.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo05.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo06.png"></div>
+							<div class="swiper-slide"><img src="/images/pc/thumb/main_picklogo06.png"></div>
 						</div>
+						<div class="swiper-button-prev "></div>
+						<div class="swiper-button-next "></div>
 					</div>
-
-					<div class="post-slider">
-						<div class="post-wrapper post-pick-for">
-							<div>
+					<div class="swiper-container post-pick-for">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
 								<div class="pick_look">
-									<div class="post-slider variable">
-										<div class="post-wrapper post-lookbook">
-											<div><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
-											<div><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
-											<div><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
+									<div class="swiper-container post-lookbook variable">
+										<div class="swiper-wrapper ">
+											<div class="swiper-slide"><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
+											<div class="swiper-slide"><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
+											<div class="swiper-slide"><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
+										</div>
+										<div class="swiper-controls">
+											<div class="swiper-pagination"></div>
 										</div>
 									</div>
 								</div>
@@ -994,13 +1037,16 @@ transition: background-size .4s ease-in-out;
 									
 								</div>
 							</div>
-							<div>
+							<div class="swiper-slide">
 								<div class="pick_look">
-									<div class="post-slider variable">
-										<div class="post-wrapper post-lookbook">
-											<div><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
-											<div><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
-											<div><img src="/images/pc/thumb/main_pickImg01.jpg" alt="barnd lookbook"></div>
+									<div class="swiper-container post-lookbook variable">
+										<div class="swiper-wrapper ">
+											<div class="swiper-slide"><img src="/images/pc/thumb/tmp_pdLookbook1.jpg" alt="barnd lookbook"></div>
+											<div class="swiper-slide"><img src="/images/pc/thumb/tmp_pdLookbook1.jpg" alt="barnd lookbook"></div>
+											<div class="swiper-slide"><img src="/images/pc/thumb/tmp_pdLookbook1.jpg" alt="barnd lookbook"></div>
+										</div>
+										<div class="swiper-controls">
+											<div class="swiper-pagination"></div>
 										</div>
 									</div>
 								</div>
@@ -1054,32 +1100,33 @@ transition: background-size .4s ease-in-out;
 									
 								</div>
 							</div>
-							<div>
+							<div class="swiper-slide">
 								<div class="pick_look"></div>
 								<div class="pick_item"></div>
 							</div>
-							<div>
+							<div class="swiper-slide">
 								<div class="pick_look"></div>
 								<div class="pick_item"></div>
 							</div>
-							<div>
+							<div class="swiper-slide">
 								<div class="pick_look"></div>
 								<div class="pick_item"></div>
 							</div>
-							<div>
+							<div class="swiper-slide">
+								<div class="pick_look"></div>
+								<div class="pick_item"></div>
+							</div>
+							<div class="swiper-slide">
 								<div class="pick_look"></div>
 								<div class="pick_item"></div>
 							</div>
 						</div>
 					</div>
-
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT
 				</div>
 			</div>
-
-
 			<!-- 8. 가로 긴 배너 슬라이드 -->
 			<!-- bnn_1stage -->
 			<div class="content wide main_1stage">
@@ -1087,9 +1134,9 @@ transition: background-size .4s ease-in-out;
 					<p class="t_c">배너 슬라이드</p>
 				</div>
 				<div class="cont_body">
-					<div class="post-slider">
-						<div class="post-wrapper post-bnnWide">
-							<div class="post">
+					<div class="swiper-container post-bnnWide">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
 								<a href="#none">
 									<div class="bnnbox" style="background:#e3e7ea;">
 										<div class="txtWrap ">
@@ -1101,7 +1148,7 @@ transition: background-size .4s ease-in-out;
 									</div>
 								</a>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<a href="#none">
 									<div class="bnnbox" style="background:#eef1f3;">
 										<div class="txtWrap ">
@@ -1114,6 +1161,8 @@ transition: background-size .4s ease-in-out;
 								</a>
 							</div>
 						</div>
+						<div class="swiper-button-prev "></div>
+						<div class="swiper-button-next "></div>
 					</div>
 				</div>
 				<div class="cont_foot dpnone">
@@ -1130,19 +1179,19 @@ transition: background-size .4s ease-in-out;
 				<div class="cont_body">
 					<section>
 						<div class="sec_head">
-							<div class="filter action">
-								<button data-filter="tag_warm" class="btn">따뜻한 무드</button>
+							<div class="filter action tag_list">
+								<button data-filter="tag_warm" class="btn active">따뜻한 무드</button>
 								<button data-filter="tag_daily" class="btn">일상의 데일리룩</button>
 								<button data-filter="tag_homeware" class="btn">집콕스타일</button>
-								<button data-filter="tag_point" class="btn" disabled >포인트 아이템</button>
-								<button data-filter="tag_classic" class="btn" disabled >클래식 자켓</button>
+								<button data-filter="tag_point" class="btn"  >포인트 아이템</button>
+								<button data-filter="tag_classic" class="btn"  >클래식 자켓</button>
 								<button data-filter="Test" class="btn test_btn" disabled >테스트 버튼</button>
 							</div>
 						</div>
 						<div class="sec_body">
-							<div class="post-slider">
-								<div class="post-wrapper post-recomm">
-									<div class="tag_warm post">
+							<div class="swiper-container post-recomm">
+								<div class="swiper-wrapper ">
+									<div class="swiper-slide tag_warm ">
 										<div class="item_prod">
 											<div class="item_state">
 												<a href="#none" class="itemLink">
@@ -1234,7 +1283,7 @@ transition: background-size .4s ease-in-out;
 											</div>
 										</div>
 									</div>
-									<div class="tag_warm post">
+									<div class="swiper-slide tag_warm ">
 										<div class="item_prod">
 											<div class="item_state">
 												<a href="#none" class="itemLink">
@@ -1326,7 +1375,7 @@ transition: background-size .4s ease-in-out;
 											</div>
 										</div>
 									</div>
-									<div class="tag_daily post">
+									<div class="swiper-slide tag_daily ">
 										<div class=" item_prod">
 											<div class="item_state">
 												<a href="#none" class="itemLink">
@@ -1418,7 +1467,7 @@ transition: background-size .4s ease-in-out;
 											</div>
 										</div>
 									</div>
-									<div class="tag_daily post">
+									<div class="swiper-slide tag_daily ">
 										<div class=" item_prod">
 											<div class="item_state">
 												<a href="#none" class="itemLink">
@@ -1510,7 +1559,7 @@ transition: background-size .4s ease-in-out;
 											</div>
 										</div>
 									</div>
-									<div class="tag_homeware post">
+									<div class="swiper-slide tag_homeware ">
 										<div class=" item_prod">
 											<div class="item_state">
 												<a href="#none" class="itemLink">
@@ -1602,7 +1651,7 @@ transition: background-size .4s ease-in-out;
 											</div>
 										</div>
 									</div>
-									<div class="tag_homeware post">
+									<div class="swiper-slide tag_homeware ">
 										<div class=" item_prod">
 											<div class="item_state">
 												<a href="#none" class="itemLink">
@@ -1695,8 +1744,12 @@ transition: background-size .4s ease-in-out;
 										</div>
 									</div>
 								</div>
+								<div class="swiper-controls">
+									<div class="swiper-pagination"></div>
+								</div>
 							</div>
-							
+							<div class="swiper-button-prev "></div>
+							<div class="swiper-button-next "></div>
 						</div>
 						<div class="sec_foot dpnone">SECTION-FOOT</div>
 					</section>
@@ -1714,31 +1767,33 @@ transition: background-size .4s ease-in-out;
 					<span>스타일24에서 가장 주목받는 상품을 살펴보세요</span>
 				</div>
 				<div class="cont_body">
-
-					<div class="post-slider fy_nav">
-						<div class="post-wrapper post-sug">
-							<div class="post">
-								<ul>
-									<li><button class="btn btn_shape active" data-tab="fy1"><div><span class="number">1</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy2"><div><span class="number">2</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy3"><div><span class="number">3</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy4"><div><span class="number">4</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy5"><div><span class="number">5</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
-								</ul>
-							</div>
-							<div class="post">
-								<ul>
-									<li><button class="btn btn_shape" data-tab="fy6"><div><span class="number">6</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy7"><div><span class="number">7</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy8"><div><span class="number">8</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy9"><div><span class="number">9</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
-									<li><button class="btn btn_shape" data-tab="fy10"><div><span class="number">10</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
-								</ul>
+					<div class="post-sug fy_nav">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<ul>
+										<li><button class="btn btn_shape active" data-tab="fy1"><div><span class="number">1</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy2"><div><span class="number">2</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy3"><div><span class="number">3</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy4"><div><span class="number">4</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy5"><div><span class="number">5</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li><button class="btn btn_shape" data-tab="fy6"><div><span class="number">6</span><span>컨버스 주니어</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy7"><div><span class="number">7</span><span>겨울 팬츠</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy8"><div><span class="number">8</span><span>BUCKAROO</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy9"><div><span class="number">9</span><span>모이몰른</span></div></button><a href="#none">더보기</a></li>
+										<li><button class="btn btn_shape" data-tab="fy10"><div><span class="number">10</span><span>기모청바지</span></div></button><a href="#none">더보기</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
+						<div class="swiper-controls">
+							<div class="swiper-pagination"></div>
+						</div>
 					</div>
-
-
 					<div class="fy_item active" id="fy1">
 						<div class="part">
 							<div class="item_prod">
@@ -1996,7 +2051,14 @@ transition: background-size .4s ease-in-out;
 							</div>
 						</div>
 					</div>
-
+					<div class="fy_item" id="fy3" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy4" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy5" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy6" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy7" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy8" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy9" style="min-height:700px;"></div>
+					<div class="fy_item" id="fy10" style="min-height:700px;"></div>
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT
@@ -2010,41 +2072,45 @@ transition: background-size .4s ease-in-out;
 					<p class="displayH t_c">STYLE24 TV</p>
 				</div>
 				<div class="cont_body">
-					<div class="post-slider">
-						<div class="post-wrapper post-tv">
-							<div class="post">
+					<div class="swiper-container post-tv">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
 								<div class="movbox">
 									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqryeW6scd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="movbox">
 									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J7nowE2iTIM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="movbox">
 									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cRiKrFk7FTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="movbox">
 									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqryeW6scd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="movbox">
 									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J7nowE2iTIM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
-							<div class="post">
+							<div class="swiper-slide">
 								<div class="movbox">
 									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cRiKrFk7FTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
+						<div class="swiper-button-prev "></div>
+						<div class="swiper-button-next "></div>
 					</div>
-
+					<div class="swiper-controls">
+						<div class="swiper-pagination"></div>
+					</div>
 				</div>
 				<div class="cont_foot dpnone">
 					CONT-FOOT					
@@ -2061,73 +2127,128 @@ transition: background-size .4s ease-in-out;
 	<!-- // container -->	
 	<footer id="footer"></footer>
 
-	<script type="text/javascript">
-	// 컨텐츠 호출
-        $(document).ready( function() {
-            $("#header").load("head.html");
-            // $("#container").load("indexx.html");
-            $("#footer").load("foot.html");
-        });
-	</script>
-	<script>
-		// header scroll
-		$(function(){
-			$(window).scroll(function(){
-				var scroll = $(this).scrollTop();
-				var headerH = $(".header").height();
-				if ($(window).scrollTop() > headerH){
-					$(".header").addClass("minify");
-					return false;
-				}
-				else {
-					$(".header").removeClass("minify");
-					return false;
-				}
-			});
-		});
-	</script>
-<!-- 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
- -->
 <script>
-$(document).ready(function(){
-
-	$('.post-visual').slick({
-		// autoplay: true,
-		// autoplaySpeed: 1000,
-		dots: true,
-        infinite: true,
-        centerMode: true,		
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		centerMode: true,
-		centerPadding: '340px',
+	 // 컨텐츠 호출
+	$(document).ready( function() {
+		$("#header").load("head.html");
+		// $("#container").load("indexx.html");
+		$("#footer").load("foot.html");
 	});
 
-	$('.post-trendy').slick({
-		// autoplay: true,
-		// autoplaySpeed: 1000,
-		dots: true,
-        infinite: true,		
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		variableWidth: true,
-	});	
-	
-	$('.post-it').slick({
-		// autoplay: true,
-		// autoplaySpeed: 1000,
-		// dots: true,
-		infinite: false,
-		arrows: false,		
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		speed: 400,
-		variableWidth: true,
-		freeMode: true,
-	});	
+	var agent = navigator.userAgent.toLowerCase();
+
+	if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+		// ie일 경우
+		var post01 = new Swiper('.main_visual .post-visual', {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 'auto',
+			spaceBetween: 100,
+			
+			// initialSlide: 0, 
+			// 초기 슬라이드의 색인 번호입니다
+			centeredSlides: true,
+			// slidesOffsetBefore: 250, 
+			// 컨테이너 시작 부분 (모든 슬라이드 이전)에 슬라이드 오프셋 추가 (픽셀 단위)
+			speed : 1000,
+			// Navigation arrows
+			//autoplay: false,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.post-visual .swiper-button-next',
+				prevEl: '.post-visual .swiper-button-prev',
+			},
+			pagination: {
+				el: '.main_visual .swiper-pagination',
+				clickable: true,
+			},
+		});
+	}else{
+		// ie가 아닐 경우
+		var post01 = new Swiper('.main_visual .post-visual', {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 'auto',
+			spaceBetween: 70,
+			
+			// initialSlide: 0, 
+			// 초기 슬라이드의 색인 번호입니다
+			centeredSlides: true,
+			// slidesOffsetBefore: 250, 
+			// 컨테이너 시작 부분 (모든 슬라이드 이전)에 슬라이드 오프셋 추가 (픽셀 단위)
+			speed : 1000,
+			// Navigation arrows
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.post-visual .swiper-button-next',
+				prevEl: '.post-visual .swiper-button-prev',
+			},
+			pagination: {
+				el: '.main_visual .swiper-pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	//메인 비주얼_자동재생 스탑
+	$(document).on('click','.slide-curb-pause',function(e){
+		post01.autoplay.stop();
+		$(this).hide();
+		$('.slide-curb-play').show();
+	});
+
+	//메인 비주얼_자동재생 시작
+	$(document).on('click','.slide-curb-play',function(e){
+		post01.autoplay.start();
+		$(this).hide();
+		$('.slide-curb-pause').show();
+	});
+
+	var post02 = new Swiper ('.post-trendy', {
+		loop: true,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		//speed : 1000,
+		//autoplay: {
+		//	delay: 2000,
+		//	disableOnInteraction: false,
+		//},
+		navigation: {
+			nextEl: '.main_trendy .swiper-button-next',
+			prevEl: '.main_trendy .swiper-button-prev',
+		},
+		pagination: {
+			el: '.main_trendy .swiper-pagination',
+			clickable: true,
+		}
+	});
+	var post03 = new Swiper ('.main_it .swiper-container', {
+		//loop: true,
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		// slidesToScroll: 4,
+		//slidesPerGroup:1,
+		observer: true,
+		observeParents: true,
+		speed : 1000,
+		//freeMode: false,
+		autoplay: false,
+		// autoplay: {
+		// 	delay: 2000,
+		// 	disableOnInteraction: false,
+		// },
+		scrollbar: {
+			el: '.main_it .swiper-scrollbar',
+			hide: false,
+		},
+	});
+
 	$(".it_nav .btn").click(function(){
 		var itActive = $(this).attr('data-tab');
 		$(".it_nav .btn").removeClass('active');
@@ -2135,130 +2256,148 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		$('#'+itActive).addClass('active');
 	});
-	// $('.post-it').slick('unslick');
-		//#it1 progress
-		$it1Slider = $('#it1 .post-it');
-		$it1ProgressBar = $('#it1 .post-it + .progress');
-		$it1ProgressBarLabel = $( '#it1 .post-it + .slider__label' );
-		$it1Slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-			var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-			$it1ProgressBar
-				.css('background-size', calc + '% 100%')
-				.attr('aria-valuenow', calc );
-			$it1ProgressBarLabel.text( calc + '% completed' );
-		});
 
-		//#it2 progress
-		var $it2Slider = $('#it2 .post-it');
-		var $it2ProgressBar = $('#it2 .post-it + .progress');
-		var $it2ProgressBarLabel = $( '#it2 .post-it + .slider__label' );
-		$it2Slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-			var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-			$it2ProgressBar
-				.css('background-size', calc + '% 100%')
-				.attr('aria-valuenow', calc );
-			$it2ProgressBarLabel.text( calc + '% completed' );
-		});
-	
-
-
-	$('.post-deal').slick({
-		// dots: true,
-		infinite: false,
-		arrows: false,		
-		slidesToShow: 4,
-		slidesToScroll: 2,
-		variableWidth: true,
-		speed: 400,
-	});
-		//post-deal progress
-		var $dealSlider = $('.post-deal');
-		var $dealProgressBar = $('.post-deal + .progress');
-		var $dealProgressBarLabel = $( '.post-deal + .slider__label' );
-		$dealSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-			var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-			$dealProgressBar
-				.css('background-size', calc + '% 100%')
-				.attr('aria-valuenow', calc );
-			$dealProgressBarLabel.text( calc + '% completed' );
-		});
-	
-
-
-	$('.post-lookbook').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows:false,
-		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 1000,
-	});
-	$('.post-pick-nav').slick({
-		infinite: true,
-		slidesToScroll: 1,
-		focusOnSelect: true,
-		variableWidth: true,
-		dots: false,
-		asNavFor: '.post-pick-for',
-	});
-	$('.post-pick-for').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,
-		asNavFor: '.post-pick-nav',
+	var post04 = new Swiper ('.post-deal', {
+		loop: false,
+		slidesPerView: 'auto',
+		// slidesToScroll: 4,
+		// centeredSlides: true,
+		speed : 1000,
+		autoWidth: true,
+		autoplay: false,
+		// autoplay: {
+		// 	delay: 2000,
+		// 	disableOnInteraction: false,
+		// },
+		scrollbar: {
+			el: '.post-deal .swiper-scrollbar',
+			hide: false,
+		},
 	});
 
-	
-	$('.post-bnnWide').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		// cssEase: 'linear'
-		// autoplay: true,
-		// autoplaySpeed: 1000,
+	var post05lookbook = new Swiper ('.post-lookbook', {
+		loop: true,
+		slidesPerView: 1,
+		// slidesToScroll: 1,
+		// centeredSlides: true,
+		speed : 1000,
+		//autoHeight:true,
+		//autoplay: {
+		//	delay: 4000,
+		//	disableOnInteraction: false,
+		//},
+		pagination: {
+			el: '.post-lookbook .swiper-pagination',
+			clickable: true,
+		},
 	});
-	$('.post-recomm').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-        infinite: true,
+
+	//var pickTabs = document.querySelector('.post-pick-nav .swiper-wrapper');
+	/*var post05Nav = new Swiper('.post-pick-nav', {
+		slidesPerView: 6,
+		navigation: {
+			nextEl: '.main_pick .swiper-button-next',
+			prevEl: '.main_pick .swiper-button-prev',
+		},
+		watchSlidesVisibility: true,
+     	watchSlidesProgress: true,
+		//onTap: function (swiper, event) {
+		//	if (event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab')) {
+		//		event.target.parentElement.querySelector('.active-tab').classList.remove('active-tab');
+		//		event.target.classList.add('active-tab');
+		//		post05PickFor.slideTo(swiper.clickedIndex);
+		//	}
+		//} 
+	}); 	
+	var post05PickFor = new Swiper('.post-pick-for', {
+		//onSlideChangeStart: function (swiper, event) {
+		//	pickTabs.children[swiper.previousIndex].classList.remove('active');
+		//	pickTabs.children[swiper.activeIndex].classList.add('active');
+		//}
+		thumbs: {
+			swiper: post05Nav,
+		},
+	});*/
+
+	var postPickNav = new Swiper('.post-pick-nav', {
+		slidesPerView: 6,
+		freeMode: false,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+    });
+    var postPick = new Swiper('.post-pick-for', {
+		spaceBetween: 10,
+		navigation: {
+		nextEl: '.main_pick .swiper-button-next',
+		prevEl: '.main_pick .swiper-button-prev',
+		},
+		thumbs: {
+		swiper: postPickNav
+		}
+    });
+
+
+	var post06 = new Swiper ('.post-bnnWide', {
+		loop: true,
+		slidesPerView: 1,
+		// slidesToScroll: 1,
+		// centeredSlides: true,
+		speed : 1500,
+		autoplay: {
+			delay: 1000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.main_1stage .swiper-button-next',
+			prevEl: '.main_1stage .swiper-button-prev',
+		},
+	});
+
+	var post07 = new Swiper ('.post-recomm', {
+		slidesPerView: 1,
+		speed : 1500,
+		autoplay: false,
+		// autoplay: {
+		// 	delay: 1000,
+		// 	disableOnInteraction: false,
+		// },
+		pagination: {
+			el: '.main_recomm .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.main_recomm .swiper-button-next',
+			prevEl: '.main_recomm .swiper-button-prev',
+		},
 	});	
-	$(".action button").on('click', function(){
-		var filter = $(this).data('filter');
-		$(".post-recomm").slick('slickUnfilter');
-		
-		if(filter == 'tag_warm'){
-			$(".post-recomm").slick('slickFilter','.tag_warm');
-		}
-		else if(filter == 'tag_daily'){
-			$(".post-recomm").slick('slickFilter','.tag_daily');
-		}
-		else if(filter == 'tag_homeware'){
-			$(".post-recomm").slick('slickFilter','.tag_homeware');
-		}
-		else if(filter == 'tag_point'){
-			$(".post-recomm").slick('slickFilter','.tag_point');
-		}
-		else if(filter == 'tag_classic'){
-			$(".post-recomm").slick('slickFilter','.tag_classic');
-		}
-		else if(filter == 'all'){		
-			$(".post-recomm").slick('slickUnfilter');
-		}
-	})
+	
+	var _tagList = $( ".tag_list" );
+	var _tagTarget = _tagList.children( "button" );
+	var swiper = new Swiper('.main_recomm .post-recomm');
+	
+	_tagTarget.on( "click", function( $e ){
+		var itemIndex = $( this ).index();
+		swiper.slideTo( itemIndex);             //index값으로 slideto에 넘김
+		$('.tag_list button').removeClass('active');
+		$(this).addClass('active');
+	});	
 
-
-	$('.post-sug').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false,
-		fade: true,
-		infinite: true,
-		// autoplay: true,
-		// autoplaySpeed: 3000,
-	});
+	var post08 = new Swiper ('.post-sug .swiper-container', {
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 80,
+		speed : 2500,
+		// effect: 'fade',
+		// autoplay: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.post-sug .swiper-pagination',
+			clickable: true,
+		},
+	});	
 	$(".fy_nav .btn_shape").click(function(){
 		var fyActive = $(this).attr('data-tab');
 		$(".fy_nav .btn_shape").removeClass('active');
@@ -2267,42 +2406,30 @@ $(document).ready(function(){
 		$('#'+fyActive).addClass('active');
 	});
 
-	
-	$('.post-tv').slick({
-		swipeToSlide: true,
-		dots: true,
-        infinite: true,		
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		centerMode: true,
-		centerPadding: '340px',
-		
-		// autoplay: true,
-		// autoplaySpeed: 850,
 
-		// 반응형대응
-		// responsive: [{
-		// 	breakpoint: 768,
-		// 	settings: {
-		// 		arrows: false,
-		// 		centerMode: true,
-		// 		centerPadding: '40px',
-		// 		slidesToShow: 3
-		// 	}
+	var post09 = new Swiper ('.post-tv', {
+		loop: true,
+		slidesPerView: 2,
+		spaceBetween: 80,
+		centeredSlides: true,
+		speed : 800,
+		// effect: 'fade',
+		autoplay: false,
+		// autoplay: {
+		// 	delay: 10000,
+		// 	disableOnInteraction: false,
 		// },
-		// {
-		// 	breakpoint: 480,
-		// 	settings: {
-		// 		arrows: false,
-		// 		centerMode: true,
-		// 		centerPadding: '40px',
-		// 		slidesToShow: 1
-		// 	}
-		// }]
-	});
-
-});
+		navigation: {
+			nextEl: '.main_tv .swiper-button-next',
+			prevEl: '.main_tv .swiper-button-prev',
+		},
+		pagination: {
+			el: '.main_tv .swiper-pagination',
+			clickable: true,
+		},
+	});	
 </script>
+
 </body>
 </html>
 

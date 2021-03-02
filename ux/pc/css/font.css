@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Light.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Light.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Light.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Light.ttf") format('ttf');
     font-weight: 100;
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Light.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Light.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Light.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Light.ttf") format('ttf');
     font-weight: 200;
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Regular.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Regular.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Regular.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Regular.ttf") format('ttf');
     font-weight: 300;
@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Regular.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Regular.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Regular.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Regular.ttf") format('ttf');
     font-weight: 400;
@@ -38,7 +38,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Medium.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Medium.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Medium.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Medium.ttf") format('ttf');
     font-weight: 500;
@@ -47,7 +47,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Bold.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Bold.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Bold.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Bold.ttf") format('ttf');
     font-weight: 600;
@@ -56,7 +56,7 @@
 @font-face {
     font-family: 'Noto Sans CJK kr';
     src: 
-    url("/ux/fonts/NotoSansCJKkr-Bold.otf") format('otf'),
+    url("/ux/fonts/NotoSansCJKkr-Bold.otf") format('opentype'),
     url("/ux/fonts/NotoSansCJKkr-Bold.woff") format('woff'),
     url("/ux/fonts/NotoSansCJKkr-Bold.ttf") format('ttf');
     font-weight: 700;

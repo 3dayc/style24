@@ -96,15 +96,763 @@
 	</div>
 	<!-- </section> -->
 	<!-- footer end -->
-
+	<!-- 퀵메뉴 -->
+	<div id="quick_menu">
+		<ul class="quick_btn">
+			<li>
+				<button type="button" id="" class="quick_btn01" data-tab="quick01">
+					<img src="/images/pc/ico_qk_history.png" alt="최근 본 상품">
+					<span class="count">30</span>
+				</button>
+			</li>
+			<li>
+				<button type="button" id="" class="quick_btn02" data-tab="quick02">
+					<img src="/images/pc/ico_qk_cart.png" alt="쇼핑백">
+					<span class="count">2</span>
+				</button>
+			</li>
+			<li>
+				<button type="button" id="" class="quick_btn03" data-tab="quick03">
+					<img src="/images/pc/ico_qk_like.png" alt="위시리스트">
+					<span class="count">100</span>
+				</button>
+			</li>
+			<li>
+				<button type="button" id="" class="quick_btn04" data-tab="quick04">
+					<img src="/images/pc/ico_qk_coupon.png" alt="쿠폰">
+					<span class="count">100</span>
+				</button>
+			</li>
+			<li>
+				<button type="button" id="" class="quick_btn05" data-tab="quick05">
+					<img src="/images/pc/ico_qk_cate.png" alt="카테고리">
+				</button>
+			</li>
+			<li>
+				<button type="button" id="top_btn">
+					<img src="/images/pc/ico_qk_top.png" alt="상단으로가기 버튼">
+				</button>
+			</li>
+		</ul>
+		<div class="tabs_con">
+			<button type="button" class="quick_close_btn"><span class="sr-only">퀵메뉴 닫기</span></button>
+			<div class="history quick_con quick01"> <!-- 퀵메뉴_최근 본 상품 -->
+				<div class="quick_head">
+					<h3>최근 본 상품</h3>
+				</div>
+				<div class="quick_body"> <!-- 최근 본 상품 없을 시 nodata 클래스 추가 -->
+					<div class="product_count"><span class='c_primary'>30</span>개의 상품</div>
+					<div class="itemsGrp">
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="no_item">
+							최근 본 상품이 없습니다.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shopingbag quick_con quick02"> <!-- 퀵메뉴_쇼핑백 -->
+				<div class="quick_head">
+					<h3><a href="">쇼핑백</a></h3>
+				</div>
+				<div class="quick_body"> <!-- 쇼핑백 상품 없을 시 nodata 클래스 추가 -->
+					<div class="product_count"><span class='c_primary'>30</span>개의 상품</div>
+					<div class="itemsGrp existence">
+						<div class="item_prod">
+							<button type="button" class="delete_btn"><span class="sr-only">해당상품 삭제</span></button>
+							<div class="item_state">
+								<div class="shape"><span>곧 품절돼요!</span></div>
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemSize">
+										<span>105</span> / <span>블랙</span> / <span>1</span>
+									</p>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+									<div class="itemComment">다다익선 할인 적용</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<button type="button" class="delete_btn"><span class="sr-only">해당상품 삭제</span></button>
+							<div class="item_state">
+								<div class="shape"><span>곧 품절돼요!</span></div>
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemSize">
+										<span>105</span> / <span>블랙</span> / <span>1</span>
+									</p>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<button type="button" class="delete_btn"><span class="sr-only">해당상품 삭제</span></button>
+							<div class="item_state">
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemSize">
+										<span>105</span> / <span>블랙</span> / <span>1</span>
+									</p>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+									<div class="itemComment">다다익선 할인 적용</div>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<button type="button" class="delete_btn"><span class="sr-only">해당상품 삭제</span></button>
+							<div class="item_state">
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemSize">
+										<span>105</span> / <span>블랙</span> / <span>1</span>
+									</p>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 쇼핑백 없을 시 -->
+					<div class="itemsGrp empty">
+						<p class="desc">쇼핑백에 담긴 상품이 없습니다.<br>이런 상품은 어떠신가요?</p>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+									<button type="button" class="btn btn_sm cart_btn"><span>쇼핑백 담기</span></button>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</a>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="javascript:;" class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<p class="itemPrice">80,100
+										<span class="itemPrice_original">89,000</span>
+									</p>
+									<button type="button" class="btn btn_sm cart_btn"><span>쇼핑백 담기</span></button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- //쇼핑백 없을 시 -->
+					<button type="button" class="btn btn_default purchase_btn"><span>전체 상품 구매하기</span></button>
+				</div>
+			</div>
+			<div class="wishlist quick_con quick03"> <!-- 퀵메뉴_위시리스트 -->
+				<div class="quick_head"> 
+					<h3><a href="">위시리스트</a></h3>
+				</div>
+				<div class="quick_body"> <!-- 최근 본 상품 없을 시 nodata 클래스 추가 --> <!-- 비로그인 시 need_login 클래스 추가 -->
+					<div class="product_count"><span class='c_primary'>50</span>개의 상품</div>
+					<div class="itemsGrp">
+						<div class="item_prod">
+							<div class="item_state">
+								<div class="shape"><span>곧 품절돼요!</span></div>
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<div class="shape"><span>곧 품절돼요!</span></div>
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod2.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="item_prod">
+							<div class="item_state">
+								<a href="#none" class=" itemLink">
+									<div class="itemPic">
+										<img class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg" alt="이미지설명" >
+										<button type="button" class="itemLike active">관심상품 추가</button>
+									</div>
+								</a>
+								<div class="hover_con">
+									<button type="button" class="btn btn_sm cart_btn on"><span>쇼핑백 담기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="no_item">
+							최근 본 상품이 없습니다.
+						</div>
+					</div>
+					<div class="login_con">
+						<div>
+							<p>로그인 후 이용 가능한 서비스입니다.</p>
+							<button type="button" class="btn btn_sm"><span>로그인</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="coupon quick_con quick04"> <!-- 퀵메뉴_나의 쿠폰 -->
+				<div class="quick_head">
+					<h3><a href="">나의 쿠폰</a></h3>
+				</div>
+				<div class="quick_body"> <!-- 비로그인 시 need_login 클래스 추가 -->
+					<div class="coupon_tab">
+						<a href="#coupon_type01" id="" class="">발급 가능 쿠폰</a>
+						<a href="#coupon_type02" id="" class="">보유 쿠폰</a>
+					</div>
+					<div id="coupon_type01" class="coupon_area">
+						<div class="pop_cont">
+							<ul class="coupon_list">
+								<li>
+									<div class="coupon">
+										<div>
+											<p class="cp_name">
+												TBJ 시즌오프 20% 할인쿠폰
+											</p>
+											<p class="cp_cont">
+												<span><em>12,399,900</em>원</span>
+											</p>
+											<p class="cp_condition">
+												500,000원 이상 구매 시 최대 50,000원 할인
+												<span>1인 최대 90장</span>
+											</p>
+										</div>
+										<button type="button" class="btn btn_dark btn_block btn_coupon_down"><span>쿠폰받기</span></button>
+									</div>
+								</li>
+								<li>
+									<div class="coupon">
+										<div>
+											<p class="cp_name">
+												신규가입 40% 할인쿠폰
+											</p>
+											<p class="cp_cont">
+												<span><em>40%</em></span>
+											</p>
+											<p class="cp_condition">
+												500,000원 이상 구매 시 최대 50,000원 할인
+												<span>1인 최대 90장</span>
+											</p>
+										</div>
+										<button type="button" class="btn btn_dark btn_block btn_coupon_done" disabled=""><span>받기완료</span></button>
+									</div>
+								</li>
+								<li>
+									<div class="coupon">
+										<div>
+											<p class="cp_name">
+												TBJ 시즌오프 20% 할인쿠폰
+											</p>
+											<p class="cp_cont">
+												<span><em>12,399,900</em>원</span>
+											</p>
+											<p class="cp_condition">
+												500,000원 이상 구매 시 최대 50,000원 할인
+												<span>1인 최대 90장</span>
+											</p>
+										</div>
+										<button type="button" class="btn btn_dark btn_block btn_coupon_down"><span>쿠폰받기</span></button>
+									</div>
+								</li>
+								<li>
+									<div class="coupon">
+										<div>
+											<p class="cp_name">
+												신규가입 40% 할인쿠폰
+											</p>
+											<p class="cp_cont">
+												<span><em>40%</em></span>
+											</p>
+											<p class="cp_condition">
+												500,000원 이상 구매 시 최대 50,000원 할인
+												<span>1인 최대 90장</span>
+											</p>
+										</div>
+										<button type="button" class="btn btn_dark btn_block btn_coupon_done" disabled=""><span>받기완료</span></button>
+									</div>
+								</li>                     
+								<li>
+									<div class="coupon">
+										<div>
+											<p class="cp_name">
+												TBJ 시즌오프 20% 할인쿠폰
+											</p>
+											<p class="cp_cont">
+												<span><em>12,399,900</em>원</span>
+											</p>
+											<p class="cp_condition">
+												500,000원 이상 구매 시 최대 50,000원 할인
+												<span>1인 최대 90장</span>
+											</p>
+										</div>
+										<button type="button" class="btn btn_dark btn_block btn_coupon_down"><span>쿠폰받기</span></button>
+									</div>
+								</li>
+								<li>
+									<div class="coupon">
+										<div>
+											<p class="cp_name">
+												신규가입 40% 할인쿠폰
+											</p>
+											<p class="cp_cont">
+												<span><em>40%</em></span>
+											</p>
+											<p class="cp_condition">
+												500,000원 이상 구매 시 최대 50,000원 할인
+												<span>1인 최대 90장</span>
+											</p>
+										</div>
+										<button type="button" class="btn btn_dark btn_block btn_coupon_done" disabled=""><span>받기완료</span></button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="coupon_type02" class="coupon_area">
+						<div class="coupon_list">
+							<ul class="clear">
+								<li>
+									<div class="cp_top">
+										<div class="cp_detail">
+											<p class="tit">신규 가입 40% 할인쿠폰</p>
+											<strong class="sale_t won_t"><span>12,399,900</span>원</strong>
+											<p class="cp_cont"><span>9,500,500</span>원 이상 구매시 최대 <span>5,000,000</span>원 할인</p>
+											<span class="cp_cnt"><span>999</span>장 보유</span>
+										</div>
+										<span class="cp_shape"></span>
+									</div>
+									<div class="cp_date">
+										<span>2020.01.01</span> ~ <span>2021.01.31</span>
+									</div>
+									<div class="cp_info">
+										<button type="button" class="coupon_pop_btn"><span>사용안내</span></button>
+									</div>
+								</li>
+								<li class="off">
+									<div class="cp_top">
+										<div class="cp_detail">
+											<p class="tit">신규 가입 40% 할인쿠폰</p>
+											<strong class="sale_t"><span>40</span>%</strong>
+											<p class="cp_cont"><span>9,500,500</span>원 이상 구매시 최대 <span>5,000,000</span>원 할인</p>
+											<span class="cp_cnt"><span>999</span>장 보유</span>
+										</div>
+										<span class="cp_shape"></span>
+									</div>
+									<div class="cp_date">
+										<span class="cp_off">사용완료</span>
+									</div>
+									<div class="cp_info">
+										<button type="button" class="coupon_pop_btn"><span>사용안내</span></button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="" class="more_btn">더 보기</a>
+					<div class="login_con">
+						<div>
+							<p>로그인 후 이용 가능한 서비스입니다.</p>
+							<button type="button" class="btn btn_sm"><span>로그인</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="category quick_con quick05"> <!-- 퀵메뉴_카테고리 -->
+				<div class="quick_head">
+					<h3>스타일24 카테고리</h3>
+				</div>
+				<div class="quick_body">
+					<ul class="quick_cate_wrap">
+						<li><a href="javascript:;"><span>홈</span></a></li>
+						<li class="has_children">
+							<a href="javascript:;"><span>여성</span></a>
+							<ul class="quick_depth">
+								<li><a href="javascript:;"><span>티셔츠/셔츠</span></a></li>
+								<li><a href="javascript:;"><span>니트/가디건/베스트</span></a></li>
+								<li><a href="javascript:;"><span>원피스/스커트</span></a></li>
+								<li><a href="javascript:;"><span>팬츠/레깅스</span></a></li>
+								<li><a href="javascript:;"><span>데님</span></a></li>
+								<li><a href="javascript:;"><span>자켓/점퍼/코트</span></a></li>
+								<li><a href="javascript:;"><span>트레이닝/스포츠</span></a></li>
+								<li><a href="javascript:;"><span>여성잡화</span></a></li>
+								<li><a href="javascript:;"><span>언더웨어</span></a></li>
+							</ul>   
+						</li>
+						<li class="has_children">
+							<a href="javascript:;"><span>남성</span></a>
+							<ul class="quick_depth">
+								<li><a href="javascript:;"><span>티셔츠/셔츠</span></a></li>
+								<li><a href="javascript:;"><span>니트/가디건/베스트</span></a></li>
+								<li><a href="javascript:;"><span>원피스/스커트</span></a></li>
+								<li><a href="javascript:;"><span>팬츠/레깅스</span></a></li>
+								<li><a href="javascript:;"><span>데님</span></a></li>
+								<li><a href="javascript:;"><span>자켓/점퍼/코트</span></a></li>
+								<li><a href="javascript:;"><span>트레이닝/스포츠</span></a></li>
+								<li><a href="javascript:;"><span>여성잡화</span></a></li>
+								<li><a href="javascript:;"><span>언더웨어</span></a></li>
+							</ul>  
+						</li>
+						<li class="has_children">
+							<a href="javascript:;"><span>유아동</span></a>
+							<ul class="quick_depth">
+								<li><a href="javascript:;"><span>티셔츠/셔츠</span></a></li>
+								<li><a href="javascript:;"><span>니트/가디건/베스트</span></a></li>
+								<li><a href="javascript:;"><span>원피스/스커트</span></a></li>
+								<li><a href="javascript:;"><span>팬츠/레깅스</span></a></li>
+								<li><a href="javascript:;"><span>데님</span></a></li>
+								<li><a href="javascript:;"><span>자켓/점퍼/코트</span></a></li>
+								<li><a href="javascript:;"><span>트레이닝/스포츠</span></a></li>
+								<li><a href="javascript:;"><span>여성잡화</span></a></li>
+								<li><a href="javascript:;"><span>언더웨어</span></a></li>
+							</ul> 
+						</li>
+						<li class="has_children">
+							<a href="javascript:;"><span>골프</span></a>
+							<ul class="quick_depth">
+								<li><a href="javascript:;"><span>티셔츠/셔츠</span></a></li>
+								<li><a href="javascript:;"><span>니트/가디건/베스트</span></a></li>
+								<li><a href="javascript:;"><span>원피스/스커트</span></a></li>
+								<li><a href="javascript:;"><span>팬츠/레깅스</span></a></li>
+								<li><a href="javascript:;"><span>데님</span></a></li>
+								<li><a href="javascript:;"><span>자켓/점퍼/코트</span></a></li>
+								<li><a href="javascript:;"><span>트레이닝/스포츠</span></a></li>
+								<li><a href="javascript:;"><span>여성잡화</span></a></li>
+								<li><a href="javascript:;"><span>언더웨어</span></a></li>
+							</ul>
+						</li>
+						<li class="has_children">
+							<a href="javascript:;"><span>라이프</span></a>
+							<ul class="quick_depth">
+								<li><a href="javascript:;"><span>티셔츠/셔츠</span></a></li>
+								<li><a href="javascript:;"><span>니트/가디건/베스트</span></a></li>
+								<li><a href="javascript:;"><span>원피스/스커트</span></a></li>
+								<li><a href="javascript:;"><span>팬츠/레깅스</span></a></li>
+								<li><a href="javascript:;"><span>데님</span></a></li>
+								<li><a href="javascript:;"><span>자켓/점퍼/코트</span></a></li>
+								<li><a href="javascript:;"><span>트레이닝/스포츠</span></a></li>
+								<li><a href="javascript:;"><span>여성잡화</span></a></li>
+								<li><a href="javascript:;"><span>언더웨어</span></a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;"><span>베스트</span></a></li>
+						<li><a href="javascript:;"><span>핫딜</span></a></li>
+						<li><a href="javascript:;"><span>기획전</span></a></li>
+						<li><a href="javascript:;"><span>총알배송</span></a></li>
+						<li class="has_children">
+							<a href="javascript:;"><span>아울렛</span></a>
+							<ul class="quick_depth">
+								<li><a href="javascript:;"><span>티셔츠/셔츠</span></a></li>
+								<li><a href="javascript:;"><span>니트/가디건/베스트</span></a></li>
+								<li><a href="javascript:;"><span>원피스/스커트</span></a></li>
+								<li><a href="javascript:;"><span>팬츠/레깅스</span></a></li>
+								<li><a href="javascript:;"><span>데님</span></a></li>
+								<li><a href="javascript:;"><span>자켓/점퍼/코트</span></a></li>
+								<li><a href="javascript:;"><span>트레이닝/스포츠</span></a></li>
+								<li><a href="javascript:;"><span>여성잡화</span></a></li>
+								<li><a href="javascript:;"><span>언더웨어</span></a></li>
+							</ul>
+						</li>
+						<li><a href="/"><span>룩북</span></a></li>
+						<li><a href="/"><span>이벤트/혜택</span></a></li>
+					</ul>
+					<div class="quick_cate_txt">
+						<a href="javascript:;">로그인</a>
+						<a href="javascript:;">회원가입</a>
+						<a href="javascript:;">마이페이지</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 퀵메뉴 -->
+	<!-- 쿠폰 사용 내역 팝업 -->
+	<div class="modal coupon_popup" tabindex="-1" role="dialog" aria-labelledby="PopupBasicLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">사용 조건</h5>
+			</div>
+			<div class="modal-body">
+				<section class="order_row">
+					<div class="coupon_condition">
+						<dl class="clear">
+							<dt>사용조건</dt>
+							<dd><span>9,999,999</span>원 구매 시 최대 <span>9,999,999</span>원 할인</dd>
+						</dl>
+						<dl class="clear">
+							<dt>대상조건</dt>
+							<dd>남성,여성,유아동 카테고리</dd>
+						</dl>
+					</div>
+				</section>
+			</div>
+		  </div>
+		</div>
+	</div>
 	<script>
-	/* familysite */
 	$(document).ready( function() {
-		$('.family_link').on('click','.btn',function(e){
+
+		//퀵메뉴
+		var tabAnchor = $('.quick_btn button'),
+			tabPanel = $('#quick_menu .quick_con');
+
+		$(document).on('click','.quick_btn button:not(#top_btn)',function(e){
 			e.preventDefault();
-			$(this).parents('.family_link').find('#family_site').slideToggle(100);
-			$(this).find('.ico.ico_ft_arrow_b').toggleClass('ico_ft_arrow_t');
+			$('body').addClass('lock');
+			$('#quick_menu').addClass('active');
+			tabAnchor.removeClass('active');
+			$(this).addClass('active');
+			var NewLink = $(this).attr('data-tab');
+			tabPanel.hide();
+			$('.' + NewLink).show();
+		});
+		
+		//퀵메뉴_쿠폰
+		var couponAnchor = $('.coupon_tab a'),
+			couponPanel = $('.coupon_area');
+
+		$(document).on('click','.coupon_tab a',function(e){
+			e.preventDefault();
+			couponAnchor.removeClass('active');
+			$(this).addClass('active');
+			var NewLink = $(this).attr('href');
+			
+			couponPanel.hide();
+			$(NewLink).show();
+			
+		});
+		
+		couponAnchor.eq(0).trigger('click');
+
+		//퀵메뉴 닫을 때
+		$(document).on('click','#quick_menu .quick_close_btn',function(e){
+			e.preventDefault();
+			$('body').removeClass('lock');
+			$('#quick_menu').removeClass('active');
+			//$('#quick_menu .quick_con').hide();
+		});
+
+		//퀵메뉴 카테고리 메뉴 클릭시
+		$(document).on('click','#quick_menu .category .quick_cate_wrap > li',function(e){
+			$(this).toggleClass('active');
+			$(this).find('> ul').slideToggle(300);
+			$(this).siblings('li').find('> ul').slideUp(300);
+			$(this).siblings('li').removeClass('active');
+		});
+
+		//퀵메뉴 탑버튼 클릭 시
+		$(document).on('click','#top_btn',function(e){
+			$('body,html').animate({scrollTop:0});
+		});
+
+		//퀵메뉴_쿠폰 사용안내 팝업
+	
+
+		$(".coupon_pop_btn").click(function() {
+			$(".coupon_popup").modal("show");
 		});
 	});
-	/* //familysite  */
 	</script>
