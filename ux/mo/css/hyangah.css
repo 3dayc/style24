@@ -1,0 +1,20 @@
+/* 네이버쿠폰 팝업 */
+.modal .naver .modal-header { padding: 2.5rem 2rem 2rem;}
+.modal .naver .modal_img { width: 20rem; height: 11.2rem; background: url(/images/mo/coupon_naver8.png); background-size: 20rem 11.2rem; margin: 0 auto; }
+.modal .naver .modal-body { padding: 2rem 2rem 3rem;}
+.modal .naver .modal-body p { font-size: 1.2rem; padding: 0 0 0.9rem; color: #666666;}
+.modal .naver .modal-body p:last-child { padding-bottom: 0;}
+.modal .naver .modal-footer { margin: 0;}
+.modal .naver .modal-footer .btn { background: #fd4802;}
+
+/* 쿠폰모두받기 팝업 */
+.modal_wide { width: 100%; position: absolute; left: 0; bottom: 0;}
+.modal_wide .coupon_all .modal-header { padding: 3rem 2rem 2.5rem;}
+.modal_wide .coupon_all .modal-body { width: 100%; height: 100%; padding: 0 2rem; margin: 0 auto; }
+.modal_coupon { width: 100%; background: url(/images/mo/coupon.png) no-repeat center; background-size: 100% auto; margin: 0 auto;}
+.modal_coupon li:nth-child(1) { padding: 2.5rem 0 1rem 2rem; font-size: 1.2rem;}
+.modal_coupon li:nth-child(2) { padding: 0 0 0 2rem; font-size: 1.8rem; font-weight: bold; color: #fd7039;}
+.modal_coupon li:nth-child(3) { padding: 1.2rem 0 1rem 2rem; font-size: 1.2rem; color: #666666;}
+.modal_coupon li:nth-child(4) { padding: 0 0 3.5rem 2rem; font-size: 1.2rem; color: #666666;}
+.modal_wide .coupon_all .modal-footer { height: 5.9rem;}
+.modal_wide .coupon_all .modal-footer .btn { background: #fd4802; position: absolute; bottom: 0;}
