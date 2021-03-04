@@ -50,3 +50,11 @@ table.vene_type2 tbody tr td a{position:relative; top:0.5rem}
 .measure_text h2{font-size:1.3rem; margin-bottom:0.6rem;}
 .measure_text p{font-size:1.2rem;}
 
+.income_alram .permi{display:flex; border-bottom:0.1rem solid #dddddd; height:15rem; margin-bottom:3rem;}
+.income_alram .permi .info_img{width:7rem; height:10.5rem; background-color:tan;}
+.income_alram .permi .info_text{margin-left:1.9rem}
+.income_alram .measure_text h2{margin-bottom:1.5rem;}
+.income_alram .measure_text > ul{display:flex;}
+.income_alram .measure_text > ul > li > button{width:6rem; height:3.4rem; border:0.1rem solid #dddddd; margin-right:0.5rem; font-size:0.1rem; font-weight:bold; color:#000}
+.income_alram .measure_text > ul > li > button.active{border:0.1rem solid red;}
+.income_btn{background-color:#000 !important; color:#fff}
