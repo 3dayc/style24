@@ -431,7 +431,7 @@ input[type="file"] {
 .ico_ft_arrow_r:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png');}
 .ico_ft_arrow_b:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png'); transform: rotate(90deg);}
 .ico_ft_arrow_t:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png'); transform: rotate(-90deg);}
-.ico_kcl::before {content: ""; width:32px; height:50px; background-image: url('/images/mo//ico_kcl.png');}
+.ico_kcl::before {content: ""; width:32px; height:50px; background-image: url('/images/mo/ico_kcl.png');}
 .ico_picker::before {content: ""; width:40px; height:40px; background:url(/images/mo//ico_picker.png) no-repeat 50% 50%;}
 .ico_trash::before {content: ""; width:13px; height:16px; background:url(/images/mo//ico_trash.png) no-repeat 50% 50%;}
 .ico_like::before {content: ""; width: 19px;height:16px;background: url(/images/mo//ico_like.png) no-repeat 0% 50%; background-size:cover;}
@@ -920,9 +920,9 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 
 
 /* 제거할 클래스 */
-.btnL{width:100%; height:4.5rem;}
-.btnM{width:100%; height:4rem;}
-.btnS{width:100%; height:3rem;}
+.btnL{width:100%; height:4.5rem; line-height:4.5rem;}
+.btnM{width:100%; height:4rem; line-height:4rem;}
+.btnS{width:100%; height:3rem; line-height:3rem;}
 
 /* .inner, .inner.bg_gray 등을 응용 */
 .blockLyout{background-color:#f5f5f5;}
