@@ -166,36 +166,71 @@
 					<div>
 						<br><br><br>
 						<button type="button" class="btn btn_default btn_lg" id="modalFull_show">
-							<span>배송안내</span>
+							<span>상품 문의하기</span>
 						</button>
 						<br><br><br>
 					</div>
 				</div>
 
-				<!-- // Full size Popup -->
+				<!-- // 고객센터 1:1 문의 (3) Popup -->
 				<div class="modal pop_full fade" id="exampleModalFull" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
-						<div class="modal-content pop_full_wrap">
+						<div class="modal-content pop_contact">
 							<div class="modal-header">
-								<ul class="modal-title" id="exampleFullLabel">
-									<li class="title_img"></li>
-									<li class="title_text">
-										<p><span>NBA</span>유니 삼단블록 플리스 집업</p>
-									</li>
-								</ul>
+								<div class="inner">
+									<h5 class="modal-title" id="exampleFullLabel">상품 문의하기</h5>
+								</div>
 							</div>
 							<div class="modal-body qnalist">
-								<div class="pop_cont">
-									<p class="dot">상품에 대해 궁금한 점이 있으시다면 문의해주세요.</p>
-									<p class="dot">배송, 주문/결제, 취소/반품/교환/환불, 회원, 쿠폰/포인트, 이벤트 등의 자세한 문의사항은 고객센터 > 1:1문의를 이용하여 주시기 바랍니다.</p>
-									<button type="button" class="btn">고객센터 1:1문의</button>
+								<div class="inner">
+									<div class="pop_cont">
+										<p class="dot">배송, 주문/결제, 취소/반품/교환/환불, 회원, 쿠폰/포인트, 이벤트 등의 자세한 문의사항은 고객센터 > 1:1 문의를 이용하여 주시기 바랍니다.</p>
+										<p class="dot">상품문의에 부합하지 않는 광고, 이유없는 비방, 욕설 및 오해의 소지가 있는 문의건에 대해서는 사전 통보 없이 삭제 될 수 있습니다.</p>
+										<p class="dot">답변은 고객센터 > 상품 문의에서 확인 하실 수 있습니다.</p>
+									</div>
 								</div>
-								<div>
-									<p>등록된 상품문의가 없습니다.</p>
+								<div class="inner">
+									<div class="form_field">
+										<div class="ui_col_12 form_full">
+											<div class="input_wrap">
+												<textarea class="doc_contactus" name="" id="" cols="30" rows="10" style="resize: none;" placeholder="문의내용 입력(500자 이내)"></textarea>
+												<p class="txt_cnt">
+													<span id="contactus_cnt" class="contactus_cnt"><em class="c_primary">0</em>/500</span>
+												</p>
+											</div> 
+											<!-- 특수문자 : \ / : < >  사용 불가 > 입력 시, “특수문자 \ / : < > 는 사용할 수 없습니다.” 얼럿 호출 스크립트 입력 불가능 -->
+										</div>
+									</div>
 								</div>
-							</div>
+								<div class="inner">
+									<ul class="check">
+										<li></li>
+										<li>비밀글 설정</li>
+									</ul>
+								</div>
+									<div class="inner">
+										<div class="form_field">
+											<div class="ui_col_12 cellphone">
+												<div class="input_wrap">
+													<span class="tt">알림톡 수신 여부</span>
+													<!-- 알림 신청 체크박스(선택 _ 기본값) -->
+													<div>
+														<div class="ck_box">
+															<input id="chk-push1" type="radio" name="sms" checked="">
+															<label for="chk-push1"><span>수신</span></label>
+														</div>
+														<div class="ck_box">
+															<input id="chk-push2" type="radio" name="sms">
+															<label for="chk-push2"><span>미수신</span></label>
+														</div>
+													</div>
+												</div> 
+											</div>
+										</div>
+									</div>
+								</div>
 							<div class="modal-footer">
-								<button type="button" class="btn"  id=""><span>상품 문의하기</span></button>
+								<button type="button" class="btn"  id=""><span>등록</span></button>
 							</div>
 						</div>
 					</div>
@@ -289,7 +324,6 @@
 			}
 		}
 	</script>
-
 	<script>
 		$(document).ready(function() {
 		// Full size Popup

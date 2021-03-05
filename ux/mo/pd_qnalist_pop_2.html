@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>STYLE24 | pd_detail_coupon2 | Publishing</title>
+	<title>STYLE24 | pd_qnalist_pop | Publishing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
@@ -161,46 +161,51 @@
 			</nav>
 
 			<!-- ★ 컨텐츠 시작 -->
-			<section class="pd_detail">
-				<div class="inner">
+			<section class="pd_qnalist_pop">
+				<div class="inner bg_gray">
 					<div>
 						<br><br><br>
-						<button type="button" class="btn btn_primary" id="modalBasic">
-							<span>쿠폰 받기</span>
+						<button type="button" class="btn btn_default btn_lg" id="modalFull_show">
+							<span>배송안내</span>
 						</button>
+						<br><br><br>
 					</div>
 				</div>
 
-				<!-- // 쿠폰모두받기 Modal Popup -->
-				<div class="modal_wide fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<!-- // 고객센터 1:1 문의 (2) Popup -->
+				<div class="modal pop_full fade" id="exampleModalFull" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
-						<div class="modal-content coupon_all">
+						<div class="modal-content pop_full_wrap">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">할인쿠폰 받기</h5>
+								<div class="inner">
+									<ul class="modal-title" id="exampleFullLabel">
+										<li class="title_img"></li>
+										<li class="title_text">
+											<p><span>NBA</span>유니 삼단블록 플리스 집업</p>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="modal-body">
-								<!-- class="done"을 추가하면 쿠폰받기 완료 -->
-								<ul class="modal_coupon">
-									<li>TBJ 시즌오프 20% 할인쿠폰</li>
-									<li>20%</li>
-									<li>10,000원 이상 구매 시 최대 5,000원 할인</li>
-									<li>1인 최대 9,999장</li>
-									<button type="button" class="btn btn_go">
-										<span>쿠폰받기</span>
-									</button>
-								</ul>
+							<div class="modal-body qnalist">
+								<div class="inner">
+									<div class="pop_cont">
+										<p class="dot">상품에 대해 궁금한 점이 있으시다면 문의해주세요.</p>
+										<p class="dot">배송, 주문/결제, 취소/반품/교환/환불, 회원, 쿠폰/포인트, 이벤트 등의 자세한 문의사항은 고객센터 > 1:1문의를 이용하여 주시기 바랍니다.</p>
+										<button type="button" class="btn">고객센터 1:1문의</button>
+									</div>
+									<div class="no_qna">
+										<p>등록된 상품문의가 없습니다.</p>
+									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
-								<!-- class="done"을 추가하면 쿠폰받기 완료 -->
-								<button type="button" class="btn btn_primary"><span>쿠폰 모두 받기</span></button>
+								<button type="button" class="btn"  id=""><span>상품 문의하기</span></button>
 							</div>
 						</div>
 					</div>
 				</div>
 
-			</section>
 			<!-- ★ 컨텐츠 종료 -->	
-
 
 		</main>
 
@@ -270,6 +275,7 @@
 
 
 	<!-- script -->
+	<!-- 서브일 경우 스크립트 추가 -->
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -287,17 +293,18 @@
 			}
 		}
 	</script>
-	 <script>
+
+	<script>
 		$(document).ready(function() {
-		   // JQUERY를 이용한 버튼 모달 팝업
-		   $("#modalBasic").click(function() {
-			   $("#exampleModal").modal("show");
-		   });					 
-		   $("#closeModalBtn").click(function() {
-			   $("#exampleModal").modal("hide");
-		   });
-	   });		
-</script>
+		// Full size Popup
+		$("#modalFull_show").click(function() {
+			$("#exampleModalFull").modal("show");
+		});					 
+		$("#closeModalBtn").click(function() {
+			$("#exampleModalFull").modal("hide");
+		});
+	});		
+	</script>
 
 </body>
 
