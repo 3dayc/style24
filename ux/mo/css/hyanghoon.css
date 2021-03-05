@@ -22,7 +22,7 @@ table.vene_type2 tbody tr td:nth-of-type(2){color:#666666; font-weight:300;}
 table.vene_type2 tbody tr td a{position:relative; top:0.5rem}
 
 .vene_tip_text{font-size:1.3rem; margin-top:1.9rem; padding-left:0.8rem; line-height:2.5rem; padding-bottom:5.9rem;}
-.vene_tip_text p:after{content:"*"; position:absolute; left:2rem; margin-top:0.3rem;}
+.vene_tip_text p:after{content:"*"; position:absolute; left:0; margin-top:0.3rem;}
 
 /* pd_size_info */
 .size_info_tab{display:flex; border-bottom:0.1rem solid #eeeeee;}
@@ -50,11 +50,34 @@ table.vene_type2 tbody tr td a{position:relative; top:0.5rem}
 .measure_text h2{font-size:1.3rem; margin-bottom:0.6rem;}
 .measure_text p{font-size:1.2rem;}
 
-.income_alram .permi{display:flex; border-bottom:0.1rem solid #dddddd; height:15rem; margin-bottom:3rem;}
+.income_alram .permi{display:flex; border-bottom:0.1rem solid #dddddd; height:13.8rem; margin-bottom:3rem; margin-top:1rem;}
 .income_alram .permi .info_img{width:7rem; height:10.5rem; background-color:tan;}
 .income_alram .permi .info_text{margin-left:1.9rem}
+.income_alram .permi .info_text p:nth-of-type(1){font-size:1rem; font-weight:600;}
+.income_alram .permi .info_text p:nth-of-type(2){font-size:1.3rem; font-weight:500;}
+.income_alram .permi .info_text p:nth-of-type(2) > span{color:#000}
 .income_alram .measure_text h2{margin-bottom:1.5rem;}
 .income_alram .measure_text > ul{display:flex;}
 .income_alram .measure_text > ul > li > button{width:6rem; height:3.4rem; border:0.1rem solid #dddddd; margin-right:0.5rem; font-size:0.1rem; font-weight:bold; color:#000}
 .income_alram .measure_text > ul > li > button.active{border:0.1rem solid red;}
-.income_btn{background-color:#000 !important; color:#fff}
+.income_btn-b{background-color:#000 !important; color:#fff}
+.income_btn-o{background-color:#fd4802 !important; color:#fff}
+
+/* pd_product_persenal */
+.income_alram .permi .info_text.type1{padding-top:0.8rem;}
+.income_alram .permi .info_text.type1 .info_price > p{font-size:1.2rem;text-decoration:line-through; margin-bottom:-0.4rem; margin-top:0.3rem;}
+.income_alram .permi .info_text.type1 .info_price > span:nth-of-type(1){font-size:1.6rem; color:#000; font-weight:600;}
+.income_alram .permi .info_text.type1 .info_price > span:nth-of-type(2){font-size:1.6rem; color:#fd4802; margin-left:1.2rem; font-weight:600;}
+.income_alram .permi .info_text.type2{padding-top:1.7rem;}
+.income_alram .permi .info_text.type2 .info_price > span{font-weight:bold;}
+.income_alram .permi .info_text.type2 .info_price > span:nth-of-type(1){font-size:1.6rem; color:#000;}
+.income_alram .permi .info_text.type2 .info_price > span:nth-of-type(2){font-size:1.2rem;text-decoration:line-through;}
+.income_alram .permi .info_text.type2 .info_price > span:nth-of-type(3){font-size:1.6rem; color:#fd4802; margin-left:1.2rem; font-weight:600;}
+.income_alram .permi_reserv{width:100%; height:50rem; background:url(../../../images/mo/pd_product_reserv.png);}
+.income_alram .permi.mg0{height:10.5rem; margin-top:-3rem;}
+.income_alram .permi.mg0:nth-of-type(1){margin-top:0; border-top:0.1rem solid #dddddd;}
+.income_alram .persenal_text div{margin-bottom:2rem;}
+.income_alram .persenal_text h2{font-size:1.3rem; margin-bottom:1rem;}
+.income_alram .persenal_text p{font-size:1.3rem;}
+.income_alram .persenal_text .p-type2 > p{padding-left:0.8rem;}
+.income_alram .persenal_text .p-type2 > p:after{content:"-"; position:absolute; left:0}
