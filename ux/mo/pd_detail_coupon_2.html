@@ -165,34 +165,61 @@
 				<div class="inner">
 					<div>
 						<br><br><br>
-						<button type="button" class="btn btn_primary" id="modalBasic">
-							<span>쿠폰 받기</span>
+						<button type="button" class="btn btn_primary" id="modalScroll_show">
+							<span>Scroll Popup</span>
 						</button>
 					</div>
 				</div>
 
-				<!-- // 쿠폰모두받기 Modal Popup -->
-				<div class="modal_wide fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<!-- // Scroll Popup -->
+				<div class="modal wide fade" id="exampleModalScroll" tabindex="-1" role="dialog" aria-labelledby="modalScrollLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content coupon_all">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">할인쿠폰 받기</h5>
+								<h5 class="modal-title" id="modalScrollLabel">할인쿠폰 받기</h5>
 							</div>
 							<div class="modal-body">
-								<!-- class="done"을 추가하면 쿠폰받기 완료 -->
-								<ul class="modal_coupon">
-									<li>TBJ 시즌오프 20% 할인쿠폰</li>
-									<li>20%</li>
-									<li>10,000원 이상 구매 시 최대 5,000원 할인</li>
-									<li>1인 최대 9,999장</li>
-									<button type="button" class="btn btn_go">
-										<span>쿠폰받기</span>
-									</button>
-								</ul>
+								<div class="pop_cont">
+									<ul class="modal_coupon">
+										<li>TBJ 시즌오프 20% 할인쿠폰</li>
+										<li>20%</li>
+										<li>10,000원 이상 구매 시 최대 5,000원 할인</li>
+										<li>1인 최대 9,999장</li>
+										<button type="button" class="btn btn_go">
+											<span>쿠폰받기</span>
+										</button>
+									</ul>
+									<ul class="modal_coupon">
+										<li>TBJ 시즌오프 20% 할인쿠폰</li>
+										<li>20%</li>
+										<li>10,000원 이상 구매 시 최대 5,000원 할인</li>
+										<li>1인 최대 9,999장</li>
+										<button type="button" class="btn btn_go">
+											<span>쿠폰받기</span>
+										</button>
+									</ul>
+									<ul class="modal_coupon">
+										<li>TBJ 시즌오프 20% 할인쿠폰</li>
+										<li>20%</li>
+										<li>10,000원 이상 구매 시 최대 5,000원 할인</li>
+										<li>1인 최대 9,999장</li>
+										<button type="button" class="btn btn_go">
+											<span>쿠폰받기</span>
+										</button>
+									</ul>
+									<ul class="modal_coupon">
+										<li>TBJ 시즌오프 20% 할인쿠폰</li>
+										<li>20%</li>
+										<li>10,000원 이상 구매 시 최대 5,000원 할인</li>
+										<li>1인 최대 9,999장</li>
+										<button type="button" class="btn btn_go">
+											<span>쿠폰받기</span>
+										</button>
+									</ul>
+								</div>
 							</div>
 							<div class="modal-footer">
-								<!-- class="done"을 추가하면 쿠폰받기 완료 -->
-								<button type="button" class="btn btn_primary"><span>쿠폰 모두 받기</span></button>
+								<button type="button" class="btn btn_primary">쿠폰 모두 받기</button>
 							</div>
 						</div>
 					</div>
@@ -289,12 +316,12 @@
 	</script>
 	 <script>
 		$(document).ready(function() {
-		   // JQUERY를 이용한 버튼 모달 팝업
-		   $("#modalBasic").click(function() {
-			   $("#exampleModal").modal("show");
+		   // Scroll Popup
+		   $("#modalScroll_show").click(function() {
+			   $("#exampleModalScroll").modal("show");
 		   });					 
-		   $("#closeModalBtn").click(function() {
-			   $("#exampleModal").modal("hide");
+		   $("#close_modal").click(function() {
+			   $("#exampleModalScroll").modal("hide");
 		   });
 	   });		
 </script>
