@@ -431,7 +431,7 @@ input[type="file"] {
 .ico_ft_arrow_r:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png');}
 .ico_ft_arrow_b:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png'); transform: rotate(90deg);}
 .ico_ft_arrow_t:before {content: ""; width:11px; height:11px; background-image: url('/images/mo//ico_ft_arrow.png'); transform: rotate(-90deg);}
-.ico_kcl::before {content: ""; width:32px; height:50px; background-image: url('/images/mo/ico_kcl.png');}
+.ico_kcl::before {content: ""; width:32px; height:50px; background-image: url('/images/mo//ico_kcl.png');}
 .ico_picker::before {content: ""; width:40px; height:40px; background:url(/images/mo//ico_picker.png) no-repeat 50% 50%;}
 .ico_trash::before {content: ""; width:13px; height:16px; background:url(/images/mo//ico_trash.png) no-repeat 50% 50%;}
 .ico_like::before {content: ""; width: 19px;height:16px;background: url(/images/mo//ico_like.png) no-repeat 0% 50%; background-size:cover;}
@@ -848,6 +848,33 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 
 
 
+/* bottom popup */
+.btPop_full {background: #ffffff;width: 100%;height: 100%;/* height: auto; */margin: 0;padding: 0;transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);top: 100%;position: fixed;left: 0;text-align: left;z-index: 999;}
+.btPop_full .btPop_head {padding: 20px;border-bottom: 1px solid #ddd;font-size:1.8rem;position: relative;}
+.btPop_full .btPop_body {padding: 20px;font-size:1.4rem;}
+.btPop {background: #ffffff;width: 100%;height: 100%;/* height: 100% */margin: 0;padding: 0;transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);top: 100%;position: fixed;left: 0;text-align: left;z-index: 999;}
+.btPop .btPop_head {padding: 20px;border-bottom: 1px solid #ddd;font-size:1.8rem;position: relative;}
+.btPop .btPop_body {padding: 20px;font-size:1.4rem;max-height: 24rem;overflow-x: hidden;overflow-y: auto;}
+.container .btPop_full .btPop_full_close,
+.container .btPop .btPop_close{transition: all 10ms ease;opacity: 0;}
+.container.btPop_full_open .btPop_full {top: 0;/* top: auto; */top: 55px;}
+.container.btPop_full_open .btPop_full .btPop_full_close,
+.container.btPop_open .btPop .btPop_close{
+  opacity: 1;position: absolute;z-index: 98;
+  top:-3.8rem;left:50%;transform: translate(-50%);display:block;border: 0;
+  width:2.7rem;height:2.7rem;text-indent:-9999px;background-size:contain;
+  background-repeat:no-repeat;background-position:center center;
+  background-image: url('/images/mo/ico_pop_cls.png');background-color: transparent;
+}
+.container.btPop_open .btPop {top: 0;/* top: auto; top: 55%;*/}
+.container.btPop_full_open::after,
+.container.btPop_open::after {
+  content: '';width: 100%;height: 100%;display: inline-block;
+  background: #333;opacity: 0.7;position: absolute;top: 0;left: 0;z-index: 82;
+}
+
+
+
 /* .popWrap, .popup */
 .popWrap{position: relative; height: 100%; padding: 30px 0; background-color: #fff;}
 .popup{display: none; position: fixed; left: 0; top: 55px; width: 100%; height: auto; background-color: #ffffff; padding: 0; z-index: 80;}
@@ -920,9 +947,9 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 
 
 /* 제거할 클래스 */
-.btnL{width:100%; height:4.5rem; line-height:4.5rem;}
-.btnM{width:100%; height:4rem; line-height:4rem;}
-.btnS{width:100%; height:3rem; line-height:3rem;}
+.btnL{width:100%; height:4.5rem;}
+.btnM{width:100%; height:4rem;}
+.btnS{width:100%; height:3rem;}
 
 /* .inner, .inner.bg_gray 등을 응용 */
 .blockLyout{background-color:#f5f5f5;}

@@ -377,7 +377,70 @@ $(document).ready(function () {
     });
 
 
+    // bottom pop
+    var appCall = document.getElementsByClassName('app'); // 디바이스 app 호출
+    console.log(appCall);
+
+    var appHeight = document.documentElement.clientHeight; // 디바이스의 클라이언트 높이값
+    console.log('★ 디바이스의 클라이언트 높이값 : ' + appHeight); 
+
+    var bodyCall = document.getElementsByClassName('btPop_body'); // btPop_body 호출
+    console.log(bodyCall); 
+
+    // let mememe = document.querySelector('.btPop'); 
+    let headresult = document.querySelector('.btPop_head');
+    let result = document.querySelector('.btPop_body');
+    // console.log('btPop : '+mememe.offsetHeight);
+    console.log('★ 헤더 높이 : ' + headresult.offsetHeight);
+    console.log('★ 바디 높이 : ' + result.offsetHeight);
     
+    let calll = result.offsetHeight + result.offsetHeight;
+    console.log('★ 헤더+바디 : ' + calll);
+
+    let pxtop = appHeight - calll;
+    console.log('★ 디바이스-(헤더+바디) : ' + pxtop);
+
+        // btPop_full
+        $('.btPop_full_click').click(function(){
+            popOpenScroll();
+            $('.container').addClass('btPop_full_open');
+        });
+        
+        $('.btPop_full_close').click(function(){
+            popClsScroll();
+            $('.container').removeClass('btPop_full_open');
+        });
+
+        // btPopAuto
+        $('.btPop_close').click(function(){
+            popClsScroll();
+            $('.container').removeClass('btPop_open');
+            autome.style.top  = 100 + "%";
+        });
+
+        let autome = document.querySelector('.btPopAuto'); 
+        let headsize = this.querySelector('.btPopAuto .btPopAuto_head');
+        let bodysize = this.querySelector('.btPopAuto .btPopAuto_body');
+        console.log('★ btPop_click_Auto헤더 높이 : ' + headsize.offsetHeight);
+        console.log('★ btPop_click_Auto바디 높이 : ' + bodysize.clientHeight);
+
+        let autotop = appHeight - (headsize.offsetHeight + bodysize.offsetHeight);
+        console.log('★ btPopAuto전체 높이 - 컨텐츠 높이 : ' + autotop);
+        console.log('★ btPopAuto전체 높이 - 컨텐츠 높이 /10 : ' + autotop /10);
+
+        $('.btPop_click_Auto').click(function(){
+            popOpenScroll();
+            $('.container').addClass('btPop_open');
+            // autome.style.top  = autotop /10 + "vh";
+            if (autotop > 251) {
+                autome.style.top = 25.0 + "vh";
+            }else{
+                autome.style.top  = pxtop/10 + "vh";
+            }
+            return false;
+        });
+
+
 
 /* ====================================================================================================================================================================
                                         ▲▲▲▲▲▲▲ 여기를 기점으로 위에는 윤성미과장님 필드 ▲▲▲▲▲▲▲
