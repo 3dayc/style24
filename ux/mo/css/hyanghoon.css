@@ -73,7 +73,7 @@ table.vene_type2 tbody tr td a{position:relative; top:0.5rem}
 .income_alram .permi .info_text.type2 .info_price > span:nth-of-type(1){font-size:1.6rem; color:#000;}
 .income_alram .permi .info_text.type2 .info_price > span:nth-of-type(2){font-size:1.2rem;text-decoration:line-through;}
 .income_alram .permi .info_text.type2 .info_price > span:nth-of-type(3){font-size:1.6rem; color:#fd4802; margin-left:1.2rem; font-weight:600;}
-.income_alram .permi_reserv{width:100%; height:50rem; background:url(../../../images/mo/pd_product_reserv.png);}
+.income_alram .permi_reserv{width:100%; height:50rem; background:url(/images/mo/pd_product_reserv.png);}
 .income_alram .permi.mg0{height:10.5rem; margin-top:-3rem;}
 .income_alram .permi.mg0:nth-of-type(1){margin-top:0; border-top:0.1rem solid #dddddd;}
 .income_alram .persenal_text div{margin-bottom:2rem;}
