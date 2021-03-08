@@ -449,13 +449,289 @@ $(document).ready(function () {
 ======================================================================================================================================================================*/
 
 /* ==================================================향훈,향아,밀림 필요한 스크립트 추가(pc에서 가져옴)========================================================*/
-    /* 고객센터_accordion */
-    $(document).on('click','.cs .foldGroup .fold_head',function(e){
+    
+    /* * * * * * * * * * * * * * * * * * * * * * * 
+
+    3. Utility (유틸리티)
+
+    * * * * * * * * * * * * * * * * * * * * * */
+
+
+    // FORM
+    // input-File-Add
+    $(document).ready(function() {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#fileAdd").on("change", function(e) {
+                var files = e.target.files,
+                    filesLength = files.length;
+                for (var i = 0; i < filesLength; i++) {
+                    var f = files[i]
+                    var fileReader = new FileReader();
+                    fileReader.onload = (function(e) {
+                        var file = e.target;
+                        $("<span class=\"pics\">" +
+                            "<img class=\"picsThumbs\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                            "<br/><span class=\"removes\">Removes image</span>" +
+                            "</span>").insertAfter("#fileAdd");
+                        $(".removes").click(function(){
+                            $(this).parent(".pics").remove();
+                        });
+                    });
+                fileReader.readAsDataURL(f);
+                }
+            });
+        } else {
+            alert("브라우저가 File API를 지원하지 않습니다.")
+        }
+    });
+    // input-File-Adds
+    $(document).ready(function() {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#fileAdds").on("change", function(e) {
+                var files = e.target.files,
+                    filesLength = files.length;
+                for (var i = 0; i < filesLength; i++) {
+                    var f = files[i]
+                    var fileReader = new FileReader();
+                    fileReader.onload = (function(e) {
+                        var file = e.target;
+                        $("<span class=\"pics\">" +
+                            "<img class=\"picsThumbs\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                            "<br/><span class=\"removes\">Removes image</span>" +
+                            "</span>").insertAfter("#fileAdds");
+                        $(".removes").click(function(){
+                            $(this).parent(".pics").remove();
+                        });
+                    });
+                fileReader.readAsDataURL(f);
+                }
+            });
+        } else {
+            alert("브라우저가 File API를 지원하지 않습니다.")
+        }
+    });
+
+    // check-All
+    $( document ).ready(function() {
+        var $chkAll = $('.check-all');
+            $chkAll.change(function () {
+                var checked = $(this).prop('checked'); 
+                $('input[name="dd"]').prop('checked', checked);
+            });
+            
+        var ddChk = $('input[name="dd"]');
+        ddChk.change(function () {
+                var ddChkLength = ddChk.length;
+                var checkedLength = $('input[name="dd"]:checked').length;
+                var selectAll = (ddChkLength == checkedLength);
+                $chkAll.prop('checked', selectAll);
+            });
+    });
+
+    //Select Custom
+    $( document ).ready(function() {
+        $('select').each(function(){
+            var $this = $(this), numberOfOptions = $(this).children('option').length;
+        
+            $this.addClass('select_hidden'); 
+            $this.wrap('<div class="select"></div>');
+            $this.after('<div class="select_dress"></div>');
+
+            var $dressSelect = $this.next('div.select_dress');
+            $dressSelect.text($this.children('option').eq(0).text());
+        
+            var $selList = $('<ul />', {
+                'class': 'select_options'
+            }).insertAfter($dressSelect);
+        
+            for (var i = 0; i < numberOfOptions; i++) {
+                $('<li />', {
+                    text: $this.children('option').eq(i).text(),
+                    rel: $this.children('option').eq(i).val(),
+                    class: $this.children('option').eq(i).attr('disabled')
+                }).appendTo($selList);
+            }
+        
+            var $selListItems = $selList.children('li');
+        
+            $dressSelect.click(function(e) {
+                e.stopPropagation();
+                $('div.select_dress.active').not(this).each(function(){
+                    $(this).removeClass('active').next('ul.select_options').hide();
+                });
+                $(this).toggleClass('active').next('ul.select_options').toggle();
+            });
+        
+            $selListItems.click(function(e) {
+                e.stopPropagation();
+                
+                if($(this).hasClass('disabled')){
+                    $this.val($(this).attr('rel',false));
+                } 
+                else{
+                    $dressSelect.text($(this).text()).removeClass('active');
+                    $this.val($(this).attr('rel'));
+                    $selList.hide();
+                }
+            });
+        
+            $(document).click(function() {
+                $dressSelect.removeClass('active');
+                $selList.hide();
+            });
+
+        });
+    });
+
+
+    // Select-Combo-Custom
+    function sCombo(selector){
+        this.$selectBox = null,
+        this.$select = null,
+        this.$list = null,
+        this.$listLi = null;
+        sCombo.prototype.init = function(selector){
+            this.$selectBox = $(selector);
+            this.$select = this.$selectBox.find('.combo .select');
+            this.$list = this.$selectBox.find('.combo .list');
+            this.$listLi = this.$list.children('li');
+        }
+        sCombo.prototype.initEvent = function(e){
+            var that = this;
+            this.$select.on('click', function(e){
+                that.listOn();
+            });
+            this.$listLi.on('click', function(e){
+                that.listSelect($(this));
+            });
+            $(document).on('click', function(e){
+                that.listOff($(e.target));
+            });
+        }
+        sCombo.prototype.listOn = function(){
+            this.$selectBox.toggleClass('on');
+            if(this.$selectBox.hasClass('on')){
+                this.$list.css('display', 'block');
+            }else{
+                this.$list.css('display', 'none');
+            };
+        }
+        sCombo.prototype.listSelect = function($target){
+            $target.addClass('selected').siblings('li').removeClass('selected');
+            this.$selectBox.removeClass('on');
+            //this.$select.text($target.text());
+            this.$select.html($target.html());
+            this.$list.css('display', 'none');
+        }
+        sCombo.prototype.listOff = function($target){
+            if(!$target.is(this.$select) && this.$selectBox.hasClass('on')){
+                this.$selectBox.removeClass('on');
+                this.$list.css('display', 'none');
+            };
+        }
+        this.init(selector);
+        this.initEvent();
+    };
+
+
+
+    // selectBrand on/off
+    $( document ).ready( function() {
+        $("#selectBrand .brandbox input").on("click", function() {
+            $("#selectBrand .brandbox input").removeClass("on");
+            $(this).addClass("on");
+        });
+    });
+
+
+
+
+
+    /* alert */
+    $(function(){
+        $('.alertCls').click(function(){
+        setTimeout(function(){
+        $('.alert').css('animation', 'none');
+            $('.alert').css('display', 'none');
+        }, 300);
+        // uifn_currCallback();
+    });
+    });
+
+
+
+
+    // 고객센터_accordion
+    $(document).on('click','.foldGroup .fold_head',function(e){
         $(this).parents('.foldGroup li').find('.fold_cont').slideToggle(100);
         $(this).toggleClass('on');
         return false;
     });
 
+    // 쇼핑백팝업
+    $("#btn_shoppingBag_pop").click(function() {
+        popClsScroll();
+        $('.container').removeClass('btPop_open');
+        autome.style.top  = 100 + "%";
+        $("html, body").animate({"scrollTop": 0}, 0);
+        $("#shoppingBagModal").fadeIn();
+        setTimeout(function(){
+            $("#shoppingBagModal").fadeOut(500);
+        },2000);
+    });	
+
+    // 쇼핑혜택팝업
+    $("#btn_bnfShopping_pop").click(function() {
+        $("#bnfShoppingModalFull").modal("show");
+    });	
+
+    // 카드혜택팝업
+    $("#btn_bnfCard_pop").click(function() {
+        $("#bnfCardModalFull").modal("show");
+    });	
+
+    // 쿠폰받기팝업
+    $("#btn_saleCoupon_pop").click(function() {
+        $("#saleCouponModalScroll").modal("show"); //할인쿠폰받기
+        //$("#epCouponModalScroll").modal("show"); //ep채널 쿠폰받기
+    });	
+
+    // 재입고알림신청팝업
+    // $("#btn_pushRestock_pop").click(function() {
+    //     $("#pushRestockPop").modal("show");
+    // });	
+
+    // 제품사이즈정보팝업
+    $("#btn_pdSizeInfo_pop").click(function() {
+        $("#pdSizeInfoModalFull").modal("show");
+    });	
+
+    // 제품문의리스트팝업
+    // $("#btn_pdQnaList_pop").click(function() {
+    //     $("#pdQnaListModalFull").modal("show");
+    // });
+
+    // 제품문의하기팝업
+    // $("#btn_pdQna_pop").click(function() {
+    //     $("#pdQnaModalFull").modal("show");
+    // });
+
+    // 제품리뷰팝업
+    $("#btn_pdReview_pop").click(function() {
+        $("#pdReviewModalFull").modal("show");
+    });
+
+    // 제품베스트리뷰팝업
+    $("#btn_pdBestReview_pop a").click(function() {
+        $("#pdBestReviewModalFull").modal("show");
+    });
+    
+    // 배송교환반품팝업
+    $("#btn_pdDelivery_Pop").click(function() {
+        $("#pdDeliveryModalFull").modal("show");
+    });
+
+    
 
 
 

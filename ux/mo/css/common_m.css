@@ -301,19 +301,19 @@ input[type="reset"], input[type="button"], input[type="submit"], button {line-he
 .form_field input[type="checkbox"] + label{ display:inline-block; position:relative; padding-left:26px; cursor:pointer; font-size: 12px; line-height: 1.4;font-weight: 300;letter-spacing: 0;} 
 .form_field input[type="checkbox"] + label:before{ 
   content:''; position:absolute; left:0; top:50%; margin-top:-10px; width:20px; height:20px; text-align:center; background:#fff; /*border:1px solid #ccc;*/ border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo/ico_chk_rdi.png') no-repeat;
   background-position: 0px 0px;
 } 
 .form_field input[type="checkbox"]:Disabled + label, 
 .form_field input[type="radio"]:Disabled + label{cursor: default;opacity: .45;} 
 .form_field input[type="checkbox"]:checked + label:after{ 
   content: ''; position:absolute; top:50%; margin-top:-10px; left:0; width:20px; height:20px; background-color: #fd4800; border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo/ico_chk_rdi.png') no-repeat;
   background-position: -20px 0px;
 }
 .form_field input[type="checkbox"]:Disabled + label:after{ 
   content: ''; position:absolute; top:3px; left:0; width:20px; height:20px; background-color: #fd4800; border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo/ico_chk_rdi.png') no-repeat;
   background-position: -40px 0px;
 }
 
@@ -322,20 +322,20 @@ input[type="reset"], input[type="button"], input[type="submit"], button {line-he
 .form_field input[type="radio"] + label{ display:inline-block; position:relative; padding-left:2.5rem; cursor:pointer; font-size: 1.3rem;line-height: 1.5;font-weight: 300;letter-spacing: 0;} 
 .form_field input[type="radio"] + label:before{ 
   content:''; position:absolute; left:0; top:50%; margin-top:-10px; width:20px; height:20px; text-align:center; background:#fff; /*border:1px solid #ccc;*/ border-radius: 100%; box-sizing:border-box; 
-  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo/ico_chk_rdi.png') no-repeat;
   background-position: -60px 0px;
 } 
 
 /* 보여질 부분의 스타일을 추가하면 된다. */ 
 .form_field input[type="radio"]:checked + label:after{ 
   content: ''; position:absolute; top:50%; margin-top:-10px; left:0; width:20px; height:20px; background-color: #fd4800; 
-  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo/ico_chk_rdi.png') no-repeat;
   background-position: -80px 0px;
 }
 
 .form_field input[type="radio"]:Disabled + label:after{ 
   content: ''; position:absolute; top:50%; margin-top:-10px; left:0; width:20px; height:20px; background-color: #fd4800; 
-  background: url('/images/mo//ico_chk_rdi.png') no-repeat;
+  background: url('/images/mo/ico_chk_rdi.png') no-repeat;
   background-position: -100px 0px;
 }
 /* 이미지 체크박스 */
@@ -351,7 +351,7 @@ input[type="file"] {
 }
 .fileAdd{
   width: 72px;height:72px;border: 1px solid #dddddd;float: right;font-size: 0;
-  background: url('../../..//images/mo/ico_btn_file.png') no-repeat;background-position: 50% 50%;
+  background: url('../../../images/mo/ico_btn_file.png') no-repeat;background-position: 50% 50%;
   -webkit-appearance: none; -moz-appearance: none; appearance: none;cursor: pointer; background-size:30px;
 }
 .fileAdds {
@@ -373,11 +373,11 @@ input[type="file"] {
 }
 .removes::after {
   content: '';display: inline-block;width: 20px;height: 20px;
-  background: url('../../..//images/mo/ico_btn_cls1.png') no-repeat;background-position: 50% 50%;
+  background: url('../../../images/mo/ico_btn_cls1.png') no-repeat;background-position: 50% 50%;
 }
 
 /* select */
-.select {cursor: pointer;display: inline-block;position: relative;font-size: 16px;color: #333333;width: 100%;height: 40px;}
+.select {cursor: pointer;display: inline-block;position: relative;font-size:1.3rem;color: #333333;width: 100%;height: 45px;}
 .select+.select{margin-left: 10px;}
 .select_hidden {display: none;visibility: hidden;padding-right: 10px;}
 .select_dress {
@@ -387,7 +387,7 @@ input[type="file"] {
   -webkit-transition: all 0.05s ease-in;transition: all 0.05s ease-in;
 }
 .select_dress:after {
-  content: "";width: 0;height: 0;box-sizing: border-box;position: absolute;top: 16px;right: 10px;
+  content: "";width: 0;height: 0;box-sizing: border-box;position: absolute;top: 18px;right: 15px;
   border: 6px solid transparent; border-color: #888888 transparent transparent transparent;  
 }
 .select_options {
@@ -801,7 +801,7 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 .fold_head.on::after {background-repeat: no-repeat; background-position:0 0%;}
 .foldGroup .fold_head a {display:block; width:inherit; height:100%; padding:1.4rem 2rem; box-sizing:border-box;}
 .fold_head .fold_tit {position:relative;}
-.fold_head .fold_tit span { position: relative; height: auto; display:inline-block; font-weight:300; color: #222; text-decoration: none; letter-spacing:-0.025em;}
+.fold_head .fold_tit span { position: relative; height: auto; display:inline-block; font-size:1.3rem; font-weight:300; color: #222; text-decoration: none; letter-spacing:-0.025em;}
 .fold_head .fold_state {display:inline-block!important; width:auto; box-sizing:border-box; text-align: center; font-size:12px; font-weight: 300; color:#888;}
 .fold_head .fold_state .important {display:inline-block; position:relative; padding:2px 10px; background-color: #fd4802; color:#fff; font-size:14px; font-weight:300; padding:4px 10px 2px;}
 .fold_head .fold_state.fix {color:#222;}
@@ -809,7 +809,7 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 .fold_head .fold_state.doing {color:#fff; background-color:#aaa;}
 .fold_head .fold_category {width:100px; font-weight:200; text-align:center; color:#888;}
 .fold_head .data{font-size:12px; font-weight: 200; color:#888;}
-.foldGroup .fold_cont {display:none; padding: 0; position: relative; color:#666; font-weight:200; font-size:14px; line-height:1.625;}
+.foldGroup .fold_cont {display:none; padding: 0; position: relative; color:#666; font-weight:200; font-size:1.3rem; line-height:1.625;}
 .fold_cont > div:first-of-type {border-top:none;}
 .fold_cont .img_group .thumb_pic {position:relative; display:inline-block; width:74px; height:74px; border:1px solid #ddd; margin-right:4px; box-sizing:border-box; overflow:hidden;} 
 .fold_cont .img_group .thumb_pic img {position:absolute; top:50%; transform: translateY(-50%); width:100%; height: auto;}
@@ -847,9 +847,8 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 
 
 
-
 /* bottom popup */
-.btPop_full {background: #ffffff;width: 100%;height: 100%;/* height: auto; */margin: 0;padding: 0;transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);top: 100%;position: fixed;left: 0;text-align: left;z-index: 999;}
+.btPop_full {background: #ffffff;width: 100%;height:calc(100% - 55px);/* height: auto; */margin: 0;padding: 0;transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);top: 100%;position: fixed;left: 0;text-align: left;z-index: 999;}
 .btPop_full .btPop_head {padding: 20px;border-bottom: 1px solid #ddd;font-size:1.8rem;position: relative;}
 .btPop_full .btPop_body {padding: 20px;font-size:1.4rem;}
 .btPop {background: #ffffff;width: 100%;height: 100%;/* height: 100% */margin: 0;padding: 0;transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);top: 100%;position: fixed;left: 0;text-align: left;z-index: 999;}
@@ -947,7 +946,7 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 
 
 /* 제거할 클래스 */
-.btnL{width:100%; height:4.5rem; line-height:4.5rem;}
+.btnL{width:100%; height:4.5rem; line-height:4.5rem; font-size:1.4rem;}
 .btnM{width:100%; height:4rem; line-height:4rem;}
 .btnS{width:100%; height:3rem; line-height:3rem;}
 
