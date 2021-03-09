@@ -81,3 +81,53 @@ table.vene_type2 tbody tr td a{position:relative; top:0.5rem}
 .income_alram .persenal_text p{font-size:1.3rem;}
 .income_alram .persenal_text .p-type2 > p{padding-left:0.8rem;}
 .income_alram .persenal_text .p-type2 > p:after{content:"-"; position:absolute; left:0}
+
+
+/* br_main */
+.br_main.pd_detail{background-color:#fff;}
+.br .pnb_mo{position:relative;}
+.br .pnb_mo > ul{display:flex; padding:0 0.8rem; height:5rem; line-height:5rem; background-color:#222222;}
+.br .pnb_mo > ul > li > a{font-size:1.6rem; color:#686868; font-weight:500; padding:0 1.2rem;}
+.br .pnb_mo > ul > li > a.on{color:#fff}
+.br .pnb_mo > button{background:url(/images/mo/br_plus.png) no-repeat; width:3.8rem; height:1.9rem; background-color:red; text-indent:-9999px; position:absolute; z-index:9; top:1.6rem; right:0; background-color:#222222;}
+.br .br_main .br_top_slide .swiper-slide img{width:100%;}
+.br .br_main .br_top_slide .swiper-slide .s-text{position:relative; top:-22rem; left:1.9rem; color:#fff}
+.br .br_main .br_top_slide .swiper-slide .s-text h1{font-size:2.9rem; color:#fff; line-height:3.6rem}
+.br .br_main .br_top_slide .swiper-slide .s-text p{font-size:1.5rem; color:#fff; margin-top:0.6rem}
+.br .br_main .br_top_slide .swiper-pagination{background-color: thistle; width:6rem; border-radius:1.2rem; display:inline-block; height:2.3rem; line-height:2.4rem; position:absolute; left:2rem; bottom:16.5rem; color:#fff; background-color:rgba(0, 0, 0, 0.3);}
+.br .br_main .br_top_info{position:relative; top:-8rem}
+.br .br_main .br_top_info > h1{margin-bottom:2.3rem}
+.br .br_main .br_top_info > p:nth-of-type(1){margin-bottom:1.6rem; font-weight:bold;}
+.br .br_main .br_top_info > p:nth-of-type(2){color:#777777}
+.br .br_main .br_top_info > button{height:4rem; border:0.1rem solid #adadad; width:100%; margin-top:3rem; font-weight:600;}
+.br .br_main .br_top_info > button > span{display:inline-block; background:url(/images/mo/br_site.png) no-repeat; width:1.1rem; height:1.2rem; margin-left:0.8rem}
+.br .br_main .br_second_slide .swiper-slide img{width:100%;}
+.br .br_main .br_second_slide .swiper-slide .s-text{position:relative; top:-9rem; margin-left:1.9rem}
+.br .br_main .br_second_slide .swiper-slide .s-text p{font-size:1.6rem; font-weight:500;}
+
+.br .br_main .swiper-container > h1{text-align:center; font-size:1.8rem; margin-bottom:2.3rem; font-weight:bold;}
+.br .pd_together > .tit{text-align:center; font-size:1.7rem; margin-bottom:2.3rem; font-weight:bold;}
+.br .pd_recommend > .tit{text-align:center; font-size:1.7rem; margin-bottom:2.3rem; font-weight:bold;}
+
+.br .br_main .br_third_slide .swiper-slide > div{width:49%; float:left; margin-bottom:36px; position:relative;}
+.br .br_main .br_third_slide .swiper-slide > div:nth-of-type(even){float:right;}
+.br .br_main .br_third_slide .swiper-slide .s-text{margin-left:0.5rem}
+.br .br_main .br_third_slide .swiper-slide .s-text > p:nth-of-type(1){font-size:0.8rem; margin-top:1.4rem}
+.br .br_main .br_third_slide .swiper-slide .s-text > p:nth-of-type(2){font-size:1rem; margin-top:0.6rem}
+.br .br_main .br_third_slide .swiper-slide .s-text > p:nth-of-type(3){font-size:1.2rem; color:#222222; font-weight:bold; margin-top:1rem}
+.br .br_main .br_third_slide .swiper-slide .s-text > p:nth-of-type(4){font-size:1.2rem; color:#fd5413; margin-top:0.6rem}
+.br .br_main .br_fourth_slide .swiper-slide{display:flex;}
+.br .br_main .br_fourth_slide .swiper-slide > div{background-color: royalblue;}
+
+.itemTag{float:left; font-size:1.1rem; color:#fd5413; margin-top:0.7rem}
+.itemColor{margin-left:0.5rem}
+.itemColor > li{width:1.2rem; height:1.2rem; background-color:blue; display:inline-block; border-radius:50%; margin-top:1.2rem;}
+.itemList{margin-top:1rem; margin-bottom:0.6rem; margin-left:0.5rem}
+.itemList > li{display:inline; font-size:1rem; padding:0.6rem 0.4rem; background-color:#f5f5f5; margin-right:0.3rem;}
+.itemList > li:last-child{margin-right:0;}
+.tb_boxes .itemTag{margin-left:0.5rem}
+
+.br .br_main .tbj_product > h1{text-align:center; font-size:1.8rem; margin-bottom:2.3rem; font-weight:bold;}
+.br .br_main .tbj_product .tb_boxes{width:49%; float:left; margin-bottom:36px; position:relative;}
+.br .br_main .tbj_product .tb_boxes:nth-of-type(even){float:right;}
+.br .br_main .tbj_product .tb_boxes .s-text{margin-top:0.8rem}
