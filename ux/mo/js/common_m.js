@@ -450,13 +450,30 @@ $(document).ready(function () {
 
 /* ==================================================향훈,향아,밀림 필요한 스크립트 추가(pc에서 가져옴)========================================================*/
     
+    // 고객센터_accordion
+    $(document).on('click','.foldGroup .fold_head',function(e){
+        $(this).parents('.foldGroup li').find('.fold_cont').slideToggle(100);
+        $(this).toggleClass('on');
+        return false;
+    });
+
+    // 쇼핑백팝업
+    $("#btn_shoppingBag_pop").click(function() {
+        popClsScroll();
+        $('.container').removeClass('btPop_open');
+        autome.style.top  = 100 + "%";
+        $("html, body").animate({"scrollTop": 0}, 0);
+        $("#shoppingBagModal").fadeIn();
+        setTimeout(function(){
+            $("#shoppingBagModal").fadeOut(500);
+        },2000);
+    });	
+
     /* * * * * * * * * * * * * * * * * * * * * * * 
 
     3. Utility (유틸리티)
 
     * * * * * * * * * * * * * * * * * * * * * */
-
-
     // FORM
     // input-File-Add
     $(document).ready(function() {
@@ -661,81 +678,7 @@ $(document).ready(function () {
 
 
 
-    // 고객센터_accordion
-    $(document).on('click','.foldGroup .fold_head',function(e){
-        $(this).parents('.foldGroup li').find('.fold_cont').slideToggle(100);
-        $(this).toggleClass('on');
-        return false;
-    });
-
-    // 쇼핑백팝업
-    $("#btn_shoppingBag_pop").click(function() {
-        popClsScroll();
-        $('.container').removeClass('btPop_open');
-        autome.style.top  = 100 + "%";
-        $("html, body").animate({"scrollTop": 0}, 0);
-        $("#shoppingBagModal").fadeIn();
-        setTimeout(function(){
-            $("#shoppingBagModal").fadeOut(500);
-        },2000);
-    });	
-
-    // 쇼핑혜택팝업
-    $("#btn_bnfShopping_pop").click(function() {
-        $("#bnfShoppingModalFull").modal("show");
-    });	
-
-    // 카드혜택팝업
-    $("#btn_bnfCard_pop").click(function() {
-        $("#bnfCardModalFull").modal("show");
-    });	
-
-    // 쿠폰받기팝업
-    $("#btn_saleCoupon_pop").click(function() {
-        $("#saleCouponModalScroll").modal("show"); //할인쿠폰받기
-        //$("#epCouponModalScroll").modal("show"); //ep채널 쿠폰받기
-    });	
-
-    // 재입고알림신청팝업
-    // $("#btn_pushRestock_pop").click(function() {
-    //     $("#pushRestockPop").modal("show");
-    // });	
-
-    // 제품사이즈정보팝업
-    $("#btn_pdSizeInfo_pop").click(function() {
-        $("#pdSizeInfoModalFull").modal("show");
-    });	
-
-    // 제품문의리스트팝업
-    // $("#btn_pdQnaList_pop").click(function() {
-    //     $("#pdQnaListModalFull").modal("show");
-    // });
-
-    // 제품문의하기팝업
-    // $("#btn_pdQna_pop").click(function() {
-    //     $("#pdQnaModalFull").modal("show");
-    // });
-
-    // 제품리뷰팝업
-    $("#btn_pdReview_pop").click(function() {
-        $("#pdReviewModalFull").modal("show");
-    });
-
-    // 제품베스트리뷰팝업
-    $("#btn_pdBestReview_pop a").click(function() {
-        $("#pdBestReviewModalFull").modal("show");
-    });
     
-    // 배송교환반품팝업
-    $("#btn_pdDelivery_Pop").click(function() {
-        $("#pdDeliveryModalFull").modal("show");
-    });
-
-    
-
-
-
-
 
 
 

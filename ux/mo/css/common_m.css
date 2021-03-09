@@ -808,7 +808,10 @@ footer .collapse .infos.on{padding: 0px 0px 20px 0; height: auto;}
 .fold_head .fold_state.done {color:#fff; background-color:#fd4801;}
 .fold_head .fold_state.doing {color:#fff; background-color:#aaa;}
 .fold_head .fold_category {width:100px; font-weight:200; text-align:center; color:#888;}
-.fold_head .data{font-size:12px; font-weight: 200; color:#888;}
+.fold_head .data,
+.fold_head .id{font-size:12px; font-weight: 200; color:#888;}
+.fold_head .id{position:relative; padding-right:1rem; margin-right:1rem;}
+.fold_head .id:after{display:block; content:''; position:absolute; right:0; top:2px; width:1px; height:0.8rem; background-color:#dddddd;}
 .foldGroup .fold_cont {display:none; padding: 0; position: relative; color:#666; font-weight:200; font-size:1.3rem; line-height:1.625;}
 .fold_cont > div:first-of-type {border-top:none;}
 .fold_cont .img_group .thumb_pic {position:relative; display:inline-block; width:74px; height:74px; border:1px solid #ddd; margin-right:4px; box-sizing:border-box; overflow:hidden;} 
