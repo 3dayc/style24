@@ -164,7 +164,7 @@
 .cs_contactUs_my .sec_foot .btn.btn_md {margin:0px 0.5rem; font-weight:300; padding:1.5rem 9rem;}
 .cs_contactUs_my .txt_cnt {position:absolute; right:1.5rem; bottom:1.5rem; text-align:right; font-size:1.2rem;}
 .cs_contactUs_my .cellphone .input_wrap{display:flex; flex-wrap:wrap;}
-.cs_contactUs_my .cellphone .input_wrap .tt{padding:0.3rem 0; margin-right:3rem; font-weight:600;}
+.cs_contactUs_my .cellphone .input_wrap .tt{padding:0.3rem 0; margin-right:3rem; font-weight:500;}
 .cs_contactUs_my .img_group .thumb_pic {position:relative; display:inline-block; width:7.4rem; height:7.4rem; border:0.1rem solid #ddd; margin-right:0.4rem; box-sizing:border-box; overflow:hidden;} 
 .cs_contactUs_my .img_group .thumb_pic img {position:absolute; top:50%; transform: translateY(-50%); width:100%; height: auto;}
 .pop_cont .cs_contactUs_my .tt { font-size: 1.4rem; line-height: 3.1rem;}
