@@ -355,7 +355,6 @@
                             </div>
                         </div>
                         <!-- //new -->
-                       
                     </form>
 				</div>
 			</div>
@@ -370,7 +369,7 @@
             $("#header").load("head.html");
             $("#footer").load("foot.html");
             
-            $(document).on('click','.mb .registration_nav .form_field > div',function(e){
+            $(document).on('click','.mb .registration_tap > .form_group > .form_field > div',function(e){
                 $(this).find('input').prop('checked', true);
                 $(this).parents('.form_group').find('.regist_box').removeClass('on');		
                 $(this).parents('.form_group').find('.regist_box').eq($(this).index()).addClass('on');		

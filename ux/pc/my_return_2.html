@@ -318,12 +318,9 @@
 	$(document).ready( function() {
 		$("#header").load("head.html");
 		$("#footer").load("foot.html");
-	});
-	</script>
-	<script>
-	$(function(){
+
 		//세부 사유 글자 수 제한
-		$('.doc_return').keyup(function (e){
+		$('.doc_return').keyup(function(e){
 			var content = $(this).val();
 			$('#return_cnt').html(content.length);
 			if (content.length > 200){

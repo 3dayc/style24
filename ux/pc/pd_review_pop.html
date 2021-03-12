@@ -219,9 +219,11 @@
                 <div class="swiper-slide">
                     <div class="best_review">
                         <a href="" id="">
+                            <!-- 이미지 없는 리뷰일 경우 -->
                             <div class="pic">
-                                <span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdLookbook2.jpg');"></span>
+                                <span class="thumb" style="background-image:url('/images/pc/thumb/bg_item_none.png');"></span>
                             </div>
+                            <!-- //이미지 없는 리뷰일 경우 -->
                             <div class="star_score">
                                 <span class="star">
                                     <em class="progbar" style="width:70%;"></em> <!-- 평점 style로 표기 -->
@@ -235,12 +237,12 @@
                             </div>
                         </a>
                     </div>                        
-                </div>  
+                </div>                  
                 <div class="swiper-slide">
                     <div class="best_review">
                         <a href="" id="">
                             <div class="pic">
-                                <span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdLookbook1.jpg');"></span>
+                                <span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdLookbook2.jpg');"></span>
                             </div>
                             <div class="star_score">
                                 <span class="star">
@@ -322,48 +324,119 @@
     <div class="area_rv_all">
         <h6>전체리뷰<span>(9,999+)</span></h6>
         <div class="selection">
-            <div class="form_field">
-                <select class="form-control select">
-                    <option>평점 전체</option>
-                    <option>5점&nbsp;&starf;&starf;&starf;&starf;&starf;</option>
-                    <option>4점&nbsp;&starf;&starf;&starf;&starf;</option>
-                    <option>3점&nbsp;&starf;&starf;&starf;</option>
-                    <option>2점&nbsp;&starf;&starf;</option>
-                    <option>1점&nbsp;&starf;</option>
-                </select>
-                <select class="form-control select">
-                    <option>사이즈 전체</option>
-                    <option>90</option>
-                    <option>95</option>
-                    <option>100</option>
-                    <option>105</option>
-                    <option>110</option>
-                </select>
-                <select class="form-control select">
-                    <option>키 전체</option>
-                    <option>150cm 이하</option>
-                    <option>150~155cm</option>
-                    <option>155~160cm</option>
-                    <option>160~165cm</option>
-                    <option>165~170cm</option>
-                    <option>175~180cm</option>
-                    <option>185~190cm</option>
-                    <option>190~200cm</option>
-                </select>
-                <select class="form-control select">
-                    <option>몸무게 전체</option>
-                    <option>40kg 이하</option>
-                    <option>40~45kg</option>
-                    <option>45~50kg</option>
-                    <option>50~55kg</option>
-                    <option>55~60kg</option>
-                    <option>60~65kg</option>
-                    <option>65~70kg</option>
-                    <option>75~80kg</option>
-                    <option>85~85kg</option>
-                    <option>90~95kg</option>
-                </select>
-            </div>
+            <form class="form_wrap">
+                <div class="form_field">
+                    <div class="select_custom sort_opt1">
+                        <div class="combo">
+                            <div class="select">평점 전체</div>
+                            <ul class="list">
+                                <!-- 선택처리 class="selected" -->
+                                <li class="selected">평점 전체</li> 
+                                <li>
+                                    <div class="star_score">
+                                        <span class="score">
+                                            <em>5</em>점
+                                        </span>
+                                        <span class="star">
+                                            <em class="progbar" style="width:100%;"></em>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="star_score">
+                                        <span class="score">
+                                            <em>4</em>점
+                                        </span>
+                                        <span class="star">
+                                            <em class="progbar" style="width:80%;"></em>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="star_score">
+                                        <span class="score">
+                                            <em>3</em>점
+                                        </span>
+                                        <span class="star">
+                                            <em class="progbar" style="width:60%;"></em>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="star_score">
+                                        <span class="score">
+                                            <em>2</em>점
+                                        </span>
+                                        <span class="star">
+                                            <em class="progbar" style="width:40%;"></em>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="star_score">
+                                        <span class="score">
+                                            <em>1</em>점
+                                        </span>
+                                        <span class="star">
+                                            <em class="progbar" style="width:20%;"></em>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select_custom sort_opt2">
+                        <div class="combo">
+                            <div class="select">사이즈 전체</div>
+                            <ul class="list">
+                                <!-- 선택처리 class="selected" -->
+                                <li class="selected">사이즈 전체</li> 
+                                <li>90</li>
+                                <li>95</li>
+                                <li>100</li>
+                                <li>105</li>
+                                <li>110</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select_custom sort_opt3">
+                        <div class="combo">
+                            <div class="select">키 전체</div>
+                            <ul class="list">
+                                <!-- 선택처리 class="selected" -->
+                                <li class="selected">키 전체</li> 
+                                <li>150cm 이하</li>
+                                <li>150~155cm</li>
+                                <li>155~160cm</li>
+                                <li>160~165cm</li>
+                                <li>165~170cm</li>
+                                <li>175~180cm</li>
+                                <li>185~190cm</li>
+                                <li>190~200cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select_custom sort_opt4">
+                        <div class="combo">
+                            <div class="select">몸무게 전체</div>
+                            <ul class="list">
+                                <!-- 선택처리 class="selected" -->
+                                <li class="selected">몸무게 전체</li> 
+                                <li>40kg 이하</li>
+                                <li>40~45kg</li>
+                                <li>45~50kg</li>
+                                <li>50~55kg</li>
+                                <li>55~60kg</li>
+                                <li>60~65kg</li>
+                                <li>65~70kg</li>
+                                <li>75~80kg</li>
+                                <li>85~85kg</li>
+                                <li>90~95kg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                
+            </form>
         </div>
         <!-- 나열조건결과 있을 때 노출 내용 -->
         <div class="review_list">
@@ -1139,58 +1212,10 @@
 <script type="text/javascript">
 $(document).ready( function() {
 
-    //select custom
-    $('select').each(function(){
-        var $this = $(this), numberOfOptions = $(this).children('option').length;
-    
-        $this.addClass('select_hidden'); 
-        $this.wrap('<div class="select"></div>');
-        $this.after('<div class="select_dress"></div>');
-
-        var $dressSelect = $this.next('div.select_dress');
-        $dressSelect.text($this.children('option').eq(0).text());
-    
-        var $selList = $('<ul />', {
-            'class': 'select_options'
-        }).insertAfter($dressSelect);
-    
-        for (var i = 0; i < numberOfOptions; i++) {
-            $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val(),
-                class: $this.children('option').eq(i).attr('disabled')
-            }).appendTo($selList);
-        }
-    
-        var $selListItems = $selList.children('li');
-    
-        $dressSelect.click(function(e) {
-            e.stopPropagation();
-            $('div.select_dress.active').not(this).each(function(){
-                $(this).removeClass('active').next('ul.select_options').hide();
-            });
-            $(this).toggleClass('active').next('ul.select_options').toggle();
-        });
-    
-        $selListItems.click(function(e) {
-            e.stopPropagation();
-            
-            if($(this).hasClass('disabled')){
-                $this.val($(this).attr('rel',false));
-            } 
-            else{
-                $dressSelect.text($(this).text()).removeClass('active');
-                $this.val($(this).attr('rel'));
-                $selList.hide();
-            }
-        });
-    
-        $(document).click(function() {
-            $dressSelect.removeClass('active');
-            $selList.hide();
-        });
-
-    });
+    var sort_selecter01 = new sCombo('.area_rv_all .selection .select_custom.sort_opt1');
+    var sort_selecter02 = new sCombo('.area_rv_all .selection .select_custom.sort_opt2');
+    var sort_selecter03 = new sCombo('.area_rv_all .selection .select_custom.sort_opt3');
+    var sort_selecter04 = new sCombo('.area_rv_all .selection .select_custom.sort_opt4');
 
     //착용정보 통계
     $('.average .part_average .percent').each(function(){

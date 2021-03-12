@@ -14,18 +14,22 @@
 <meta property="og:description" th:content="" content=""/>
 <meta property="og:locale" content="ko_KR"/>
 <meta property="og:site_name" th:content="" content=""/>
-
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
-
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="stylesheet" type="text/css" href="css/common.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="js/jquery.ellipsis.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/common-ui.js"></script>
+<script src="js/mcxdialog_ui.js"></script>
 </head>
 
 <body>
@@ -46,11 +50,9 @@
 			</ul>
 		</div>
 		<div class="wrap">
-			<div class="content ev_list">
+			<div class="content ev_list"> <!-- 페이지특정 클래스 = ev_list -->
 				<div class="cont_head">
-					<div>
-						<h3>이벤트</h3>
-					</div>
+                    <h2 class="displayH t_c">이벤트</h2>
 				</div>
 				<div class="cont_body">
 					<div class="ev_mem_rank">
@@ -84,135 +86,140 @@
 							</ul>
 						</div>
 					</div>
-					<div class="event_list">
-						<div class="event_top">
-							<div class="count">
-								<span>9,999</span>개의 이벤트
-							</div>
-							<div class="event_btn">
-								<a href="javascript:;">당첨자 발표</a>
-							</div>
+					<div class="area_top_list_info">
+						<div class="total_count">
+							<span>9999</span>개의 이벤트
 						</div>
-						<div class="list">
-							<ul class="clear event_con">
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<div class="rank ranker"><span>NEW</span></div>
-											<img src="/images/pc/thumb/ev_list_img01.jpg" alt="ATTENTION! 20FW HOLIDAY TBJ 주목할 홀리데이 TBJ 컬렉션">
-										</div>
-										<div class="txt">
-											<p class="tit">ATTENTION! 20FW HOLIDAY TBJ 주목할 홀리데이 TBJ 컬렉션</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-									<div class="ev_img">
-										<div class="rank ranker"><span>NEW</span></div><img src="/images/pc/thumb/ev_list_img02.jpg" alt="단 48시간, 퓨어캐시미어 최대 80%세일 PURE CASHMERE 48H POP-UP">
-									</div>
-									<div class="txt">
-										<p class="tit">단 48시간, 퓨어캐시미어 최대 80%세일 PURE CASHMERE 48H POP-UP 단 48시간, 퓨어캐시미어 최대 80%세일 PURE CASHMERE 48H POP-UP</p>
-										<div class="date">
-											<span>2020.12.17</span> - <span>2021.01.03</span>
-										</div>
-									</div>
-								</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<img src="/images/pc/thumb/ev_list_img03.jpg" alt="ANDEW white 20winter">
-										</div>
-										<div class="txt">
-											<p class="tit">ANDEW white 20winter</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<img src="/images/pc/thumb/ev_list_img04.jpg" alt="자연스럽고 편안한  Earth Colors">
-										</div>
-										<div class="txt">
-											<p class="tit">자연스럽고 편안한  Earth Colors</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<img src="/images/pc/thumb/ev_list_img05.jpg" alt="RETRO CONTEMPORARY 3개 브랜드 BUCKAROO/NBA/ANDEW">
-										</div>
-										<div class="txt">
-											<p class="tit">RETRO CONTEMPORARY 3개 브랜드 BUCKAROO/NBA/ANDEW</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<img src="/images/pc/thumb/ev_list_img06.jpg" alt="스타일24만의 스타일로, tbj 하이 스타일링">
-										</div>
-										<div class="txt">
-											<p class="tit">스타일24만의 스타일로, TBJ 하이 스타일링</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<img src="/images/pc/thumb/ev_list_img07.jpg" alt="올 겨울, 나를 설레게하는 선물같은 브랜드 THIS IS FOUR YOU">
-										</div>
-										<div class="txt">
-											<p class="tit">올 겨울, 나를 설레게하는 선물같은 브랜드 THIS IS FOUR YOU</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="ev_img">
-											<img src="/images/pc/thumb/ev_list_img08.jpg" alt="한눈에 살펴보는 우리 아이 겨울 아이템">
-										</div>
-										<div class="txt">
-											<p class="tit">한눈에 살펴보는 우리 아이 겨울 아이템</p>
-											<div class="date">
-												<span>2020.12.17</span> - <span>2021.01.03</span>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<ul class="clear no_con">
-								<li>
-									<p><img src="/images/pc/ico_content_find.png" alt="등록된 이벤트가 없습니다."></p>
-									<span>등록된 이벤트가 없습니다.</span>
-									<a href="">홈으로 가기</a>
-								</li>
-							</ul>
+						<div class="ui_right">
+							<button class="btn btn_default"><span>당첨자 발표</span></button>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+					<div class="area_thumb_list">
+						<div class="thumb_list">
+							<ul>
+								<li>
+									<a href="">
+										<div class="rank ranker"><span>NEW</span></div>
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img01.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">ATTENTION! 20FW HOLIDAY TBJ 주목할 홀리데이 TBJ 컬렉션</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img02.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">단 48시간, 퓨어캐시미어 최대 80%세일 PURE CASHMERE 48H POP-UP 단 48시간, 퓨어캐시미어 최대 80%세일 PURE CASHMERE 48H POP-UP</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img03.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">ANDEW white 20winter</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img04.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">자연스럽고 편안한  Earth Colors</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img05.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">RETRO CONTEMPORARY 3개 브랜드 BUCKAROO/NBA/ANDEW</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img06.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">스타일24만의 스타일로, TBJ 하이 스타일링</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img07.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">올 겨울, 나를 설레게하는 선물같은 브랜드 THIS IS FOUR YOU</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="thumb">
+											<img src="/images/pc/thumb/ev_list_img08.jpg" alt="">
+										</div>
+										<div class="txt">
+											<p class="title">한눈에 살펴보는 우리 아이 겨울 아이템</p>
+											<p class="date">
+												<span>2020.12.17</span> - <span>2021.01.03</span>
+											</p>
+										</div>
+									</a>
+								</li>
+							</ul>	
+						</div>
+						<!-- 등록된 이벤트가 없을 때 노출 -->
+						<div class="nodata">
+							<div class="txt_box">
+								<p>
+									등록된 이벤트가 없습니다.
+								</p>
+							</div>
+							<div class="btn_box">
+								<button class="btn btn_default"><span>홈으로 가기</span></button>
+							</div>
+						</div>		
+						<!-- //등록된 이벤트가 없을 때 노출 -->
+					</div>
+			    </div>
+		    </div>
+        </div>	
 	</div>
 	<!-- // container -->	
 	<footer id="footer"></footer>
@@ -222,19 +229,6 @@
 	$(document).ready( function() {
 		$("#header").load("head.html");
 		$("#footer").load("foot.html");
-	});
-	</script>
-	<script>
-	$(function(){
-
-		$('#exchange_btn').click(function(){
-			alert('교환/취소가 불가능한 상품입니다.'); //교환/반품이 불가능한 제품의 경우 클릭시
-		})
-
-		//주문 내역 삭제 클릭 confirm
-		$('.od_del_btn').click(function(){
-			confirm("주문내역을 삭제하시면 더 이상 해당 주문의 내용을 확인 및 교환/반품등을 할 수 없습니다. 계속하시겠습니까?");
-		})
 	});
 	</script>
 </body>

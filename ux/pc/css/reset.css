@@ -14,8 +14,8 @@ body {line-height:1; background-color:#fff;  word-break:break-all;text-rendering
 ::selection {background-color:#efe7e5;}
 .blocker::-webkit-scrollbar{display:none;}
 br{visibility: hidden;font-family: sans-serif; height:0px;}
-body,input,textarea,select,button {font-size:14px; font-family:'LATO', 'Noto Sans CJK kr','Noto Sans kr', sans-serif; font-weight: 200; color:#222222; letter-spacing:-.025em;}
-h1,h2,h3,h4,h5,h6 {font-family:'LATO', 'Noto Sans CJK kr','Noto Sans kr', 'LATO', sans-serif; color:#666666; letter-spacing:-.025em;}
+body,input,textarea,select,button {font-size:14px; font-family:'LATO', 'Noto Sans kr', sans-serif; font-weight: 200; color:#222222; letter-spacing:-.025em;}
+h1,h2,h3,h4,h5,h6 {font-family:'LATO','Noto Sans kr', 'LATO', sans-serif; color:#666666; letter-spacing:-.025em;}
 table {border-collapse:collapse; border-spacing:0; width:100%;}
 
 /* legend {*width:0;} */

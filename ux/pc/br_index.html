@@ -19,19 +19,17 @@
 <link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="stylesheet" type="text/css" href="/ux/pc/css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="/ux/pc/css/main.css" />
-<link rel="stylesheet" type="text/css" href="/ux/pc/css/swiper.min.css" />
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="/ux/pc/css/slick.css" /> -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
-<!-- <script type="text/javascript" src="/ux/pc/js/slick.min.js"></script> -->
-<script type="text/javascript" src="/ux/pc/js/jquery-ui.js"></script>
-<script type="text/javascript" src="/ux/pc/js/common-ui.js"></script>
-<script type="text/javascript" src="/ux/pc/js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+<script src="js/mcxdialog_ui.js"></script>
 </head>
 
 <body>
@@ -41,12 +39,10 @@
 		<a href="#footer">하단메뉴 바로가기</a>
 	</div>
 
-	<!-- <header id="header"></header> -->
-	<header id="header" style="height: 178px;"></header>
+	<header id="header"></header>
 
 	<!--  container -->
 	<div id="container" class="container brand_main">
-		<!-- <div class="breadcrumb"> (breadcrumb) </div> -->
 
 		<div class="wrap ">
 			<!-- 1. 비주얼 슬라이드 -->
@@ -57,7 +53,7 @@
 				<div class="cont_body">
 					<div class="swiper-container post-visual">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide ">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<dl class="w">
 										<dt>NBA</dt>
@@ -70,7 +66,7 @@
 								<img src="/images/pc/thumb/main_visual01.jpg" alt="">
 							</div>
 						
-							<div class="swiper-slide ">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<dl class="w">
 										<dt>브랜드명</dt>
@@ -83,7 +79,7 @@
 								<img src="/images/pc/thumb/main_visual02.jpg" alt="">
 							</div>
  	
-							<div class="swiper-slide ">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<dl class="w">
 										<dt>브랜드명</dt>
@@ -95,7 +91,7 @@
 								</div>
 								<img src="/images/pc/thumb/main_visual03.jpg" alt="">
 							</div>
-							<div class="swiper-slide ">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<dl class="w">
 										<dt>브랜드명</dt>
@@ -107,7 +103,7 @@
 								</div>
 								<img src="/images/pc/thumb/main_visual04.jpg" alt="">
 							</div>
-							<div class="swiper-slide ">
+							<div class="swiper-slide">
 								<div class="txtWrap">
 									<dl class="w">
 										<dt>브랜드명</dt>
@@ -120,15 +116,17 @@
 							</div>
 						</div>
 						<!-- If we need pagination -->
-						<div class="swiper-pagination"></div>
-						<!-- If we need navigation buttons -->
-						<div class="swiper-button-prev sbtn01_lb"></div>
-						<div class="swiper-button-next sbtn01_rb"></div>
+						<div class="swiper-controls">
+							<div class="swiper-pagination"></div>
+							<div class="slide-curb">
+								<div class="slide-curb-play sbtn01_play">슬라이드 재생</div>
+								<div class="slide-curb-pause sbtn01_stop">슬라이드 정지</div>
+							</div>
+						</div>
 					</div>
-					
-				</div>
-				<div class="cont_foot dpnone">
-					CONT-FOOT
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev sbtn01_lb"></div>
+					<div class="swiper-button-next sbtn01_rb"></div>
 				</div>
 			</div>
 
@@ -151,15 +149,15 @@
 			</div>
 
 			<!-- new_item -->
-			<div class="content wide new_item items">
+			<div class="content wide new_item">
 				<div class="cont_head">
 					<p class="displayH t_c">NEW ITEMS</p>
 				</div>
 				<div class="cont_body">
 					<div class="swiper-container post-trendy">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class=" item_prod inc">
+							<div class="swiper-slide scaleBig">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -169,12 +167,13 @@
 											<p class="itemBrand">BRAND NAME</p>
 											<div class=" itemName">스타 착용 여성 퍼 아플리케 오버핏 투마일 웨어링 점퍼</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod shr">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -182,15 +181,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">유니 다이아몬드 누빔 포인트포켓 거위털 밴딩 점퍼 스웨이드 집업 트러커 점퍼</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod shr">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -198,15 +197,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">여성 카라리스 오버핏 메탈릭 포켓 셔츠</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
-								<div class=" item_prod inc">
+							<div class="swiper-slide scaleBig">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -214,15 +213,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">가을 신상 면 혼방 블루종 자수 로고 포인트 자켓 유니 스몰 로고 긴팔 티셔츠</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod shr">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -230,15 +229,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">가을 신상 남성 스탠다드핏 로고맨 블루 볼 캡 유니 경량다운 시보리넥 베스트</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod inc">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -248,12 +247,13 @@
 											<p class="itemBrand">BRAND NAME</p>
 											<div class=" itemName">스타 착용 여성 퍼 아플리케 오버핏 투마일 웨어링 점퍼</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod shr">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -261,15 +261,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">유니 다이아몬드 누빔 포인트포켓 거위털 밴딩 점퍼 스웨이드 집업 트러커 점퍼</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod shr">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -277,15 +277,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">여성 카라리스 오버핏 메탈릭 포켓 셔츠</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod inc">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -293,15 +293,15 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">가을 신상 면 혼방 블루종 자수 로고 포인트 자켓 유니 스몰 로고 긴팔 티셔츠</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod shr">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -309,16 +309,16 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">가을 신상 남성 스탠다드핏 로고맨 블루 볼 캡 유니 경량다운 시보리넥 베스트</div>
 											<p class="itemPrice">488,000원</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-scrollbar"></div>
 					</div>
+					<div class="swiper-pagination"></div>
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
 				</div>
@@ -363,9 +363,6 @@
 						<div class="swiper-button-next "></div>
 					</div>
 				</div>
-				<div class="cont_foot dpnone">
-					CONT-FOOT
-				</div>
 			</div>
 
 			<!-- best_item -->
@@ -377,26 +374,27 @@
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class=" item_prod sUiXc">
+								<div class="item_prod sUiXc">
 									<div class="item_state">
 										<a href="#none" class=" itemLink">
 											<div class="shape ranker"><span>1</span></div>
 											<div class="itemPic">
-												<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+												<img alt="BLACK-a" class="vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
-											<p class=" itemBrand">BRAND NAME</p>
-											<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+											<p class="itemBrand">BRAND NAME</p>
+											<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 											<p class="itemPrice">80,100
 												<span class="itemPrice_original">89,000</span>
-												<span class=" itemPercent">10%</span>
+												<span class="itemPercent">10%</span>
 											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class="shape"><span>2</span></div>
@@ -405,15 +403,18 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">여성 체인 프린트 큐롯 스커트 프린트 큐롯 스커트</div>
-											<p class="itemPrice">488,000 원</p>
+											<p class="itemPrice">80,100
+												<span class="itemPrice_original">89,000</span>
+												<span class="itemPercent">10%</span>
+											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class="shape"><span>3</span></div>
@@ -422,15 +423,18 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">남성 헤링본 기모 팬츠 헤링본 기모 팬츠</div>
-											<p class="itemPrice">488,000 원</p>
+											<p class="itemPrice">80,100
+												<span class="itemPrice_original">89,000</span>
+												<span class="itemPercent">10%</span>
+											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class="shape"><span>4</span></div>
@@ -439,15 +443,18 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
-											<p class="itemPrice">488,000 원</p>
+											<p class="itemPrice">80,100
+												<span class="itemPrice_original">89,000</span>
+												<span class="itemPercent">10%</span>
+											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class="shape"><span>5</span></div>
@@ -456,15 +463,18 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
 											<div class=" itemName">[온라인 단독] 여성 겨울 부클칼라 A라인 다운베스트(구스)</div>
-											<p class="itemPrice">488,000 원</p>
+											<p class="itemPrice">80,100
+												<span class="itemPrice_original">89,000</span>
+												<span class="itemPercent">10%</span>
+											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod sUiXc">
+								<div class="item_prod sUiXc">
 									<div class="item_state">
 										<a href="#none" class=" itemLink">
 											<div class="shape"><span>6</span></div>
@@ -476,14 +486,15 @@
 											<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 											<p class="itemPrice">80,100
 												<span class="itemPrice_original">89,000</span>
-												<span class=" itemPercent">10%</span>
+												<span class="itemPercent">10%</span>
 											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class="shape"><span>7</span></div>
@@ -492,15 +503,18 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
-											<div class=" itemName">여성 체인 프린트 큐롯 스커트 프린트 큐롯 스커트</div>
-											<p class="itemPrice">488,000 원</p>
+											<div class=" itemName">[온라인 단독] 여성 겨울 부클칼라 A라인 다운베스트(구스)</div>
+											<p class="itemPrice">80,100
+												<span class="itemPrice_original">89,000</span>
+												<span class="itemPercent">10%</span>
+											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class="shape"><span>8</span></div>
@@ -509,9 +523,12 @@
 												<button type="button" class="itemLike">관심상품 추가</button>
 											</div>
 											<p class="itemBrand">BRAND NAME</p>
-
-											<div class=" itemName">남성 헤링본 기모 팬츠 헤링본 기모 팬츠</div>
-											<p class="itemPrice">488,000 원</p>
+											<div class=" itemName">[온라인 단독] 여성 겨울 부클칼라 A라인 다운베스트(구스)</div>
+											<p class="itemPrice">80,100
+												<span class="itemPrice_original">89,000</span>
+												<span class="itemPercent">10%</span>
+											</p>
+											<div class="itemComment">#가을느낌 물씬!</div>
 										</a>
 									</div>
 								</div>
@@ -534,7 +551,7 @@
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class=" item_prod sUiXc">
+								<div class="item_prod sUiXc">
 									<div class="item_state">
 										<a href="#none" class=" itemLink">
 											<div class="itemPic">
@@ -553,7 +570,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -570,7 +587,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -587,7 +604,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -607,7 +624,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -624,7 +641,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod sUiXc">
+								<div class="item_prod sUiXc">
 									<div class="item_state">
 										<a href="#none" class=" itemLink">
 											<div class="itemPic">
@@ -643,7 +660,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -662,7 +679,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class=" item_prod">
+								<div class="item_prod">
 									<div class="item_state">
 										<a href="#none" class="itemLink">
 											<div class=" itemPic">
@@ -699,28 +716,34 @@
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<div class="txtWrap">
-										<p>티.바지.점퍼의 계절!</p>
-										<p>가을 전격 오픈</p>
-										<span>신상 15% 쿠폰할인</span>
-									</div>
-									<img src="/images/pc/thumb/br_special.jpg" alt="">
+									<a href="">
+										<div class="txtWrap">
+											<p>티.바지.점퍼의 계절!</p>
+											<p>가을 전격 오픈</p>
+											<span>신상 15% 쿠폰할인</span>
+										</div>
+										<img src="/images/pc/thumb/br_special.jpg" alt="">
+									</a>
 								</div>
 								<div class="swiper-slide">
-									<div class="txtWrap">
-										<p>티.바지.점퍼의 계절!</p>
-										<p>가을 전격 오픈</p>
-										<span>신상 15% 쿠폰할인</span>
-									</div>
-									<img src="/images/pc/thumb/dp_submain_img01.jpg" alt="">
+									<a href="">
+										<div class="txtWrap">
+											<p>티.바지.점퍼의 계절!</p>
+											<p>가을 전격 오픈</p>
+											<span>신상 15% 쿠폰할인</span>
+										</div>
+										<img src="/images/pc/thumb/dp_submain_img01.jpg" alt="">
+									</a>
 								</div>
 								<div class="swiper-slide">
-									<div class="txtWrap">
-										<p>티.바지.점퍼의 계절!</p>
-										<p>가을 전격 오픈</p>
-										<span>신상 15% 쿠폰할인</span>
-									</div>
-									<img src="/images/pc/thumb/dp_submain_img02.jpg" alt="">
+									<a href="">
+										<div class="txtWrap">
+											<p>티.바지.점퍼의 계절!</p>
+											<p>가을 전격 오픈</p>
+											<span>신상 15% 쿠폰할인</span>
+										</div>
+										<img src="/images/pc/thumb/dp_submain_img02.jpg" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
@@ -729,17 +752,18 @@
 					</div>
 					<div class="spe_pr_list">
 						<div class="slide_wrap">
-							<div class="spe0 spe_sl">
+							<div class="spe_sl">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class=" item_prod">
+										<div class="swiper-slide view">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod2.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -748,14 +772,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
-											<div class=" item_prod">
+										<div class="swiper-slide view">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod2.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -764,14 +789,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
-											<div class=" item_prod sUiXc "> <!-- item_prod ranker d_detail -->
+										<div class="swiper-slide view">
+											<div class="item_prod sUiXc "> <!-- item_prod ranker d_detail -->
 												<div class="item_state"> <!-- item_state AD soldout -->
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod2.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -781,13 +807,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod2.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -797,13 +824,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod sUiXc "> <!-- item_prod ranker d_detail -->
+											<div class="item_prod sUiXc "> <!-- item_prod ranker d_detail -->
 												<div class="item_state"> <!-- item_state AD soldout -->
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod2.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -813,13 +841,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod2.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -830,18 +859,54 @@
 										</div>
 									</div>
 								</div>
+								<div class="swiper-scrollbar"></div>
 							</div>
-							<div class="spe1 spe_sl">
+							<div class="spe_sl">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class=" item_prod">
+										<div class="swiper-slide view">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemPrice">80,100
+															<span class="itemPrice_original">89,000</span>
+															<span class=" itemPercent">10%</span>
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide view">
+											<div class="item_prod">
+												<div class="item_state">
+													<a href="#none" class=" itemLink">
+														<div class="itemPic">
+															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+														</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemPrice">80,100
+															<span class="itemPrice_original">89,000</span>
+															<span class=" itemPercent">10%</span>
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide view">
+											<div class="item_prod">
+												<div class="item_state">
+													<a href="#none" class=" itemLink">
+														<div class="itemPic">
+															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
+														</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -851,13 +916,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -867,13 +933,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -883,45 +950,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
-														<p class="itemPrice">80,100
-															<span class="itemPrice_original">89,000</span>
-															<span class=" itemPercent">10%</span>
-														</p>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class=" item_prod">
-												<div class="item_state">
-													<a href="#none" class=" itemLink">
-														<div class="itemPic">
-															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
-														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
-														<p class="itemPrice">80,100
-															<span class="itemPrice_original">89,000</span>
-															<span class=" itemPercent">10%</span>
-														</p>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class=" item_prod">
-												<div class="item_state">
-													<a href="#none" class=" itemLink">
-														<div class="itemPic">
-															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod1.jpg">
-														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -932,18 +968,54 @@
 										</div>
 									</div>
 								</div>
+								<div class="swiper-scrollbar"></div>
 							</div>
-							<div class="spe2 spe_sl">
+							<div class="spe_sl">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class=" item_prod">
+										<div class="swiper-slide view">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemPrice">80,100
+															<span class="itemPrice_original">89,000</span>
+															<span class=" itemPercent">10%</span>
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide view">
+											<div class="item_prod">
+												<div class="item_state">
+													<a href="#none" class=" itemLink">
+														<div class="itemPic">
+															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
+														</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemPrice">80,100
+															<span class="itemPrice_original">89,000</span>
+															<span class=" itemPercent">10%</span>
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide view">
+											<div class="item_prod">
+												<div class="item_state">
+													<a href="#none" class=" itemLink">
+														<div class="itemPic">
+															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
+														</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -953,13 +1025,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -969,13 +1042,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -985,45 +1059,14 @@
 											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class=" item_prod">
+											<div class="item_prod">
 												<div class="item_state">
 													<a href="#none" class=" itemLink">
 														<div class="itemPic">
 															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
 														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
-														<p class="itemPrice">80,100
-															<span class="itemPrice_original">89,000</span>
-															<span class=" itemPercent">10%</span>
-														</p>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class=" item_prod">
-												<div class="item_state">
-													<a href="#none" class=" itemLink">
-														<div class="itemPic">
-															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
-														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
-														<p class="itemPrice">80,100
-															<span class="itemPrice_original">89,000</span>
-															<span class=" itemPercent">10%</span>
-														</p>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class=" item_prod">
-												<div class="item_state">
-													<a href="#none" class=" itemLink">
-														<div class="itemPic">
-															<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/prod3.jpg">
-														</div>
-														<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+														<p class="itemBrand">BRAND NAME</p>
+														<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 														<p class="itemPrice">80,100
 															<span class="itemPrice_original">89,000</span>
 															<span class=" itemPercent">10%</span>
@@ -1034,8 +1077,8 @@
 										</div>
 									</div>
 								</div>
+								<div class="swiper-scrollbar"></div>
 							</div>
-							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</div>
@@ -1053,17 +1096,17 @@
 							<div class="swiper-slide">
 								<div class="bt_lb_item">
 									<img class="vLHTC lb_img" src="/images/pc/thumb/br_lookbook_img01.jpg" alt="BLUE-a" />
-									<div class="item_picker" style="left:95px; top:245px;">
+									<div class="item_picker" style="left:20%; top:44%;">
 										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
-										<div class="pick_descr" style="display: none;">
+										<div class="pick_descr">
 											<a href="">
-												상품명12
+												상품명11
 											</a>
 										</div>
 									</div>
-									<div class="item_picker" style="left:320px; top:150px;">
+									<div class="item_picker" style="left:60%; top:30%;">
 										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
-										<div class="pick_descr" style="display: none;">
+										<div class="pick_descr">
 											<a href="">
 												상품명12
 											</a>
@@ -1074,19 +1117,64 @@
 							<div class="swiper-slide">
 								<div class="bt_lb_item">
 									<img class="vLHTC lb_img" src="/images/pc/thumb/br_lookbook_img02.jpg" alt="BLUE-a" />
-									<button></button>
+									<div class="item_picker" style="left:20%; top:44%;">
+										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
+										<div class="pick_descr">
+											<a href="">
+												상품명21
+											</a>
+										</div>
+									</div>
+									<div class="item_picker" style="left:60%; top:30%;">
+										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
+										<div class="pick_descr">
+											<a href="">
+												상품명22
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="bt_lb_item">
 									<img class="vLHTC lb_img" src="/images/pc/thumb/br_lookbook_img03.jpg" alt="BLUE-a" />
-									<button></button>
+									<div class="item_picker" style="left:20%; top:44%;">
+										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
+										<div class="pick_descr">
+											<a href="">
+												상품명31
+											</a>
+										</div>
+									</div>
+									<div class="item_picker" style="left:60%; top:30%;">
+										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
+										<div class="pick_descr">
+											<a href="">
+												상품명32
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="bt_lb_item">
 									<img class="vLHTC lb_img" src="/images/pc/thumb/br_lookbook_img04.jpg" alt="BLUE-a" />
-									<button></button>
+									<div class="item_picker" style="left:20%; top:44%;">
+										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
+										<div class="pick_descr">
+											<a href="">
+												상품명41
+											</a>
+										</div>
+									</div>
+									<div class="item_picker" style="left:60%; top:30%;">
+										<button type="button" id="btn_lookbook_picker01"><span class="ico ico_picker"></span></button>
+										<div class="pick_descr">
+											<a href="">
+												상품명42
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1106,7 +1194,7 @@
 				</div>
 				<div class="cont_body">
 					<div class="itemsGrp">
-						<div class=" item_prod">
+						<div class="item_prod">
 							<div class="item_state">
 								<a href="#none" class=" itemLink">
 									<div class="itemPic">
@@ -1114,7 +1202,7 @@
 										<button type="button" class="itemLike">관심상품 추가</button>
 									</div>
 									<p class=" itemBrand">BRAND NAME</p>
-									<div class=" itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+									<div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
 									<p class="itemPrice">80,100
 										<span class="itemPrice_original">89,000</span>
 										<span class=" itemPercent">10%</span>
@@ -1129,10 +1217,11 @@
 										<span class="badge13">단독특가</span>
 										<span class="badge13">무료배송</span>
 									</p>
+									<div class="itemComment">#가을느낌 물씬!</div>
 								</a>
 							</div>
 						</div>
-						<div class=" item_prod">
+						<div class="item_prod">
 							<div class="item_state">
 								<a href="#none" class="itemLink">
 									<div class=" itemPic">
@@ -1153,10 +1242,11 @@
 										<span class="badge13">단독특가</span>
 										<span class="badge13">무료배송</span>
 									</p>
+									<div class="itemComment">#가을느낌 물씬!</div>
 								</a>
 							</div>
 						</div>
-						<div class=" item_prod">
+						<div class="item_prod">
 							<div class="item_state">
 								<a href="#none" class="itemLink">
 									<div class=" itemPic">
@@ -1177,10 +1267,11 @@
 										<span class="badge13">단독특가</span>
 										<span class="badge13">무료배송</span>
 									</p>
+									<div class="itemComment">#가을느낌 물씬!</div>
 								</a>
 							</div>
 						</div>
-						<div class=" item_prod">
+						<div class="item_prod">
 							<div class="item_state">
 								<a href="#none" class="itemLink">
 									<div class=" itemPic">
@@ -1204,10 +1295,11 @@
 										<span class="badge13">단독특가</span>
 										<span class="badge13">무료배송</span>
 									</p>
+									<div class="itemComment">#가을느낌 물씬!</div>
 								</a>
 							</div>
 						</div>
-						<div class=" item_prod">
+						<div class="item_prod">
 							<div class="item_state">
 								<a href="#none" class="itemLink">
 									<div class=" itemPic">
@@ -1215,7 +1307,6 @@
 										<button type="button" class="itemLike">관심상품 추가</button>
 									</div>
 									<p class="itemBrand">BRAND NAME</p>
-
 									<div class=" itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
 									<p class="itemPrice">488,000 원
 										<span class="itemPrice_original">89,000</span>
@@ -1231,6 +1322,7 @@
 										<span class="badge13">단독특가</span>
 										<span class="badge13">무료배송</span>
 									</p>
+									<div class="itemComment">#가을느낌 물씬!</div>
 								</a>
 							</div>
 						</div>
@@ -1253,32 +1345,32 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="movbox">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqryeW6scd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqryeW6scd0?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="movbox">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J7nowE2iTIM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J7nowE2iTIM?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="movbox">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cRiKrFk7FTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cRiKrFk7FTM?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="movbox">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqryeW6scd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hqryeW6scd0?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="movbox">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J7nowE2iTIM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J7nowE2iTIM?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="movbox">
-										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cRiKrFk7FTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cRiKrFk7FTM?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
 								</div>
 							</div>
@@ -1304,7 +1396,7 @@
 				</div>
 				<div class="modal-body">
 					<div class="itemsGrp">
-						<div class="item_prod">
+						<div class="item_prod"> <!-- 품절일때 sold_out 클래스 추가 요청 -->
 							<div class="item_state">
 								<div class="itemLink">
 									<div class="itemPic">
@@ -1334,23 +1426,21 @@
 			$("#header").load("br_head.html");
 			$("#footer").load("foot.html");
 	
-			var br_post_slide = new Swiper('.brand_main .post-visual', {
+			/* SLIDE - BRAND_VISUAL */
+			var br_post_slide = new Swiper('.brand_main .brand_visual .post-visual', {
 				loop: true,
-				slidesPerView: 'auto',
 				spaceBetween: 60,
-				centeredSlides: true,
 				speed : 1000,
-				autoplay: false,
-				// autoplay: {
-				// 	delay: 2000,
-				// 	disableOnInteraction: false,
-				// },
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
 				navigation: {
-					nextEl: '.brand_main .post-visual .swiper-button-next',
-					prevEl: '.brand_main .post-visual .swiper-button-prev',
+					nextEl: '.brand_main .brand_visual .swiper-button-next',
+					prevEl: '.brand_main .brand_visual .swiper-button-prev',
 				},
 				pagination: {
-					el: '.brand_main .post-visual .swiper-pagination',
+					el: '.brand_main .brand_visual .swiper-pagination',
 					clickable: true,
 				},
 
@@ -1360,57 +1450,80 @@
 					},
 				},
 			});
-	
-			$('.spe_pr_list .spe_sl').hide();
-			$('.spe_pr_list .spe_sl').eq(0).show();
-			
-			var br_special_slide = new Swiper('.brand_main .special_shop .spe_thumb .swiper-container', {
-				navigation: {
-					nextEl: '.brand_main .special_shop .swiper-button-next',
-					prevEl: '.brand_main .special_shop .swiper-button-prev',
-				},
-				on: {
-					slideChangeTransitionStart: function () {
-						$('.brand_main .spe_pr_list .spe_sl').hide();
-						$('.brand_main .spe_pr_list .spe' + br_special_slide.activeIndex).show();
-					},
-				}
+
+			//VISUAL SLIDE Control - PAUSE 
+			$(document).on('click','.brand_main .brand_visual .slide-curb-pause',function(e){
+				br_post_slide.autoplay.stop();
+				$(this).hide();
+				$('.brand_main .brand_visual .slide-curb-play').show();
 			});
-	
-			var br_special_slide02 = new Swiper('.brand_main .special_shop .spe_pr_list .spe_sl .swiper-container', {
-				observer: true,
-				observeParents: true,
-				slidesPerView: 'auto',
-				spaceBetween: 20,
-				scrollbar: {
-					el: '.special_shop .swiper-scrollbar',
-					hide: false,
-				},
-			});
-	
+
+			//VISUAL SLIDE Control - PLAY
+			$(document).on('click','.brand_main .brand_visual .slide-curb-play',function(e){
+				br_post_slide.autoplay.start();
+				$(this).hide();
+				$('.brand_main .brand_visual .slide-curb-pause').show();
+			});	
+
+
+			/* SLIDE - NEW ITEMS */
 			var br_trendy_slide = new Swiper('.brand_main .new_item .swiper-container', {
+				watchSlidesProgress: true,
+            	watchSlidesVisibility: true,
+				allowTouchMove: false,
+				speed : 1000,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction:false,
+				},
 				navigation: {
 					nextEl: '.new_item .swiper-button-next',
 					prevEl: '.new_item .swiper-button-prev',
 				},
+				pagination: {
+					el: '.new_item .swiper-pagination',
+					clickable: true,
+				},
 				slidesPerView: 'auto',
 				spaceBetween: 22,
-				scrollbar: {
-					el: '.new_item .swiper-scrollbar',
-					hide: false,
-				},
 			});
-	
-			var br_bn_slide = new Swiper ('.brand_main .post-bnnWide', {
+			
+			br_trendy_slide.on('slideChange', function () {
+				var newitemIndex = br_trendy_slide.activeIndex;
+				var slideWidth = $(".new_item .swiper-slide-visible").eq(0).width() + 22;
+
+				$(".new_item .swiper-slide").removeClass('scaleBig');
+				$(".new_item .swiper-slide-visible").eq(0).addClass('scaleBig');
+				$(".new_item .swiper-slide-visible").eq(3).addClass('scaleBig');
+				
+				$(".new_item .swiper-wrapper").css("transform","translateX(-"+ (slideWidth * newitemIndex) +"px)");
+			});
+
+			br_trendy_slide.on('reachEnd', function () {
+				var newitemIndex = br_trendy_slide.activeIndex + 1;
+				var slideWidth = $(".new_item .swiper-slide-visible").eq(0).width() + 22;
+
+				$(".new_item .swiper-slide").removeClass('scaleBig');
+				$(".new_item .swiper-slide-visible").eq(1).addClass('scaleBig');
+				$(".new_item .swiper-slide-visible").eq(4).addClass('scaleBig');
+
+				$(".new_item .swiper-wrapper").css("transform","translateX(-"+ (slideWidth * newitemIndex) +"px)");
+			});				
+
+			
+			/* SLIDE - WIDE BANNER */
+			var br_bn_slide = new Swiper ('.brand_main .main_1stage .post-bnnWide', {
 				loop: true,
 				slidesPerView: 1,
 				speed : 1500,
 				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
+					nextEl: '.main_1stage .swiper-button-next',
+					prevEl: '.main_1stage .swiper-button-prev',
 				},
 			});
-	
+
+
+			/* SLIDE - BEST ITEMS */
 			var br_best_slide = new Swiper('.brand_main .best_item .swiper-container', {
 				navigation: {
 					nextEl: '.best_item .swiper-button-next',
@@ -1422,8 +1535,10 @@
 					el: '.best_item .swiper-pagination',
 					clickable: true,
 				},
-			});
-	
+			});			
+			
+
+			/* SLIDE - MD’S PICK */
 			var br_md_slide = new Swiper('.brand_main .md_item .swiper-container', {
 				navigation: {
 					nextEl: '.md_item .swiper-button-next',
@@ -1436,7 +1551,54 @@
 					clickable: true,
 				},
 			});
+
+
+			/* SLIDE - SPECIAL SHOP */
+			$('.brand_main .special_shop .spe_pr_list .spe_sl').hide();
+			$('.brand_main .special_shop .spe_pr_list .spe_sl').eq(0).show();
+			
+			var br_special_left_slide = new Swiper('.brand_main .special_shop .spe_thumb .swiper-container', {
+				navigation: {
+					nextEl: '.brand_main .special_shop .swiper-button-next',
+					prevEl: '.brand_main .special_shop .swiper-button-prev',
+				},
+				on: {
+					slideChangeTransitionStart: function () {
+						$('.brand_main .spe_pr_list .spe_sl').hide();
+						$('.brand_main .spe_pr_list .spe_sl').eq(br_special_left_slide.activeIndex).show();
+					},
+				}
+			});
 	
+			$(".brand_main .special_shop .spe_pr_list .spe_sl .swiper-container").each(function(index, element){
+				var $this = $(this);
+				$this.addClass('spe' + index);
+
+				var br_special_right_slide = new Swiper('.spe' + index, {
+					observer: true,
+					observeParents: true,
+					watchSlidesProgress: true,
+					watchSlidesVisibility: true,
+					slidesPerView: 'auto',
+					freeMode: true,
+					spaceBetween: 20,
+					scrollbar: {
+						el: $('.spe' + index).siblings('.swiper-scrollbar'),
+						hide: false,
+					},
+					watchOverflow: true,
+				});
+
+				br_special_right_slide.on('slideChange', function () {
+					$(".special_shop .spe_sl .spe" + index).find(".swiper-slide").removeClass('view');
+					$(".special_shop .spe_sl .spe" + index).find(".swiper-slide-visible").eq(0).addClass('view');
+					$(".special_shop .spe_sl .spe" + index).find(".swiper-slide-visible").eq(1).addClass('view');
+					$(".special_shop .spe_sl .spe" + index).find(".swiper-slide-visible").eq(2).addClass('view');
+				});
+
+			});
+
+			/* SLIDE - BRAND_LOOKBOOK */
 			var br_lookbook_slide = new Swiper('.brand_main .br_lookbook .swiper-container', {
 				loop: true,
 				slidesPerView: 'auto',
@@ -1455,7 +1617,16 @@
 					clickable: true,
 				},
 			});
-	
+			
+
+			// BRAND_LOOKBOOK > picker - 룩북_피커_상품정보 팝업
+			$(document).on('click','#btn_lookbook_picker01',function(e){
+				$("#brLookbookPopup").modal("show");
+				return false;
+			});			
+
+
+			/* SLIDE - BRAND_TV */		
 			var br_tv_slide = new Swiper ('.brand_main .main_tv .post-tv', {
 				loop: true,
 				slidesPerView: 'auto',
@@ -1463,8 +1634,8 @@
 				centeredSlides: true,
 				autoplay: false,
 				navigation: {
-					nextEl: '.main_tv .swiper-button-next',
-					prevEl: '.main_tv .swiper-button-prev',
+					nextEl: '.brand_main .main_tv .swiper-button-next',
+					prevEl: '.brand_main .main_tv .swiper-button-prev',
 				},
 				pagination: {
 					el: '.main_tv .swiper-pagination',
@@ -1472,11 +1643,6 @@
 				},
 			});
 	
-			//팝업 - 룩북_피커_상품정보
-			$(document).on('click','#btn_lookbook_picker01',function(e){
-				$("#brLookbookPopup").modal("show");
-				return false;
-			});
 		});
 		</script>
 </body>

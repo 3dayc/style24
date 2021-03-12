@@ -54,6 +54,40 @@ $(document).ready(function(){
 		history.back()
 	});
 
+	//통합검색 - 레이어 열고닫기
+	$(document).on('click','.common_header .search .promotion_search, .common_header .search .btn_open_search',function(e){
+		$('body').addClass('lock');
+		$("#header .common_search").addClass('active'); 
+		return false;
+	}).on('click','.common_search .btn_close_search',function(e){
+		$("#header .common_search").removeClass('active'); 
+		$('body').removeClass('lock');
+		return false;
+	});		
+
+	//통합검색 - 검색어 입력 시 
+	$(document).on('keyup','.common_search .area_input input',function(e){
+		var searchValue = $(this).val();
+		if(searchValue.length > 0) {
+			$('.common_search .area_result .default_box').hide();	
+			$('.common_search .area_result .searching_box').show();	
+		} else if (searchValue.length == 0) {
+			$('.common_search .area_result .searching_box').hide();	
+			$('.common_search .area_result .default_box').show();	
+		}
+	});
+
+	//통합검색 - 슬라이드 컨트롤러 > 지금 고객님들이 많이 보고 있어요 
+	$(document).on('click','.common_search .realtime_slider .btn_pause',function(e){
+		realtimeItemSwiper.autoplay.stop();
+		$(this).hide();
+		$('.common_search .realtime_slider .btn_play').show();
+	}).on('click','.common_search .realtime_slider .btn_play',function(e){
+		realtimeItemSwiper.autoplay.start();
+		$(this).hide();
+		$('.common_search .realtime_slider .btn_pause').show();
+	});
+
 });
 /* * * * * * * * * * * * * * * * * * * * * * * 
 
@@ -309,10 +343,14 @@ $(document).ready( function() {
 
 	/* 상품상세 > 상품문의 _accordion */
 	$(document).on('click','.pd_qnalist .foldGroup .fold_head',function(e){
-		$(this).parents('.foldGroup li').find('.fold_cont').slideToggle(100);
-		$(this).toggleClass('on');
-		return false;
+		if($(this).parent().hasClass('secret_qna')){
+			alert('비밀글은 열람하실 수 없습니다.');
+		}else {
+			$(this).parents('.foldGroup li').find('.fold_cont').slideToggle(100);
+			$(this).toggleClass('on');
+		}
 	});
+	
 	
 	/* 아이디/비밀번호 찾기_accordion:open */
 	$(document).on('click','.mb .foldGroup.checkcase .fold_head',function(e){	

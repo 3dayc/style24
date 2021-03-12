@@ -1867,132 +1867,238 @@
 				<!-- 팝업영역 -->
 				<div>
 					<!-- 구매하기팝업 -->
-					<div class="btPop btPopAuto pdPurchasePop" id="btPopAuto">
+					<div class="btPop btPopAuto pd_pop Purchase_pop" id="btPopAuto_back">
 						<a class="btn btPop_close">Close </a>
 						<div class="header btPop_head btPopAuto_head">
 							구매하기팝업
 						</div>
 						<div class="body btPop_body btPopAuto_body">
-							<!-- 옵션 -->
-							<div class="option_box">
-								<div class="opt_color">
-									<div class="opt_header">
-										<span class="title">컬러</span>
-										<span class="color">그레이</span>
+							<div class="option_result op1">
+								<!-- 옵션 -->
+								<div class="option_box">
+									<div class="opt_color">
+										<div class="opt_header">
+											<span class="title">컬러</span>
+											<span class="color">그레이</span>
+										</div>
+										<ul>
+											<li>
+												<a href="" class="on">  <!-- 해당 컬러 상품페이지로 이동 -->
+													<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="그레이">
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="베이지">
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="그린">
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="핑크">
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="민트">
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="블랙">
+												</a>
+											</li>
+										</ul>
 									</div>
-									<ul>
-										<li>
-											<a href="" class="on">  <!-- 해당 컬러 상품페이지로 이동 -->
-												<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="그레이">
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="베이지">
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="그린">
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="핑크">
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="민트">
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<img src="/images/mo/thumb/tmp_cartColor1.jpg" alt="블랙">
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="opt_size">
-									<div class="opt_header">
-										<span class="title">사이즈</span>
-									</div>
-									<div class="form_field2">
-										<div class="lap">
-											<div>
-												<label><input type="radio" name="rdi-optsize" value="" checked=""><span>90</span></label>
-											</div>
-											<div>
-												<label><input type="radio" name="rdi-optsize" value="" disabled=""><span>95</span></label>
-											</div>
-											<div>
-												<label><input type="radio" name="rdi-optsize" value=""><span>100</span></label>
-											</div>
-											<div>
-												<label><input type="radio" name="rdi-optsize" value=""><span>105</span></label>
-											</div>
-											<div>
-												<label><input type="radio" name="rdi-optsize" value=""><span>110</span></label>
-											</div>
-											<div>
-												<label><input type="radio" name="rdi-optsize" value=""><span>115</span></label>
-											</div>
-											<div>
-												<label><input type="radio" name="rdi-optsize" value=""><span>free</span></label>
+									<div class="opt_size">
+										<div class="opt_header">
+											<span class="title">사이즈</span>
+										</div>
+										<div class="form_field2">
+											<div class="lap">
+												<div>
+													<label><input type="radio" name="rdi-optsize" value="" checked=""><span>90</span></label>
+												</div>
+												<div>
+													<label><input type="radio" name="rdi-optsize" value="" disabled=""><span>95</span></label>
+												</div>
+												<div>
+													<label><input type="radio" name="rdi-optsize" value=""><span>100</span></label>
+												</div>
+												<div>
+													<label><input type="radio" name="rdi-optsize" value=""><span>105</span></label>
+												</div>
+												<div>
+													<label><input type="radio" name="rdi-optsize" value=""><span>110</span></label>
+												</div>
+												<div>
+													<label><input type="radio" name="rdi-optsize" value=""><span>115</span></label>
+												</div>
+												<div>
+													<label><input type="radio" name="rdi-optsize" value=""><span>free</span></label>
+												</div>
 											</div>
 										</div>
 									</div>
+									<!-- 해당상품 품절시 노출 -->
+									<div class="info_restock"><a href="#none" id="btn_pushRestock_pop" class="btn_popup">재입고 알림 신청</a></div>
+									<!-- //해당상품 품절시 노출 -->
+									<div class="opt_count">
+										<div class="opt_header">
+											<span class="title">수량</span>
+										</div>
+										<div class="number_count">
+											<span class="minus"><em class="sr-only">감소</em></span>
+											<input type="text" name="" maxlength="3" style="ime-mode:disabled" value="1">
+											<span class="plus"><em class="sr-only">추가</em></span>
+										</div>
+									</div>
+									<div class="opt_select">
+										<form class="form_wrap">
+											<div class="form_field">
+												<div class="select_custom option_open">
+													<div class="combo">
+														<div class="select">상품옵션06</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="opt_result">
+										<div class="result_item">
+											<div class="opt_header">
+												<div class="bundle">
+													<span class="item_option">다크그레이/XXL</span>
+												</div>
+											</div>
+											<div class="number_count">
+												<span class="minus"><em class="sr-only">감소</em></span>
+												<input type="text" name="" maxlength="3" style="ime-mode:disabled" value="1">
+												<span class="plus"><em class="sr-only">추가</em></span>
+											</div>
+											<div class="item_price">
+												<p><em>99,999,999</em>원</p>
+											</div>
+											<button type="button" class="btn_delete_item"><span>삭제</span></button>
+										</div>
+										<div class="result_item">
+											<div class="opt_header">
+												<div class="bundle">
+													<span class="item_name">[상품1] 남성 테이퍼드핏 기모면 올밴딩 팬트</span>
+													<span class="item_option">다크그레이/XXL</span>
+												</div>
+												<div class="bundle">
+													<span class="item_name">[상품1] 남성 테이퍼드핏 기모면 올밴딩 팬트</span>
+													<span class="item_option">다크그레이/XXL</span>
+												</div>
+											</div>
+											<div class="number_count">
+												<span class="minus"><em class="sr-only">감소</em></span>
+												<input type="text" name="" maxlength="3" style="ime-mode:disabled" value="1">
+												<span class="plus"><em class="sr-only">추가</em></span>
+											</div>
+											<div class="item_price">
+												<p><em>99,999,999</em>원</p>
+											</div>
+											<button type="button" class="btn_delete_item"><span>삭제</span></button>
+										</div>
+										<div class="result_item">
+											<div class="opt_header">
+												<div class="bundle">
+													<span class="item_name">[상품1] 남성 테이퍼드핏 기모면 올밴딩 팬트</span>
+													<span class="item_option">블루그레이/S</span>
+												</div>
+											</div>
+											<div class="number_count">
+												<span class="minus"><em class="sr-only">감소</em></span>
+												<input type="text" name="" maxlength="3" style="ime-mode:disabled" value="1">
+												<span class="plus"><em class="sr-only">추가</em></span>
+											</div>
+											<div class="item_price">
+												<p><em>99,999,999</em>원</p>
+											</div>
+											<button type="button" class="btn_delete_item"><span>삭제</span></button>
+										</div>
+									</div>
+									
 								</div>
-								<div class="opt_select">
-									<div class="opt_header">
-										<span class="title">옵션</span>
-										<button type="button" id="btn_infoSize_pop" class="btn_popup"><span>사이즈정보</span></button>
-									</div>
-									<div class="form_field">
-										<select id="" class="form-control select">
-											<option value="hide">옵션1 선택</option>
-											<option value="" rel="icon-temperature">카키/95</option>
-											<option value="">카키/100</option>
-											<option value="">카키/105</option>
-											<option value="" disabled>카키/110</option>
-											<option value="">옐로우/95</option>
-											<option value="">옐로우/100</option>
-											<option value="">옐로우/105</option>
-											<option value="">옐로우/110</option>
-										</select> 
-									</div>
-									<div class="form_field">
-										<select id="" class="form-control select" disabled>
-											<option value="hide">옵션2 선택</option>
-											<option value="" rel="icon-temperature">카키/95</option>
-											<option value="">카키/100</option>
-											<option value="">카키/105</option>
-											<option value="" disabled>카키/110</option>
-											<option value="">옐로우/95</option>
-											<option value="">옐로우/100</option>
-											<option value="">옐로우/105</option>
-											<option value="">옐로우/110</option>
-										</select> 
-									</div>
+								<!-- 네이버결제 -->
+								<div class="npay_box">
+									<a href="">네이버id로 간편구매~</a>
 								</div>
-								<!-- 해당상품 품절시 노출 -->
-								<div class="info_restock"><a href="#none" id="btn_pushRestock_pop" class="btn_popup">재입고 알림 신청</a></div>
-								<!-- //해당상품 품절시 노출 -->
-								<div class="opt_count">
-									<div class="opt_header">
-										<span class="title">수량</span>
-									</div>
-									<div class="number_count">
-										<span class="minus"><em class="sr-only">감소</em></span>
-										<input type="text" name="" maxlength="3" style="ime-mode:disabled" value="1">
-										<span class="plus"><em class="sr-only">추가</em></span>
+							</div>
+							<!-- 옵션선택팝업 -->
+							<div class="pop_option_select">
+								<div class="close">닫기</div>
+								<div class="pp_body">
+									<div class="pp_cont">
+										<div class="opt_select">
+											<div class="opt_header">
+												<span class="title">옵션선택</span>
+												<div class="check_excluding form_field">
+													<div>
+														<input id="excluding" type="checkbox"><label for="excluding"> <span>품절제외</span> </label>
+													</div>
+												</div>
+											</div>
+											<form class="form_wrap">
+												<div class="form_field">
+													<div class="select_custom item_opt1">
+														<div class="combo">
+															<div class="select">상품옵션01</div>
+															<ul class="list" style="display: none;">
+																<!-- 선택처리 class="selected" / 선택불가 aria-disabled="true" / 품절표기 data-soldout="true" 추가  -->
+																<li class="">선택</li> 
+																<li class="selected">상품옵션01</li>
+																<li>상품옵션02</li>
+																<li>상품옵션03</li>
+																<li aria-disabled="true">
+																	<div>상품옵션05</div>
+																	<div>120,000원</div>
+																</li>
+																<li>상품옵션06</li>
+																<li aria-disabled="true" data-soldout="true">
+																	<div>상품옵션07</div>
+																	<div>120,000원</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="form_field">
+													<div class="select_custom item_opt2">
+														<div class="combo">
+															<div class="select">상품옵션12</div>
+															<ul class="list" style="display: none;">
+																<!-- 선택처리 class="selected" / 선택불가 aria-disabled="true" / 품절표기 data-soldout="true" 추가  -->
+																<li class="">선택</li> 
+																<li class="">상품옵션11</li>
+																<li class="selected">상품옵션12</li>
+																<li>상품옵션13</li>
+																<li aria-disabled="true">
+																	<div>상품옵션15</div>
+																	<div>120,000원</div>
+																</li>
+																<li>상품옵션16</li>
+																<li aria-disabled="true" data-soldout="true">
+																	<div>상품옵션17</div>
+																	<div>120,000원</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</form>
+											<div class="text_excluding">99개의 품절옵션이 제외되었습니다.</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<!-- 네이버결제 -->
-							<div class="npay_box">
-								<a href="">네이버id로 간편구매~</a>
-							</div>
+							<!-- //옵션선택팝업 -->
 						</div>
 						<div class="body btPop_foot btPopAuto_foot">
 							<!-- 총 결재금액, 하단버튼 -->
@@ -2008,7 +2114,9 @@
 									</p>
 								</div>
 								<div class="btn_box">
-									<button class="gift">선물하기</button>
+									<button class="gift">
+										<span><span>선물해보세요!</span></span>
+									</button>
 									<button class="cart" id="btn_shoppingBag_pop">쇼핑백</button>
 									<button class="buyNow">바로구매</button>
 								</div>
@@ -3468,260 +3576,10 @@
 									<!-- //해당상품 -->
 								</div>
 								<div class="modal-body">
-									<div class="pd_qnalist">
-										<div class="info_txt">
-											<ul>
-												<li>상품에 대해 궁금한 점이 있으시다면 문의해주세요.</li>
-												<li>배송, 주문/결제, 취소/반품/교환/환불, 회원, 쿠폰/포인트, 이벤트 등의 자세한 문의사항은 고객센터 &gt; 1:1문의를 이용하여 주시기 바랍니다.</li>
-											</ul>              
-											<div class="btn_box">
-												<button type="button" class="btnM btn_default" onclick="location.href='cs_contactUs_1.html'"><span>고객센터 1:1문의</span></button>
-											</div>     
-										</div>
-										<div class="qna_list">
-											<!-- 나열조건결과 있을 때 노출 내용 -->
-											<div class="yesdata">
-												<div class="form_field check_secret">
-													<input id="except_secret" type="checkbox"><label for="except_secret"><span>비밀글제외</span></label>
-												</div>
-												<div class="ui_row">
-													<div class="foldGroup case2">
-														<!-- list2 -->
-														<ul>
-															<li class="my_qna"><!-- 내가 쓴 글에 클래스 my_qna 추가 -->
-																<div class="fold_head">
-																	<a href="javascript:void(0)">
-																		<div>
-																			<div class="fold_tit">
-																				<div class="lap1">
-																					<span class="fold_state done">답변완료</span> <!-- 답변완료 : done / 처리중 : doing -->
-																					<span class="prod"><i class="ico ico_myqna"></i><i class="ico ico_secret"></i></span>
-																				</div>
-																				<div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
-																			</div>
-																			<span class="id">**nana</span><span class="data">2020.12.02</span>
-																		</div>
-																	</a>
-																</div>
-																<div class="fold_cont">
-																	<!-- 내 1대1문의 내용 -->
-																	<div class="fold_detail">
-																		<div>
-																			<p>
-																				PC에서 남성 분또 맨투맨 (T203TS120P)<br>
-																				오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
-																				다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
-																				바쁘시겠지만 확인 부탁드립니다.
-																			</p>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 내용 -->
-																	<!-- 내 1대1문의 답변 -->
-																	<div class="fold_answer">
-																		<div>
-																			<div class="answer_body">
-																				안녕하세요, 고객님. 스타일24 담당자 배수지 입니다. <br>
-																				문의주신 해당 상품의 선물하기는 모바일에서만 사용이 가능합니다. <br>
-																				이외 궁금하신 사항이 있으시면 1:1문의나 고객센터(1544-5336)로 문의 부탁 드립니다. <br>
-																				고객 만족을 위해 더욱 더 노력하는 스타일24가 되겠습니다. <br>
-																				좋은 하루 보내세요, 감사합니다.
-																			</div>
-																			<div class="answer_foot">
-																				<span class="id">**nana</span><span class="data">2020.12.02</span>
-																				<button type="button" class="btn_delete"><span>삭제</span></button>
-																			</div>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 답변 -->
-																</div>
-															</li>
-															<li>
-																<div class="fold_head">
-																	<a href="javascript:void(0)">
-																		<div>
-																			<div class="fold_tit">
-																				<div class="lap1">
-																					<span class="fold_state done">답변완료</span> <!-- 답변완료 : done / 처리중 : doing -->
-																					<span class="prod"></span>
-																				</div>
-																				<div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
-																			</div>
-																			<span class="id">**nana</span><span class="data">2020.12.02</span>
-																		</div>
-																	</a>
-																</div>
-																<div class="fold_cont">
-																	<!-- 내 1대1문의 내용 -->
-																	<div class="fold_detail">
-																		<div>
-																			<p>
-																				PC에서 남성 분또 맨투맨 (T203TS120P)<br>
-																				오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
-																				다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
-																				바쁘시겠지만 확인 부탁드립니다.
-																			</p>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 내용 -->
-																	<!-- 내 1대1문의 답변 -->
-																	<div class="fold_answer">
-																		<div>
-																			<div class="answer_body">
-																				안녕하세요, 고객님. 스타일24 담당자 배수지 입니다. <br>
-																				문의주신 해당 상품의 선물하기는 모바일에서만 사용이 가능합니다. <br>
-																				이외 궁금하신 사항이 있으시면 1:1문의나 고객센터(1544-5336)로 문의 부탁 드립니다. <br>
-																				고객 만족을 위해 더욱 더 노력하는 스타일24가 되겠습니다. <br>
-																				좋은 하루 보내세요, 감사합니다.
-																			</div>
-																			<div class="answer_foot">
-																				<span class="id">**nana</span><span class="data">2020.12.02</span>
-																				<button type="button" class="btn_delete"><span>삭제</span></button>
-																			</div>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 답변 -->
-																</div>
-															</li>
-															<li>
-																<div class="fold_head">
-																	<a href="javascript:void(0)">
-																		<div>
-																			<div class="fold_tit">
-																				<div class="lap1">
-																					<span class="fold_state doing">처리중</span> <!-- 답변완료 : done / 처리중 : doing -->
-																					<span class="prod"></span>
-																				</div>
-																				<div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
-																			</div>
-																			<span class="id">**nana</span><span class="data">2020.12.02</span>
-																		</div>
-																	</a>
-																</div>
-																<div class="fold_cont">
-																	<!-- 내 1대1문의 내용 -->
-																	<div class="fold_detail">
-																		<div>
-																			<p>
-																				PC에서 남성 분또 맨투맨 (T203TS120P)<br>
-																				오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
-																				다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
-																				바쁘시겠지만 확인 부탁드립니다.
-																			</p>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 내용 -->
-																</div>
-															</li>		
-															<li>
-																<div class="fold_head">
-																	<a href="javascript:void(0)">
-																		<div>
-																			<div class="fold_tit">
-																				<div class="lap1">
-																					<span class="fold_state doing">처리중</span> <!-- 답변완료 : done / 처리중 : doing -->
-																					<span class="prod"></span>
-																				</div>
-																				<div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
-																			</div>
-																			<span class="id">**nana</span><span class="data">2020.12.02</span>
-																		</div>
-																	</a>
-																</div>
-																<div class="fold_cont">
-																	<!-- 내 1대1문의 내용 -->
-																	<div class="fold_detail">
-																		<div>
-																			<p>
-																				PC에서 남성 분또 맨투맨 (T203TS120P)<br>
-																				오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
-																				다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
-																				바쁘시겠지만 확인 부탁드립니다.
-																			</p>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 내용 -->
-																</div>
-															</li>	
-															<li>
-																<div class="fold_head">
-																	<a href="javascript:void(0)">
-																		<div>
-																			<div class="fold_tit">
-																				<div class="lap1">
-																					<span class="fold_state doing">처리중</span> <!-- 답변완료 : done / 처리중 : doing -->
-																					<span class="prod"></span>
-																				</div>
-																				<div class="lap2"><span>상품을 받았는데, 옷의 색상이 화면과 다릅니다. </span></div>
-																			</div>
-																			<span class="id">**nana</span><span class="data">2020.12.02</span>
-																		</div>
-																	</a>
-																</div>
-																<div class="fold_cont">
-																	<!-- 내 1대1문의 내용 -->
-																	<div class="fold_detail">
-																		<div>
-																			<p>
-																				PC에서 남성 분또 맨투맨 (T203TS120P)<br>
-																				오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
-																				다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
-																				바쁘시겠지만 확인 부탁드립니다.
-																			</p>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 내용 -->
-																</div>
-															</li>
-															<li>
-																<div class="fold_head">
-																	<a href="javascript:void(0)">
-																		<div>
-																			<div class="fold_tit">
-																				<div class="lap1">
-																					<span class="fold_state done">답변완료</span> <!-- 답변완료 : done / 처리중 : doing -->
-																					<span class="prod"><i class="ico ico_secret"></i></span>
-																				</div>
-																				<div class="lap2"><span>비밀글입니다.</span></div>
-																			</div>
-																			<span class="id">**nana</span><span class="data">2020.12.02</span>
-																		</div>
-																	</a>
-																</div>
-																<div class="fold_cont">
-																	<!-- 내 1대1문의 내용 -->
-																	<div class="fold_detail">
-																		<div>
-																			<p>
-																				PC에서 남성 분또 맨투맨 (T203TS120P)<br>
-																				오렌지 컬러 선물하려고 하는데 선물을 할 수 없다고 나오네요.<br>
-																				다른 컬러는 선물이 가능한 것 같은데 오렌지 컬러는 왜 안 되는건가요?<br>
-																				바쁘시겠지만 확인 부탁드립니다.
-																			</p>
-																		</div>
-																	</div>
-																	<!-- //내 1대1문의 내용 -->
-																</div>
-															</li>	
-														</ul>
-														<!-- //list2 -->
-													</div>
-												</div>
-											</div>
-											<!-- //나열조건결과 있을 때 노출 내용 -->
-											<!-- 나열조건결과 없을 때 노출 내용 -->
-											<div class="nodata">
-												<div class="txt_box">
-													<p>
-														등록된 상품문의가 없습니다.
-													</p>
-												</div>
-											</div>
-											<!-- //나열조건결과 없을 때 노출 내용 -->
-										</div>
-									</div>
+									
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btnL btn_dark" id="btn_pdQnaWrite_pop"><span>상품 문의하기</span></button>
+									
 								</div>
 							</div>
 						</div>
@@ -3806,87 +3664,7 @@
 									<!-- //해당상품 -->
 								</div>
 								<div class="modal-body">
-									<div class="inner">
-										<div class="delivery">
-											<div class="pop_cont">
-												<h2>배송안내</h2>
-												<h3>구분</h3>
-												<p class="dot">일반배송/총알배송(오전 10시까지 주문 시)</p>
-											</div>
-											<div class="pop_cont">
-												<h3>배송비</h3>
-												<p class="dot">배송비 2,500원</p>
-												<p class="dot">배송비 2,500원(40,000원 이상 무료배송)</p>
-												<p class="dot">무료배송</p>
-											</div>
-											<div class="pop_cont">
-												<h3>배송업체</h3>
-												<p class="dot">CJ 대한통운</p>
-											</div>
-											<div class="pop_cont">
-												<h3>기간</h3>
-												<p class="dot">총알배송 : 오늘 밤 12시까지 도착 (토/일/공휴일 제외)</p>
-												<p class="dot">일반배송 : 결제 완료 후 2~3일 이내 (일/공휴일 제외)</p>
-												<p class="dot">단, 제주도나 도서 지방은 별도요금이 부과될 수 있습니다. 날씨나 택배사 사정에 따라 배송이 지연될 수 있습니다.</p>
-											</div>
-										</div>
-									</div>
-									<div class="inner wide">
-										<div class="pop_board"></div>
-									</div>
-									<div class="inner">
-										<div class="change">
-											<div class="pop_cont">
-												<h2>반품/교환안내</h2>
-												<table class="pop_table">
-													<tbody>
-													<tr>
-														<th>반품/교환<br>배송업체</th>
-														<td>CJ 대한통운</td>
-													</tr>
-													<tr>
-														<th>반품배송비</th>
-														<td>3,000원(최초 배송비가 무료인 경우<br>왕복 배송비 6,000원 부과)</td>
-													</tr>
-													<tr>
-														<th>교환배송비</th>
-														<td>6,000원</td>
-													</tr>
-													<tr>
-														<th>반품/교환 주소</th>
-														<td>10857 경기도 파주시 탄현면 방촌로<br>1172-21 아이스타일24 물류센터</td>
-													</tr>
-												</tbody></table>
-											</div>
-											<div class="pop_cont">
-												<h3>반품/교환 신청</h3>
-												<p class="dot">반품/교환 시 먼저 고객센터(1544-5336)나 일대일 문의로 반품/교환 신청 후 상품을 발송 해 주시기 바랍니다.</p>
-												<p class="dot">마이페이지 &gt; 나의쇼핑 &gt; 정상주문내역에서 하실 수 있습니다.</p>
-												<p class="dot">반품/교환 신청시 상품의 반송입고 확인 후 환불/교환 처리해 드립니다.</p>
-											</div>
-											<div class="pop_cont">
-												<h3>반품시기</h3>
-												<p class="dot">상품의 반품/교환은 상품 수령 후 7일 이내 가능합니다. 단, 상품을 수령하셨을 때의 상태를 그대로 보존해 주셔야 합니다.</p>
-											</div>
-											<div class="pop_cont">
-												<h3>반품/교환 불가사유</h3>
-												<p class="dot">반품/교환 가능기간을 초과하였을 경우.</p>
-												<p class="dot">상품 및 구성품을 분실하였거나 취급 부주의로 인한 파손/고장/오염된 경우.</p>
-												<p class="dot">고객님의 요청에 따른 주문제작 상품의 경우.</p>
-												<p class="dot">상품을 착용 또는 설치하였거나, 상품의 일부를 소비하였을 경우.</p>
-												<p class="dot">상품의 포장을 개봉하여 사용 및 설치가 완료 되거나 상품의 가치가 훼손되었을 경우.</p>
-												<p class="dot">구매한 상품의 구성품(세트, 기프트상품, 부속품, 의류부착 악세사리 등)이 누락 된 경우.</p>
-												<p class="dot">신발, 그릇류의 박스포장을 포함, 상품이 판매할 수 없게 훼손 된 경우(신발박스 등의 파손, 박스포장 위 송장 부착, 박스 훼손/파손/찢어집, 택 분실 등)</p>
-											</div>
-											<div class="pop_cont">
-												<h3>기타사항</h3>
-												<p class="dot">상품에 따라 반송주소/방법이 각각 다를 수 있습니다.</p>
-												<p class="dot">자사배송 상품의 경우, 출고 전후 옵션 변경 및 다른 상품으로 교환이 불가하여 취소 또는 재주문하셔야 합니다.</p>
-												<p class="dot">고객님께서 임의로 반송하실 경우, 빠른 처리가 어려울 수 있습니다.</p>
-												<p class="dot">제품 반송 시 꼭 반품 신청 후, 안내에 따른 반송 부탁 드립니다.</p>
-											</div>
-										</div>
-									</div>
+
 								</div>
 							</div>
 						</div>
@@ -3894,44 +3672,418 @@
 					<!-- //배송교환반품팝업 -->
 
 					<!-- 제품리뷰팝업 -->
-					<div class="modal pop_full fade" id="pdReviewModalFull" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
+					<div class="modal pop_full fade pd_pop pd_review_pop" id="pdReviewPop" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleFullLabel">제품리뷰 팝업</h5>
+									<div class="item_prod2">
+										<div class="item_state">
+											<a href="#none" class="itemLink">
+												<div class="itemPic">
+													<img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
+												</div>
+												<p class="itemBrand">NBA 키즈</p>
+												<div class="itemName">유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
+											</a>
+										</div>
+									</div>
 								</div>
 								<div class="modal-body">
 									<div class="pop_cont">
-										제품리뷰 내용
 									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn"  id=""><span>확인</span></button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<!-- //제품리뷰팝업 -->
 
-					<!-- 제품베스트리뷰팝업 -->
-					<div class="modal pop_full fade" id="pdBestReviewModalFull" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
+					<!-- 베스트리뷰팝업 -->
+					<div class="modal pop_full fade pd_pop pd_bestreviewdetail_pop" id="pdBestReviewPop" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleFullLabel">제품베스트리뷰 팝업</h5>
+									<h5 class="modal-title" id="exampleFullLabel">베스트 리뷰</h5>
 								</div>
 								<div class="modal-body">
 									<div class="pop_cont">
-										제품베스트리뷰 내용
+										<!-- 리뷰사진영역 -->
+											<div class="area_slider">
+												<div class="swiper-container thumb_list">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide"><div class="thumb nodata"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div><!-- 이미지 없으면 calss .nodata  -->
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+													</div>
+													<!-- Add Pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+										<!-- //리뷰사진영역 -->
+										<!-- 리뷰내용 -->
+										<div class="pd_review best">
+											<div class="area_rv_all">
+												<div class="btn_review_open">리뷰오픈</div>
+												<div class="review_list">
+													<ul>
+														<li>
+															<div class="review">
+																<div class="info_box">
+																	<div class="star_score">
+																		<span class="star">
+																			<em class="progbar" style="width:70%;"></em> <!-- 평점 style로 표기 -->
+																		</span>
+																	</div>
+																	<div class="writer">
+																		<span class="wr_id">ab2****</span>
+																		<span class="wr_date">2020.07.15</span>
+																	</div>
+																</div>
+																<div class="response_box">
+																	<div>
+																		<dl>
+																			<div>
+																				<dt>구매옵션</dt>
+																				<dd>베이지 / 100</dd>
+																			</div>
+																			<div>
+																				<dt>키/몸무게</dt>
+																				<dd>178cm/71kg</dd>
+																			</div>
+																		</dl>
+																	</div>
+																</div>
+																<div class="txt_review_box">
+																	<p>
+																		옷이 부들부들 촉감이 너무 좋습니다~ 보는 것 보다 실제 입으니깐 더 멋스러운 것 같아요! 차분한 그레이 라서 지금 가을가을한 계절에 잘 어울리는 같아요. 옷이 부들부들 촉감이 너무 좋습니다~ 보는 것 보다 실제 입으니깐 더 멋스러운 것 같아요! 차분한 그레이 라서 지금 가을가을한 계절에 잘 어울리는 같아요.
+																	</p>
+																</div>
+																<div class="response_box2">
+																	<div>
+																		<dl>
+																			<div>
+																				<dt>사이즈</dt>
+																				<dd>작음</dd>
+																			</div>
+																			<div>
+																				<dt>컬러</dt>
+																				<dd>밝음</dd>
+																			</div>
+																			<div>
+																				<dt>핏</dt>
+																				<dd>레귤러</dd>
+																			</div>
+																			<div>
+																				<dt>두께감</dt>
+																				<dd>적당함</dd>
+																			</div>
+																		</dl>
+																	</div>
+																</div>
+																<div class="reply_box">
+																	<div class="reply">
+																		<div class="reply_writer">
+																			<span class="wr_name">관리자</span>
+																			<span class="wr_date">2020.07.15</span>
+																		</div>
+																		<div class="reply_txt">
+																			<p>
+																				안녕하세요, 스타일24 관리자입니다.<br>
+																				최대한 검수작업을 하고 있으나, 상품 출고량이 많은 경우 간혹 검수가 누락되는 경우가 있습니다.<br>
+																				만약, 받아보시고 문제가 있을 경우 텍 제거하지마시고 고객센터로 접수 해주시면 처리 도와드리겠습니다.<br>
+																				구매해주셔서 감사합니다.                                                 
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>                               
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //리뷰내용 -->
 									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn"  id=""><span>확인</span></button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- //제품베스트리뷰팝업 -->
+					<!-- //베스트리뷰팝업 -->
+
+					<!-- 포토/영상리뷰팝업(detail) -->
+					<div class="modal pop_full fade pd_pop pd_photoreviewdetail_pop" id="pdPhotoReviewDetailPop" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleFullLabel">
+										<button id="btn_more_photoreview"></button>
+										포토/영상리뷰
+									</h5>
+								</div>
+								<div class="modal-body">
+									<div class="pop_cont">
+										<!-- 리뷰사진영역 -->
+											<div class="area_slider">
+												<div class="swiper-container thumb_list">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<div class="thumb mov">
+																<video poster="http://cdn.011st.com/11dims/resize/1999x1999/quality/75/11src/review/10201202/3121412332/2e66698576d64c5c9977a6fe6606008d.jpg" muted="muted" preload="metadata" controls="controls">
+																	<source src="http://snsvideo.11st.co.kr/movie/item/www/675/67518524_06_1_C1.mp4" type="video/mp4">
+																</video>
+															</div>
+														</div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+														<div class="swiper-slide"><div class="thumb"><img src="/images/mo/thumb/tmp_pdDetail1.jpg" alt=""></div></div>
+													</div>
+													<!-- Add Pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+										<!-- //리뷰사진영역 -->
+										<!-- 리뷰내용 -->
+										<div class="pd_review photo">
+											<div class="area_rv_all">
+												<div class="btn_review_open">리뷰오픈</div>
+												<div class="review_list">
+													<ul>
+														<li>
+															<div class="review">
+																<div class="info_box">
+																	<div class="star_score">
+																		<span class="star">
+																			<em class="progbar" style="width:70%;"></em> <!-- 평점 style로 표기 -->
+																		</span>
+																	</div>
+																	<div class="writer">
+																		<span class="wr_id">ab2****</span>
+																		<span class="wr_date">2020.07.15</span>
+																	</div>
+																</div>
+																<div class="response_box">
+																	<div>
+																		<dl>
+																			<div>
+																				<dt>구매옵션</dt>
+																				<dd>베이지 / 100</dd>
+																			</div>
+																			<div>
+																				<dt>키/몸무게</dt>
+																				<dd>178cm/71kg</dd>
+																			</div>
+																		</dl>
+																	</div>
+																</div>
+																<div class="txt_review_box">
+																	<p>
+																		옷이 부들부들 촉감이 너무 좋습니다~ 보는 것 보다 실제 입으니깐 더 멋스러운 것 같아요! 차분한 그레이 라서 지금 가을가을한 계절에 잘 어울리는 같아요. 옷이 부들부들 촉감이 너무 좋습니다~ 보는 것 보다 실제 입으니깐 더 멋스러운 것 같아요! 차분한 그레이 라서 지금 가을가을한 계절에 잘 어울리는 같아요.
+																	</p>
+																</div>
+																<div class="response_box2">
+																	<div>
+																		<dl>
+																			<div>
+																				<dt>사이즈</dt>
+																				<dd>작음</dd>
+																			</div>
+																			<div>
+																				<dt>컬러</dt>
+																				<dd>밝음</dd>
+																			</div>
+																			<div>
+																				<dt>핏</dt>
+																				<dd>레귤러</dd>
+																			</div>
+																			<div>
+																				<dt>두께감</dt>
+																				<dd>적당함</dd>
+																			</div>
+																		</dl>
+																	</div>
+																</div>
+																<div class="reply_box">
+																	<div class="reply">
+																		<div class="reply_writer">
+																			<span class="wr_name">관리자</span>
+																			<span class="wr_date">2020.07.15</span>
+																		</div>
+																		<div class="reply_txt">
+																			<p>
+																				안녕하세요, 스타일24 관리자입니다.<br>
+																				최대한 검수작업을 하고 있으나, 상품 출고량이 많은 경우 간혹 검수가 누락되는 경우가 있습니다.<br>
+																				만약, 받아보시고 문제가 있을 경우 텍 제거하지마시고 고객센터로 접수 해주시면 처리 도와드리겠습니다.<br>
+																				구매해주셔서 감사합니다.                                                 
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>                               
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- //리뷰내용 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //포토/영상리뷰팝업(detail) -->
+
+					<!-- 포토/영상리뷰팝업(list) -->
+					<div class="modal pop_full fade pd_pop pd_photoreviewlist_pop" id="pdPhotoReviewListPop" tabindex="-1" role="dialog" aria-labelledby="exampleFullLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleFullLabel">포토/영상리뷰</h5>
+								</div>
+								<div class="modal-body">
+									<div class="pop_cont">
+										<div class="photo_list">
+											<ul>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb mov" style="background-image:url('/images/pc/thumb/tmp_pdLookbook3.jpg');"></span><!-- 동영상의 썸네일일 경우 mov 클래스 추가 -->
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb mov" style="background-image:url('/images/pc/thumb/tmp_pdLookbook2.jpg');"></span><!-- 동영상의 썸네일일 경우 mov 클래스 추가 -->
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb mov" style="background-image:url('/images/pc/thumb/tmp_pdLookbook3.jpg');"></span><!-- 동영상의 썸네일일 경우 mov 클래스 추가 -->
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb mov" style="background-image:url('/images/pc/thumb/tmp_pdLookbook2.jpg');"></span><!-- 동영상의 썸네일일 경우 mov 클래스 추가 -->
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb mov" style="background-image:url('/images/pc/thumb/tmp_pdLookbook3.jpg');"></span><!-- 동영상의 썸네일일 경우 mov 클래스 추가 -->
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb mov" style="background-image:url('/images/pc/thumb/tmp_pdLookbook2.jpg');"></span><!-- 동영상의 썸네일일 경우 mov 클래스 추가 -->
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="pic">
+															<span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdDetail4.jpg');"></span>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="review_last">
+											마지막 게시글입니다.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //포토/영상리뷰팝업(list) -->
 
 					
 				</div>
@@ -4041,7 +4193,15 @@
 	<script type="text/javascript">
         $(document).ready( function() {
 
-            /* 상품옵션변경 팝업 > 수량조절 */
+			
+			// selecter
+			$(function(){
+				var item_opt01 = new sCombo('.pd .pop_option_select .item_opt1');
+				var item_opt02 = new sCombo('.pd .pop_option_select .item_opt2');
+				var opt_select = new sCombo('.pd .op1 .opt_select .select_custom');
+			});
+
+			/* 상품옵션변경 팝업 > 수량조절 */
             $(document).on('click','.option_box .opt_count .number_count .minus',function(e){
                 var $input = $(this).parent().find('input');
 				var count = parseInt($input.val()) - 1;
@@ -4073,7 +4233,9 @@
             });    
 			
 			//슬라이드 - 베스트리뷰
-			var riviewSwiper = new Swiper('.pd .riview_box .area_slider .swiper-container', {
+			var riviewSwiper = new Swiper('.riview_box .area_slider .swiper-container', {
+				observer: true,
+				observeParents: true,
 				slidesPerView: 1,
 				spaceBetween: 8,
 				loop: true,
@@ -4137,7 +4299,29 @@
             var relateItemSwiper = new Swiper('.pd .pd_relate .area_slider .swiper-container', {
                 slidesPerView: 3,
                 spaceBetween: 8,
-            });      
+            });     
+			
+			//슬라이드 - 베스트리뷰팝업 
+            var bestreviewdetailSwiper = new Swiper('.pd_bestreviewdetail_pop .area_slider .swiper-container', {
+				observer: true,
+				observeParents: true,
+                slidesPerView: 1,
+                pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+            });
+			
+			//슬라이드 - 포토,영상리뷰팝업 
+            var photoreviewdetailSwiper = new Swiper('.pd_photoreviewdetail_pop .area_slider .swiper-container', {
+				observer: true,
+				observeParents: true,
+                slidesPerView: 1,
+                pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+            });
             
 			
 			//팝업 - 쿠폰받기
@@ -4200,10 +4384,10 @@
                 return false;
             });                     
 
-
 			//팝업 - 상품문의 리스트	
 			$(document).on('click','#btn_pdQnaList_pop',function(e){
 				$("#pdQnaListPop").modal("show");
+				$('#pdQnaListPop .modal-body').load('pd_qnalist_pop.html');
 				return false;
 			});
 
@@ -4216,18 +4400,84 @@
 			//팝업 - 배송교환반품 안내
             $(document).on('click','#btn_pdDelivery_Pop',function(e){
                 $("#pdDeliveryPop").modal("show");
+				$('#pdDeliveryPop .modal-body').load('pd_delivery_pop.html');
                 return false;
             })
 
-			// 제품리뷰팝업
-			$("#btn_pdReview_pop").click(function() {
-				$("#pdReviewModalFull").modal("show");
+			//팝업 - 리뷰
+			$(document).on('click','#btn_pdReview_pop',function(e){
+                $("#pdReviewPop").modal("show");
+				$('#pdReviewPop .modal-body .pop_cont').load('pd_review_pop.html');
+                return false;
+            })
+
+			//팝업 - 베스트리뷰
+			$(document).on('click','#btn_pdBestReview_pop a',function(e){
+                $("#pdBestReviewPop").modal("show");
+                return false;
+            })
+
+			//팝업 - 포토/영상 리뷰 (detail)
+            $(document).on('click','.area_rv_photo .photo_list a, .area_rv_all .review_list .photo_list a, .pd_photoreviewlist_pop .photo_list ul li a',function(e){
+                $("#pdPhotoReviewDetailPop").modal("show");
+                return false;
+            })
+
+			//팝업 - 포토/영상 리뷰 (list)
+            $(document).on('click','#btn_more_photoreview',function(e){
+                $("#pdPhotoReviewListPop").modal("show");
+                return false;
+            })
+
+			//팝업 - 제품리뷰 > 카테고리팝오픈
+			// 오픈
+            $(document).on('click','.pd_review .category_open > li',function(e){
+				var dataName=$(this).attr("data_name");
+                $(".pd_review .category_box").show();
+				$(".pd_review .category_list").find(".category").hide();
+				$(".pd_review .category_list").find("#"+dataName).show();
+				return false;
+            });
+			// 닫기
+			$(document).on('click','.pd_review .category_box .category_close',function(e){
+				$(".pd_review .category_box").hide();
+                return false;
+            });
+			// 변경
+		    $(document).on('click','.pd_review .category ul > li',function(e){
+				var num=$(".pd_review .category_open > li").length;
+				var value=$(this).find("a").attr("data");
+				var name=$(this).parent().parent().attr("id");
+				$(this).parent().find("li").removeClass("active");
+				$(this).addClass("active");
+				for(var i=0; i < num; i++){
+					var dataname=$(".pd_review .category_open > li").eq(i).attr("data_name");
+					if(name==dataname){
+						$(".pd_review .category_open > li").eq(i).find("span").text(value);
+					}
+				}
+                return false;
+            });
+
+
+			//팝업 - 구매하기 > 옵션선택 > 옵션셀렉트팝업
+			$(document).on('click','.Purchase_pop .option_result .option_open',function(e){
+                $(".Purchase_pop .pop_option_select").show();
+                return false;
+            });
+			$(document).on('click','.Purchase_pop .close',function(e){
+                $(".Purchase_pop .pop_option_select").hide();
+                return false;
+            });
+
+			// 포토,베스트리뷰숨김
+			var review_open=$(".btn_review_open");
+			$(document).on('click','.btn_review_open',function(e){
+				$(this).toggleClass('active');
+				$(this).next(".review_list").toggleClass('active');
+				return false;
 			});
 
-			// 제품베스트리뷰팝업
-			$("#btn_pdBestReview_pop a").click(function() {
-				$("#pdBestReviewModalFull").modal("show");
-			});
 
 			// 밑에는 지울것들....
 				// var relateItemSwiper = new Swiper('.pd .pd_relate .area_slider .swiper-container', {

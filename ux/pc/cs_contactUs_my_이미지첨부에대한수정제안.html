@@ -83,20 +83,24 @@
 									<div class="form_field">
 										<label class="ui_col_2 input_label">문의 유형</label>
 										<div class="ui_col_10 form_full">
-											<div class="input_wrap">
-												<select name="" id="">
-													<option value="">유형을 선택해 주세요</option>
-													<option value="">상품문의</option>
-													<option value="">주문결제</option>
-													<option value="">배송정보 문의</option>
-													<option value="">취소/반품/교환</option>
-													<option value="">포인트</option>
-													<option value="">할인쿠폰</option>
-													<option value="">회원/멤버십</option>
-													<option value="">이벤트/서비스</option>
-													<option value="">기타 중 선택</option>
-												</select>
-											</div> 
+											<div class="select_custom">
+												<div class="combo">
+													<div class="select">유형을 선택해 주세요</div>
+													<ul class="list">
+														<!-- 선택처리 class="selected" / 선택불가 aria-disabled="true" / 품절표기 data-soldout="true" 추가  -->
+														<li class="selected">선택</li> 
+														<li>상품문의</li>
+														<li>주문결제</li>
+														<li>배송정보 문의</li>
+														<li>취소/반품/교환</li>
+														<li>포인트</li>
+														<li>할인쿠폰</li>
+														<li>회원/멤버십</li>
+														<li>이벤트/서비스</li>
+														<li>기타 중 선택</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="form_field">
@@ -189,7 +193,9 @@
 			// 컨텐츠 호출
 			$("#header").load("head.html");
 			$("#footer").load("foot.html");
-
+			
+			//문의유형 선택
+			var cs_selecter01 = new sCombo('.cs .contactUs_my .select_custom');
 			// text_area
 			$('.doc_contactus').keyup(function (e){
 				var content = $(this).val();

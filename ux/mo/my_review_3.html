@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>STYLE24 | 리뷰_쓰기 | Publishing</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+
+	<link rel="stylesheet" href="/ux/mo/css/swiper.min.css">
+	<link rel="stylesheet" href="/ux/mo/css/style24_m.css">
+
+	<script src="/ux/mo/js/jquery-3.5.1.min.js"></script>
+	<script src="/ux/mo/js/jquery.modal.min.js"></script>
+	<script src="/ux/mo/js/swiper.min.js"></script>
+	<script src="/ux/mo/js/common_m.js"></script>
+	<script src="js/hyanghoon.js" defer></script>
+
+</head>
+
+<body>
+	<div class="app">
+		<a href="#mainCon" class="skipNav">본문바로가기</a>
+		<header class=""> <!-- 서브페이지에서는 <header>의 클래스.main 제거 -->
+			<section class="htop" id="htopSub bg_gray" style="background: #fff;">
+				<button class="btn_back" title="이전페이지로">
+					<span>
+						<i class="gl1"></i>
+						<i class="gl2"></i>
+						<i class="gl3"></i>
+					</span>
+				</button>
+				<h1 id="htopTitle">리뷰 쓰기</h1>
+			</section>
+		</header>
+
+		<main role="" id="" class="container my">
+			<section class="content review">
+				<form action="" class="form_wrap">
+					<div class="inner bg_gray">
+						<ul class="note">
+							<li>일반 리뷰 작성시 150P, 일반 리뷰 작성시 150P, 포토/영상 리뷰는 350P가 추가 적립됩니다.</li>
+							<li>월 최대 10,000P까지 적립 가능합니다.(합산 후 월 1회 지급)</li>
+							<li>베스트 리뷰로 선정되면 10,000P가 추가 적립됩니다.</li>
+							<li>리뷰 작성시 욕설, 비방, 선정적인 내용 등이 있을 경우 통보 없이관리자에 의해 삭제 될 수 있습니다.</li>
+						</ul>
+					</div>
+					<div class="inner">
+						<div class="part_goods">
+							<!-- 굿즈_리뷰 -->
+							<div class="goods_section">
+								<div class="goods_detail">
+									<a href="">
+										<div class="thumb_box">
+											<img src="/images/mo/thumb/tmp_pdClickother1.jpg" alt="tmp_pdClickother1">
+										</div>
+										<div class="info_box">
+											<div class="od_name">
+												<div class="goods_date"><span class="date">2020.10.25</span>구매</div>
+												<div class="brand">
+													<span>Mollimelli 몰리멜리</span>
+												</div>
+												<div class="name">몰리겨울상하복 균일가 택1 유아동/상하복/기모상하복/상하의세트 몰리겨울상하복 균일가 택1</div>
+											</div>
+											<div class="od_opt">
+												<div class="option">
+													<em>Black</em><em>XXL</em>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>											
+							</div>
+							<!-- //굿즈_리뷰 -->
+						</div>
+					</div>
+					<div class="inner">
+						<div class="titWrap">
+							<div class="">별점을 선택해주세요</div>
+						</div>
+						<div class="review_score">
+							<div id="star_grade">
+								<button type="button"></button>
+								<button type="button"></button>
+								<button type="button"></button>
+								<button type="button"></button>
+								<button type="button"></button>
+							</div>
+						</div>
+					</div>
+					<div class="inner">
+						<div class="my_edit_section">
+							<div class="tbl_wrap">
+								<div class="tbl_tit"> 
+									<h3>키/몸무게</h3>
+								</div>
+								<div class="tbl">
+									<div class="tbl_row">
+										<table>
+											<colgroup>
+												<col width="*">
+											</colgroup>   
+											<tr>
+												<th>키</th>
+												<td>
+													<div class="form_field rev_height">
+														<input type="text" class="form_control" placeholder="키를 숫자만 입력해주세요."><span>cm</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>몸무게</th>
+												<td>
+													<div class="form_field rev_height">
+														<input type="text" class="form_control" placeholder="몸무게를 숫자만 입력해주세요."><span>kg</span>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="tbl_wrap">
+								<div class="tbl_tit"> 
+									<h3>상품평가</h3>
+								</div>
+								<div class="tbl">
+									<div class="tbl_row">
+										<table data-name="rating">
+											<colgroup>
+												<col width="*">
+											</colgroup>   
+											<tr>
+												<th>사이즈</th>
+												<td>
+													<div class="form_field review_radio">
+														<div class="radio_li">
+															<input id="chk-1" type="radio" name="test1"><label for="chk-1"> <span>작음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-2" type="radio" name="test1"><label for="chk-2"> <span>딱맞음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-3" type="radio" name="test1"><label for="chk-3"> <span>큼</span></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>컬러</th>
+												<td>
+													<div class="form_field review_radio">
+														<div class="radio_li">
+															<input id="chk-4" type="radio" name="test2"><label for="chk-4"> <span>밝음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-5" type="radio" name="test2"><label for="chk-5"> <span>똑같음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-6" type="radio" name="test2"><label for="chk-6"> <span>어두움</span></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>핏</th>
+												<td>
+													<div class="form_field review_radio">
+														<div class="radio_li">
+															<input id="chk-7" type="radio" name="test3"><label for="chk-7"> <span>슬림</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-8" type="radio" name="test3"><label for="chk-8"> <span>레귤러</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-9" type="radio" name="test3"><label for="chk-9"> <span>오버</span></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>두께감</th>
+												<td>
+													<div class="form_field review_radio">
+														<div class="radio_li">
+															<input id="chk-10" type="radio" name="test4"><label for="chk-10"> <span>얇음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-11" type="radio" name="test4"><label for="chk-11"> <span>적당함</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-12" type="radio" name="test4"><label for="chk-12"> <span>도톰함</span></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>무게감</th>
+												<td>
+													<div class="form_field review_radio">
+														<div class="radio_li">
+															<input id="chk-13" type="radio" name="test5"><label for="chk-13"> <span>가벼움</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-14" type="radio" name="test5"><label for="chk-14"> <span>적당함</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-15" type="radio" name="test5"><label for="chk-15"> <span>무거움</span></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>볼너비</th>
+												<td>
+													<div class="form_field review_radio">
+														<div class="radio_li">
+															<input id="chk-16" type="radio" name="test6"><label for="chk-16"> <span>작음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-17" type="radio" name="test6"><label for="chk-17"> <span>딱맞음</span></label>
+														</div>
+														<div class="radio_li">
+															<input id="chk-18" type="radio" name="test6"><label for="chk-18"> <span>큼</span></label>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="tbl_wrap">
+								<div class="tbl">
+									<div class="tbl_row">
+										<table>
+											<colgroup>
+												<col width="*">
+											</colgroup>   
+											<tr>
+												<th>
+													<span class="tit">고객님의 리뷰가<br>다른 고객님께 도움이 될 수 있어요! </span>
+
+													<div class="tip_wrap tip2" >
+														<div class="tip_tit">?</div>
+														<div class="tip_contents">
+															<ul>
+																<li>리뷰 내용은 최소 10자 이상 입력해주세요.</li>
+																<li>상품과 무관하거나 스팸, 음란, 불법적인 내용의 리뷰는 통보없이 삭제되며, 지금된 포인트는 회수 될 수 있습니다.</li>
+															</ul>
+														</div>
+													</div>
+												</th>
+												<td>
+													<textarea class="doc_review" name="review" id="" cols="30" rows="10"></textarea>
+													<p class="txt_cnt"><span id="review_cnt" class="c_primary">0</span>/500</p>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<span class="tit">포토/영상 첨부</span>
+												</th>
+												<td>
+													<div class="form_field">
+														<div class="imgUpload">
+															<label for="fileAdd" class="fileAdd">업로드</label>
+															<input type="file" id="fileAdd" name="files[]" multiple="">
+															<!-- 첨부한 이미지가 반영될 곳, 실제 반영 시 해당 구역은 제거할 것 -->
+															<span class="pics">
+																<span class="removes">removes image</span>
+															</span>		
+														</div>
+													</div>
+													<p class="review_desc">최대 10개까지 등록 가능</p>					
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner">
+						<div class="goods_btn_wrap btn_flex_group">
+							<div><button type="button" class="btn btn_default"><span>취소</span></button></div>
+							<div><button type="button" class="btn btn_dark"><span>리뷰 등록</span></button></div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<nav id="tabbar" class="tabbar fixed">
+		<!-- <nav id="tabbar" class="tabbar"> -->
+			<div class="tabbar-inner">
+				<a href="javascript:home" class="btn-home">Home</a>
+				<a href="javascript:history" class="btn-history">History</a>
+				<a href="javascript:wish" class="btn-wish">Wish</a>
+				<a href="javascript:myPage" class="btn-my">Mypage</a>
+				<a href="javascript:menu;" class="btn-menu" data-popup-trigger="" data-target="#menu">Menu</a>
+			</div>
+				<!-- 
+					<span class="txt-balloon" id="tutorial_mycloset" style=""> 툴팁예제</span>
+				-->
+		</nav>
+		<footer>
+			<button class="btn_top" title="페이지 맨위로 이동">
+				<span>
+					<i class="gl1"></i>
+					<i class="gl2"></i>
+					<i class="gl3"></i>
+				</span>
+			</button>
+			<section class="f1">
+				<div class="inner">
+					<ul class="link wider">
+						<li><a href="#none">고객센터</a></li>
+						<li><a href="#none">이용약관</a></li>
+						<li><a href="#none">개인정보취급방침</a></li>
+					</ul>
+
+					<div class="collapse">
+						<div class="btnWrap">
+							<button class="btn_infos">아이스타일이십사 주식회사</button>
+						</div>
+						<ul class="infos info">
+							<li class="fn">대표이사 : 윤종선</li>
+							<li class="fn">주소 : 서울시 영등포구 은행로 11, 8층(여의도동, 일신빌딩)</li>
+							<li class="fn">사업자등록번호 : 116-81-32499 </li>
+							<li class="fn">개인정보관리책임자 : 이정득 </li>
+							<li class="fn">통신판매업신고번호 : 제 2020-서울영등포1432</li>
+							<li class="fn">개인정보보호책임자 : 김명인</li>
+							<li class="fn">호스팅 서비스 : 아이스타일이십사㈜</li>
+						</ul>
+					</div>
+					
+					<ul class="link">
+						<li><a href="#none">사업자정보확인</a></li>
+						<li><a href="#none">PC버전</a></li>
+						<li><a href="#none">APP 다운로드</a></li>
+						<li><a href="#none">SN&#64;PP</a></li>
+					</ul>
+					<ul class="copy">
+						<li>COPYRIGHTⓒ2020 STYLE24 ALL RIGHTS RESERVED.</li>
+					</ul>
+					<ul class="sns">
+						<li><a href="#none" class="insta">Instagram</a></li>
+						<li><a href="#none" class="facebook">facebook</a></li>
+					</ul>
+				</div>
+			</section>
+		</footer>
+	</div>
+
+	<script>
+		//TabWrap, TabIndex
+		$(document).on('click', '.tabIndex li a', function() {
+			var $this = $(this),
+				$tabList = $this.parents('ul'),
+				_idx = $this.closest('li').index();
+			
+			$tabList.children().eq(_idx).addClass('active').siblings().removeClass('active');
+			$tabList.next().children().eq(_idx).addClass('active').siblings().removeClass('active');
+		});
+	</script>
+	<script>
+		
+		// header scroll
+		$(function(){
+			$(window).scroll(function(){
+				var scroll = $(this).scrollTop();
+				var headerH = $(".header").height();
+				if ($(window).scrollTop() > headerH){
+					$(".header").addClass("minify");
+					return false;
+				}
+				else {
+					$(".header").removeClass("minify");
+					return false;
+				}
+			});
+
+			$('#star_grade button').click(function(){
+				$(this).parent().children("button").removeClass("on");  /* 별점의 on 클래스 전부 제거 */ 
+				$(this).addClass("on").prevAll("button").addClass("on"); /* 클릭한 별과, 그 앞 까지 별점에 on 클래스 추가 */
+				return false;
+			});
+
+			//리뷰 내용 글자 수 제한
+			$('.doc_review').keyup(function (e){
+				var content = $(this).val();
+				$('#review_cnt').html(content.length);
+				if (content.length > 500){
+					alert("최대 500자까지 입력 가능합니다.");
+					$(this).val(content.substring(0, 500));
+					$('#review_cnt').html("500");
+				}
+			});
+		});
+	
+	</script>
+</body>
+</html>

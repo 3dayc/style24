@@ -43,15 +43,6 @@
 	<header id="header"></header>
 	<!--  container -->
 	<div id="container" class="container pd deal">
-		<div class="breadcrumb"> 
-			<ul>
-				<li class="bread_home"><a href="index.html">홈</a></li>
-				<li class="bread_2depth"><a href="">유니섹스캐주얼</a></li>
-				<li class="bread_3depth"><a href="">자켓/점퍼/코트</a></li>
-				<li class="bread_4depth"><a href="">점퍼</a></li>
-				<li class="bread_5depth">패딩/다운점퍼</li>
-			</ul> 
-        </div>
 		<div class="wrap">
             <!-- 상품 대표설명 -->
 			<div class="content pd_detail">
@@ -132,9 +123,10 @@
                                     <dl>
                                         <div class="bnf_shopping">
                                             <dt>쇼핑혜택</dt>
+                                            <!------------ 색상 강조 텍스트 영역 <em class="c_primary"></em> 사용요청 ------------>
                                             <dd>
-                                                <span>최대 15% 쿠폰 할인</span> 
-                                                <span>99개 이상 구매 시 9,999,999원 할인</span>
+                                                <span>최대 <em class="c_primary">15%</em> 쿠폰 할인</span> 
+                                                <span><em class="c_primary">99개</em> 이상 구매 시 <em class="c_primary">9,999,999원</em> 할인</span>
                                                 <span>미니언즈 우산 증정</span>
                                                 <button type="button" id="btn_bnfShopping_pop" class="btn_popup"><span>자세히</span></button>
                                             </dd>
@@ -142,7 +134,7 @@
                                         <div class="bnf_card">
                                             <dt>카드혜택</dt>
                                             <dd>
-                                                <span>국민카드 5% 즉시할인</span>
+                                                <span>국민카드 <em class="c_primary">5%</em> 즉시할인</span>
                                                 <span>신용카드 무이자 혜택</span>
                                                 <button type="button" id="btn_bnfCard_pop" class="btn_popup"><span>자세히</span></button>
                                             </dd>
@@ -156,8 +148,15 @@
                                                 <div class="select_custom deal_opt_item">
                                                     <div class="combo">
                                                         <div class="select">
-                                                            <div>
-                                                                선택
+                                                            <div class="item_prod">
+                                                                <div class="item_state">
+                                                                    <a href="javascript:void(0)" class="itemLink">
+                                                                        <div class="itemPic">
+                                                                            <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
+                                                                        </div>
+                                                                        <div class="itemName">선택</div>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <ul class="list">
@@ -165,12 +164,11 @@
                                                             <li class="selected">
                                                                 <div class="item_prod">
                                                                     <div class="item_state">
-                                                                        <a href="#none" class="itemLink">
+                                                                        <a href="javascript:void(0)" class="itemLink">
                                                                             <div class="itemPic">
                                                                                 <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
                                                                             </div>
-                                                                            <p class="itemBrand">NBA 키즈</p>
-                                                                            <div class="itemName">유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
+                                                                            <div class="itemName"><span class="tit_option">[상품1]</span>유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
                                                                             <p class="itemPrice">134,100
                                                                                 <span class="itemPrice_original">149,000</span>
                                                                                 <span class="itemPercent">30%</span>
@@ -182,12 +180,27 @@
                                                             <li>
                                                                 <div class="item_prod">
                                                                     <div class="item_state">
-                                                                        <a href="#none" class="itemLink">
+                                                                        <a href="javascript:void(0)" class="itemLink">
                                                                             <div class="itemPic">
                                                                                 <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
                                                                             </div>
-                                                                            <p class="itemBrand">NBA 키즈</p>
-                                                                            <div class="itemName">유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
+                                                                            <div class="itemName"><span class="tit_option">[상품2]</span>유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
+                                                                            <p class="itemPrice">134,100
+                                                                                <span class="itemPrice_original">149,000</span>
+                                                                                <span class="itemPercent">30%</span>
+                                                                            </p>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="item_prod">
+                                                                    <div class="item_state">
+                                                                        <a href="javascript:void(0)" class="itemLink">
+                                                                            <div class="itemPic">
+                                                                                <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
+                                                                            </div>
+                                                                            <div class="itemName"><span class="tit_option">[상품3]</span>유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
                                                                             <p class="itemPrice">134,100
                                                                                 <span class="itemPrice_original">149,000</span>
                                                                                 <span class="itemPercent">30%</span>
@@ -199,12 +212,11 @@
                                                             <li aria-disabled="true">
                                                                 <div class="item_prod">
                                                                     <div class="item_state">
-                                                                        <a href="#none" class="itemLink">
+                                                                        <a href="javascript:void(0)" class="itemLink">
                                                                             <div class="itemPic">
                                                                                 <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
                                                                             </div>
-                                                                            <p class="itemBrand">NBA 키즈</p>
-                                                                            <div class="itemName">유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
+                                                                            <div class="itemName"><span class="tit_option">[상품4]</span>유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
                                                                             <p class="itemPrice">134,100
                                                                                 <span class="itemPrice_original">149,000</span>
                                                                                 <span class="itemPercent">30%</span>
@@ -212,16 +224,14 @@
                                                                         </a>
                                                                     </div>
                                                                 </div>
-                                                            </li>
-                                                            <li aria-disabled="true" data-soldout="true">
+                                                            </li><li aria-disabled="true" data-soldout="true">
                                                                 <div class="item_prod">
                                                                     <div class="item_state">
-                                                                        <a href="#none" class="itemLink">
+                                                                        <a href="javascript:void(0)" class="itemLink">
                                                                             <div class="itemPic">
                                                                                 <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdDetail1.jpg">
                                                                             </div>
-                                                                            <p class="itemBrand">NBA 키즈</p>
-                                                                            <div class="itemName">유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
+                                                                            <div class="itemName"><span class="tit_option">[상품5]</span>유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업</div>
                                                                             <p class="itemPrice">134,100
                                                                                 <span class="itemPrice_original">149,000</span>
                                                                                 <span class="itemPercent">30%</span>
@@ -1006,6 +1016,7 @@
             </div>
           </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="epCouponPop_close" class="close-modal">Close</a>
     </div>    
     <!-- //EP 제휴쿠폰 팝업 -->    
 
@@ -1063,6 +1074,7 @@
             </div>
           </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="saleCouponPop_close" class="close-modal">Close</a>
     </div>
     <!-- //쿠폰사용안내 팝업 -->    
 
@@ -1127,12 +1139,16 @@
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <th>99,999,999원 이상 구매 시</th>
-                                            <td>미니언즈 우산 99개 증정</td>
+                                            <td>
+                                                <div class="th">99,999,999원 이상 구매 시</div>
+                                                <div class="td">미니언즈 우산 99개 증정</div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th>99,999,999원 이상 구매 시</th>
-                                            <td>미니언즈 우산 99개 증정 외 택1</td>
+                                            <td>
+                                                <div class="th">99,999,999원 이상 구매 시</div>
+                                                <div class="td">미니언즈 우산 99개 증정 외 택1</div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1142,6 +1158,7 @@
                 </div>
             </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="bnfShoppingPop_close" class="close-modal">Close</a>
     </div>    
     <!-- //쇼핑혜택 팝업 -->
 
@@ -1171,7 +1188,8 @@
                                             <td>
                                                 <div class="info_card">
                                                     <p>5% 즉시할인</p>
-                                                    <p>7만원 이상 구매 시 최대 5만원 할인</p>
+                                                    <p>7만원 이상 구매 시</p>
+                                                    <p>최대 5만원 할인</p>
                                                 </div>
                                             </td>
                                             <td>
@@ -1185,7 +1203,8 @@
                                             <td>
                                                 <div class="info_card">
                                                     <p>5% 즉시할인</p>
-                                                    <p>7만원 이상 구매 시 최대 5만원 할인</p>
+                                                    <p>7만원 이상 구매 시</p>
+                                                    <p>최대 5만원 할인</p>
                                                 </div>
                                             </td>
                                             <td>
@@ -1200,7 +1219,7 @@
                                                 <div class="info_card">
                                                     <p>[제휴카드] YES24 MANIA 롯데카드</p>
                                                     <p>최대 12~24% 청구할인</p>
-                                                    <p>1회 1만5천원이상 결제시, 바로발급가능</p>
+                                                    <p>1회 1만5천원이상 결제시, 바로발급가능</p>`
                                                 </div>
                                             </td>
                                             <td>
@@ -1233,12 +1252,37 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                KB국민카드
+                                                삼성카드
                                             </th>
                                             <td>
                                                 <div class="info_card">
-                                                    <p>2~6개월 무이자</p>
+                                                    <p>2~4개월 무이자</p>
                                                     <p>5만원 이상 구매 시</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>   
+                        <div class="benefit_blk">
+                            <h6>부분 무이자 할부</h6>
+                            <div class="tbl type1">
+                                <table>
+                                    <colgroup>
+                                        <col width="140">
+                                        <col width="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                BC카드
+                                            </th>
+                                            <td>
+                                                <div class="info_card">
+                                                    <p>7개월(1~2회차 고객부담)</p>
+                                                    <p>8개월(1~2회차 고객부담)</p>
+                                                    <p>ARS 사전신청 고객에 한함 (1899-5772)</p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1251,11 +1295,12 @@
                                     <li>법인, 체크, 기프트 카드는 부분 무이자 할부 제외</li>
                                 </ul>                   
                             </div>
-                        </div>                    
+                        </div>                                            
                     </div>
                 </div>
             </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="bnfCardPop_close" class="close-modal">Close</a>
     </div>    
     <!-- //카드혜택 팝업 -->
 
@@ -1496,7 +1541,8 @@
             <div class="modal-content">
                 <!-- 베스트리뷰 팝업 내용 -->
             </div>
-        </div>        
+        </div>
+        <a href="#close-modal" rel="modal:close" id="pdBestReviewPop_close" class="close-modal">Close</a>
     </div>
     <!-- //베스트 리뷰 자세히보기 팝업 -->   
 
@@ -1506,7 +1552,8 @@
             <div class="modal-content">
                 <!-- 포토영상 리뷰 자세히보기 팝업 내용 -->
             </div>
-        </div>        
+        </div>
+        <a href="#close-modal" rel="modal:close" id="pdPhotoReviewDetailPop_close" class="close-modal">Close</a>
     </div>
     <!-- //포토영상 리뷰 자세히보기 팝업 -->      
 
@@ -1517,7 +1564,7 @@
                 <!-- 포토영상 리뷰 리스트 팝업 내용 -->
             </div>
         </div>        
-        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+        <a href="#close-modal" rel="modal:close" id="pdPhotoReviewListPop_close" class="close-modal">Close</a>
     </div>
     <!-- //포토영상 리뷰 리스트 팝업 -->   
     <!-- //**************** 상품리뷰 팝업 **************** -->  
@@ -1575,33 +1622,10 @@
                     <button type="button" class="btn btn_dark"><span>등록</span></button>
                 </div>
             </div>
-        </div>        
+        </div>    
+        <a href="#close-modal" rel="modal:close" id="pdQnaWritePop_close" class="close-modal">Close</a>    
     </div>
     <!-- //상품문의 작성 팝업 -->
-
-    <!-- 상품문의 이미지 팝업 -->
-    <div class="modal fade pd_pop qna_img_pop" id="qnaImgPop" tabindex="-1" role="dialog" aria-labelledby="qnaImgLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header sr-only">
-                    <h5 class="modal-title" id="qnaImgLabel">이미지 상세보기</h5>
-                </div>
-                <div class="modal-body">
-                    <div class="pop_cont">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <!-- 이미지 슬라이드 영역 -->
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>						
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- //상품문의 이미지 팝업 -->
     <!-- **************** 상품문의 팝업 **************** -->
     
 
@@ -1817,18 +1841,25 @@
                 $("#saleCouponPop").modal("show"); //할인쿠폰받기
                 //$("#epCouponPop").modal("show"); ep채널 쿠폰받기
                 return false;
+            }).on('click','#saleCouponPop_close',function(e){
+                $("#saleCouponPop").modal("hide"); //할인쿠폰받기
+                //$("#epCouponPop").modal("hide"); ep채널 쿠폰받기
             });
 
             //팝업 - 쇼핑혜택 > 자세히보기
             $(document).on('click','#btn_bnfShopping_pop',function(e){
                 $("#bnfShoppingPop").modal("show");
                 return false;
+            }).on('click','#bnfShoppingPop_close',function(e){
+                $("#bnfShoppingPop").modal("hide");
             });
 
             //팝업 - 카드혜택 > 자세히보기
             $(document).on('click','#btn_bnfCard_pop',function(e){
                 $("#bnfCardPop").modal("show");
                 return false;
+            }).on('click','#bnfCardPop_close',function(e){
+                $("#bnfCardPop").modal("hide");
             });
 
             //팝업 - 개별상품 상세정보 안내
@@ -1848,20 +1879,26 @@
                 $("#pdBestReviewPop .modal-content").load("pd_bestreviewdetail_pop.html");
                 $("#pdBestReviewPop").modal("show");
                 return false;
-            });      
+            }).on('click','#pdBestReviewPop_close',function(e){
+                $("#pdBestReviewPop").modal("hide");
+            });   
 
             //팝업 - 포토/영상 리뷰 (detail)
             $(document).on('click','.area_rv_photo .photo_list a, .area_rv_all .review_list .photo_list a, .pd_photoreviewlist_pop .photo_list ul li a',function(e){
                 $("#pdPhotoReviewDetailPop .modal-content").load("pd_photoreviewdetail_pop.html");
                 $("#pdPhotoReviewDetailPop").modal("show");
                 return false;
-            });                  
+            }).on('click','#pdPhotoReviewDetailPop_close',function(e){
+                $("#pdPhotoReviewDetailPop").modal("hide");
+            });               
             
             //팝업 - 포토/영상 리뷰 (list)
             $(document).on('click','#btn_more_photoreview, #btn_pdPhotoReviewList_pop',function(e){
                 $("#pdPhotoReviewListPop .modal-content").load("pd_photoreviewlist_pop.html");
                 $("#pdPhotoReviewListPop").modal("show");
                 return false;
+            }).on('click','#pdPhotoReviewListPop_close',function(e){
+                $("#pdPhotoReviewListPop").modal("hide");
             });        
             
             //팝업 - 상품문의 작성
@@ -1880,29 +1917,9 @@
                 });                
 
                 return false;
-            });		
-
-            //팝업 - 상품문의 이미지 슬라이드
-            $(document).on('click','.qna_list .img_group .thumb_pic',function(e){
-                $("#qnaImgPop .swiper-wrapper").empty();
-
-                var pdPopSlideIndex = $(this).index();
-                itemQnaPopSwiper.slideTo(pdPopSlideIndex);
-                itemQnaPopSwiper.update();
-
-                var itemQnaImglength = $('.qna_list .img_group .thumb_pic').length;
-                var itemPopImgHtml = "";
-                for (i = 1; i <= itemQnaImglength; i++) {
-                    var itemQnaImg = $(this).find('img');
-                    var itemQnaImgSrc = $('.img_group .thumb_pic:nth-child('+i+') img').attr('src');
-                    itemPopImgHtml += "<div class='swiper-slide'><div class='pop_img' style='background-image:url("+ itemQnaImgSrc +")'></div></div>";
-                }
-
-                $("#qnaImgPop .swiper-wrapper").append(itemPopImgHtml);
-                $('#qnaImgPop').modal("show");
-                
-                return false;
-            });
+            }).on('click','#pdQnaWritePop_close',function(e){
+                ("#pdQnaWritePop").modal("hide");
+            });	
 
         });
     </script>

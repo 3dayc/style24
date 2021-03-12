@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>STYLE24 | 일반상품상세_EP채널쿠폰팝업 | Publishing</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="Title" th:content="" content=""/>
+<meta name="description" th:content="" content=""/>
+<meta name="keywords" th:content="" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" th:content="" content=""/>
+<meta property="og:url" th:content="" content=""/>
+<meta property="og:title" th:content="" content=""/>
+<meta property="og:description" th:content="" content=""/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" th:content="" content=""/>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/pc/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/pc/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/pc/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/common-ui.js"></script>
+<script src="js/mcxdialog_ui.js"></script>
+</head>
+
+<body>
+    <!-----------------***** 현 페이지는 EP채널 쿠폰 팝업 내용확인용 샘플 페이지 입니다. (pd_detail.html 에 같은 내용 주석처리 되어있으니 참고부탁드리겠습니다.) *****----------------->
+	<div class="skipComment">
+		<a href="#content">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+
+    <style>
+        .modal {display: block; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+    </style>
+
+    <!-- EP 제휴쿠폰 팝업 -->
+    <div class="modal fade pd_pop epcoupon_pop" id="epCouponPop" tabindex="-1" role="dialog" aria-labelledby="epCouponLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="epCouponLabel">네이버 전용 할인쿠폰</h5>
+            </div>
+            <div class="modal-body">
+                <div class="pop_cont">
+                    <div class="ep_coupon">
+                        <div>
+                            <p class="cp_title">
+                                COUPON
+                            </p>
+                            <p class="cp_cont">
+                                <!-- 할인금액 일때 -->
+                                <span class="unit_won">
+                                    <em class="number">3,000</em><em class="unit">원</em>
+                                </span>
+                                <!-- //할인금액 일때 -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ep_coupon">
+                        <div>
+                            <p class="cp_title">
+                                COUPON
+                            </p>
+                            <p class="cp_cont">
+                                <!-- 할인율 일때 -->
+                                <span class="unit_percent">
+                                    최대<em class="number">30</em><em class="unit">%</em>
+                                </span>
+                                <!-- //할인율 일때 -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info_txt">
+                        <ul>
+                            <li>일부 상품은 쿠폰 사용이 제한될 수 있습니다.</li>
+                            <li>할인대상 및 금액은 상시 변경됩니다.</li>
+                            <li>제휴 사이트와 정보연동 시간차이로 판매정보가 불일치할 수 있습니다.</li>
+                            <li>본 쿠폰은 제휴 사이트를 통해 들어온 고객님만 발급 및 사용이 가능합니다.</li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="" class="btn btn_primary btn_all_cpdown"><span>쿠폰 받기</span></button>
+            </div>
+          </div>
+        </div>
+        <a href="#close-modal" rel="modal:close" id="epCouponPop_close" class="close-modal">Close</a>
+    </div>    
+    <!-- //EP 제휴쿠폰 팝업 -->    
+    
+	<script type="text/javascript">
+        $(document).ready( function() {
+            $("#saleCouponPop").modal("show"); //할인쿠폰받기
+        });
+    </script>
+</body>
+</html>
+
+
+

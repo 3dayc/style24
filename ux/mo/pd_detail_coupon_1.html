@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>STYLE24 | pd_detail_coupon1 | Publishing</title>
+	<title>STYLE24 | Sub Test Page | Publishing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
@@ -22,277 +22,61 @@
 	<script src="/ux/mo/js/swiper.min.js"></script>
 	<script src="/ux/mo/js/common_m.js"></script>
 
+    <style>
+        #epCouponPop{display:block!important;}
+    </style>
+
 </head>
 
 <body>
-	<div class="app">
-		<a href="#mainCon" class="skipNav">본문바로가기</a>
-		<header class=" "> <!-- 서브페이지에서는 <header>의 클래스.main 제거 -->
-			<section class="htop" id="htopMain">
-				<h1>
-					<a href="./index.html"><img src="/images/mo/logo_STYLE24.png" alt="STYLE24"></a>
-					<button class="btn_gnb" title="메인메뉴 열기/닫기">
-						<span>
-							<i class="gl1"></i>
-							<i class="gl2"></i>
-						</span>
-					</button>
-				</h1>
-			</section>		
-			<section class="htop" id="htopSub" style="background: #fff;">
-				<button class="btn_back" title="이전페이지로">
-					<span>
-						<i class="gl1"></i>
-						<i class="gl2"></i>
-						<i class="gl3"></i>
-					</span>
-				</button>
-				<h1 id="htopTitle">PAGE TITLE</h1>
-			</section>
-			<section class="hmenu">
-				<div class="inner scrollWrap">
-					<nav class="bng">
-					<!-- <nav class="gnb bng"> -->
-						<ul class="d1">
-							<li>
-								<a href="#brandpage">
-									BUCKAROO <span><img src="#" alt=""></span>
-								</a>
-							</li>
-							<li>
-								<a href="#brandpage">
-									TBJ <span><img src="#" alt=""></span>
-								</a>
-							</li>
-							<li>
-								<a href="#brandpage">
-									ANDEW <span><img src="#" alt=""></span>
-								</a>
-							</li>
-							<li>
-								<a href="#brandpage">
-									FRJ <span><img src="#" alt=""></span>
-								</a>
-							</li>
-							<li>
-								<a href="#brandpage">
-									NBA <span><img src="#" alt=""></span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- fold/depth type -->
-					<!-- 
-					<nav class="gnb bng"> 
-						<ul class="d1">
-							<li class="folder">
-								<a href="#toggle">depth1</a>
-								<ul class="d2">
-									<li><a href="./sustainability2.html">depth2-1-1</a></li>
-									<li class="folder">
-										<a href="#toggle">depth2-2-1</a>
-										<ul class="d3">
-											<li><a href="#depth3-1">depth3-1</a></li>
-											<li><a href="#depth3-2">depth3-2</a></li>
-										</ul>
-									</li>
-									<li class="folder">
-										<a href="#toggle">depth2-3-1</a>
-										<ul class="d3">
-											<li><a href="#depth3-1">depth3-1</a></li>
-											<li><a href="#depth3-2">depth3-2</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					 -->
-					<nav class="bnb">
-						<ul>
-							<li><a href="#go">Quick Link 1</a></li>
-							<li><a href="#go">Quick Link 2</a></li>
-							<li><a href="#go">Quick Link 3</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-		</header>
-
-		<div id="gnb" class="gnb">
-			<div class="gnb-inner">
-				<ul>
-					<li class="on"><a href="#none">브랜드</a></li>
-					<li><a href="#none">여성</a></li>
-					<li><a href="#none">남성</a></li>
-					<li><a href="#none">유아동</a></li>
-					<li><a href="#none">골프</a></li>
-					<li><a href="#none">라이프</a></li>
-					<li><a href="#none">베스트</a></li>
-					<li><a href="#none">핫딜</a></li>
-					<li><a href="#none">기획전</a></li>
-					<li><a href="#none">총알배송</a></li>
-					<li><a href="#none">아울렛</a></li>
-					<li><a href="#none">룩북</a></li>
-					<li><a href="#none">이벤트</a></li>
-				</ul>
-			</div>
-			<button onclick="$('#gnb').toggleClass('expand');" class="btn-expand"></button>
-		</div>
 
 
-		<main role="" id="" class="container pd">
-			<!-- page nav: CS 고객센터 -->
-			<nav class="pnb">
-				<ul>
-					<li>
-						<a href="">FAQ</a>
-					</li>
-					<li>
-						<a href="" class="on">1:1문의</a>
-					</li>
-					<li>
-						<a href="">상품문의</a>
-					</li>
-					<li>
-						<a href="">공지</a>
-					</li>
-				</ul>
-			</nav>
-
-			<!-- ★ 컨텐츠 시작 -->
-			<section class="pd_detail">
-				<div class="inner">
-					<div>
-						<br><br><br>
-						<button type="button" class="btn btn_primary" id="modalBasic">
-							<span>쿠폰 받기</span>
-						</button>
-					</div>
-				</div>
-
-				<!-- // 네이버쿠폰 Modal Popup -->
-				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content naver">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">네이버 전용 할인쿠폰</h5>
-							</div>
-							<div class="modal_img"></div>
-							<div class="modal-body">
-								<p>일부 상품은 쿠폰 사용이 제한될 수 있습니다.</p>
-								<p>할인대상 및 금액은 상시 변경됩니다.</p>
-								<p>제휴 사이트와 정보연동 시간차이로 판매정보가 불일치할 수 있습니다.</p>
-								<p>본 쿠폰은 제휴 사이트를 통해 들어온 고객님만 발급 및 사용이 가능합니다.</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn_primary"><span>쿠폰받기</span></button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</section>
-			<!-- ★ 컨텐츠 종료 -->	
-
-
-		</main>
-
-		<nav id="tabbar" class="tabbar fixed">
-		<!-- <nav id="tabbar" class="tabbar"> -->
-			<div class="tabbar-inner">
-				<a href="javascript:home" class="btn-home">Home</a>
-				<a href="javascript:history" class="btn-history">History</a>
-				<a href="javascript:wish" class="btn-wish">Wish</a>
-				<a href="javascript:myPage" class="btn-my">Mypage</a>
-				<a href="javascript:menu;" class="btn-menu" data-popup-trigger="" data-target="#menu">Menu</a>
-			</div>
-				<!-- 
-					<span class="txt-balloon" id="tutorial_mycloset" style=""> 툴팁예제</span>
-				-->
-		</nav>
-		<footer>
-			<button class="btn_top" title="페이지 맨위로 이동">
-				<span>
-					<i class="gl1"></i>
-					<i class="gl2"></i>
-					<i class="gl3"></i>
-				</span>
-			</button>
-			<section class="f1">
-				<div class="inner">
-					<ul class="link wider">
-						<li><a href="#none">고객센터</a></li>
-						<li><a href="#none">이용약관</a></li>
-						<li><a href="#none">개인정보취급방침</a></li>
-					</ul>
-
-					<div class="collapse">
-						<div class="btnWrap">
-							<button class="btn_infos">아이스타일이십사 주식회사</button>
-						</div>
-						<ul class="infos info">
-							<li class="fn">대표이사 : 윤종선</li>
-							<li class="fn">주소 : 서울시 영등포구 은행로 11, 8층(여의도동, 일신빌딩)</li>
-							<li class="fn">사업자등록번호 : 116-81-32499 </li>
-							<li class="fn">개인정보관리책임자 : 이정득 </li>
-							<li class="fn">통신판매업신고번호 : 제 2020-서울영등포1432</li>
-							<li class="fn">개인정보보호책임자 : 김명인</li>
-							<li class="fn">호스팅 서비스 : 아이스타일이십사㈜</li>
-						</ul>
-					</div>
+    <!-- EP제휴쿠폰다운팝업 -->
+    <div class="modal fade pd_pop epcoupon_pop" id="epCouponPop" tabindex="-1" role="dialog" aria-labelledby="modalScrollLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalScrollLabel">네이버 전용 할인쿠폰</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="pop_cont">
+                        <div class="ep_coupon">
+                            <div>
+                                <p class="cp_title">
+                                    COUPON
+                                </p>
+                                <p class="cp_cont">
+                                    <!-- 할인금액 일때 -->
+                                    <span class="unit_won">
+                                        <em class="number">3,000</em><em class="unit">원</em>
+                                    </span>
+                                    <!-- //할인금액 일때 -->
+                                    <!-- 할인율 일때 -->
+                                    <span class="unit_percent">
+                                        최대<em class="number">30</em><em class="unit">%</em>
+                                    </span>
+                                    <!-- //할인율 일때 -->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info_txt">
+                            <ul>
+                                <li>일부 상품은 쿠폰 사용이 제한될 수 있습니다.</li>
+                                <li>할인대상 및 금액은 상시 변경됩니다.</li>
+                                <li>제휴 사이트와 정보연동 시간차이로 판매정보가 불일치할 수 있습니다.</li>
+                                <li>본 쿠폰은 제휴 사이트를 통해 들어온 고객님만 발급 및 사용이 가능합니다.</li>
+                            </ul>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="" class="btnL btn_primary btn_all_cpdown"><span>쿠폰 받기</span><span>쿠폰 받기 완료</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //EP제휴쿠폰다운팝업 -->
 					
-					<ul class="link">
-						<li><a href="#none">사업자정보확인</a></li>
-						<li><a href="#none">PC버전</a></li>
-						<li><a href="#none">APP 다운로드</a></li>
-						<li><a href="#none">SN&#64;PP</a></li>
-					</ul>
-					<ul class="copy">
-						<li>COPYRIGHTⓒ2020 STYLE24 ALL RIGHTS RESERVED.</li>
-					</ul>
-					<ul class="sns">
-						<li><a href="#none" class="insta">Instagram</a></li>
-						<li><a href="#none" class="facebook">facebook</a></li>
-					</ul>
-				</div>
-			</section>
 
-
-		</footer>
-	</div>
-
-
-	<!-- script -->
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			setHtop();
-		});
-
-		function setHtop() {
-			if($('header').hasClass('main')) {
-				$('#htopMain').show();
-				$('#htopSub').hide();
-			} else {
-				$('#htopMain').hide();
-				$('#gnb').hide();
-				$('#htopSub').show();
-			}
-		}
-	</script>
-	 <script>
-		$(document).ready(function() {
-		   // JQUERY를 이용한 버튼 모달 팝업
-		   $("#modalBasic").click(function() {
-			   $("#exampleModal").modal("show");
-		   });					 
-		   $("#closeModalBtn").click(function() {
-			   $("#exampleModal").modal("hide");
-		   });
-	   });		
-</script>
-
-</body>
 
 </html>

@@ -1359,18 +1359,26 @@
                                     <div class="opt_header">
                                         <span class="title">옵션선택</span>
                                     </div>
-                                    <div class="form_field">
-                                        <select id="">
-											<option value="" rel="icon-temperature">카키/95</option>
-											<option value="">카키/100</option>
-											<option value="">카키/105</option>
-											<option value="">카키/110</option>
-											<option value="">옐로우/95</option>
-											<option value="">옐로우/100</option>
-											<option value="">옐로우/105</option>
-											<option value="">옐로우/110</option>
-										</select> 
-                                    </div>
+                                    <form class="form_wrap">
+                                        <div class="form_field">
+                                            <div class="select_custom item_opt1">
+                                                <div class="combo">
+                                                    <div class="select">카키/95</div>
+                                                    <ul class="list">
+                                                        <!-- 선택처리 class="selected" / 선택불가 aria-disabled="true" 추가  -->
+                                                        <li class="selected">카키/95</li> 
+                                                        <li>카키/100</li>
+                                                        <li>카키/105</li>
+                                                        <li>카키/110</li>
+                                                        <li>옐로우/95</li>
+                                                        <li>옐로우/100</li>
+                                                        <li aria-disabled="true">옐로우/105</li>
+                                                        <li>옐로우/110</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="opt_count">
                                     <div class="opt_header">
@@ -1433,6 +1441,7 @@
             });
             
             //옵션변경 팝업열기
+            var opt_selecter01 = new sCombo('.od_pop .opt_select .select_custom.item_opt1');
             $(document).on('click','#btn_opt_pop',function(e){
                 $("#optModifyPop").modal("show");
                 return false;

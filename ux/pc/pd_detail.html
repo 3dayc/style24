@@ -43,15 +43,6 @@
 	<header id="header"></header>
 	<!--  container -->
 	<div id="container" class="container pd">
-		<div class="breadcrumb"> 
-			<ul>
-				<li class="bread_home"><a href="index.html">홈</a></li>
-				<li class="bread_2depth"><a href="">유니섹스캐주얼</a></li>
-				<li class="bread_3depth"><a href="">자켓/점퍼/코트</a></li>
-				<li class="bread_4depth"><a href="">점퍼</a></li>
-				<li class="bread_5depth">패딩/다운점퍼</li>
-			</ul> 
-        </div>
 		<div class="wrap">
             <!-- 상품 대표설명 -->
 			<div class="content pd_detail">
@@ -67,7 +58,7 @@
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide on"><a href="#navLocate1"><span class="thumb"><img src="/images/pc/thumb/tmp_pdDetail1.jpg" alt=""></span></a></div><!-- 첫 슬라이드 클래스 on 추가 -->
-                                            <div class="swiper-slide"><a href="#navLocate2"><span class="thumb"><img src="/images/pc/thumb/tmp_pdDetail2.jpg" alt=""></span></a></div>
+                                            <div class="swiper-slide"><a href="#navLocate2"><span class="thumb mov"><img src="/images/pc/thumb/tmp_pdDetail2.jpg" alt=""></span></a></div>
                                             <div class="swiper-slide"><a href="#navLocate3"><span class="thumb"><img src="/images/pc/thumb/tmp_pdDetail3.jpg" alt=""></span></a></div>
                                             <div class="swiper-slide"><a href="#navLocate4"><span class="thumb"><img src="/images/pc/thumb/tmp_pdDetail4.jpg" alt=""></span></a></div>
                                             <div class="swiper-slide"><a href="#navLocate5"><span class="thumb"><img src="/images/pc/thumb/tmp_pdDetail5.jpg" alt=""></span></a></div>
@@ -90,6 +81,7 @@
                                     <li id="navLocate6"><a href=""><span class="thumb"><img src="/images/pc/thumb/tmp_pdDetail6.jpg" alt=""></span></a></li>
                                     <li id="navLocate7"><a href=""><span class="thumb"><img src="/images/pc/thumb/tmp_pdLookbook3.jpg" alt=""></span></a></li>
                                     <li id="navLocate8"><a href=""><span class="thumb"><img src="/images/pc/thumb/tmp_pdLookbook2.jpg" alt=""></span></a></li>
+                                    <!--<li><a href=""><span class="thumb"><img src="/images/pc/thumb/bg_item_none.png" alt=""></span></a></li> // 에러알림용 STYLE24 빈 이미지 -->
                                 </ul>
                             </div>
                         </div>
@@ -118,7 +110,7 @@
                                                 N204TJ112P
                                             </span>
                                             <span class="comment">
-                                                #가을 느낌 물씬!
+                                                #미리 준비하는 얼리버드 세일 봄이 기대되는 Spring item 미리미리미리미리!
                                             </span>
                                             <span class="name">
                                                 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업 유니 삼단블록 플리스 집업
@@ -132,10 +124,10 @@
                                                 <em>134,100</em>원
                                             </span>
                                             <del class="org_price">
-                                                149,000원
+                                                <em>149,000</em>원
                                             </del>
                                             <span class="save_point">
-                                                스타일포인트 9,999P 적립예정
+                                                스타일포인트 <em>9,999</em>P 적립예정
                                             </span>
                                             <button type="button" id="btn_saleCoupon_pop" class="btn btn_primary btn_sm btn_coupon"><span>쿠폰받기</span></button>
                                         </div>
@@ -148,9 +140,10 @@
                                     <dl>
                                         <div class="bnf_shopping">
                                             <dt>쇼핑혜택</dt>
+                                            <!------------ 색상 강조 텍스트 영역 <em class="c_primary"></em> 사용요청 ------------>
                                             <dd>
-                                                <span>최대 15% 쿠폰 할인</span> 
-                                                <span>99개 이상 구매 시 9,999,999원 할인</span>
+                                                <span>최대 <em class="c_primary">15%</em> 쿠폰 할인</span> 
+                                                <span><em class="c_primary">99개</em> 이상 구매 시 <em class="c_primary">9,999,999원</em> 할인</span>
                                                 <span>미니언즈 우산 증정</span>
                                                 <button type="button" id="btn_bnfShopping_pop" class="btn_popup"><span>자세히</span></button>
                                             </dd>
@@ -158,7 +151,7 @@
                                         <div class="bnf_card">
                                             <dt>카드혜택</dt>
                                             <dd>
-                                                <span>국민카드 5% 즉시할인</span>
+                                                <span>국민카드 <em class="c_primary">5%</em> 즉시할인</span>
                                                 <span>신용카드 무이자 혜택</span>
                                                 <button type="button" id="btn_bnfCard_pop" class="btn_popup"><span>자세히</span></button>
                                             </dd>
@@ -253,6 +246,10 @@
                                         </div>
                                     </div>
                                     <div class="opt_select">
+                                        <div class="opt_header">
+                                            <span class="title">옵션</span>
+                                            <button type="button" id="btn_infoSize_pop" class="btn_popup"><span>사이즈정보</span></button>
+                                        </div>
                                         <form class="form_wrap">
                                             <div class="form_field">
                                                 <div class="select_custom item_opt1">
@@ -265,13 +262,13 @@
                                                             <li>상품옵션02</li>
                                                             <li>상품옵션03</li>
                                                             <li aria-disabled="true">
-                                                                <div>상품옵션05</div>
-                                                                <div>120,000원</div>
+                                                                <div class="opt_name">상품옵션05</div>
+                                                                <div class="opt_price">120,000원</div>
                                                             </li>
                                                             <li>상품옵션06</li>
                                                             <li aria-disabled="true" data-soldout="true">
-                                                                <div>상품옵션07</div>
-                                                                <div>120,000원</div>
+                                                                <div class="opt_name">상품옵션07</div>
+                                                                <div class="opt_price">120,000원</div>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -288,13 +285,13 @@
                                                             <li>상품옵션12</li>
                                                             <li>상품옵션13</li>
                                                             <li aria-disabled="true">
-                                                                <div>상품옵션15</div>
-                                                                <div>120,000원</div>
+                                                                <div class="opt_name">상품옵션15</div>
+                                                                <div class="opt_price">120,000원</div>
                                                             </li>
                                                             <li>상품옵션16</li>
                                                             <li aria-disabled="true" data-soldout="true">
-                                                                <div>상품옵션17</div>
-                                                                <div>120,000원</div>
+                                                                <div class="opt_name">상품옵션17</div>
+                                                                <div class="opt_price">120,000원</div>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -307,38 +304,6 @@
                                         <a href="" id="btn_pushRestock_pop" class="btn_popup">재입고 시 알림을 받아보세요</a>
                                     </div>
                                     <!-- //해당 상품 품절시 노출 -->
-                                    <div class="opt_result">
-                                        <div class="result_item">
-                                            <div class="opt_header">
-                                                <span class="item_name">[상품1] 남성 테이퍼드핏 기모면 올밴딩 팬트</span>
-                                                <span class="item_option">다크그레이/XXL</span>
-                                            </div>
-                                            <div class="number_count">
-                                                <span class="minus"><em class="sr-only">감소</em></span>
-                                                <input type="text" name="" maxlength="3" style='ime-mode:disabled' value="1" />
-                                                <span class="plus"><em class="sr-only">추가</em></span>
-                                            </div>
-                                            <div class="item_price">
-                                                <p><em>99,999,999</em>원</p>
-                                            </div>
-                                            <button type="button" class="btn_delete_item"><span>삭제</span></button>
-                                        </div>
-                                        <div class="result_item">
-                                            <div class="opt_header">
-                                                <span class="item_name">[상품1] 남성 테이퍼드핏 기모면 올밴딩 팬트</span>
-                                                <span class="item_option">블루그레이/S</span>
-                                            </div>
-                                            <div class="number_count">
-                                                <span class="minus"><em class="sr-only">감소</em></span>
-                                                <input type="text" name="" maxlength="3" style='ime-mode:disabled' value="1" />
-                                                <span class="plus"><em class="sr-only">추가</em></span>
-                                            </div>
-                                            <div class="item_price">
-                                                <p><em>99,999,999</em>원</p>
-                                            </div>
-                                            <button type="button" class="btn_delete_item"><span>삭제</span></button>
-                                        </div>
-                                    </div>
                                     <div class="opt_count">
                                         <div class="opt_header">
                                             <span class="title">수량</span>
@@ -388,7 +353,7 @@
                                                         <span class="star">
                                                             <em class="progbar" style="width:86%;"></em> <!-- 평점 style로 표기 -->
                                                         </span>
-                                                        <span class="score">4.3점</span>
+                                                        <span class="score"><em>4.3</em>점</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -454,10 +419,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩</div>
@@ -472,10 +437,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -490,10 +455,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -508,10 +473,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -526,10 +491,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -544,10 +509,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -562,10 +527,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -580,10 +545,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdTogether1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -622,10 +587,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩</div>
@@ -640,10 +605,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -658,10 +623,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -676,10 +641,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -694,10 +659,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -712,10 +677,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -730,10 +695,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -748,10 +713,10 @@
                                 <div class="swiper-slide">
                                     <div class="item_prod">
                                         <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
                                             <a href="#none" class="itemLink">
                                                 <div class="itemPic">
                                                     <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdClickother1.jpg">
-                                                    <button type="button" class="itemLike">관심상품 추가</button>
                                                 </div>
                                                 <p class="itemBrand">BRAND NAME1</p>
                                                 <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
@@ -790,7 +755,7 @@
                                         <div class="pic">
                                             <span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdLookbook1.jpg');"></span>
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:150px; top:550px;">
+                                            <div class="item_picker" style="left:10%; top:69%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -800,7 +765,7 @@
                                             </div>
                                             <!-- //상품피커 -->
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:414px; top:300px;">
+                                            <div class="item_picker" style="left:50%; top:40%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -810,7 +775,7 @@
                                             </div>
                                             <!-- //상품피커 -->       
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:480px; top:520px;">
+                                            <div class="item_picker" style="left:57%; top:62%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -829,7 +794,7 @@
                                                 <div class="li_item">
                                                     <ul>
                                                         <li>
-                                                            <div class="item_prod">
+                                                            <div class="item_prod unable"> <!-- 판매불가 상품에 unable 추가 -->
                                                                 <div class="item_state">
                                                                     <a href="#none" class="itemLink">
                                                                         <div class="itemPic">
@@ -930,7 +895,7 @@
                                         <div class="pic">
                                             <span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdLookbook2.jpg');"></span>
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:150px; top:550px;">
+                                            <div class="item_picker" style="left:24%; top:69%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -940,7 +905,7 @@
                                             </div>
                                             <!-- //상품피커 -->
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:414px; top:300px;">
+                                            <div class="item_picker" style="left:50%; top:40%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -950,7 +915,7 @@
                                             </div>
                                             <!-- //상품피커 -->       
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:480px; top:520px;">
+                                            <div class="item_picker" style="left:57%; top:62%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -1070,7 +1035,7 @@
                                         <div class="pic">
                                             <span class="thumb" style="background-image:url('/images/pc/thumb/tmp_pdLookbook3.jpg');"></span>
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:150px; top:550px;">
+                                            <div class="item_picker" style="left:24%; top:69%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -1080,7 +1045,7 @@
                                             </div>
                                             <!-- //상품피커 -->
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:414px; top:300px;">
+                                            <div class="item_picker" style="left:50%; top:40%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -1090,7 +1055,7 @@
                                             </div>
                                             <!-- //상품피커 -->       
                                             <!-- 상품피커 -->
-                                            <div class="item_picker" style="left:480px; top:520px;">
+                                            <div class="item_picker" style="left:70%; top:62%;">
                                                 <button type="button"><span class="ico ico_picker"></span></button>
                                                 <div class="pick_descr">
                                                     <a href="">
@@ -1217,6 +1182,172 @@
                 </div>
             </div>
             <!-- // STYLE24의 스타일링 추천 -->            
+            <!-- 브랜드 추천상품 -->
+            <div class="content wide pd_brand">
+                <div class="cont_head">
+                    <h3 class="subH1 t_c mb40"><span>NIKE</span> 추천상품</h3>
+                </div>
+                <div class="cont_body">
+                    <!-- CONT-BODY -->
+                    <div class="area_slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item_prod">
+                                        <div class="item_state">
+                                            <button type="button" class="itemLike">관심상품 추가</button>
+                                            <a href="#none" class="itemLink">
+                                                <div class="itemPic">
+                                                    <img alt="" class="vLHTC pd_img" src="/images/pc/thumb/tmp_pdRelate1.jpg">
+                                                </div>
+                                                <p class="itemBrand">BRAND NAME1</p>
+                                                <div class="itemName">남성 로고 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건 자카드 방풍 패딩 스웨터 가디건</div>
+                                                <p class="itemPrice">80,100
+                                                    <span class="itemPrice_original">89,000</span>
+                                                    <span class="itemPercent">10%</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>                    
+                    </div>
+                    <!-- // CONT-BODY -->
+                </div>
+            </div>
+            <!-- // 브랜드 추천상품 -->
             <!-- 이 상품과 비슷한 상품 -->
             <div class="content wide pd_relate">
                 <div class="cont_head">
@@ -1389,6 +1520,19 @@
 	<!-- // container -->	
 	<footer id="footer"></footer>
 
+    <!-- 상품썸네일 크게보기 팝업 -->
+    <div class="pd_pop full_pop pd_itemthumb_pop" id="pdItemThumbPop"> 
+        <div class="full_popup_wrap">
+            <h5 class="sr-only">상품썸네일 크게보기</h5>
+            <div class="btn_close">
+                <a href="" id="btn_close_itemThumbPop">닫기버튼</a>
+            </div>
+            <div class="full_pop_container">
+                <!-- 배송교환반품안내 리스트 내용 -->
+            </div>
+        </div>        
+    </div>
+    <!-- //상품썸네일 크게보기 팝업 -->
 
     <!-- EP 제휴쿠폰 팝업 -->
     <div class="modal fade pd_pop epcoupon_pop" id="epCouponPop" tabindex="-1" role="dialog" aria-labelledby="epCouponLabel" aria-hidden="true">
@@ -1433,6 +1577,7 @@
             </div>
           </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="epCouponPop_close" class="close-modal">Close</a>
     </div>    
     <!-- //EP 제휴쿠폰 팝업 -->    
 
@@ -1481,15 +1626,35 @@
                                 </div>
                                 <button type="button" class="btn btn_dark btn_block btn_coupon_done" disabled=""><span>받기완료</span></button>
                             </div>
-                        </li>                        
+                        </li>
+                        <li>
+                            <div class="coupon">
+                                <div>
+                                    <p class="cp_name">
+                                        신규가입 40% 할인쿠폰
+                                    </p>
+                                    <p class="cp_cont">
+                                        <span><em>12,399,900</em>원</span>
+                                        <span><em>40%</em></span>
+                                    </p>
+                                    <p class="cp_condition">
+                                        500,000원 이상 구매 시 최대 50,000원 할인
+                                        <span>1인 최대 90장</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn_dark btn_block btn_coupon_done" disabled=""><span>받기완료</span></button>
+                            </div>
+                        </li>                         
                     </ul>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" id="" class="btn btn_primary btn_all_cpdown"><span>쿠폰 모두 받기</span></button>
+                <button type="button" id="" class="btn btn_all_cpdown btn_coupon_done" disabled=""><span>쿠폰 모두 받기 완료</span></button>
             </div>
           </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="saleCouponPop_close" class="close-modal">Close</a>
     </div>
     <!-- //쿠폰사용안내 팝업 -->    
 
@@ -1554,12 +1719,16 @@
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <th>99,999,999원 이상 구매 시</th>
-                                            <td>미니언즈 우산 99개 증정</td>
+                                            <td>
+                                                <div class="th">99,999,999원 이상 구매 시</div>
+                                                <div class="td">미니언즈 우산 99개 증정</div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th>99,999,999원 이상 구매 시</th>
-                                            <td>미니언즈 우산 99개 증정 외 택1</td>
+                                            <td>
+                                                <div class="th">99,999,999원 이상 구매 시</div>
+                                                <div class="td">미니언즈 우산 99개 증정 외 택1</div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1569,6 +1738,7 @@
                 </div>
             </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="bnfShoppingPop_close" class="close-modal">Close</a>
     </div>    
     <!-- //쇼핑혜택 팝업 -->
 
@@ -1598,7 +1768,8 @@
                                             <td>
                                                 <div class="info_card">
                                                     <p>5% 즉시할인</p>
-                                                    <p>7만원 이상 구매 시 최대 5만원 할인</p>
+                                                    <p>7만원 이상 구매 시</p>
+                                                    <p>최대 5만원 할인</p>
                                                 </div>
                                             </td>
                                             <td>
@@ -1612,7 +1783,8 @@
                                             <td>
                                                 <div class="info_card">
                                                     <p>5% 즉시할인</p>
-                                                    <p>7만원 이상 구매 시 최대 5만원 할인</p>
+                                                    <p>7만원 이상 구매 시</p>
+                                                    <p>최대 5만원 할인</p>
                                                 </div>
                                             </td>
                                             <td>
@@ -1627,7 +1799,7 @@
                                                 <div class="info_card">
                                                     <p>[제휴카드] YES24 MANIA 롯데카드</p>
                                                     <p>최대 12~24% 청구할인</p>
-                                                    <p>1회 1만5천원이상 결제시, 바로발급가능</p>
+                                                    <p>1회 1만5천원이상 결제시, 바로발급가능</p>`
                                                 </div>
                                             </td>
                                             <td>
@@ -1660,12 +1832,37 @@
                                         </tr>
                                         <tr>
                                             <th>
-                                                KB국민카드
+                                                삼성카드
                                             </th>
                                             <td>
                                                 <div class="info_card">
-                                                    <p>2~6개월 무이자</p>
+                                                    <p>2~4개월 무이자</p>
                                                     <p>5만원 이상 구매 시</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>   
+                        <div class="benefit_blk">
+                            <h6>부분 무이자 할부</h6>
+                            <div class="tbl type1">
+                                <table>
+                                    <colgroup>
+                                        <col width="140">
+                                        <col width="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                BC카드
+                                            </th>
+                                            <td>
+                                                <div class="info_card">
+                                                    <p>7개월(1~2회차 고객부담)</p>
+                                                    <p>8개월(1~2회차 고객부담)</p>
+                                                    <p>ARS 사전신청 고객에 한함 (1899-5772)</p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1678,11 +1875,12 @@
                                     <li>법인, 체크, 기프트 카드는 부분 무이자 할부 제외</li>
                                 </ul>                   
                             </div>
-                        </div>                    
+                        </div>                                            
                     </div>
                 </div>
             </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="bnfCardPop_close" class="close-modal">Close</a>
     </div>    
     <!-- //카드혜택 팝업 -->
 
@@ -2171,93 +2369,57 @@
                                         <!-- 표준 사이즈 > 카테고리 내용(신발) -->
                                         <div class="sub_tab_cont">
                                             <div class="size_tbl_box">
-                                                <h6>신발 상의</h6>
-                                                <p class="size_unit">단위 : cm</p>
+                                                <h6>여성 신발</h6>
+                                                <p class="size_unit">한국 단위 : cm</p>
                                                 <div class="tbl type2">
                                                     <table>
                                                         <colgroup>
-                                                            <col width="20%">
-                                                            <col width="20%">
-                                                            <col width="20%">
-                                                            <col width="20%">
-                                                            <col width="20%">
+                                                            <col width="50%">
+                                                            <col width="50%">
                                                         </colgroup>
                                                         <thead>
                                                             <tr>
-                                                                <th scope="col">&nbsp;</th>
-                                                                <th scope="col">XS/44/85</th>
-                                                                <th scope="col">S/55/90</th>
-                                                                <th scope="col">M/66/95</th>
-                                                                <th scope="col">L/77/100</th>
+                                                                <th scope="col">한국</th>
+                                                                <th scope="col">미국</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <th scope="col">가슴둘레</th>
-                                                                <td>95</td>
-                                                                <td>100</td>
-                                                                <td>105</td>
-                                                                <td>110</td>
+                                                                <td>220</td>
+                                                                <td>5</td>
                                                             </tr>
                                                             <tr>
-                                                                <th scope="col">허리둘레</th>
-                                                                <td>95</td>
-                                                                <td>100</td>
-                                                                <td>105</td>
-                                                                <td>110</td>
-                                                            </tr> 
-                                                            <tr>
-                                                                <th scope="col">신장</th>
-                                                                <td>95</td>
-                                                                <td>100</td>
-                                                                <td>105</td>
-                                                                <td>110</td>
-                                                            </tr>                                               
+                                                                <td>225</td>
+                                                                <td>5.5</td>
+                                                            </tr>                                         
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
                                             <div class="size_tbl_box">
-                                                <h6>신발 하의</h6>
+                                                <h6>남성 신발</h6>
                                                 <p class="size_unit">단위 : cm</p>
                                                 <div class="tbl type2">
                                                     <table>
                                                         <colgroup>
-                                                            <col width="20%">
-                                                            <col width="10%">
-                                                            <col width="10%">
-                                                            <col width="10%">
-                                                            <col width="10%">
-                                                            <col width="10%">
-                                                            <col width="10%">
-                                                            <col width="10%">
-                                                            <col width="10%">
+                                                            <col width="50%">
+                                                            <col width="50%">
                                                         </colgroup>
                                                         <thead>
                                                             <tr>
-                                                                <th scope="col">&nbsp;</th>
-                                                                <th scope="col">27</th>
-                                                                <th scope="col">28</th>
-                                                                <th scope="col">29</th>
-                                                                <th scope="col">30</th>
-                                                                <th scope="col">32</th>
-                                                                <th scope="col">34</th>
-                                                                <th scope="col">36</th>
-                                                                <th scope="col">38</th>
+                                                                <th scope="col">한국</th>
+                                                                <th scope="col">미국</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <th scope="col">허리둘레</th>
-                                                                <td>69</td>
-                                                                <td>71</td>
-                                                                <td>74</td>
-                                                                <td>76</td>
-                                                                <td>81</td>
-                                                                <td>86</td>
-                                                                <td>91</td>
-                                                                <td>97</td>
-                                                            </tr>                                    
+                                                                <td>250</td>
+                                                                <td>7.5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>255</td>
+                                                                <td>8</td>
+                                                            </tr>                                         
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -2374,65 +2536,73 @@
                                 <!-- 표준 사이즈 브랜드별 구분일때 -->
                                 <div class="size_head">
                                     <span class="tit_header">
-                                        페르지노몬티 FERGINO MONTI
+                                        모이몰른 MOIMOLN
                                     </span>
                                 </div>
                                 <div class="size_cont">
                                     <div class="size_tbl_box">
-                                        <h6>남성 상의</h6>
-                                        <p class="size_unit">단위 : cm</p>
-                                        <div class="tbl type2">
-                                            <table>
-                                                <colgroup>
-                                                    <col width="20%">
-                                                    <col width="20%">
-                                                    <col width="20%">
-                                                    <col width="20%">
-                                                    <col width="20%">
-                                                </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">&nbsp;</th>
-                                                        <th scope="col">XS/44/85</th>
-                                                        <th scope="col">S/55/90</th>
-                                                        <th scope="col">M/66/95</th>
-                                                        <th scope="col">L/77/100</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="col">가슴둘레</th>
-                                                        <td>95</td>
-                                                        <td>100</td>
-                                                        <td>105</td>
-                                                        <td>110</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="col">허리둘레</th>
-                                                        <td>95</td>
-                                                        <td>100</td>
-                                                        <td>105</td>
-                                                        <td>110</td>
-                                                    </tr> 
-                                                    <tr>
-                                                        <th scope="col">신장</th>
-                                                        <td>95</td>
-                                                        <td>100</td>
-                                                        <td>105</td>
-                                                        <td>110</td>
-                                                    </tr>                                               
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="size_tbl_box">
-                                        <h6>남성 하의</h6>
+                                        <h6>의류/언더</h6>
                                         <p class="size_unit">단위 : cm</p>
                                         <div class="tbl type2">
                                             <table>
                                                 <colgroup>
                                                     <col width="20%">
                                                     <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                    <col width="10%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">&nbsp;</th>
+                                                        <th scope="col">60</th>
+                                                        <th scope="col">79</th>
+                                                        <th scope="col">80</th>
+                                                        <th scope="col">90</th>
+                                                        <th scope="col">100</th>
+                                                        <th scope="col">110</th>
+                                                        <th scope="col">123</th>
+                                                        <th scope="col">130</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col">나이(월령)</th>
+                                                        <td>신생아</td>
+                                                        <td>1~5</td>
+                                                        <td>6~10</td>
+                                                        <td>10~18</td>
+                                                        <td>10~18</td>
+                                                        <td>18~24</td>
+                                                        <td>24~36</td>
+                                                        <td>48~60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">신장</th>
+                                                        <td>95</td>
+                                                        <td>100</td>
+                                                        <td>105</td>
+                                                        <td>115</td>
+                                                        <td>120</td>
+                                                        <td>125</td>
+                                                        <td>130</td>
+                                                        <td>135</td>
+                                                    </tr>                                               
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="size_tbl_box">
+                                        <h6>모자</h6>
+                                        <p class="size_unit">단위 : cm</p>
+                                        <div class="tbl type2">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="20%">
                                                     <col width="10%">
                                                     <col width="10%">
                                                     <col width="10%">
@@ -2464,7 +2634,6 @@
                                                         <td>81</td>
                                                         <td>86</td>
                                                         <td>91</td>
-                                                        <td>97</td>
                                                     </tr>                                    
                                                 </tbody>
                                             </table>
@@ -2603,14 +2772,18 @@
                                                     <dt>총길이</dt>
                                                     <dd>설명 필요</dd>
                                                 </div>
+                                                <div>
+                                                    <dd>
+                                                        <div class="info_txt">
+                                                            <ul>
+                                                                <li>
+                                                                    국내 브랜드는 브랜드, 스타일마다 사이즈가 다르게 전개될 수 있으니, 개별 상품 상세페이지에 기재된 상세 사이즈안내를 참조하세요.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </dd>
+                                                </div>
                                             </dl>
-                                            <!--<div class="info_txt">
-                                                <ul>
-                                                    <li>
-                                                        국내 브랜드는 브랜드, 스타일마다 사이즈가 다르게 전개될 수 있으니, 개별 상품 상세페이지에 기재된 상세 사이즈안내를 참조하세요.
-                                                    </li>
-                                                </ul>
-                                            </div>-->
                                         </div> 
                                         <!-- //측정 사이즈 > 카테고리 내용(신발) --> 
                                         <!-- 측정 사이즈 > 카테고리 내용(언더웨어) -->
@@ -2643,6 +2816,7 @@
                 </div>
             </div>
         </div>
+        <a href="#close-modal" rel="modal:close" id="infoSizePop_close" class="close-modal">Close</a>
     </div>    
     <!-- //사이즈정보 팝업 -->
     
@@ -2672,6 +2846,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--- 버튼 선택유형 사용 -->
                         <div class="select_blk">
                             <h6>사이즈 선택</h6>
                             <div class="opt_size">
@@ -2715,7 +2890,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="select_blk">
+                        <!--- //버튼 선택유형 사용 -->
+                        <!--- 셀렉트박스 선택유형 사용 -->
+                        <div class="select_blk" style="display:none;">
                             <h6>옵션 선택</h6>
                             <div class="opt_select">
                                 <form class="form_wrap">
@@ -2768,13 +2945,15 @@
                                 </form>
                             </div>   
                         </div>      
+                        <!--- //셀렉트박스 선택유형 사용 -->
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="" class="btn btn_dark"><span>신청</span></button>
                 </div>
             </div>
-        </div>        
+        </div>
+        <a href="#close-modal" rel="modal:close" id="pushRestockPop_close" class="close-modal">Close</a>       
     </div>
     <!-- //재입고 알림신청 팝업 -->  
 
@@ -2810,6 +2989,39 @@
         </div>        
     </div>
     <!-- //배송교환반품안내 팝업 -->
+
+    <!-- 스타일링 추천_상품picker_팝업 -->	
+	<div class="modal fade pd_pop pd_lookbook_pop" id="pdLookbookPop" tabindex="-1" role="dialog" aria-labelledby="pd_lookbook_label" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title sr-only" id="pd_lookbook_label">상품정보</h5>
+				</div>
+				<div class="modal-body">
+					<div class="itemsGrp">
+						<div class="item_prod"> <!-- 품절일때 sold_out 클래스 추가 요청 -->
+							<div class="item_state">
+								<div class="itemLink">
+									<div class="itemPic">
+										<img alt="BLACK-a" class=" vLHTC pd_img" src="/images/pc/thumb/ev_list_img05.jpg">
+									</div>
+									<p class="itemBrand">BRAND NAME</p>
+									<div class="itemName">[온라인 단독] 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼 여성 니트 후드 경량 다운 점퍼</div>
+									<span class="itemPrice_original">89,000</span>
+									<p class="itemPrice">80,100
+										<span class="itemPercent">10%</span>
+									</p>
+									<button type="button" class="btn btn_default"><span>자세히 보기</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <a href="#close-modal" rel="modal:close" id="pdLookbookPop_close" class="close-modal">Close</a>
+	</div>
+	<!-- //스타일링 추천_상품picker_팝업 -->
 
 
     <!-- **************** 상품리뷰 팝업 **************** -->
@@ -2851,8 +3063,19 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <!-- 베스트리뷰 팝업 내용 -->
+                <!-- 리뷰 게시글 이동 버튼 
+                <div class="btn_post_wrap">
+                    <a href="javascript:void(0)" class="btn_prev_post no_more"> //더이상 게시글 없을때 no_more 클래스 추가
+                        이전 게시물
+                    </a>
+                    <a href="javascript:void(0)" class="btn_next_post">
+                        다음 게시물
+                    </a>
+                </div>
+                //리뷰 게시글 이동 버튼 -->
             </div>
-        </div>        
+        </div>   
+        <a href="#close-modal" rel="modal:close" id="pdBestReviewPop_close" class="close-modal">Close</a>            
     </div>
     <!-- //베스트 리뷰 자세히보기 팝업 -->   
 
@@ -2862,7 +3085,8 @@
             <div class="modal-content">
                 <!-- 포토영상 리뷰 자세히보기 팝업 내용 -->
             </div>
-        </div>        
+        </div>
+        <a href="#close-modal" rel="modal:close" id="pdPhotoReviewDetailPop_close" class="close-modal">Close</a>         
     </div>
     <!-- //포토영상 리뷰 자세히보기 팝업 -->      
 
@@ -2873,7 +3097,7 @@
                 <!-- 포토영상 리뷰 리스트 팝업 내용 -->
             </div>
         </div>        
-        <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+        <a href="#close-modal" rel="modal:close" id="pdPhotoReviewListPop_close" class="close-modal">Close</a> 
     </div>
     <!-- //포토영상 리뷰 리스트 팝업 -->   
     <!-- //**************** 상품리뷰 팝업 **************** -->  
@@ -2931,7 +3155,8 @@
                     <button type="button" class="btn btn_dark"><span>등록</span></button>
                 </div>
             </div>
-        </div>        
+        </div>       
+        <a href="#close-modal" rel="modal:close" id="pdQnaWritePop_close" class="close-modal">Close</a>  
     </div>
     <!-- //상품문의 작성 팝업 -->
 
@@ -2968,31 +3193,8 @@
     </div>
     <!-- //상품문의 리스트 팝업 -->
 
-    <!-- 상품문의 이미지 팝업 -->
-    <div class="modal fade pd_pop qna_img_pop" id="qnaImgPop" tabindex="-1" role="dialog" aria-labelledby="qnaImgLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header sr-only">
-                    <h5 class="modal-title" id="qnaImgLabel">이미지 상세보기</h5>
-                </div>
-                <div class="modal-body">
-                    <div class="pop_cont">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <!-- 이미지 슬라이드 영역 -->
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>						
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- //상품문의 이미지 팝업 -->
     <!-- **************** 상품문의 팝업 **************** -->
-    
+      
 
 	<script type="text/javascript">
         $(document).ready( function() {
@@ -3036,6 +3238,7 @@
             //슬라이드 - 상품 대표설명 > 좌측 상품썸네일 navi
             var thumbNavSwiper = new Swiper('.area_pic .thumb_nav_wrap .swiper-container', {
                 direction: 'vertical',
+                allowTouchMove: false,
                 slidesPerView: 6,
                 slidesPerGroup : 6,
                 spaceBetween: 10,
@@ -3080,7 +3283,7 @@
             //상품 대표설명 > 우측 상품정보 
             /* 1차 옵션선택 후 2차 옵션 활성화 */
             var opt_selecter01 = new sCombo('.opt_select .select_custom.item_opt1');
-            var opt_selecter01 = new sCombo('.opt_select .select_custom.item_opt2');
+            var opt_selecter02 = new sCombo('.opt_select .select_custom.item_opt2');
             $('.opt_select .select_custom .combo .list > li').click(function(e) {
                 $(this).parents('.form_field').next('.form_field').find('.select_custom').attr('disabled', false);
                 return false;
@@ -3113,28 +3316,44 @@
             setInterval(function() { promotionTimer(); }, 1000);
 
             /* 상품옵션변경 팝업 > 수량조절 */
+            //수량1개 이하 감소버튼 비활성화 
+            var valItemCount = $('.option_box .opt_count .number_count input').val();
+            if ( valItemCount == 1 ) {
+                $('.option_box .opt_count .number_count .minus').addClass('min_val');
+            } 
+            //수량조절 이벤트
             $(document).on('click','.option_box .opt_count .number_count .minus',function(e){
                 var $input = $(this).parent().find('input');
 				var count = parseInt($input.val()) - 1;
 				count = count < 1 ? 1 : count;
 				$input.val(count);
-				$input.change();
+				$input.change();  
+                //수량1개 이하 감소버튼 비활성화               
+                if ($input.val() == 1) {
+                    $('.option_box .opt_count .number_count .minus').addClass('min_val');
+                } 
 				return false;
             }).on('click','.option_box .opt_count .number_count .plus',function(e){
                 var $input = $(this).parent().find('input');
 				$input.val(parseInt($input.val()) + 1);
 				$input.change();
+                //수량2개 이상부터 감소버튼 활성화 
+                $('.option_box .opt_count .number_count .minus').removeClass('min_val');
 				return false;
+            }).on('keyup','.option_box .opt_count .number_count input[type=text]',function(e){
+                //텍스트, 0 입력금지 
+                $(this).val($(this).val().replace(/[^1-9]/g,""));
             });
 
-            //스타일링 추천 picker    
-            $(document).on('mouseenter','.pd_recommend .area_slider .item_picker button',function(e){
-                $(this).parents('.item_picker').find('.pick_descr').show();
+            //스타일링 추천 picker 상품팝업
+            $(document).on('click','.pd_recommend .area_slider .item_picker button',function(e){
+                $("#pdLookbookPop").modal("show");
                 return false;
-            }).on('mouseleave','.pd_recommend .area_slider .item_picker button', function(e){
-                $(this).parents('.item_picker').find('.pick_descr').hide();
-                return false;
-            });   
+            });
+            $("#pdLookbookPop_close").click(function() {
+                $("#pdLookbookPop").modal("hide");
+            });
+
 
             //상품상세정보 안내 호출
             $(".pd_descrp").load("pd_descrp_pop.html");
@@ -3193,6 +3412,20 @@
                 },
             });            
 
+            //슬라이드 - 브랜드 추천상품
+            var relateItemSwiper = new Swiper('.pd .pd_brand .area_slider .swiper-container', {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.pd_brand .swiper-button-next',
+                    prevEl: '.pd_brand .swiper-button-prev',
+                },
+                pagination: {
+                    el: '.pd_brand .swiper-pagination',
+                    clickable: true,
+                },
+            });  
+
             //슬라이드 - 이 상품과 비슷한 상품 
             var relateItemSwiper = new Swiper('.pd .pd_relate .area_slider .swiper-container', {
                 slidesPerView: 5,
@@ -3232,11 +3465,16 @@
                 });
             };
 
+
             //팝업 - 쿠폰받기
             $(document).on('click','#btn_saleCoupon_pop',function(e){
                 $("#saleCouponPop").modal("show"); //할인쿠폰받기
                 //$("#epCouponPop").modal("show"); ep채널 쿠폰받기
                 return false;
+            });
+            $("#saleCouponPop_close").click(function() {
+                $("#saleCouponPop").modal("hide"); //할인쿠폰받기
+                //$("#epCouponPop").modal("hide"); ep채널 쿠폰받기
             });
 
             //팝업 - 쇼핑혜택 > 자세히보기
@@ -3244,18 +3482,27 @@
                 $("#bnfShoppingPop").modal("show");
                 return false;
             });
+            $("#bnfShoppingPop_close").click(function() {
+                $("#bnfShoppingPop").modal("hide");
+            });
 
             //팝업 - 카드혜택 > 자세히보기
             $(document).on('click','#btn_bnfCard_pop',function(e){
                 $("#bnfCardPop").modal("show");
                 return false;
             });
+            $("#bnfCardPop_close").click(function() {
+                $("#bnfCardPop").modal("hide");
+            });
 
             //팝업 - 사이즈정보
             $(document).on('click','#btn_infoSize_pop',function(e){
                 $("#infoSizePop").modal("show");
                 return false;
-            });            
+            });
+            $("#infoSizePop_close").click(function() {
+                $("#infoSizePop").modal("hide");
+            });        
 
             //팝업 - 사이즈정보 > 탭
             $(document).on('click','.info_size_pop .tab_nav ul li',function(e){
@@ -3281,7 +3528,10 @@
                 
                 $("#pushRestockPop").modal("show");
                 return false;
-            });                     
+            });    
+            $("#pushRestockPop_close").click(function() {
+                $("#pushRestockPop").modal("hide");
+            });    
 
             //팝업 - 상품리뷰
             $(document).on('click','#btn_pdReview_pop',function(e){
@@ -3301,20 +3551,29 @@
                 $("#pdBestReviewPop").modal("show");
                 return false;
             });      
+            $("#pdBestReviewPop_close").click(function() {
+                $("#pdBestReviewPop").modal("hide");
+            });
 
             //팝업 - 포토/영상 리뷰 (detail)
             $(document).on('click','.area_rv_photo .photo_list a, .area_rv_all .review_list .photo_list a, .pd_photoreviewlist_pop .photo_list ul li a',function(e){
                 $("#pdPhotoReviewDetailPop .modal-content").load("pd_photoreviewdetail_pop.html");
                 $("#pdPhotoReviewDetailPop").modal("show");
                 return false;
-            });                  
+            });                   
+            $("#pdPhotoReviewDetailPop_close").click(function() {
+                $("#pdPhotoReviewDetailPop").modal("hide");
+            });
             
             //팝업 - 포토/영상 리뷰 (list)
             $(document).on('click','#btn_more_photoreview, #btn_pdPhotoReviewList_pop',function(e){
                 $("#pdPhotoReviewListPop .modal-content").load("pd_photoreviewlist_pop.html");
                 $("#pdPhotoReviewListPop").modal("show");
                 return false;
-            });        
+            });         
+            $("#pdPhotoReviewListPop_close").click(function() {
+                $("#pdPhotoReviewListPop").modal("hide");
+            });
             
             //팝업 - 상품문의 작성
             $(document).on('click','#btn_pdQnaWrite_pop',function(e){
@@ -3330,8 +3589,10 @@
                         $('#itemqna_cnt').html("(<em class='c_primary'>500</em>/500자)");
                     }
                 });                
-
                 return false;
+            });	
+            $("#pdQnaWritePop_close").click(function() {
+                $("#pdQnaWritePop").modal("hide");
             });
 
             //팝업 - 상품문의 리스트
@@ -3346,28 +3607,6 @@
                 return false;
             });			
 
-            //팝업 - 상품문의 이미지 슬라이드
-            $(document).on('click','.qna_list .img_group .thumb_pic',function(e){
-                $("#qnaImgPop .swiper-wrapper").empty();
-
-                var pdPopSlideIndex = $(this).index();
-                itemQnaPopSwiper.slideTo(pdPopSlideIndex);
-                itemQnaPopSwiper.update();
-
-                var itemQnaImglength = $('.qna_list .img_group .thumb_pic').length;
-                var itemPopImgHtml = "";
-                for (i = 1; i <= itemQnaImglength; i++) {
-                    var itemQnaImg = $(this).find('img');
-                    var itemQnaImgSrc = $('.img_group .thumb_pic:nth-child('+i+') img').attr('src');
-                    itemPopImgHtml += "<div class='swiper-slide'><div class='pop_img' style='background-image:url("+ itemQnaImgSrc +")'></div></div>";
-                }
-
-                $("#qnaImgPop .swiper-wrapper").append(itemPopImgHtml);
-                $('#qnaImgPop').modal("show");
-                
-                return false;
-            });
-
             //팝업 - 배송교환반품 안내
             $(document).on('click','#btn_pdDeliveryPop',function(e){
                 $('body').addClass('lock');
@@ -3377,10 +3616,34 @@
             }).on('click','#btn_close_deliveryPop',function(e){
                 $("#pdDeliveryPop").hide(); 
                 $('body').removeClass('lock');
-                
                 return false;
             });
-
+	                     
+            //팝업 - 상품썸네일 크게보기
+            $(document).on('click','.pd_detail .area_pic .thumb_list_wrap ul li',function(e){
+                $('body').addClass('lock');
+                $("#pdItemThumbPop .full_pop_container").empty();
+                var thumbIndex = $(this).index() + 1;
+                var thumbImglength = $('.pd_detail .area_pic .thumb_list_wrap ul li').length;
+                var popThumbImgHtml = "";
+                for (i = 1; i <= thumbImglength; i++) {
+                    var thumbImg = $(this).find('img');
+                    var thumbImgSrc = $('.pd_detail .area_pic .thumb_list_wrap ul li:nth-child('+i+') a img').attr('src');
+                    popThumbImgHtml += "<div id=popThumb"+i+" class='scaleview'><img src="+ thumbImgSrc +" alt=''></div>";
+                }
+                $("#pdItemThumbPop .full_pop_container").append(popThumbImgHtml);
+                $("#pdItemThumbPop").show(); 
+            
+                var scrollThumbPop = $('#popThumb'+thumbIndex).offset().top;
+                var currentTop = $(window).scrollTop();
+                $('#pdItemThumbPop').animate({scrollTop : scrollThumbPop - currentTop}, 1000);
+                return false;
+            }).on('click','#btn_close_itemThumbPop, .pd_itemthumb_pop .scaleview img',function(e){
+                $("#pdItemThumbPop").scrollTop(0);
+                $("#pdItemThumbPop").hide(); 
+                $('body').removeClass('lock');
+                return false;
+            });			    
         });
     </script>
 </body>

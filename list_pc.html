@@ -79,7 +79,7 @@
 	.section table tr.tr-bgtype3 td {background:#fdfce6; color:#666;}
 	.section table tr.tr-bgtype4 td {background:#fde6e9; color:#666;}
 	.modi{position: relative;color: #cc4949;}
-	.modi::after{content: 'MODIFY';font-size: 6px;color: #fff;line-height: 0.7;text-decoration: underline;position: absolute;bottom: 1px;left: -40px;background: #e26666;height: 11px;}
+	.modi::after{content: 'MODIFY';font-size: 6px;color: #fff;line-height: 0.7;text-decoration: underline;position: absolute;bottom: 1px;left: -40px;background:#ff1e1e;height: 11px;}/*#e26666*/
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
@@ -201,9 +201,10 @@
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">
-							<span class="modi">02.26</span>
+							<!-- <span class="modi">02.26</span> -->
+							<span class="">02.26</span>
 						</td>
-						<td class="desc" style="color:#c52126;">
+						<td class="desc">
 							1. [slick → swiper] 슬라이더 교체 <br>
 							** 모든 구역 공통 : 교체로 인해 변경되는 html 구조를 확인바랍니다. <br>
 						</td>
@@ -216,15 +217,18 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="#none">head.html</a></td>
+						<td class="file"><a target="_blank" href="#none">head</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">
-							<span class="modi">02.26</span>
+							02.26<br>
+							<!-- <span class="modi">03.02</span> -->
+							<span class="">03.02</span>
 						</td>
-						<td class="desc" style="color:#c52126;">
-							1. [gnb] 하위 뎁스 노출  <br>
-							2. [더보기▶] 셀렉터는 3월 첫주에 진행예정
+						<td class="desc">
+							<!-- 02.26 1. [gnb] 하위 뎁스 노출  <br> -->
+							<!-- 02.26 2. [더보기▶] 셀렉터는 3월 첫주에 진행예정 <br> -->
+							검색레이어 호출 추가
 						</td>
 						<td class="note" ><em>include only</em></td>
 					</tr>
@@ -235,12 +239,16 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="#none">br_head.html</a></td>
+						<td class="file"><a target="_blank" href="#none">br_head</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
-						<td class="date"></td>
-						<td class="desc" style="color:#c52126;">
-							1. 카테고리 '매장' 제거 
+						<td class="date">
+							<!-- <span class="modi">03.02</span> -->
+							<span class="">03.02</span>
+						</td>
+						<td class="desc">
+							<!-- 1. 카테고리 '매장' 제거 <br> -->
+							검색레이어 호출 추가
 						</td>
 						<td class="note"><em>include only</em></td>
 					</tr>
@@ -251,7 +259,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="#none">foot.html</a></td>
+						<td class="file" rowspan="2"><a target="_blank" href="#none">foot</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date"></td>
@@ -262,10 +270,10 @@
 						<td>퀵메뉴</td>
 						<td colspan="3">최근본상품, 위시리스트, 쇼핑백, 나의쿠폰, 카테고리</td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href=""></a></td>
+						<!-- <td class="file"><a target="_blank" href=""></a></td> -->
 						<td class="stat"></td>
-						<td class="name"><span class="modi">02.26</span></td>
-						<td class="date"></td>
+						<td class="name">02.26</td>
+						<td class="date">02.26</td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -278,17 +286,17 @@
 						<td colspan="12">1개노출, 2개노출, 3개이상(슬라이더)</td>
 					</tr>
 					<tr>
-						<td class="tit" rowspan="5">검색</td>
+						<td class="tit" rowspan="5">검색 <br><sub style="color:#c52126;">* 디자인변경예정</sub> </td>
 						<td>기본 (검색 전)</td>
 						<td></td>
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href=""></a></td>
+						<td class="file" rowspan="3"><a target="_blank" href="ux/pc/sch_layer_pop.html">sch_layer_pop</a></td>
 						<td class="stat"></td>
 						<td class="name"> - </td>
-						<td class="date"></td>
-						<td class="desc"></td>
+						<td class="date" >03.02</td>
+						<td class="desc" >.default_box >  .popular_blk,  .realtime_blk</td>
 						<td class="note">최근검색어/(nodeta포함), 검색되고있어요, 실시간베스트상품리스트영역<em></em></td>
 					</tr>
 					<tr>
@@ -297,11 +305,11 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href=""></a></td>
+						<!-- <td class="file"><a target="_blank" href=""></a></td> -->
 						<td class="stat"></td>
 						<td class="name"> - </td>
-						<td class="date"></td>
-						<td class="desc"></td>
+						<td class="date" >03.02</td>
+						<td class="desc" >searching_box > .autokeyword_blk,  .exfind_blk,  .pd_list relate</td>
 						<td class="note">자동완성검색어, 브랜드 바로가기, 카테고리 이동, 관련상품<em></em></td>
 					</tr>
 					<tr>
@@ -309,11 +317,11 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href=""></a></td>
+						<!-- <td class="file"><a target="_blank" href=""></a></td> -->
 						<td class="stat"></td>
 						<td class="name"> - </td>
-						<td class="date"></td>
-						<td class="desc"></td>
+						<td class="date" >03.02</td>
+						<td class="desc" style="color:#c52126;"></td>
 						<td class="note">nodata, 추천상품<em></em></td>
 					</tr>
 					<tr>
@@ -322,11 +330,11 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href=""></a></td>
+						<td class="file" rowspan="2"><a target="_blank" href="ux/pc/sch_result.html">sch_result</a></td>
 						<td class="stat"></td>
 						<td class="name"> - </td>
-						<td class="date"></td>
-						<td class="desc"></td>
+						<td class="date" >03.02</td>
+						<td class="desc" >.sch_result > .cont_head > <strong>.nodata</strong></td>
 						<td class="note"><em></em></td>
 					</tr>
 					<tr>
@@ -334,11 +342,11 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href=""></a></td>
+						<!-- <td class="file"><a target="_blank" href=""></a></td> -->
 						<td class="stat"></td>
 						<td class="name"> - </td>
-						<td class="date"></td>
-						<td class="desc"></td>
+						<td class="date" >03.02</td>
+						<td class="desc" >.sch_result > .cont_body > .sch_result_cont > <strong>.nodata</strong></td>
 						<td class="note"><em></em></td>
 					</tr>
 					<tr>
@@ -348,11 +356,53 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/br_</td>
-						<td class="file"><a target="_blank" href="ux/pc/br_index.html">br_index.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/br_index.html">br_index</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
-						<td class="date">02.23</td>
-						<td class="desc"></td>
+						<td class="date">02.23 <br>
+							<!-- <span class="modi">03.02</span> -->
+							<span class="">03.02</span>
+						</td>
+						<td class="desc" >룩북 피커 포지션 수정 <br> 룩북 슬라이드 (css해당)</td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>브랜드검색</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/pc/br_</td>
+						<td class="file"><a target="_blank" href="ux/pc/br_sch_result.html">br_sch_result</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date" style="color:#c52126;"><b>03.07</b></td>
+						<td class="desc"style="color:#c52126;">마크업 업데이트 </td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>브랜드 룩북</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/pc/br_</td>
+						<td class="file"><a target="_blank" href="ux/pc/br_lookbook_list.htm">br_lookbook_list</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date" style="color:#c52126;"><b>03.07</b></td>
+						<td class="desc"style="color:#c52126;">마크업 업데이트 </td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>브랜드 룩북 상세</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/pc/br_</td>
+						<td class="file"><a target="_blank" href="ux/pc/br_lookbook_view.html">br_lookbook_view</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date" style="color:#c52126;"><b>03.07</b></td>
+						<td class="desc"style="color:#c52126;">마크업 업데이트 </td>
 						<td class="note"><em></em></td>
 					</tr>
 					<tr>
@@ -361,7 +411,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_list_1.html">dp_list_1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_list_1.html">dp_list_1</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -414,14 +464,17 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_detail.html">pd_detail.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_detail.html">pd_detail</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">
 							02.19 <br>
-							<span class="modi"><b>02.25</b></span>
+							02.25</br>
+							<!-- <span class="modi">03.02</span> -->
+							<span class="">03.02</span>
 						</td>
-						<td class="desc" style="color:#c52126;">1. [페이지 분리] 리뷰/상품설명/문의 <br> 2. [옵션영역] 옵션선택된 리스트 추가 <br> 3. [Select] 신규타입으로 교체</td>
+						<!-- <td class="desc" style="color:#c52126;">02.25 1. [페이지 분리] 리뷰/상품설명/문의 <br> 2. [옵션영역] 옵션선택된 리스트 추가 <br> 3. [Select] 신규타입으로 교체</td> -->
+						<td class="desc">1.룩북 피커 포지션 수정</td>
 						<td class="note"><em></em></td>
 					</tr>
 					<tr>
@@ -430,10 +483,10 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_deal_detail.html">pd_deal_detail.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_deal_detail.html">pd_deal_detail</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
-						<td class="date"><b>02.25</b></td>
+						<td class="date">02.25</td>
 						<td class="desc">상품 옵션 셀렉트 추가 및 변경 이슈 남아있음, 주석 참고</td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -443,10 +496,10 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_descrp_pop.html">pd_descrp_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_descrp_pop.html">pd_descrp_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
-						<td class="date"><b>02.25</b></td>
+						<td class="date">02.25</td>
 						<td class="desc">상품 옵션 셀렉트 추가 및 변경 이슈 남아있음, 주석 참고</td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -456,7 +509,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_review_pop.html">pd_review_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_review_pop.html">pd_review_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">02.23</td>
@@ -469,7 +522,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_bestreviewdetail_pop.html">pd_bestreviewdetail_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_bestreviewdetail_pop.html">pd_bestreviewdetail_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">02.23</td>
@@ -482,7 +535,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_photoreviewlist_pop.html">pd_photoreviewlist_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_photoreviewlist_pop.html">pd_photoreviewlist_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">02.23</td>
@@ -495,7 +548,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_photoreviewdetail_pop.html">pd_photoreviewdetail_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_photoreviewdetail_pop.html">pd_photoreviewdetail_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">02.23</td>
@@ -508,7 +561,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_qnalist_pop.html">pd_qnalist_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_qnalist_pop.html">pd_qnalist_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">02.23</td>
@@ -521,7 +574,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/pd_</td>
-						<td class="file"><a target="_blank" href="ux/pc/pd_delivery_pop.html">pd_delivery_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/pd_delivery_pop.html">pd_delivery_pop</a></td>
 						<td class="stat">○</td>
 						<td class="name"> - </td>
 						<td class="date">02.23</td>
@@ -556,17 +609,19 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td class="tit" rowspan="4">이벤트</td>
+						<td class="tit" rowspan="7">이벤트</td>
 						<td>리스트</td>
 						<td></td>
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_list.html">ev_list.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_list.html">ev_list</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
-						<td class="date">02.10</td>
-						<td class="desc"></td>
+						<td class="date">02.10
+							<span class="modi"><b>03.07</b></span>
+						</td>
+						<td class="desc" style="color:#c52126;">마크업 업데이트 </td>
 						<td class="note"><em></em></td>
 					</tr>
 					<tr>
@@ -575,10 +630,57 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_list_no_content.html">ev_list_no_content.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_list_no_content.html">ev_list_no_content</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
-						<td class="date">02.10</td>
+						<td class="date">02.10
+							<span class="modi"><b>03.07</b></span>
+						</td>
+						<td class="desc" style="color:#c52126;">마크업 업데이트 </td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>출석체크 이벤트</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/mo/ev_</td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_check_1.html">ev_check_1</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date" >02.16
+							<!-- <span class="modi">03.02</span> -->
+						</td>
+						<td class="desc"></td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>리뉴얼 <br>댓글 이벤트</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/mo/ev_</td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_comment_1.html">ev_comment_1</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date">02.16
+							<!-- <span class="modi">03.02</span> -->
+						</td>
+						<td class="desc"></td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>리뉴얼 <br>댓글 이벤트 <br>댓글없음</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/mo/ev_</td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_comment_2.html">ev_comment_2</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date" >02.16
+							<!-- <span class="modi">03.02</span> -->
+						</td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -588,7 +690,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_renew_1.html">ev_renew_1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_renew_1.html">ev_renew_1</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -601,7 +703,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_renew_2.html">ev_renew_2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_renew_2.html">ev_renew_2</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -615,7 +717,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_rank_1.html">ev_rank_1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_rank_1.html">ev_rank_1</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -628,7 +730,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_rank_2.html">ev_rank_2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_rank_2.html">ev_rank_2</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -640,7 +742,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/ev_</td>
-						<td class="file"><a target="_blank" href="ux/pc/ev_rank_3.html">ev_rank_3.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/ev_rank_3.html">ev_rank_3</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -681,7 +783,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_submain.html">dp_submain.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_submain.html">dp_submain</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -695,7 +797,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_list_1.html">dp_list_1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_list_1.html">dp_list_1</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -708,7 +810,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_list_2.html">dp_list_2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_list_2.html">dp_list_2</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -722,7 +824,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_best.html">dp_best.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_best.html">dp_best</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -736,7 +838,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Hotdeal.html">dp_Hotdeal.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Hotdeal.html">dp_Hotdeal</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -750,7 +852,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Exhibition.html">dp_Exhibition.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Exhibition.html">dp_Exhibition</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -763,7 +865,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_detail_case1.html">dp_detail_case1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_detail_case1.html">dp_detail_case1</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -776,7 +878,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_detail_case2.html">dp_detail_case2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_detail_case2.html">dp_detail_case2</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -789,7 +891,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_detail_case3.html">dp_detail_case3.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_detail_case3.html">dp_detail_case3</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -802,7 +904,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_detail_casePOPUP.html">dp_detail_casePOPUP.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_detail_casePOPUP.html">dp_detail_casePOPUP</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -815,7 +917,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Exhibition_nodata.html">dp_Exhibition_nodata.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Exhibition_nodata.html">dp_Exhibition_nodata</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -829,7 +931,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship1.html">dp_Bulletship1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship1.html">dp_Bulletship1</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -842,7 +944,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship_pop.html">dp_Bulletship_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship_pop.html">dp_Bulletship_pop</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -855,7 +957,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship2.html">dp_Bulletship2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship2.html">dp_Bulletship2</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -868,7 +970,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship_pop.html">dp_Bulletship_pop.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship_pop.html">dp_Bulletship_pop</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -881,7 +983,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship3.html">dp_Bulletship3.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_Bulletship3.html">dp_Bulletship3</a></td>
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -895,7 +997,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_outlets.html">dp_outlets.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_outlets.html">dp_outlets</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -909,7 +1011,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_lookbook.html">dp_lookbook.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_lookbook.html">dp_lookbook</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -922,7 +1024,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/dp_</td>
-						<td class="file"><a target="_blank" href="ux/pc/dp_lookbook_no_content.html">dp_lookbook_no_content.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/dp_lookbook_no_content.html">dp_lookbook_no_content</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -957,7 +1059,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td class="tit" rowspan="10">로그인</td>
+						<td class="tit" rowspan="11">로그인</td>
 						<td>로그인</td>
 						<td></td>
 						<td></td>
@@ -967,7 +1069,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -981,7 +1083,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -995,7 +1097,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1009,7 +1111,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1023,7 +1125,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1037,7 +1139,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1051,7 +1153,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1065,7 +1167,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1079,7 +1181,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1093,8 +1195,21 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
+						<td class="note"><em></em></td>
+					</tr>
+					<tr>
+						<td>비밀번호 변경 캠페인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>/ux/pc/mb_</td>
+						<td class="file"><a target="_blank" href="ux/pc/mb_campaign.html">mb_campaign</a></td>
+						<td class="stat">○</td>
+						<td class="name">-</td>
+						<td class="date" >03.04</td>
+						<td class="desc" style="color:#c52126;">차후 디자인 반영</td>
 						<td class="note"><em></em></td>
 					</tr>
 					<tr>
@@ -1108,7 +1223,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1122,7 +1237,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1136,7 +1251,7 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">01.29<br>
-							<span class="modi"><b>02.25</b></span></td>
+							02.25<br><!-- <span class="modi"></span> --></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
@@ -1150,7 +1265,7 @@
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">
-							<span class="modi"><b>02.25</b></span>
+							02.25<br><!-- <span class="modi"></span> -->
 						</td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
@@ -1655,9 +1770,9 @@
 						<td class="stat">●</td>
 						<td class="name">-</td>
 						<td class="date">02.10 <br>
-							<span class="modi"><b>02.25</b></span>
+							02.25<br><!-- <span class="modi"></span> -->
 						</td>
-						<td class="desc" style="color:#c52126;">1. button 문구 변경 <br> 2. 휴대폰 항목[input]→알림톡 항목[radio] 교체 </td>
+						<td class="desc" >1. button 문구 변경 <br> 2. 휴대폰 항목[input]→알림톡 항목[radio] 교체 </td>
 						<td class="note"><em></em></td>	
 					</tr>
 					<tr>
@@ -1720,7 +1835,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_shopping_Bag.html">od_shopping_Bag.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_shopping_Bag.html">od_shopping_Bag</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1733,7 +1848,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_member1.html">od_member1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_member1.html">od_member1</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1745,7 +1860,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_member2.html">od_member2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_member2.html">od_member2</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1758,7 +1873,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_nonMb_order.html">od_nonMb_order.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_nonMb_order.html">od_nonMb_order</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1771,7 +1886,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_no_member1.html">od_no_member1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_no_member1.html">od_no_member1</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1783,7 +1898,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_no_member2.html">od_no_member2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_no_member2.html">od_no_member2</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1797,7 +1912,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_Completed1.html">od_Completed1.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_Completed1.html">od_Completed1</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">02.10</td>
@@ -1809,7 +1924,7 @@
 						<td></td>
 						<td></td>
 						<td>/ux/pc/</td>
-						<td class="file"><a target="_blank" href="ux/pc/od_Completed2.html">od_Completed2.html</a></td>
+						<td class="file"><a target="_blank" href="ux/pc/od_Completed2.html">od_Completed2</a></td>
 						<td class="stat">○</td>
 						<td class="name">-</td>
 						<td class="date">01.29</td>
