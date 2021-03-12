@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>STYLE24 | br_search| Publishing</title>
+	<title>STYLE24 | br_search | Publishing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
@@ -17,12 +17,12 @@
 	<link rel="stylesheet" href="/ux/mo/css/swiper.min.css">
 	<link rel="stylesheet" href="/ux/mo/css/style24_m.css">
 	<link rel="stylesheet" href="/ux/mo/css/hyanghoon.css">
-	<link rel="stylesheet" href="/ux/mo/css/hyangah.css">
 
 	<script src="/ux/mo/js/jquery-3.5.1.min.js"></script>
 	<script src="/ux/mo/js/swiper.min.js"></script>
 	<script src="/ux/mo/js/common_m.js"></script>
 	<script src="../package/swiper-bundle.min.js"></script>
+	<script src="js/main_m.js" defer></script>
 
 </head>
 
@@ -154,7 +154,7 @@
 		<main role="" id="" class="container br_search_wrap">
 			<!-- page nav: CS 고객센터 -->
 			<section class="hmenu">
-				<div class="swiper-container">
+				<div class="swiper-container brand_si">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<li>
@@ -237,6 +237,20 @@
 							<li>
 								<a href="#brandpage">
 									<span><img src="/images/mo/thumb/brlogo06.png" alt=""></span>
+								</a>
+							</li>
+						</div>
+						<div class="swiper-slide">
+							<li>
+								<a href="#brandpage">
+									<span><img src="/images/mo/thumb/brlogo06.png" alt=""></span>
+								</a>
+							</li>
+						</div>
+						<div class="swiper-slide">
+							<li>
+								<a href="#brandpage">
+									<span><img src="/images/mo/thumb/brlogo02.png" alt=""></span>
 								</a>
 							</li>
 						</div>
@@ -402,9 +416,7 @@
 	</script>
 
 	<script>
-		// new Swiper('.swiper-container');
-
-		var swiper = new Swiper('.swiper-container', {
+		var swiperBrand = new Swiper('.swiper-container.brand_si', {
 		slidesPerView: 3,
 		slidesPerColumn: 2,
 		spaceBetween: 0,

@@ -16,3 +16,7 @@ function qna_list(){
 }
 qna_list();
 
+// 더보기 --> 수정해야됨 
+document.querySelector(".reco_information button").onclick = function () {
+  document.querySelector(".reco_information .pop_info").style.height = "100%";
+}
