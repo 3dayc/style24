@@ -1795,14 +1795,14 @@
 		});
 
 		// 배너 슬라이드
-		var swiper2 = new Swiper('.swiper-container.br_second_slide', {
+		var swiperBanner = new Swiper('.swiper-container.br_second_slide', {
 			pagination: {
 				el: '.swiper-pagination',
 			},
 		});
 
 		// 뉴아이템 슬라이드
-		var swiper3 = new Swiper('.swiper-container.br_third_slide', {
+		var swiperNewItem = new Swiper('.swiper-container.br_third_slide', {
 			pagination: {
 				el: '.swiper-pagination',
 			},
@@ -1816,10 +1816,8 @@
 		});
 
 		// 스페셜샵 슬라이드
-		var swiper7 = new Swiper('.swiper-container.br_special_slide', {
-			pagination: {
-				el: '.swiper-pagination',
-			},
+		var swiperShop = new Swiper('.swiper-container.br_special_slide', {
+			slidesPerView: 1,
 		});
 
 		// 룩북 슬라이드
@@ -1833,7 +1831,7 @@
 		});
 
 		// 유튜브 슬라이드
-		var swiper6 = new Swiper('.swiper-container.br_youtube_slide', {
+		var swiperYoutu = new Swiper('.swiper-container.br_youtube_slide', {
 			pagination: {
 				el: '.swiper-pagination',
 			},

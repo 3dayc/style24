@@ -20,3 +20,5 @@ qna_list();
 document.querySelector(".reco_information button").onclick = function () {
   document.querySelector(".reco_information .pop_info").style.height = "100%";
 }
+
+
