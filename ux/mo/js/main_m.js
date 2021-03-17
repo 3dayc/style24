@@ -16,9 +16,21 @@ function qna_list(){
 }
 qna_list();
 
-// 더보기 --> 수정해야됨 
-document.querySelector(".reco_information button").onclick = function () {
-  document.querySelector(".reco_information .pop_info").style.height = "100%";
+// sch_result 탭메뉴
+var schTab = document.querySelectorAll(".sch_result .area_taps .sch-tab");
+var srCont = document.querySelectorAll(".sch .sch_result .sch_result_cont");
+
+function sch_tab(){
+  for(var i=0; i<schTab.length; i++){
+      schTab[i].classList.remove("on");
+      this.classList.add("on");
+  }
 }
 
+function tab_event(){
+  for(var i=0; i<schTab.length; i++){
+    schTab[i].addEventListener("click", sch_tab);
+  }
+}
 
+tab_event();
