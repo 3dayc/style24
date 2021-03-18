@@ -344,7 +344,7 @@
 										<span>3,624</span>개의 상품
 									</div>
 									<div class="f_right">
-										<a href="#">최신상품순<span></span></a>
+										<a href="javascript:void(0);" class="shcFilter">최신상품순<span></span></a>
 										<a href="#">필터<span></span></a>
 									</div>
 								</div>
@@ -538,28 +538,25 @@
 
 						<div class="bg_gray">
 							<div>
-								<a class="btn btn_primary btPop_full_click">Open Modal</a>
-									<div class="btPop_full">
-										<div class="body btPop_body">
-											<ul>
-												<li><a href="#" class="on">최신상품순</a></li>
-												<li><a href="#">인기많은순</a></li>
-												<li><a href="#">리뷰많은순</a></li>
-											</ul>
-											<a class="btn btn-close btPop_full_close">Close</a>
-										</div>
+								<div class="btPop_full">
+									<div class="body btPop_body">
+										<ul>
+											<li><a href="#" class="on">최신상품순</a></li>
+											<li><a href="#">인기많은순</a></li>
+											<li><a href="#">리뷰많은순</a></li>
+										</ul>
+										<a class="btn btn-close btPop_full_close">Close</a>
 									</div>
+								</div>
 							</div>
 						</div>
-
-						
 
 						<div class="filter-list">
 							<div class="f_left">
 								<span>0</span>개의 상품
 							</div>
 							<div class="f_right">
-								<a href="#">최신상품순<span></span></a>
+								<a href="javascript:void(0);" class="shcFilter">최신상품순<span></span></a>
 								<a href="#">필터<span></span></a>
 							</div>
 						</div>
@@ -940,6 +937,43 @@
 				$('.sch_result .sch_result_cont').eq($(this).index()).show();
 				return false;
 			});
+
+			// btPop_full
+			$('.shcFilter').click(function(){
+            	popOpenScroll();
+            	$('.container').addClass('btPop_full_open');
+			});
+			
+			$('.btPop_full_close').click(function(){
+				popClsScroll();
+				$('.container').removeClass('btPop_full_open');
+			});
+
+			// btPopAuto
+			$('.btPop_close').click(function(){
+				popClsScroll();
+				$('.container').removeClass('btPop_open');
+				autome.style.top  = 100 + "%";
+			});
+
+			function popOpenScroll(){
+				$('html, body').css({'overflow': 'hidden', 'height': '100%'}); 
+				$('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브, 휠 스크롤 방지
+					event.preventDefault();
+					event.stopPropagation();
+					return false;
+				});
+			}
+
+			function popClsScroll(){
+				$('html, body').css({'overflow': 'auto', 'height': '100%'}); //n 해제
+				$('#element').off('scroll touchmove mousewheel'); // 터치무브, 휠 스크롤 가능
+			}
+
+			$('.btPop_body ul li a').click(function(){
+				$('.btPop_body ul li a').removeClass('on');
+				$(this).addClass('on');
+			})
 
         });
     </script>

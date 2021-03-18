@@ -471,7 +471,7 @@ main.container .br_lookbook .inner:last-child {padding-bottom: 0;}
 .sch .sch_result .tbj_product .itemPrice_original{margin-left:0.6rem; width:3rem;}
 .sch .sch_result .tbj_product .item_prod .s-text{margin-top:1.5rem;}
 .sch .sch_result .tbj_product > h1{padding:4rem 0 2rem; font-size:1.5rem;}
-.sch .sch_result .tbj_product.no-slide .filter-list{margin:4rem 0 2rem}
+.sch .sch_result .tbj_product.no-slide .filter-list{margin:4rem 0 0}
 .sch .sch_result .tbj_product.no-slide > h1{font-size:1.8rem; margin-bottom:2.3rem; font-weight:bold;}
 .sch .sch_result .tbj_product.no-slide .item_prod{width:49%; float:left; margin-bottom:36px; position:relative;}
 .sch .sch_result .tbj_product.no-slide .item_prod:nth-of-type(even){float:right;}

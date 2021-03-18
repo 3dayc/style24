@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>STYLE24 | sch_result | Publishing</title>
+	<title>STYLE24 | sch_brandresult | Publishing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
@@ -456,7 +456,7 @@
 										<span>3,624</span>개의 상품
 									</div>
 									<div class="f_right">
-										<a href="#">최신상품순<span></span></a>
+										<a href="javascript:void(0);" class="shcFilter">최신상품순<span></span></a>
 										<a href="#">필터<span></span></a>
 									</div>
 								</div>
@@ -517,7 +517,23 @@
 							</div>
 						</div>
 					</div>
+
+                    <div class="bg_gray">
+                        <div>
+                            <div class="btPop_full">
+                                <div class="body btPop_body">
+                                    <ul>
+                                        <li><a href="#" class="on">최신상품순</a></li>
+                                        <li><a href="#">인기많은순</a></li>
+                                        <li><a href="#">리뷰많은순</a></li>
+                                    </ul>
+                                    <a class="btn btn-close btPop_full_close">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 				</div>
+
 
                 <div class="inner wide">
                     <div class="banner">
@@ -695,11 +711,13 @@
 							</div>
 						</div>
 					</div>
+                    <div class="last_page">
+                        <p>마지막페이지 입니다.</p>
+                    </div>
 				</div>
 				
-                <div class="last_page">
-                    <p>마지막페이지 입니다.</p>
-                </div>
+
+                
 				
 
 			</section>
@@ -808,6 +826,50 @@
             slidesPerView: 3,
         });
 	</script>
+
+<script type="text/javascript">
+	// 컨텐츠 호출
+        $(document).ready( function() {
+
+			// btPop_full
+			$('.shcFilter').click(function(){
+            	popOpenScroll();
+            	$('.container').addClass('btPop_full_open');
+			});
+			
+			$('.btPop_full_close').click(function(){
+				popClsScroll();
+				$('.container').removeClass('btPop_full_open');
+			});
+
+			// btPopAuto
+			$('.btPop_close').click(function(){
+				popClsScroll();
+				$('.container').removeClass('btPop_open');
+				autome.style.top  = 100 + "%";
+			});
+
+			function popOpenScroll(){
+				$('html, body').css({'overflow': 'hidden', 'height': '100%'}); 
+				$('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브, 휠 스크롤 방지
+					event.preventDefault();
+					event.stopPropagation();
+					return false;
+				});
+			}
+
+			function popClsScroll(){
+				$('html, body').css({'overflow': 'auto', 'height': '100%'}); //n 해제
+				$('#element').off('scroll touchmove mousewheel'); // 터치무브, 휠 스크롤 가능
+			}
+
+            $('.btPop_body ul li a').click(function(){
+				$('.btPop_body ul li a').removeClass('on');
+				$(this).addClass('on');
+			})
+
+        });
+    </script>
 
 </body>
 
